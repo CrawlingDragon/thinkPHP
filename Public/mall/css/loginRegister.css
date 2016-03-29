@@ -1,0 +1,86 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+address, cite, dfn, em, var { font-style:normal; } 
+code, kbd, pre, samp { font-family:"宋体",couriernew, courier, monospace; } 
+small{ font-size:12px; }
+ul, ol ,li{ list-style:none; } 
+a { text-decoration:none;color: #333333; } 
+a:hover { text-decoration:none; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+input{border: 0;}
+button, input, select, textarea { font-size:100%; } 
+table { border-collapse:collapse; border-spacing:0; }
+ul,dl{
+font-size:0;
+}
+ul li,dl dd{
+	font-size: 12px;
+}
+input[type=button],input[type=submit]{cursor: pointer;}
+body{background:#fff;}
+.fl{float:left;}
+.fr{float:right;}
+.mainWrap{width:960px;margin:0 auto; overflow: hidden;}
+/*登录注册头部*/
+header{
+	height:100px;
+	width:100%;
+	border-bottom:1px solid #e5e5e5;
+	background:#599524;
+}
+.main-header{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+.main-header>section{padding-top:32px;}
+.logo{
+	width:150px;
+	height:36px;
+	background:url(../images/vipdateLogo.png) no-repeat;
+}
+.li-link{
+	margin-top:15px;
+	color:#000;
+	font-size:12px;
+}
+.li-link a{
+	color:#000;
+}
+/*登录注册尾部*/
+footer{width:100%;border-top:1px solid #e5e5e5;margin-top: 120px;padding-bottom: 25px;}
+.footerImg{width:1170px;height:108px;border-bottom:1px solid #e5e5e5;overflow:hidden;margin:50px auto 30px auto;}
+.footerImg ul li{float:left;font-size:20px;color:#333;font-family:"微软雅黑";line-height:52px;width:168px;height:52px;background:url(../images/bj.png) no-repeat -22px -68px;padding-left:60px;margin:0 32px;}
+.footerImg ul li em{color:#548d35;font-weight:bold;}
+footer p{line-height:28px;text-align:center;font-size:12px;color:#666;}
+
+/*登录注册主体*/
+a{color:#0066cc;}
+::-webkit-input-placeholder { color:#999;font-size:12px; }
+::-moz-placeholder { color:#999;font-size:12px; } /* firefox 19+ */
+:-ms-input-placeholder { color:#999;font-size:12px; } /* ie */
+input:-moz-placeholder { color:#999;font-size:12px; }
+input:focus {border: 1px solid #599524;}
+input:focus {outline:none;}
+
+.lfSide, .rtSide{margin-top:60px;}
+.lfSide h3{font-size:20px;color:#333;padding:0 0 32px 10px;}
+.item {overflow:hidden;margin-bottom:20px;}
+.item span{width:100px;height:44px;line-height:44px;font-size:14px;color:#000;float:left;text-align:right;}
+.item input{float:left;}
+.input310, .input150{padding-left: 10px;border:1px solid #e5e5e5;color:#000;margin-right:10px;}
+.input310{width:308px;height:38px;}
+.input150{width:150px;height:38px;}
+#randimg{width:80px;height:44px;margin:0 10px;}
+.item em{line-height:44px;color:#666;font-size:14px;}
+.logTip{font-size:13px;color:#999;}
+input[type=button]{background:#f7f7f7;height: 40px;}
+
+.subBtn{background:#ff6600;width:310px;height:40px;font-size:16px;color:#fff;}
+.subBtn:hover{background:#df5a01;}
+.two-code{background:url(../images/two-code.png) no-repeat;width:450px;height:420px;margin-top: 10px;}
+.formtips{font-size:12px;color:#ff6600;padding-left: 100px;}

@@ -1,0 +1,271 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+address, cite, dfn, em, var { font-style:normal; } 
+code, kbd, pre, samp { font-family:"宋体",couriernew, courier, monospace; } 
+small{ font-size:12px; }
+ul, ol ,li{ list-style:none; } 
+a { text-decoration:none;color: #333333; } 
+a:hover { text-decoration:none; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+input{border: 0;}
+button, input, select, textarea { font-size:100%; } 
+table { border-collapse:collapse; border-spacing:0; }
+ul,dl{
+font-size:0;
+}
+ul li,dl dd{
+	font-size: 12px;
+}
+.fl{float:left;}
+.fr{float:right;}
+
+/*申诉头部和尾部*/
+header{
+	height:100px;
+	width:100%;
+	border-bottom:1px solid #e5e5e5;
+	background:#599524;
+}
+.main-header{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+.main-header>section{padding-top:32px;}
+.logo{
+	width:150px;
+	height:36px;
+	background:url(../images/vipdateLogo.png) no-repeat;
+}
+.li-link{
+	margin-top:15px;
+	color:#000;
+	font-size:12px;
+	cursor: default;
+}
+.li-link a{
+	color:#000;
+}
+/*登录注册尾部*/
+footer{width:100%;border-top:1px solid #e5e5e5;margin-top: 120px;padding-bottom: 25px;}
+.footerImg{width:1170px;height:108px;border-bottom:1px solid #e5e5e5;overflow:hidden;margin:50px auto 30px auto;}
+.footerImg ul li{float:left;font-size:20px;color:#333;font-family:"微软雅黑";line-height:52px;width:168px;height:52px;background:url(../images/bj.png) no-repeat -22px -68px;padding-left:60px;margin:0 32px;}
+.footerImg ul li em{color:#548d35;font-weight:bold;}
+footer p{line-height:28px;text-align:center;font-size:12px;color:#666;}
+
+/*会员验证*/
+.main-wrap{
+	width:1190px;
+	margin:0 auto;
+    padding-bottom: 100px;
+}
+.main-wrap>h3{
+	font-size:14px;
+	color:#333;
+	padding-top:50px;
+	padding-left:150px;
+}
+.main-form{
+	margin-top:60px;
+	overflow:hidden;
+}
+.main-form>em{display:block;padding:20px 0 20px 380px ;font-size:12px;}
+.item{margin-bottom: 30px;}
+.item:after{
+	content:" ";
+	display:block;
+	clear:both;
+}
+.item2{
+	margin-bottom: 10px;
+	overflow:hidden;
+}
+.item span, .item2 span{
+	width:440px;
+	line-height:34px;
+	height:34px;
+	font-size:14px;
+	color:#333;
+	text-align:right;
+	display:block;
+	float:left;
+	padding-right:3px;
+}
+.item strong{
+	font-size:16px;
+	color:#333;
+	line-height:34px;
+}
+.item input,.item select, .send-sms{
+	font-size:14px;
+	color:#333;
+	border:1px solid #e5e5e5;
+	line-height:32px;
+	float:left;
+}
+.input250{
+	width:248px;
+	height:32px;
+	padding-left:10px;
+}
+.input120{margin-right:5px;}
+.input120, .send-sms{
+	width:118px;
+	height:32px;
+	padding-left:10px;
+}
+.send-sms{
+	display: inline-block;
+	background:#f5f5f5;
+	text-align:center;
+	margin:0 10px;
+	padding:0;
+	cursor: pointer;
+}
+.no-sms{
+	line-height:34px;
+	color:#589325;
+	margin-left:30px;
+}
+.send-sms, .no-sms{font-size:12px;}
+.item .form-btn{
+	display:block;
+	float:left;
+	width:110px;
+	height:50px;
+	font-size:14px;
+	border-radius:6px;
+	line-height:50px;
+	text-align:center;
+	background:#599524;
+	color:#fff;
+	border: none;
+	margin:30px 50px 0 0;
+}
+.p33{
+	font-size:14px;
+	color:#333;
+	line-height:34px;
+	float:left;
+}
+/*发送邮件状态*/
+.email-pic{
+	width:443px;
+	height:34px;
+	margin-right:20px;
+}
+.email-text{padding-bottom:20px;}
+.email-text h4{color:#599524;font-size:16px;padding-bottom:10px;}
+.email-text p{font-size:14px;line-height:30px;}
+.form-btn2 {
+	display:block;
+	width:110px;
+	height:50px;
+	font-size:14px;
+	border-radius:6px;
+	line-height:50px;
+	text-align:center;
+	background:#ff6600;
+	color:#fff;
+	margin:30px 0 0 0;
+}
+.form-btn3 {
+	display:block;
+	width:110px;
+	height:50px;
+	font-size:14px;
+	border-radius:6px;
+	line-height:50px;
+	text-align:center;
+	background:#599524;
+	color:#fff;
+	margin:30px 0 0 0;
+}
+.pwd-path{display:block;margin:35px 0 0 230px;}
+.find-ok{
+	width:50px;
+	height:34px;
+	line-height:34px;
+	padding-left:135px;
+	float:left;
+	font-size:16px;
+	color:#333;
+	font-weight:bold;
+	background:url(../images/appealOk.png) no-repeat 90px 0;
+}
+.top-login{width:80px;text-align:center;padding:0 10px;}
+.top-login-list{width:100px;position:absolute;top:33px;left:766px;background:#fff;display:none;/*padding-top:34px;*/}
+.top-login-list dd{margin-bottom:10px;line-height: 18px;text-align:left;text-indent:10px;}
+.top-login-list dd a{display:block;color:#000;}
+.top-login-list dd a:hover{color:#fff;background:#ff6600;}
+.dropDownList{
+	float:left;
+	width:260px;
+	height:34px;
+	position:relative;
+}
+.dropDownList .input250{
+	cursor:pointer;
+}
+.img-drop{
+	position:absolute;
+	top:12px;
+	left: 240px;
+	width:10px;
+	height:10px;
+	background: url(../images/bj.png) no-repeat -222px -38px;
+}
+.dropDownList ul {
+	position:absolute;
+	top:34px;
+	left:0;
+	width:260px;
+}
+.dropDownList ul li{
+	width:258px;
+	height:32px;
+	text-indent:10px;
+	font-size:14px;
+	color:#333;
+	border:1px solid #e5e5e5;
+	line-height:32px;
+}
+.dropDownList ul li:hover{
+	background:#ff6600;
+	color:#fff;
+}
+
+/*申诉页面*/
+#randimg{width:80px;height:34px;margin:0 5px;}
+.form-btn:hover, .form-btn3:hover{background:#366b08;}
+.item>label {line-height: 34px;color: #666;font-size: 14px;float:left;}
+.appealTwoTit{font-size:14px;color:#333;margin:45px 0 28px 230px;}
+.appealTwoTit>em{font-size:12px;color:#666;}
+.input78{width:76px;height:32px;padding-left:10px;margin-right:5px;}
+.main-form>h4 {line-height:32px;font-size:16px;color:#333;background:url(../images/appealOk.png) no-repeat 520px center;margin:30px 0 15px 0;}
+.main-form>p{text-align:center;font-size:14px;line-height:25px;color:#333;}
+.formtips, .onError{font-size:12px;color:#ff6600;float:left;line-height:34px;padding-left: 10px;}
+.selectWrap{display:block;float:left;}
+/*没有找到登录名*/
+.findLogin-pic{width:380px;height:34px;margin-right:20px;}
+.findLogin-text{width:230px;padding-bottom:10px;}
+.findLogin-text p{font-size:12px;line-height:22px;color:#666;}
+.subTit{padding:20px 0 30px 270px;font-size:14px;color:#333;font-weight:bold;}
+.subTit>span{font-size:12px;font-weight:normal;padding-left:10px;color:#666;}
+.form-btn2:hover{background:#ff4400;}
+
+::-webkit-input-placeholder { color:#999;font-size:12px; }
+::-moz-placeholder { color:#999;font-size:12px; } /* firefox 19+ */
+::-ms-input-placeholder { color:#999;font-size:12px; } /* ie */
+input:-moz-placeholder { color:#999;font-size:12px; }
+input:-ms-input-placeholder { color:#999;font-size:12px; }
+input:focus {border: 1px solid #599524;}
+input:focus {outline:none;}
+input[type=button] {background:#f7f7f7;height:34px;padding:0;}
+option.holdOpt{color:#999;}
+input[type=button].smsValBtn{background:#ff6600;color:#fff;}
+input[type=button].smsValBtn:hover{background:#ff4400;}

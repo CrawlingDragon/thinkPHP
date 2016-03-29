@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中农在线</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="__PUBLIC__/mall/css/vipdate.css" type="text/css">
+	<script type="text/javascript" src="__PUBLIC__/mall/js/jquery.1.11.3.min.js"></script>
+
+	<!--[if IE]> 
+	<script> 
+	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
+	</script> 
+	<![endif]-->
+	<!--[if lt IE 8]>
+	<script type="text/javascript" src="__PUBLIC__/mall/js/IE8.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		$(function(){
+
+			//地区
+			$(".selectWrap").blur(function(){	            	
+                $(".selectWrap select").each(function(){
+                    if($(this).val()=="0"){
+                    	$(this).parent().css("border","1px solid #ff6600");
+                    	$(this).addClass("onError");
+                    }else{
+                    	$(this).parent().removeAttr("style");
+                    }
+
+                });
+                   
+	        }).click(function(){
+	        	$(this).triggerHandler("blur");
+	        }).keyup(function(){
+	        	$(this).triggerHandler("blur");
+	        });
+	        
+			
+        	$('form :input').blur(function(){
+				var $parent = $(this).parent();
+				$parent.find(".formtips").remove();
+				$(this).removeAttr("style");
+				//真实姓名验证
+				if($(this).is('#realName ,#companyName')){
+					var realNameReg= /^[\u4e00-\u9fa5 ]{2,20}$/; //中文验证
+					if (this.value=="" || (!realNameReg.test(this.value))) {
+						var errorMsg = '请您填写您的真实信息';
+						$parent.append('<p class="formtips onError">'+ errorMsg+'</p>');
+						$(this).css("border","1px solid #ff6600");
+					}
+				}
+				//手机号
+	            if ($(this).is('#phoneNumber')) {
+	            	var telReg= /^1[3|4|5|8|9]\d{9}$/;
+	            	if (this.value=="" ||(!telReg.test(this.value))) {
+	                	var errorMsg = '请输入正确的手机号';
+	              		$parent.append('<p class="formtips onError">'+ errorMsg+'</p>');
+	              		$(this).css("border","1px solid #ff6600");
+	                }
+	            }
+	            //具体地址
+	            if ($(this).is('#realAddress')) {
+	            	if (this.value=="") {
+	                	var errorMsg = '请输入具体地址';
+	              		$parent.append('<p class="formtips onError">'+ errorMsg+'</p>');
+	              		$(this).css("border","1px solid #ff6600");
+	                }
+	            }
+        
+	        }).keyup(function(){
+	           $(this).triggerHandler("blur");
+	        });//end blur
+
+
+	        //提交，最终验证。
+	         $('.form-btn').click(function(){
+	                $("form :input.require , .selectWrap.require").trigger("blur");//点击btn之后再次检测一遍form的内容
+	                var numError = $('form .onError').length;
+	                if(numError){
+	                    return false;
+	                }
+
+	         });
+
+		});
+	</script>
+</head>
+<body>
+	<include file="Public:header"/>
+
+	<section class="main-wrap">
+		<h3>完善企业资料</h3>
+		<div class="main-form" style="margin-top:30px;">
+			<form action="" method="">
+			<p class="subTit">企业资料</p>
+				<div class="item">
+					<span>企业名称：</span>
+					<input type="text" name="companyName" id="companyName" value="" class="input250 require" placeholder="请输入企业名称" />
+				</div>
+				<div class="item">
+					<span>所在地区：</span>
+					<div class="selectWrap require">
+						<select name="" id="" class="input78 ">
+				            <option value="0" >省</option>
+				            <option value="1">11</option>
+				            <option value="2">22</option>
+				            <option value="3">33</option>
+				            <option value="4">44</option>
+				            <option value="5">55</option>
+				        </select>
+				        <select name="" id="" class="input78 ">
+				            <option value="0">市</option>
+				            <option value="1">11</option>
+				        </select>
+				        <select name="" id="" class="input78 ">
+				            <option value="0">区</option>
+				            <option value="1">11</option>
+				        </select>
+			        </div>
+				</div>
+				<div class="item">
+					<span> </span>
+					<input type="text" name="realAddress" id="realAddress" value="" class="input250 require" placeholder="请输入具体地址" />
+				</div>
+				<p class="subTit">个人资料</p>
+				<div class="item">
+					<span>姓名：</span>
+					<input type="text" name="realName" id="realName" value="" class="input250 require" placeholder="请输入您的姓名" />
+				</div>
+				<div class="item">
+					<span>手机号码：</span>
+					<input type="text" name="phoneNumber" id="phoneNumber" value="" class="input250 require" placeholder="请输入您的手机号" />
+				</div>
+				<div class="item">
+					<span> </span>
+					<a href="" class="form-btn">完成去购物吧</a>
+					<a href="" class="form-btn2" style="float:left;">完善更多资料</a>
+				</div>
+
+			</form>
+		</div>
+	</section>
+
+	<include file="Public:footer"/>
+
+</body>
+</html>
