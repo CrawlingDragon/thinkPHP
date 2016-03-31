@@ -1,0 +1,6 @@
+.adWrap .adBottom .adBm-cont:hover .adBm-text{
+	background: #666;
+}
+.adWrap .adBottom .adBm-cont .adBm-text{
+	background: #333;
+}

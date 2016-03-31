@@ -1,0 +1,107 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	box-sizing:border-box;
+}
+.printWrap{
+	position:absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin:auto;
+	margin-top:-341px;
+    background:#fff;
+    width: 983px;
+	height: 690px;
+    overflow:auto;	
+    box-sizing:border-box;
+    
+}
+.printWrap .printBox{
+	width: 980px;
+	height: 600px;
+	border:1px solid #e2e2e2;
+    box-shadow: -1px 1px 1px #f1f1f1;
+    padding:0 93px;
+    box-sizing:border-box;
+}
+.printWrap .printBox h2{
+	width: 100%;
+	height: 103px;
+	font-family: '微软雅黑';
+	font-size: 26px;
+	line-height: 103px;
+	text-align: center;
+}
+.printWrap .printBox .printTop tr td{
+	padding-bottom: 15px;
+}
+.printWrap .printBox .printTop tr td span{
+	font-size: 14px;
+	font-weight: normal;
+}
+.printWrap .printBox .printTop tr td i{
+	display: inline-block;
+	width: 200px;
+	border-bottom: 1px solid #333;
+}
+.printWrap .printBox .printBottom{
+
+}
+.printWrap .printBox .printBottom tr{
+	height: 40px;
+}
+.printWrap .printBox .printBottom tr td{
+	text-align: center;
+	font-size: 12px;
+}
+.printWrap .printBox .printBottom tr td i{
+	margin-right: 10px;
+}
+.printWrap .printBox .printBottom tr td .num{
+	font-size: 24px;
+	font-family: '微软雅黑';
+	margin:0 5px;
+}
+.printWrap .printBox .remark{
+	width: 791px;
+	height: 80px;
+	border:1px solid #333;
+	border-top: none;
+	box-sizing:border-box;
+	font-size: 0;
+}
+.printWrap .printBox .remark .remark-left{
+	line-height: 80px;
+	display: inline-block;
+	width: 48px;
+	height:80px;
+	font-size: 12px;
+	margin-left: 10px;
+}
+.printWrap .printBox .remark .remark-right{
+	display: inline-block;
+	width: 717px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.printWrap .printBox .printName{
+	text-align: right;
+	margin-top: 10px;
+}
+.printWrap .ps{
+	text-align: right;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+.printWrap .ps input[type=button]{
+	display: inline-block;
+	width: 110px;
+	height: 60px;
+	line-height: 60px;
+	border:none;
+	font-weight: bolder;
+	background: #589325;
+	color: #fff;
+}
