@@ -57,6 +57,7 @@
 	width: 100%;
 	height: auto;
 	border:1px solid #e5e5e5;
+	box-sizing:border-box;
 }
 .goodsList-Cont .goodsNav-box .goodsWrap{
 	width: 960px;
@@ -209,11 +210,11 @@
 	vertical-align: top;
 }
 .goodsList-ul{
-	width: 100%;
+	width: 1019px;
 	min-height:1935px;
 }
 .goodsList-ul li{
-	margin:0 15px 0 5px;
+	margin-right: 26px;
 	float: left;
 	width: 228px;
     box-sizing: border-box;
@@ -293,6 +294,9 @@
   behavior: url(css/ie-css3.htc);
   position: relative;
   z-index: 2;
+}
+.goodsList-wrap .btns .car:hover{
+	background:#d65702;
 }
 .goodsList-wrap .btns .collect{
 	display: inline-block;
@@ -385,7 +389,7 @@
 	overflow: hidden;
 }
 .right-ad .topUl li .imgs:hover{
-	border:1px solid #ff5500;
+	border:1px solid #9cb98d;
 }
 .right-ad .topUl li a img{
 	display: inline-block;
@@ -464,7 +468,7 @@
 	box-sizing:border-box;
 }
 .goodsList-bottom .ul-cont li .imgs:hover{
-	border:2px solid green;
+	border:2px solid #9cb98d;
 }
 .goodsList-bottom .ul-cont li .imgs img{
 	display: inline-block;

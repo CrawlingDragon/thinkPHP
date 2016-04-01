@@ -106,8 +106,6 @@ header, footer, nav, section, article{ display:block;}
 /*首页头部*/
 header{
 	width: 100%;
-	height: 141px;
-	border-bottom:1px solid #eeeeee;
 	font-size: 12px;
 	background: #f5f8fa;
 }
@@ -483,6 +481,7 @@ header .searchBox .goodsCar a p span{
 	height: 40px;
 	border:none;
 	color: #fff;
+	text-indent: 0;
 }
  .sellerNav .areaShops .shopTitle>div{
 	width: 100%;
@@ -717,6 +716,467 @@ header .searchBox .goodsCar a p span{
 	width: 100%;
 	min-height: 1050px;
 }
+/*导航部分*/
+.bannarBox-bj{
+	width: 100%;
+	height: 40px;
+	background: #589325;
+}
+.bannarBox{
+	width: 1190px;
+	margin:0 auto;
+	height: 40px;
+	clear: both;
+	position: relative;
+}
+.bannarBox .bannarLeft{
+	width: 165px;
+	float: left;
+	position: relative;
+	margin-left: 16px;
+}
+.bannarBox .bannarLeft .title{
+	width: 165px;
+	height: 40px;
+	line-height: 40px;
+	background: #589325;
+	color: #fff;
+}
+.bannarBox .bannarLeft .title img{
+	display: inline-block;
+	width: 14px;
+	height: 11px;
+	margin-left: 14px;
+	margin-right: 5px;
+}
+.bannarBox .bannarMiddle{
+	float: left;
+	font-weight: bolder;
+}
+.bannarBox .bannarMiddle ul li{
+	display: inline-block;
+	line-height: 40px;
+	margin-left: 33px;
+	height: 40px;
+}
+.bannarBox .bannarMiddle ul li a{
+	font-size: 16px;
+	color: #fff;
+}
+.bannarBox .bannarMiddle ul li a:hover{
+	color:#224400; 
+}
+.bannarBox .bannarRight{
+	width: 189px;
+	position: absolute;
+	right: 0;
+	top: 42px;
+	z-index: 2;
+	overflow: hidden;
+}
+.bannarBox .bannarRight h4{
+	width: 100%;
+    line-height: 38px;
+    text-align: center;
+    border-bottom: 2px solid #589325;
+    background: url(../images/bj.png) no-repeat;
+	background-position: -260px -23px;
+	cursor: pointer;
+}
+
+.bannarBox .bannarRight .bannarRight-box{
+	width: inherit;
+	height: 400px;
+	border-bottom: 1px solid #eeeeee;
+	background: #fff;
+	z-index: 111;
+	padding-top: 10px;
+	box-sizing:border-box;
+}
+.bannarBox .bannarRight .rightHeader{
+	height: 44px;
+	line-height: 44px;
+	width: 100%;
+	font-size: 0;
+}
+.bannarBox .bannarRight .rightHeader p:first-child{
+	margin-left: 4px;
+}
+.bannarBox .bannarRight .smallHeader{
+	height: 86px;
+    width: inherit;
+    background: url(../images/bannar6.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 16px;
+    text-indent: 25px;
+}
+.bannarBox .bannarRight .smallHeader h5{	
+	padding-top: 25px;
+}
+.bannarBox .bannarRight .smallHeader p{
+	line-height: 41px;
+}
+.hr1{
+	width: 175px;
+	border: 1px dotted #dddddd;
+	margin:0 auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.bannarBox .bannarRight .rightContent{
+	width: 166px;
+	margin:0 auto;
+}
+.bannarBox .bannarRight .rightContent #box1{
+	width: 166px;
+}
+.bannarBox .bannarRight .rightContent #box1 li{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	box-sizing:border-box;
+	border-right: 1px solid #ddd;
+	font-size: 14px;
+	color: #000;
+	cursor: pointer;
+	font-weight: bold;
+	[;width: 23%;]
+}
+.bannarBox .bannarRight .rightContent #box1 li:last-child{
+	border:none;
+}
+.bannarBox .bannarRight .rightContent #box1 .active{
+	color: #ff6600;
+}
+.bannarBox .bannarRight .rightContent #showBox div dl dd{
+	font-size: 12px;
+	line-height: 24px;
+	color: #999999;
+}
+.loginedWrap,
+.bfloginWrap,
+.notapply,
+.apply{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 343px;
+	height: 579px;
+	border:1px solid #e5e5e5;
+	background: #fff;
+	box-sizing:border-box;
+	z-index: 1;
+}
+.loginedWrap .logined-title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 12px;
+	padding-left: 20px;
+	box-sizing:border-box;
+	color: #333;
+	border-bottom: 1px solid #e5e5e5;
+}
+.loginedWrap .logined-cont{
+	width: 100%;
+	clear: both;
+}
+.loginedWrap .logined-cont #login-btn li{
+	width: 50%;
+	float: left;
+	border-bottom: 1px solid #e5e5e5;
+	height: 43px;
+	line-height: 43px;
+	box-sizing:border-box;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	cursor: pointer;
+}
+.loginedWrap .logined-cont #login-btn li:first-child{
+	border-right: 1px solid #e5e5e5;
+}
+.loginedWrap .logined-cont #login-btn li.active{
+	border-bottom: none;
+	font-weight: bolder;
+}
+/*未登陆状态*/
+.bfloginWrap .bflogin-title{
+	width: 100%;
+	height: 115px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-top: 20px;
+	box-sizing:border-box;
+}
+.bfloginWrap .bflogin-title p{
+	color: #333;
+	font-size: 12px;
+	margin:0px 0 22px 20px;
+}
+.bfloginWrap .bflogin-title .go{
+	float: left;
+	width: 90px;
+	height: 35px;
+	background: #ff6600;
+	text-align: center;
+	line-height: 35px;
+	font-weight: bolder;
+	margin-left: 16px;
+}
+.bfloginWrap .bflogin-title .go:hover{
+	background:#d65702;
+}
+.bfloginWrap .bflogin-title .go a{
+	color: #fff;
+}
+.shoppes{
+	margin:20px 0 10px 20px;
+}
+.shoppes img{
+	vertical-align: middle;
+	    margin-top: -4px;
+}
+ .other{
+	position: absolute;
+	width: 65px;
+	height: 25px;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -34px;
+	cursor: pointer;
+}
+.other img{
+	margin-right: 5px;
+	display: inline-block;
+}
+.other img.ans,
+.goodsList-bottom .change-one img.ans{
+	animation: myfirst 1s linear infinite;
+	-moz-animation: myfirst 1s linear infinite;	/* Firefox */
+	-webkit-animation: myfirst 1s linear infinite;	/* Safari 和 Chrome */
+	-o-animation: myfirst 1s linear infinite;
+}
+@keyframes myfirst{
+	from{
+		-moz-transform: rotate(0deg); 
+		-webkit-transform: rotate(0deg); 
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg); 
+		transform: rotate(0deg); 
+	}
+	to{
+		-moz-transform: rotate(-360deg); 
+		-webkit-transform: rotate(-360deg); 
+		-o-transform: rotate(-360deg); 
+		-ms-transform: rotate(-360deg); 
+		transform: rotate(-360deg);
+	}
+	0%{
+		-moz-transform: rotate(0deg); 
+		-webkit-transform: rotate(0deg); 
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg); 
+		transform: rotate(0deg); 
+
+	}
+　　50%{
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+}
+　　100%{
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	}
+}
+/*.owl-wrapper-outer{
+	height: 302px;
+}*/
+/*未登陆状态*/
+/*未申请开店的*/
+.notapply .notapply-title{
+	width: 100%;
+	height: 106px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-top: 20px;
+	box-sizing:border-box;
+}
+.notapply .notapply-title p{
+	margin:0 0 20px 20px;
+	font-size: 14px;
+}
+.notapply .notapply-title a{
+	background: #ff6600;
+	width: 302px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	display: block;
+	color: #fff;
+	font-weight: bolder;
+	margin:0 auto;
+}
+/*未申请开店的*/
+/*已经申请的店铺*/
+.apply .apply-title{
+		font-size:14px;
+		margin:20px;
+	}
+.apply .order-active{
+	width: 100%;
+	border:1px solid #e5e5e5;
+	border-left: none;
+	border-right: none;
+	clear: both;
+	height: 60px;
+}
+.apply .order-active .list{
+	padding-top: 16px;
+	box-sizing:border-box;
+	text-align: center;
+	float: left;
+	height: 60px;
+	width: 33%;
+	box-sizing:border-box;
+	border-right: 1px solid #e5e5e5;
+	font-size: 14px;
+}
+.apply .order-active .list2{
+	border:none;
+}
+.apply .order-active h5{
+	margin-top: 5px;
+	color: #ff6600;
+	font-family: '微软雅黑';
+}
+.apply .goodsList .list1{
+	float: left;
+	width: 50%;
+	height: 90px;
+	border-bottom:1px solid #e5e5e5;
+	text-align: center;
+	border-right:1px solid #e5e5e5;
+	box-sizing:border-box;
+	padding-top: 20px;
+}
+.apply .goodsList .list1 p{
+	font-size: 14px;
+	color: #333;
+	margin-top: 5px;
+}
+.apply dl{
+	height: 169px;
+    overflow: hidden;
+}
+/*我加入的商铺赋值部分*/
+.fastNav select{
+	width: 93px;
+	height: 33px;
+	border:1px solid #e5e5e5;
+	text-indent: 5px;
+	font-size: 14px;
+	margin: 12px 5px;
+}
+.fastNav select:first-child{
+	margin-left: 15px;
+}
+.fastNav dl dd p{
+	display: inline-block;
+}
+.fastNav dl{
+	width: 341px;
+	clear: both;
+}
+.fastNav dl dd{
+	clear: both;
+	font-size: 12px;
+	height: 33px;
+	line-height: 33px;
+	width: 341px;
+}
+.fastNav dl dd a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding:0;
+}
+.fastNav dl dd a:hover p{
+	color: #589325;
+}
+.fastNav dl dd span{
+	display: inline-block;
+	width: 68px;
+	font-size: 0;
+	text-align: right;
+	margin-left: 10px;
+}
+.fastNav dl dd img{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	margin-top: -6px;
+	text-align: right;
+	[;margin-right: -4px;];
+}
+.fastNav dl dd p{
+	width: 243px;
+	text-indent: 17px;
+	font-weight: normal;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+}
+.fastNav .changeBtn{
+	width: 100%;
+	clear: both;
+	position: absolute;
+	bottom: 20px;
+}
+.fastNav .changeBtn p{
+	width: 157px;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+}
+.fastNav .changeBtn p span{margin-right: 5px;}
+.fastNav .changeBtn p a{
+	display: inline-block;
+	color:#999999;
+	line-height: 24px;
+}
+.fastNav .searchWrap{
+	margin-left: 16px;
+	font-size: 0;
+}
+.fastNav .searchWrap .txt{
+	width: 223px;
+	height: 34px;
+	border:1px solid #e5e5e5;
+	line-height: 34px;
+	font-size: 14px;
+}
+.fastNav .searchWrap .txt::-webkit-input-placeholder{
+	font-size: 14px;
+}
+.fastNav .searchWrap .btn{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb( 229, 229, 229 );
+  background-color: rgb( 245, 245, 245 );
+  width: 98px;
+  height: 34px;
+  font-size: 14px;
+  border-left: none;
+  color: #999;
+}
+/*我加入的商铺赋值部分end*/
+/*导航部分*/
 /*首页底部内容*/
 footer{
 	width: 100%;
