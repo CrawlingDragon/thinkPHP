@@ -134,4 +134,31 @@ $(document).ready(function(){
 		$(this).parent().parent().find('.goodsNum-txt').show();		//文字出现
 	})
 
+// 页面底部换一批导航点击效果
+		$('.ul-nav li').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+		}).hover(function(){
+			$(this).trigger("click");
+		});
+
+
 })
+ function numLess(){   //商品详情页减
+      var num = document.getElementById('nums').value;
+      var numLess = parseInt(num)-1;
+      if(num>1){
+        document.getElementById('nums').value = numLess;
+      }else{
+         document.getElementById('nums').value = 1;
+      }
+}
+function numAdd(){
+	var num = document.getElementById('nums').value;
+	var numAdd = parseInt(num)+1;
+	document.getElementById('nums').value = numAdd;
+	if (num>0) {
+		document.getElementById('nums').value = numAdd;
+	}else{
+		document.getElementById('nums').value =1;
+	}
+}

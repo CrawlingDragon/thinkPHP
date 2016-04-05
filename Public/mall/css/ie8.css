@@ -4,3 +4,20 @@
 .adWrap .adBottom .adBm-cont .adBm-text{
 	background: #333;
 }
+.goodsDetail-top-midden .dataBox .buyerNum-wrap input[type=text]{
+	padding-top: 10px;
+}
+.goodsDetail-top-midden .dataBox .dealer-wrap select{
+	background: none;
+}
+.containerBox{
+	clear: both;
+}
+.containerBox .goodsList-bottom{
+	clear: both;
+	margin-top: 1868px;
+}
+#showBox2 .cont1 .cont1-bottom .imgBox img{
+	margin-left: -250px\0;
+	margin-top: -235px\0;
+}

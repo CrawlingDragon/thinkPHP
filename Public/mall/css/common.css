@@ -448,8 +448,8 @@ header .searchBox .goodsCar a p span{
 	float: left;
 	font-size: 16px;
 	color: #000;
-	height: 39px;
-	line-height: 39px;
+	height: 40px;
+	line-height: 40px;
 	font-weight: bold;
 }
 .sellerNav dl a{
@@ -491,94 +491,6 @@ header .searchBox .goodsCar a p span{
 	background: url(../images/bj.png) no-repeat;
 	background-position: -307px -23px;
 }
-/* .sellerNav .areaShops .shopContent{
-	position: absolute;
-	top: 39px;
-	left: -171px;
-	width: 297px;
-	height: 362px;
-	border:1px solid #e5e5e5;
-	background: #fff;
-	z-index: 999999999;
-	font-size: 0;
-	display: none;
-}
- .sellerNav .areaShops .shopContent select{
-	width: 80px;
-	height: 36px;
-	border:1px solid #e5e5e5;
-	text-indent: 5px;
-	font-size: 14px;
-	margin: 12px 5px;
-}
- .sellerNav .areaShops .shopContent select:first-child{
-	margin-left: 18px;
-}
- .sellerNav .areaShops .shopContent dl dd p{
-	display: inline-block;
-}
- .sellerNav .areaShops .shopContent dl{
-	width: 298px;
-	clear: both;
-}
- .sellerNav .areaShops .shopContent dl dd{
-	clear: both;
-	font-size: 12px;
-	height: 33px;
-	line-height: 33px;
-	width: 296px;
-}
- .sellerNav .areaShops .shopContent dl dd a{
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	padding:0;
-}
- .sellerNav .areaShops .shopContent dl dd a:hover p{
-	color: #589325;
-}
- .sellerNav .areaShops .shopContent dl dd span{
-	display: inline-block;
-	width: 68px;
-	font-size: 0;
-	text-align: right;
-	margin-left: 10px;
-}
-.areaShops .shopContent dl dd img{
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	vertical-align: middle;
-	margin-top: -6px;
-	text-align: right;
-	[;margin-right: -4px;];
-}
-.areaShops .shopContent dl dd p{
-	width: 197px;
-	text-indent: 17px;
-	font-weight: normal;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	vertical-align: middle;
-}
-.areaShops .changeBtn{
-	width: 100%;
-	clear: both;
-	padding-top: 7px;
-}
-.areaShops .changeBtn p{
-	width: 140px;
-	display: inline-block;
-	float: left;
-	font-size: 12px;
-}
-.areaShops .changeBtn p span{margin-right: 5px;}
-.areaShops .changeBtn p a{
-	display: inline-block;
-	color:#999999;
-	line-height: 24px;
-}*/
  .sellerHr{
 	width: 100%;
 	height: 40px;
@@ -741,6 +653,7 @@ header .searchBox .goodsCar a p span{
 	line-height: 40px;
 	background: #589325;
 	color: #fff;
+	font-size: 16px;
 }
 .bannarBox .bannarLeft .title img{
 	display: inline-block;
@@ -949,6 +862,7 @@ header .searchBox .goodsCar a p span{
 .other img{
 	margin-right: 5px;
 	display: inline-block;
+	vertical-align: middle;
 }
 .other img.ans,
 .goodsList-bottom .change-one img.ans{
@@ -1325,4 +1239,21 @@ footer .aboutUs li:nth-child(6){
 }
 footer .aboutUs li p{
 	line-height: 35px;
+}
+
+/*sfari 的css hack*/
+@media all and (-webkit-min-device-pixel-ratio:0){
+/* select{ [;这里单独设置Safari的样式] } */
+select{ [;color:#666;] }
+.goodsDetail-top-midden .dataBox .buyerNum-wrap input[type="text"]{
+		[;margin-left: -4px;]
+		[;margin-right: -4px;]
+	}
+.goodsDetail-top .dealer-box ul li img{
+		[;margin-left: -6px;]
+	}
+#showBox2 .cont1 .cont1-bottom .imgBox img{
+	[;margin-left: -250px;]
+	[;margin-top: -235px;]
+}
 }

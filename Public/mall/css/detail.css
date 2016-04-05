@@ -3,6 +3,7 @@
 	width: 1195px;
 	margin:0 auto;
 	margin-top: 105px;
+	display: block;
 }
 .goodsList-bottom .ul-nav span{
 	display: inline-block;
@@ -19,13 +20,12 @@
 	font-family: '黑体';
 	color: #666;
 	font-size: 16px;
-	margin-right: 40px;
 	height: 40px;
 	line-height: 40px;
 	cursor: pointer;
+	padding:0 20px;
 }
 .goodsList-bottom .ul-nav li.active{
-	padding:0 20px;
 	background: #e5e5e5;
 }
 .goodsList-bottom .ul-cont{
@@ -50,7 +50,7 @@
 	box-sizing:border-box;
 }
 .goodsList-bottom .ul-cont li .imgs:hover{
-	border:2px solid green;
+	border:2px solid #9cb98d;
 }
 .goodsList-bottom .ul-cont li .imgs img{
 	display: inline-block;
@@ -209,7 +209,9 @@
 .goodsDetail-top-midden .dataBox .dealer-wrap select{
 	border:none;
 	font-size: 14px;
-	margin-left: -10px;
+	margin-left: -6px;
+	margin-left: -2px\0;
+	padding-right: 14px\0;
 }
 .goodsDetail-top-midden .dataBox .specification-wrap{
 	margin-bottom: 25px;
@@ -230,6 +232,7 @@
 }
 .goodsDetail-top-midden .dataBox .buyerNum-wrap .less{
 	margin-left: 8px;
+	margin-left: 4px\0;
 }
 .goodsDetail-top-midden .dataBox .buyerNum-wrap .less,
 .goodsDetail-top-midden .dataBox .buyerNum-wrap .add{
@@ -243,6 +246,11 @@
 	vertical-align: top;
 	cursor: default;
 	color: #666;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 .goodsDetail-top-midden .dataBox .buyerNum-wrap input[type=text]{
 	border:1px solid #e5e5e5;
@@ -384,6 +392,7 @@
 	width: 100%;
 	height: 50px;
 	background: #f8f8f8;
+	clear: both;
 }
 .goodsDetail-bottom .goodsDetail-bottom-title .goodsDetail-bottom-title-txt{
 	width: 70px;
@@ -410,6 +419,8 @@
 	width: 100%;
 	height: auto;
 	margin-top: 20px;
+	clear: both;
+	min-height: 1600px;
 }
 .goodsDetail-bottomBox .leftBar{
 	width: 200px;
@@ -484,6 +495,10 @@
 	height: 150px;
 	overflow: hidden;
 	margin-bottom: 10px;
+	box-sizing:border-box;
+}
+.leftBar .recommendHot-box .recommendHot-list .imgs:hover{
+	border:1px solid  #9cb98d;
 }
 .leftBar .recommendHot-box .recommendHot-list .imgs img{
 	display: inline-block;
@@ -524,16 +539,16 @@
 	border-left: 1px solid #e5e5e5;
 	border-right: 1px solid #e5e5e5;
 }
-#showBox .showCont{
+#showBox2 .showCont{
 	width: inherit;
 	height: auto;
 	margin-top: 5px;
 	background: #fff;
 }
-#showBox .cont1{
+#showBox2 .cont1{
 	border:none;
 }
-#showBox .cont1 .cont1-top{
+#showBox2 .cont1 .cont1-top{
 	border:1px solid #e5e5e5;
 	width: inherit;
 	height: 140px;
@@ -542,28 +557,28 @@
 	font-size: 12px;
 	color: #333;
 }
-#showBox .cont1 .cont1-top table tr td{
+#showBox2 .cont1 .cont1-top table tr td{
 	width: 342px;
 	padding-bottom: 17px;
 }
-#showBox .cont1 .cont1-bottom{
+#showBox2 .cont1 .cont1-bottom{
 	font-size: 12px;
 	color: #666;
 	padding:25px 0 0 20px;
 }
-#showBox .cont1 .cont1-bottom h2{
+#showBox2 .cont1 .cont1-bottom h2{
 	font-weight: normal;
 	margin-bottom: 35px;
 }
-#showBox .cont1 .cont1-bottom h5{
+#showBox2 .cont1 .cont1-bottom h5{
 	font-weight: normal;
 	margin-bottom: 10px;
 }
-#showBox .cont1 .cont1-bottom .txt{
+#showBox2 .cont1 .cont1-bottom .txt{
 	line-height: 20px;
 	margin-bottom: 40px;
 }
-#showBox .cont1 .cont1-bottom .imgBox{
+#showBox2 .cont1 .cont1-bottom .imgBox{
 	width: inherit;
 	height: auto;
 	padding:20px 0;
@@ -571,7 +586,7 @@
 	position: relative;
 	min-height: 500px;
 }
-#showBox .cont1 .cont1-bottom .imgBox img{
+#showBox2 .cont1 .cont1-bottom .imgBox img{
 	display: block;
 	width: auto;
 	height: auto;
@@ -580,7 +595,7 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-#showBox .cont3 .cont3-top{
+#showBox2 .cont3 .cont3-top{
 	width: 100%;
 	height: 141px;
 	box-sizing:border-box;
@@ -588,63 +603,63 @@
 	font-size: 12px;
 	padding:30px 0 50px 30px;
 }
-#showBox .cont3 .cont3-top .cont3-top-before{
+#showBox2 .cont3 .cont3-top .cont3-top-before{
 	float: left;
 	margin-top: 30px;
 }
-#showBox .cont3 .cont3-top .cont3-top-left{
+#showBox2 .cont3 .cont3-top .cont3-top-left{
 	float: left;
 	color: #333;
 	margin-top: -15px;
 	margin-right: 70px;
 }
-#showBox .cont3 .cont3-top .cont3-top-left strong{
+#showBox2 .cont3 .cont3-top .cont3-top-left strong{
 	font-size: 80px;
 	font-family: '黑体';
 	color: #ff6600;
 }
-#showBox .cont3 .cont3-top .cont3-top-left i{
+#showBox2 .cont3 .cont3-top .cont3-top-left i{
 	color: #ff6600;
 	font-size: 25px;
 	font-family: '黑体';
 	
 }
-#showBox .cont3 .cont3-top .cont3-top-mid{
+#showBox2 .cont3 .cont3-top .cont3-top-mid{
 	float: left;
 	font-size: 12px;
 	color: #666;
 	margin-right: 80px;
 }
-#showBox .cont3 .cont3-top .cont3-top-mid .num{
+#showBox2 .cont3 .cont3-top .cont3-top-mid .num{
 	width: 55px;
 	text-align: center;
 }
-#showBox .cont3 .cont3-top .cont3-top-mid tr td{
+#showBox2 .cont3 .cont3-top .cont3-top-mid tr td{
 	padding-bottom: 10px;
 }
-#showBox .cont3 .cont3-top .cont3-top-mid tr td span{
+#showBox2 .cont3 .cont3-top .cont3-top-mid tr td span{
 	color: #ff6600;
 	font-size: 14px;
 	font-weight: bolder;
 	font-family: '黑体';
 }
-#showBox .cont3 .cont3-top .cont3-top-mid img{
+#showBox2 .cont3 .cont3-top .cont3-top-mid img{
 	margin-right: -4px;
 	vertical-align: bottom;
 }
-#showBox .cont3 .cont3-top .cont3-top-right{
+#showBox2 .cont3 .cont3-top .cont3-top-right{
 	float: left;
 	width: 385px;
 	padding-top: 17px;
 }
-#showBox .cont3 .cont3-top .cont3-top-right ul li{
+#showBox2 .cont3 .cont3-top .cont3-top-right ul li{
 	float: left;
 	border:1px solid #e5e5e5;
 	padding:4px 10px;
 	margin-bottom: 7px;
 	margin-right: 20px;
 }
-#showBox .cont3 .cont3-title{
+#showBox2 .cont3 .cont3-title{
 	width: inherit;
 	height: 39px;
 	line-height: 39px;
@@ -654,18 +669,18 @@
 	border:1px solid #e5e5e5;
 	border-top: none;
 }
-#showBox .cont3 .cont3-title label{
+#showBox2 .cont3 .cont3-title label{
 	margin-right: 30px;
 	line-height: 39px;
 }
-#showBox .cont3 .cont3-title input[type=radio]{
+#showBox2 .cont3 .cont3-title input[type=radio]{
 	vertical-align: middle;
 }
-#showBox .cont3 .cont3-cont{
+#showBox2 .cont3 .cont3-cont{
 	width: inherit;
 	height: auto;
 }
-#showBox .cont3 .cont3-cont ul{
+#showBox2 .cont3 .cont3-cont ul{
 	width: 100%;
 	display:block;
 	min-height: 65px;
@@ -675,47 +690,47 @@
 	font-size: 12px;
 	color: #666;
 }
-#showBox .cont3 .cont3-cont ul li{
+#showBox2 .cont3 .cont3-cont ul li{
 	float: left;
 	height: auto;
 }
-#showBox .cont3 .cont3-cont ul li .imgs{
+#showBox2 .cont3 .cont3-cont ul li .imgs{
   width: 32px;
   height: 32px;
   border-radius: 100%;
   margin-top: -8px;
   overflow: hidden;
 }
-#showBox .cont3 .cont3-cont ul li .imgs img{
+#showBox2 .cont3 .cont3-cont ul li .imgs img{
 	display: inline-block;
 	width: 100%;
 	height: 100%;
 }
-#showBox .cont3 .cont3-cont ul li.names{
+#showBox2 .cont3 .cont3-cont ul li.names{
 	width: 120px;
 	text-align: left;
 	margin-left: 13px;
 }
-#showBox .cont3 .cont3-cont ul li.good{
+#showBox2 .cont3 .cont3-cont ul li.good{
 	width: 30px;
 	margin-right: 66px;
 }
-#showBox .cont3 .cont3-cont ul li.txt{
+#showBox2 .cont3 .cont3-cont ul li.txt{
 	width: 470px;
 	margin-right: 70px;
 }
-#showBox .cont3 .cont3-cont ul li.txt .EvaluationCont{
+#showBox2 .cont3 .cont3-cont ul li.txt .EvaluationCont{
 	line-height: 22px;
 	margin-bottom: 15px;
 	margin-top: -5px;
 }
-#showBox .cont3 .cont3-cont ul li.txt .times span{
+#showBox2 .cont3 .cont3-cont ul li.txt .times span{
 	margin-right: 12px;
 }
-#showBox .cont3 .cont3-cont ul li.nums{
+#showBox2 .cont3 .cont3-cont ul li.nums{
 	width: 146px;
 }
-#showBox .cont3 .cont3-cont ul li.nums div{
+#showBox2 .cont3 .cont3-cont ul li.nums div{
 	margin-bottom: 10px;
 }
 /*申请按钮弹出*/
