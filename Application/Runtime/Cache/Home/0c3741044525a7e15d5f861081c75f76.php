@@ -1,30 +1,27 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="/Public/mall/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/css/goods.css" type="text/css">
+	<link rel="stylesheet" href="/Public/mall/css/seller.css" type="text/css">
 	<script type="text/javascript" src="/Public/mall/js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="/Public/mall/js/common.js"></script>
-<!-- 	<script type="text/javascript" src="/Public/mall/js/jquery.rotate.min.js"></script> -->
 	<!--[if IE]> 
 	<script> 
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
-
 	<!--[if lt IE 8]>
 	<script src="/Public/mall/IE8.js" type="text/javascript"></script>
 	<![endif]-->
 </head>
 <body>
-	<a href="/home/goods/index.html">首页</a><a href="/home/goods/goodsdetail.html">商品详情页</a><a href="http://192.168.115.175/home/store/index.html">商铺页</a>
 	<header><!-- 头部开始 -->
 		<article class="headerTop clear">
 			<section class="header-left"> <!-- 头部左边 未读消息 -->
-				<a href="/home/goods/goodslist.html" class="message-title">
+				<a href="消息.html" class="message-title">
 					<div><img src="/Public/mall/images/messageImg3.png" alt="">未读消息<span class="fb messageNum">10</span></div></a>
 					<ul class="messageBox hide">
 							<li>
@@ -133,7 +130,6 @@
 			<article class="bannarBox  sellerNav">
 				<div class="bannarLeft" style="width: auto;"> <!-- 所有商品分类开始 -->
 					<div class="title" style="width: auto;">
-						<!-- <img src="/Public/mall/images/bannartitle.png" alt="所有商品分类"> -->
 						<span class="fb">首页</span>
 					</div>
 				</div><!-- 所有商品分类结束 -->
@@ -149,7 +145,7 @@
 				<div class="areaShops fastNav"> <!-- 区域商铺开始 -->
 						<div class="shopTitle">
 							快速导航
-							<img src="/Public/mall/images/moreup.png" alt="">
+              <img src="/Public/mall/images/moreup.png" alt="">
 						</div>
 						<div class="fastNav-cont hide"><!-- 显示盒子 -->
 							<div class="loginedWrap" style="display: none;"><!-- 已经登录的状态 -->
@@ -645,457 +641,169 @@
 		</div>
 	</header><!-- 头部结束 -->
 
-	<section class="container" style="border-bottom: 1px solid #d1d1d1;padding-bottom: 80px;"><!-- 主体内容开始 -->
+	<section class="container"><!-- 主体内容开始 -->
 		<div class="containerBox clear">
-			<article class="goodsList-Cont"><!-- 左边部分 -->
-				<div class="goodsList-topBox"><!-- 首页位置搜索按钮上面部分 -->
-					<a href="">首页</a><span class="leftHook">></span>
-					<a href="">产品库</a><span class="leftHook">></span>
-					<a href="">全部</a>
-					<form action="" method="">
-						<input type="text" name="" id="" placeholder="输入关键字">
-						<input type="button" value="搜索">
-					</form>
-					<p class="right-txt">搜索到<span>13390</span>件</p>
-				</div><!-- 首页位置搜索按钮上面部分结束 -->
-				<div class="goodsNav-box"><!-- 列表导航 -->
-					<div class="goodsWrap">
-						<h2>农药药剂：</h2>
-						<div class="goodsNav-list">
-							<a href="">全部</a>
-							<a href="">杀虫剂</a>
-							<a href="">除草剂</a>
-							<a href="">杀菌剂</a>
-							<a href="">杀螨剂</a>
-							<a href="">杀线虫剂</a>
-							<a href="">植物生长调节剂</a>
-							<a href="">杀软体动物剂</a>
-							<a href="">农药助剂</a>
-							<a href="">杀鼠剂</a>
-							<a href="">农药原药</a>
-							<a href="">中间体</a>
-							<a href="">其他</a>
-						</div>
-						<div class="showBtn">
-							<div class="btn-show">更多</div>
+			<article class="wealthOrderDetails paymentWrap">
+				<!-- 当前位置开始 -->
+				<div class="current">
+					<span>当前位置:</span>
+					<a href="">首页</a>
+					<span>&gt;</span>
+					<a href="">买家中心</a>
+					<span>&gt;</span>
+					<a href="">付款</a>
+				</div>
+				<!-- 当前位置结束 -->
+				<div class="wealthOrderDetails-head paymentCont">
+					<div class="wealthOrderDetails-headBar paymentCont-headBar"><!-- 进度条部分开始 -->
+						<p>
+							<span>确认订单</span>
+							<span>支付货款</span>
+							<span style="margin-right: 153px;">卖家发货</span>
+							<span>确认收货</span>
+							<span style="margin:0">评价</span>
+						</p>
+						<div class="wealthOrderDetails-headBarbg"></div>
+						<div class="wealthOrderDetails-headBartimes">
+							<span>2015-06-06 10:31:33</span>
+							<span>2015-06-06 10:31:34</span>
 						</div>
 					</div>
-					<div class="goodsWrap">
-						<h2>化肥肥料：</h2>
-						<div class="goodsNav-list">
-							<a href="">全部</a>
-							<a href="">氮肥</a>
-							<a href="">除磷肥</a>
-							<a href="">钾肥</a>
-							<a href="">钙肥</a>
-							<a href="">复合肥,复合肥</a>
-							<a href="">生物肥</a>
-							<a href="">控释肥</a>
-							<a href="">有机肥</a>
-							<a href="">水溶肥</a>
-							<a href="">微量元素肥</a>
-							<a href="">化肥原料</a>
-							<a href="">添加剂</a>
-							<a href="">其他肥料</a>
-							<a href="">全部</a>
-							<a href="">氮肥</a>
-							<a href="">除磷肥</a>
-							<a href="">钾肥</a>
-							<a href="">钙肥</a>
-							<a href="">复合肥,复合肥</a>
-							<a href="">生物肥</a>
-							<a href="">控释肥</a>
-							<a href="">有机肥</a>
-							<a href="">水溶肥</a>
-							<a href="">微量元素肥</a>
-							<a href="">化肥原料</a>
-							<a href="">添加剂</a>
-							<a href="">其他肥料</a>
-						</div>
-						<div class="showBtn">
-								<div class="btn-show">更多</div>
-						</div>
-					</div>
-					<div class="goodsWrap">
-						<h2>农膜：</h2>
-						<div class="goodsNav-list">
-							<a href="">全部</a>
-							<a href="">棚膜</a>
-							<a href="">地魔</a>
-							<a href="">塑料包装肥</a>
-							<a href="">其他</a>
-						</div>
-						<div class="showBtn">
-							<div class="btn-show">更多</div>
-						</div>
-					</div>
-					<div class="goodsWrap">
-						<h2>植物种子：</h2>
-						<div class="goodsNav-list">
-							<a href="">全部</a>
-							<a href="">玉米种子</a>
-							<a href="">水稻种子</a>
-							<a href="">小麦种子</a>
-							<a href="">棉花种子</a>
-							<a href="">大豆种子</a>
-							<a href="">花生种子</a>
-							<a href="">油菜种苗</a>
-							<a href="">蔬菜种子</a>
-							<a href="">瓜果种子</a>
-							<a href="">其他</a>
-						</div>
-						<div class="showBtn">
-							<div class="btn-show">更多</div>
-						</div>
-					</div>
-					<div class="goodsWrap" style="border-bottom: none;">
-						<h2>农机工具：</h2>
-						<div class="goodsNav-list">
-							<a href="">全部</a>
-							<a href="">播种机械</a>
-							<a href="">灌溉机械</a>
-							<a href="">采摘机械</a>
-							<a href="">育苗育秧设备</a>
-							<a href="">栽植机械</a>
-							<a href="">耕种机械</a>
-							<a href="">收获机械</a>
-							<a href="">植保机械</a>
-							<a href="">农业仪器</a>
-							<a href="">农机配件</a>
-							<a href="">中其他机械</a>
-							<a href="">中其他机械</a>
-							<a href="">中其他机械</a>
-							<a href="">中其他机械</a>
-							<a href="">中其他机械</a>
-							<a href="">中其他机械</a>
-						</div>
-						<div class="showBtn">
-							<div class="btn-show">更多</div>
-						</div>
-					</div>
-				</div><!-- 列表导航结束 -->
-				<div class="goodsList-filter"> <!-- 筛选栏 -->
-					<div class="goodsList-filterTop">
-						<span class="filterTop-title">综合排序</span>
-						<span class="newBar">
-							<i>最新<img src="/Public/mall/images/smalldown.png" alt=""></i>
-							<i>收藏数<img src="/Public/mall/images/smalldown.png" alt=""></i>
-							<i>销量<img src="/Public/mall/images/smalldown.png" alt=""></i>
-						</span>
-						<span class="priceBar">
-							<span>价格:</span>
-							<i>全部</i>
-							<i>500元以下</i>
-							<i>500-1000元以下</i>
-							<i>1000-2000元以下</i>
-							<i>3000元以上</i>
-						</span>
-						<span class="page">
-							<a href=""><</a>
-							<strong>2</strong>
-							/31
-							<a href="">></a>
-						</span>
-					</div>
-					<div class="goodsList-filterBottom">
-						<span class="origin">产地：</span>
-						<div class="originBox">
-							<select name="" id="">
-								<option value="">浙江</option>
-								<option value="">北京</option>
-							</select>
-						</div>
-						<div class="originBox">
-							<select name="" id="">
-								<option value="">杭州</option>
-								<option value="">河北</option>
-							</select>
-						</div>
-						<div class="originBox">
-							<select name="" id="">
-								<option value="">滨江</option>
-								<option value="">下沙</option>
-							</select>
-						</div>
-					</div>
-				</div><!-- 筛选栏结束 -->
-				<div><!-- 商品列表展示区域 -->
-					<ul class="goodsList-ul clear">
-						<li>
-							<div class="goodsList-wrap">
-								<!-- 大图begin -->
-								<div  class="spec-preview"> 
-									<span class="jqzoom"><img jqimg="" src="/Public/mall/images/goodslist.jpg" /></span>
-									<div class="spec-bottom hide">
-										<div class="bj">
-											杜邦贸易(上海)有限公司
-										</div>
-									</div> 
-								</div>
-								<!-- 大图end -->
-								<!-- 缩略图begin -->
-								<div class="spec-scroll">
-								  <div class="items">
-								    <ul>
-								      <li class="active">
-								      	<img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg">
-								      </li>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg">
-								      </li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg"></li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg"></li>
-								    </ul>
-								  </div>
-								</div>
-								<!-- 缩略图end -->
-								<h5>杜邦农得时肥料农药剂杀菌抗菌业防治霜霉、疫病高效安全型</h5>
-								<p class="f12 c9"><span class="buyerNum">322人已购买</span><span class="address">浙江杭州</span></p>
-								<div class="btns"><a href="" class="car">加入购物车</a><span class="collect">收藏</span></div>
-							</div>
-						</li>
-						<li>
-							<div class="goodsList-wrap">
-								<!-- 大图begin -->
-								<div  class="spec-preview"> 
-									<span class="jqzoom"><img jqimg="" src="/Public/mall/images/goodslist.jpg" /></span> 
-								</div>
-								<!-- 大图end -->
-								<!-- 缩略图begin -->
-								<div class="spec-scroll">
-								  <div class="items">
-								    <ul>
-								      <li class="active">
-								      	<img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg">
-								      </li>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg">
-								      </li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg"></li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg"></li>
-								    </ul>
-								  </div>
-								</div>
-								<!-- 缩略图end -->
-								<h5>杜邦农得时肥料农药剂杀菌抗菌业防治霜霉、疫病高效安全型杀菌
-								疫病高效安全型杀菌</h5>
-								<p class="f12 c9"><span class="buyerNum">322人已购买</span><span class="address">浙江杭州</span></p>
-								<div class="btns"><a href="" class="car">加入购物车</a><span class="collect">收藏</span></div>
-							</div>
-						</li>
-						<li>
-							<div class="goodsList-wrap">
-								<!-- 大图begin -->
-								<div  class="spec-preview"> 
-									<span class="jqzoom"><img jqimg="" src="/Public/mall/images/goodslist.jpg" /></span> 
-								</div>
-								<!-- 大图end -->
-								<!-- 缩略图begin -->
-								<div class="spec-scroll">
-								  <div class="items">
-								    <ul>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg">
-								      </li>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg">
-								      </li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg"></li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg"></li>
-								    </ul>
-								  </div>
-								</div>
-								<!-- 缩略图end -->
-								<h5>杜邦农得时肥料农药剂杀菌抗菌业防治霜霉、疫病高效安全型杀菌
-								疫病高效安全型杀菌</h5>
-								<p class="f12 c9"><span class="buyerNum">322人已购买</span><span class="address">浙江杭州</span></p>
-								<div class="btns"><a href="" class="car">加入购物车</a><span class="collect">收藏</span></div>
-							</div>
-						</li>
-						<li>
-							<div class="goodsList-wrap">
-								<!-- 大图begin -->
-								<div  class="spec-preview"> 
-									<span class="jqzoom"><img jqimg="" src="/Public/mall/images/goodslist.jpg" /></span> 
-								</div>
-								<!-- 大图end -->
-								<!-- 缩略图begin -->
-								<div class="spec-scroll">
-								  <div class="items">
-								    <ul>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg">
-								      </li>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg">
-								      </li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg"></li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg"></li>
-								    </ul>
-								  </div>
-								</div>
-								<!-- 缩略图end -->
-								<h5>杜邦农得时肥料农药剂杀菌抗菌业防治霜霉、疫病高效安全型杀菌
-								疫病高效安全型杀菌</h5>
-								<p class="f12 c9"><span class="buyerNum">322人已购买</span><span class="address">浙江杭州</span></p>
-								<div class="btns"><a href="" class="car">加入购物车</a><span class="collect">收藏</span></div>
-							</div>
-						</li>
-						<li>
-							<div class="goodsList-wrap">
-								<!-- 大图begin -->
-								<div  class="spec-preview"> 
-									<span class="jqzoom"><img jqimg="" src="/Public/mall/images/goodslist.jpg" /></span> 
-								</div>
-								<!-- 大图end -->
-								<!-- 缩略图begin -->
-								<div class="spec-scroll">
-								  <div class="items">
-								    <ul>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg">
-								      </li>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg">
-								      </li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg"></li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg"></li>
-								    </ul>
-								  </div>
-								</div>
-								<!-- 缩略图end -->
-								<h5>杜邦农得时肥料农药剂杀菌抗菌业防治霜霉、疫病高效安全型杀菌
-								疫病高效安全型杀菌</h5>
-								<p class="f12 c9"><span class="buyerNum">322人已购买</span><span class="address">浙江杭州</span></p>
-								<div class="btns"><a href="" class="car">加入购物车</a><span class="collect">收藏</span></div>
-							</div>
-						</li>
-						<li>
-							<div class="goodsList-wrap">
-								<!-- 大图begin -->
-								<div  class="spec-preview"> 
-									<span class="jqzoom"><img jqimg="" src="/Public/mall/images/goodslist.jpg" /></span> 
-								</div>
-								<!-- 大图end -->
-								<!-- 缩略图begin -->
-								<div class="spec-scroll">
-								  <div class="items">
-								    <ul>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg">
-								      </li>
-								      <li>
-								      	<img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg">
-								      </li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist.jpg" class="smallImg"></li>
-								      <li><img bimg="" src="/Public/mall/images/goodslist2.jpg" class="smallImg"></li>
-								    </ul>
-								  </div>
-								</div>
-								<!-- 缩略图end -->
-								<h5>杜邦农得时肥料农药剂杀菌抗菌业防治霜霉、疫病高效安全型杀菌
-								疫病高效安全型杀菌</h5>
-								<p class="f12 c9"><span class="buyerNum">322人已购买</span><span class="address">浙江杭州</span></p>
-								<div class="btns"><a href="" class="car">加入购物车</a><span class="collect">收藏</span></div>
-							</div>
-						</li>
+					<!-- 进度条部分结束 -->
+				</div>
+				<div class="payment-address">收货地址：<span>浙江省 宁波市 鄞州区 集北路1888号</span><i>车春华收</i><strong>手机13355845286</strong></div>
+					<div class="payment-orderNum f14 green fb">订单号：10012015060862394 </div>
+				<div class="wealthOrderDetails-title green">订单号：1234567890987654</div>
+				<table>
+					<tr style="border:1px solid #e5e5e5;border-bottom:none;">
+						<th style="width: 190px">商品图片</th>
+						<th style="width: 170px">商品名称</th>
+						<th style="width: 110px">规格</th>
+						<th style="width: 90px">数量</th>
+						<th style="width: 100px">单价</th>
+						<th style="width: 90px">总价</th>
+						<th style="width: 100px">运费</th>
+						<th style="width: 130px">订单总金额</th>
+						<th style="width: 210px">实际付款</th>
+					</tr>
+					<tr>
+						<td>
+							<div class="imgs"><a href=""><img src="/Public/mall/images/goods5.png" alt=""></a></div>
+						</td>
+						<td class="tableTxt">
+							<a href="">道儿纯硫酸复合葡萄酸专用多功能棚摸过果蔬钙肥</a>
+						</td>
+						<td>
+							<p>40kg/包</p>
+							<p>80kg/包</p>
+						</td>
+						<td>
+							<p>100</p>
+							<p>100</p>
+						</td>
+						<td>
+							<p>5.0</p>
+							<p>5.0</p>
+						</td>
+						<td>
+							<p>500</p>
+							<p>500</p>
+						</td>
+						<td>
+							10.00
+						</td>
+						<td>51.00</td>
+						<td>
+							<div class="f14 c3 fb">实收款</div>
+							<div class="f25 fh orange">510.00</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="imgs"><a href=""><img src="/Public/mall/images/goods5.png" alt=""></a></div>
+						</td>
+						<td class="tableTxt">
+							<a href="">道儿纯硫酸复合葡萄酸专用多功能棚摸过果蔬钙肥</a>
+						</td>
+						<td class="tableTxtP">
+							<p>40kg/包</p>
+						</td>
+						<td class="tableTxtP">
+							<p>100</p>
+						</td>
+						<td class="tableTxtP">
+							<p>5.0</p>
+						</td>
+						<td class="tableTxtP">
+							<p>500</p>
+						</td>
+						<td>
+							10.00
+						</td>
+						<td>51.00</td>
+						<td>
+							<div class="f14 c3 fb">实收款</div>
+							<div class="f25 fh orange">510.00</div>
+						</td>
+					</tr>
+				</table>
+				<div class="payment-way"><!-- 支付方式 -->
+					<ul id="box1" class="clear box2">
+						<li>网上银行支付</li>
+						<li>会员余额支付</li>
+						<li class="active">授信支付</li>
 					</ul>
-					<div class="pageBox"> <!-- 分页开始 -->
-					<dl>
-						<dd><a href=""><</a></dd>
-						<dd ><a href="">1</a></dd>
-						<dd class="active"><a href="">2</a></dd>
-						<dd><a href="">3</a></dd>
-						<dd><a href="">4</a></dd>
-						<dd><a href="">5</a></dd>
-						<dd><a href="">6</a></dd>
-						<dd>...</dd>
-						<dd><a href="">33</a></dd>
-						<dd><a href="">34</a></dd>
-						<dd><a href="">></a></dd>
-						<dd class="pageBtn">
-							<p>到第
-								<input type="text" name="" id="" value="15">页
-								<input type="button" value="确定">
-							</p>
-						</dd>
-					</dl>
-				</div><!-- 分页结束 -->
-				</div><!-- 商品列表展示区域结束 -->
-			</article><!-- 左边部分结束 -->
-			<div class="right-ad"><!-- 右边广告部分 -->
-				<h4 class="green">热门推荐</h4>
-				<ul class="topUl">
-					<li>
-						<a href="" class="imgs"><img src="/Public/mall/images/goods7.jpg" alt=""></a>
-						<a href=""><p>杜邦农得时肥料农药剂杀菌抗菌业防治</p></a>
-					</li>
-					<li>
-						<a href="" class="imgs"><img src="/Public/mall/images/goods7.jpg" alt=""></a>
-						<a href=""><p>杜邦农得时肥料农药剂杀菌抗菌业防治</p></a>
-					</li>
-					<li>
-						<a href="" class="imgs"><img src="/Public/mall/images/goods7.jpg" alt=""></a>
-						<a href=""><p>杜邦农得时肥料农药剂杀菌抗菌业防治</p></a>
-					</li>
-					<li>
-						<a href="" class="imgs"><img src="/Public/mall/images/goods7.jpg" alt=""></a>
-						<a href=""><p>杜邦农得时肥料农药剂杀菌抗菌业防治</p></a>
-					</li>
-					<li>
-						<a href="" class="imgs"><img src="/Public/mall/images/goods7.jpg" alt=""></a>
-						<a href=""><p>杜邦农得时肥料农药剂杀菌抗菌业防治</p></a>
-					</li>
-				</ul>
-				<ul class="bottomUl">
-					<li><a href=""><img src="/Public/mall/images/bottomul.jpg" alt=""></a></li>
-					<li><a href=""><img src="/Public/mall/images/bottomul.jpg" alt=""></a></li>
-					<li><a href=""><img src="/Public/mall/images/bottomul.jpg" alt=""></a></li>
-					<li><a href=""><img src="/Public/mall/images/bottomul.jpg" alt=""></a></li>
-				</ul>
-			</div><!-- 右边广告部分结束 -->
+					<div id="showBox" class="showBox2">
+						<div class="showCont showCont1 hide">
+							<form action="">
+								<div>
+									<label for="">选择网上银行支付方式：</label>
+									<input type="radio" name="name1" id="">
+									<img src="/Public/mall/images/blank.png" alt="">
+									<span>中国农业银行</span>
+									<input type="radio" name="name1" id="">
+									<span>易宝</span>
+								</div>
+								<div>
+									<input type="button" value="担保支付" class="buttons">
+								</div>
+							</form>
+						</div>
+						<div class="showCont showCont2 hide">
+							<form action="">
+								<div>
+									<label for="">当前余额：<strong class="orange">96390.00</strong></label>
+								</div>
+								<div>
+									<label for="">支付密码：</label>
+									<input type="text" name="" id="">
+									<span class="green setPass">设置支付密码</span>
+								</div>
+								<div>
+									<input type="button" value="担保支付" class="buttons">
+								</div>
+							</form>
+						</div>
+						<div class="showCont">
+							<div>
+								<label for="">授信卖家：<span class="c3">宁波金泰惠多利农资连锁有限公司</span></label>
+							</div>
+							<div>
+								<label for="">当前余额：<strong class="orange">96390.00</strong></label>
+							</div>
+							<div>
+								<label for="">支付密码：</label>
+								<input type="text" name="" id="">
+								<span class="green setPass">设置支付密码</span>
+							</div>
+							<div>
+								<input type="button" value="担保支付" class="buttons">
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
 		</div>
-		<div class="goodsList-bottom"><!-- 底部热门分类 -->
-			<ul class="ul-nav clear">
-				<span>热门分类：</span>
-				<li class="active">除草剂</li>
-				<li>杀鼠剂</li>
-				<li>磷肥</li>
-				<li>钾肥</li>
-				<li>钙肥</li>
-				<li>棉花种子</li>
-				<li>大豆种子</li>
-				<li>花生种子</li>
-			</ul>
-			<ul class="ul-cont clear">
-				<li>
-					<div class="imgs"><a href=""><img src="/Public/mall/images/goodslist2.jpg" alt=""></a></div>
-					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
-					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
-				</li>
-				<li>
-					<div class="imgs"><a href=""><img src="/Public/mall/images/goodslist2.jpg" alt=""></a></div>
-					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
-					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
-				</li>
-				<li>
-					<div class="imgs"><a href=""><img src="/Public/mall/images/goodslist2.jpg" alt=""></a></div>
-					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
-					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
-				</li>
-				<li>
-					<div class="imgs"><a href=""><img src="/Public/mall/images/goodslist2.jpg" alt=""></a></div>
-					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
-					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
-				</li>
-				<li>
-					<div class="imgs"><a href=""><img src="/Public/mall/images/goodslist2.jpg" alt=""></a></div>
-					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
-					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
-				</li>
-			</ul>
-			<div class="change-one"><img src="/Public/mall/images/changeone.png" alt="" id="img6">换一批</div>
-		</div><!-- 底部热门分类END -->
 	</section><!-- 主体内容结束 -->
 
 	<footer style="border:none;background: #f5f5f5;"><!-- 脚部开始 -->
@@ -1123,7 +831,7 @@
 				</li>
 			</ul>
 		</div>
-		<ul class="aboutUs clear ">
+		<ul class="aboutUs clear">
 				<li>
 					<p>关于我们</p>
 					<p>会员服务</p>
@@ -1151,89 +859,12 @@
 		</section> 
 	</footer><!-- 脚部结束 -->
 <script type="text/javascript">
-	$(function(){	
-		//缩略图对应大图
-		$('.smallImg').hover(function(){
-			$(this).parent().parent().parent().parent().parent('.goodsList-wrap').find('.jqzoom img').attr("src",$(this).attr("src"));
-			$(this).parent().parent().parent().parent().parent('.goodsList-wrap').find('.jqzoom img').attr("jqimg",$(this).attr("bimg"));
-		});
-		
-		//图片下方公司出现
-		$('.spec-preview').hover(function(){
-			$(this).find('.spec-bottom').toggle();
-		})
-
-		//收藏
-		$('.btns .collect').click(function(){
-			var txt1 = $(this).text();
-			if (txt1=="收藏") {
-				$(this).text("已收藏");
-				alert("已收藏");
-			}else{
-				$(this).text("收藏");
-				alert("已取消");
-			}
-		})
-		
-		//缩略图的边框变化
-		$('.spec-scroll .items li').hover(function(){
+	$(function(){
+		$('.box2 li').click(function(){
 			$(this).addClass('active').siblings().removeClass('active');
+			$('.showBox2 .showCont:eq('+$(this).index()+')').show().siblings().hide();
 		})
-
-
-		// 导航栏的更多按钮下拉效果
-		$('.btn-show').click(function(){
-			var txt = $(this).text();
-			if(txt == "更多"){       //按钮为更多的时候
-				$(this).text("收起");    //点击后变成收起
-				$(this).addClass('active'); //按钮的箭头变成向上
-				$(this).parent().prev().css("height","auto"); //导航内容显示全部，不再超出隐藏
-			}else{                   //按钮为收起的时候
-				$(this).text("更多");  //按钮变成更多
-				$(this).removeClass('active'); //按钮的箭头变成向下
-				$(this).parent().prev().css("height","33px"); //导航高度为34px，超出部分隐藏
-			}
-		})
-
-		// 页面底部换一批图片动画效果
-		// $(".change-one").rotate({ 
-		//    bind: 
-		//      { 
-		//         click: function(){
-		//             $(this).find("#img6").rotate({ 
-		//             								angle:0,  //初始角度
-		//             								animateTo:2000, //旋转的角度总数
-		//             								duration:5000, //完成所有角度需要的时间
-		//             								easing: $.easing.easeInOutExpo, //定于运动的效果
-		//             								callback:function(){   //返回函数
-		//             									alert("数据加载完成");
-		//             								} 
-		//             							});
-		            
-		            
-		//         }
-		//      } 
-		   
-		// });
-		$(".change-one").click(function(){
-			$('#img6').addClass('ans');
-		})
-
-
-		//快速导航显示
-	    $(".shopTitle").click(function(){
-	      var a = $(this).next();
-	      if(a.css("display")!="none"){
-	        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moreup.png");
-	        a.hide();
-	      }else{
-	        a.show();
-	        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moredown.png");
-	      }
-	    });
-
-
-
+		
 	})
 </script>
 </body>

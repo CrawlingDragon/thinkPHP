@@ -141,6 +141,22 @@ $(document).ready(function(){
 			$(this).trigger("click");
 		});
 
+//快速导航显示
+    $(".shopTitle").click(function(){
+      var a = $(this).next();
+      if(a.css("display")!="none"){
+        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moreup.png");
+        a.hide();
+      }else{
+        a.show();
+        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moredown.png");
+      }
+    });
+
+
+
+
+
 
 })
  function numLess(){   //商品详情页减

@@ -11,6 +11,9 @@ sup { vertical-align:text-top; }
 sub{ vertical-align:text-bottom; } 
 legend { color:#000; } 
 fieldset, img { border:0; } 
+.fw{
+	font-family: '微软雅黑';
+}
 select {
 	*background: none;
   /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/

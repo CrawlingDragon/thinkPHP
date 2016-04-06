@@ -507,3 +507,179 @@
 	margin-bottom: 3px;
 	margin-right: 7px;
 }
+/*购物车*/
+.cartWrap{
+	width: 1192px;
+	margin:0 auto;
+}
+.cartWrap .cart-title{
+	font-size: 12px;
+	color: #333;
+	margin:10px 0 20px 0;
+}
+.cartWrap .cart-title span{
+	margin:0 5px;
+}
+.cartCont .contHead{
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+.cartCont .contHead label{
+	vertical-align: middle;
+}
+.cartCont .contHead input[type=button]{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb( 220, 220, 220 );
+  background-color: rgb( 255, 255, 255 );
+  width: 73px;
+  height: 27px;
+  font-size: 12px;
+  color: #666;
+}
+.cartCont .table-title{
+	width: 100%;
+	box-sizing:border-box;
+	border:1px solid #e5e5e5;
+	background: #f5f8fa;
+	color: #666;
+	font-size: 12px;
+	clear: both;
+	height: 32px;
+	line-height: 32px;
+	font-weight: bolder;
+	padding-left: 33px;
+	margin-bottom: 20px;
+}
+.cartCont .table-title li{
+	float: left;
+}
+.cartCont table{
+	width: 100%;
+	margin-bottom: 24px;
+}
+.cartCont table tr{
+	border:1px solid #e5e5e5;
+}
+.cartCont table tr th{
+	text-align: left;
+	padding-bottom: 10px;
+}
+.cartCont table tr th a{
+	font-weight: normal;
+	font-size: 12px;
+	color: #589325;
+}
+.cartCont table tr td{
+	height: 90px;
+	text-align: center;
+}
+.cartCont table tr .td1{
+	width: 33px;
+	text-align: center;
+}
+.cartCont table tr .td2{
+	width: 74px;
+	text-align: center;
+}
+.cartCont table tr .td2 .cartimg{
+	display: block;
+	width: 74px;
+	height: 74px;
+	border:1px solid #e5e5e5;
+}
+.cartCont table tr .td2 .cartimg img{
+	width: 100%;
+	height: 100%;
+}
+.cartCont table tr .td3{
+	width: 268px;
+	color: #999999;
+	font-size: 12px;
+	text-align: left;
+}
+.cartCont table tr .td3 h5{
+	margin:0 auto;
+	width: 143px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	text-align: left;
+	line-height: 20px;
+}
+.cartCont table tr .td3 p{
+	margin:0 auto;
+	width: 143px;
+	text-align: left;
+}
+.cartCont table tr .td3 p span{
+	margin-right: 10px;
+}
+.cartCont table tr .td4{
+	width: 93px;
+}
+.cartCont table tr .td5{
+	width: 230px;
+	font-size: 0;
+}
+.cartCont table tr .td5 span{
+	font-size: 14px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: default;
+	vertical-align: middle;
+	line-height: 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.cartCont table tr .td5 input[type=text]{
+	width: 42px;
+	height: 24px;
+	font-size: 12px;
+	text-align: center;
+	padding:0;
+}
+.cartCont table tr .td6{
+	width: 153px;
+	text-align: left;
+}
+.cartCont table tr .td7{
+	width: 244px;
+	text-align: left;
+	line-height: 22px;
+}
+.cartCont .cartFoot{
+	margin-top: 36px;
+	padding-left: 35px;
+}
+.cartCont .cartFoot input[type=button]{
+	float: left;
+	width: 108px;
+	height: 50px;
+	border:none;
+	background: #589325;
+	font-size: 16px;
+	color: #fff;
+	margin-right: 20px;
+}
+.cartCont .cartFoot .goPay{
+	float: right;
+	width: 110px;
+	height: 50px;
+	background: #ff6600;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+	margin-right: 127px;
+}
+.cartCont .cartFoot .moneyBox{
+	float: right;
+	text-align: right;
+	margin-right: 122px;
+	line-height: 30px;
+}

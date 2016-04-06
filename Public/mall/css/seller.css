@@ -3645,6 +3645,7 @@
 	font-weight: bolder;
 	color: #333;
 	margin-left: 10px;
+	margin-top: -11px;
 }
 .payment-way #showBox .showCont1 img{
 	display: inline-block;

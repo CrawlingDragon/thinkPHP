@@ -523,6 +523,10 @@
 	border:1px solid #e5e5e5;
 	border-left: none;
 }
+.rightBar #box2.fix{
+	position: fixed;
+	top: 0;
+}
 .rightBar #box2 ul li{
 	float: left;
 	padding:0 25px;

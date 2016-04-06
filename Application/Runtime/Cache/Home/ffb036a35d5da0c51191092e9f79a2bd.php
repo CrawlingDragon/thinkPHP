@@ -23,6 +23,7 @@
 	<![endif]-->
 </head>
 <body>
+<a href="/home/goods/cart.html">购物车</a><a href="/home/goods/orderDetail.html">订单详情</a>
 	<header><!-- 头部开始 -->
 		<article class="headerTop clear">
 			<section class="header-left"> <!-- 头部左边 未读消息 -->
@@ -1116,17 +1117,7 @@
     //   });
     // })
 
-   //快速导航显示
-    $(".shopTitle").click(function(){
-      var a = $(this).next();
-      if(a.css("display")!="none"){
-        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moreup.png");
-        a.hide();
-      }else{
-        a.show();
-        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moredown.png");
-      }
-    });
+   
 		// 详情部分卡片切换
 		$('#box2 ul li').click(function(){
 			$(this).addClass('active').siblings().removeClass('active');
@@ -1195,6 +1186,25 @@
 				    }
 				});
 			});//修改价格按钮弹出end
+
+
+		$(window).scroll(function(){
+			var top = document.documentElement.scrollTop || document.body.scrollTop;
+			var h   = $('.rightBar').height();//1300  898-100
+			var h2 = parseInt(798+h);
+			console.log(h2);
+			console.log(top+"px");
+			if(top>=900 && top<h2){
+				$('.rightBar #box2').addClass('fix');
+				$('#box2 .active').css({"height":"38px","border-bottom":"1px solid #e5e5e5"});
+			}else if(top>=h2){
+				$('.rightBar #box2').removeClass('fix');
+				$('#box2 .active').css({"height":"45px","border-bottom":"none"});
+			}else{
+				$('.rightBar #box2').removeClass('fix');
+				$('#box2 .active').css({"height":"45px","border-bottom":"none"});
+			}
+		});
 
 	})
 </script>

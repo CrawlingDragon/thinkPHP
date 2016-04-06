@@ -47,10 +47,11 @@
 	</script>
 </head>
 <body>
+<a href="/home/goods/goodslist.html">列表页</a><a href="/home/goods/goodsdetail.html">详情页</a>
 	<header><!-- 头部开始 -->
 		<article class="headerTop clear">
 			<section class="header-left"> <!-- 头部左边 未读消息 -->
-				<a href="消息.html" class="message-title">
+				<a href="/home/goods/goodslist.html" class="message-title">
 					<div><img src="/Public/mall/images/messageImg3.png" alt="">未读消息<span class="fb messageNum">10</span></div></a>
 					<ul class="messageBox hide">
 							<li>
