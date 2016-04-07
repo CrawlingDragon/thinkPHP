@@ -362,7 +362,7 @@
 	font-size: 12px;
 	float: left;
 	width: 107px;
-    line-height: 20px;
+    /*line-height: 20px;*/
 }
 .goodsDetail-top .dealer-box ul li img{
 	margin-right: 3px;
@@ -769,3 +769,58 @@
 	cursor: pointer;
 	margin-top: 20px;
 }
+/*收藏按钮*/
+.collectBox{
+	border:4px solid #b2b2b2;
+	position: relative;
+	box-sizing:border-box;
+	/*padding:30px 0 0 20px;*/
+}
+.collectBox h4{
+	width: 440px;
+	margin:0 auto;
+	margin-top:30px; 
+	text-align: center;
+	font-weight: normal;
+	color: #333;
+	font-size: 14px;
+}
+.collectBox h4 img{
+	vertical-align: middle;
+	margin-top: -3px;
+	margin-right: 5px;
+}
+.collectBox h5{
+	margin:30px 0 15px 20px;
+	color: #666;
+	font-size: 12px;
+	font-weight: normal;
+}
+.collectBox ul{
+	margin-left: 15px;
+	clear: both;
+}
+.collectBox ul li{
+	float: left;
+}
+.collectBox ul li .imgc{
+	width: 100px;
+	height: 100px;
+	display: block;
+	background: #fff;
+	border:1px solid #e5e5e5;
+	margin-right: 12px;
+}
+.collectBox ul li .imgc img{
+	width: 100%;
+	height: 100%;
+}
+.collectBox ul li .txt{
+	display: block;
+	line-height: 24px;
+	width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/*收藏按钮*/

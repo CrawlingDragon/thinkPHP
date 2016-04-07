@@ -697,7 +697,7 @@
 									<a href="#" class="bds_weixin" data-cmd="weixin"></a>
 								</div><!-- 百度分享插件end -->
 							</i>
-							<i>
+							<i id="collect">
 								<img src="/Public/mall/images/greenstar.png" alt="">收藏
 							</i>
 							<i class="proxy">
@@ -1107,6 +1107,7 @@
 			<p>增值电信业务经营许可证:浙B2-20150086</p>
 		</section> 
 	</footer><!-- 脚部结束 -->
+	
 <script type="text/javascript">
 	$(function(){
 
@@ -1186,6 +1187,36 @@
 				    }
 				});
 			});//修改价格按钮弹出end
+
+			$("#collect").click(function(){  //收藏按钮弹出
+			_this = $(this);
+			layer.open({
+				    type: 1,
+				    title:false,
+				    skin: 'collectBox', //样式类名
+				    closeBtn: 0, //不显示关闭按钮
+				    shift: 0,
+				    area: ['485px', '286px'],
+				    shadeClose: false, //开启遮罩关闭
+				    content: '<h4><img src="/Public/mall/images/right.png" alt="">您已经收藏了该商品</h4><h5>您还可以购买的商品推荐：</h5><ul><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%</a></li><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%</a></li><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%富岛尿素 46.4%</a></li><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%</a></li></ul>',
+				    success:function(){
+				    	$(".modifyBtn2").click(function(){ //取消按钮
+				    		layer.closeAll('page');
+				    	});
+				    	$(".proxybtn").click(function(){ //确定按钮
+				    		
+				    		layer.closeAll('page');
+				    		_this.text("申请中");
+				    		alert("修改成功！");
+				    	});
+				    }
+				});
+			});//收藏按钮弹出end
+
+
+
+
+
 
 
 		$(window).scroll(function(){

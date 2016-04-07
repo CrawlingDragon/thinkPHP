@@ -130,16 +130,16 @@
 			</div>
 		</div>
 		<nav class="store-nav"> <!-- 商铺导航 -->
-			<a href="index.html" class="f14song curnav">店铺首页</a>
-			<a href="店铺商品列表.html" class="f14song">全部商品</a>
-			<a href="信用评价.html" class="f14song">信用评价</a>
-			<a href="###" class="f14song">优惠信息</a>
-			<a href="试验示范.html" class="f14song">试验示范</a>
+			<a href="/home/store/index.html" class="f14song curnav">店铺首页</a>
+			<a href="/home/store/storeList.html" class="f14song">全部商品</a>
+			<a href="/home/store/credit.html" class="f14song">信用评价</a>
+			<a href="" class="f14song">优惠信息</a>
+			<a href="/home/store/test.html" class="f14song">试验示范</a>
 			<a href="###" class="f14song">采购咨询</a>
-			<a href="植保园地.html" class="f14song">植保园地</a>
-			<a href="公司简介.html" class="f14song">公司简介</a>
+			<a href="/home/store/corner.html" class="f14song">植保园地</a>
+			<a href="/home/store/company.html" class="f14song">公司简介</a>
 			<a href="###" class="f14song">企业动态</a>
-			<a href="联系我们.html" class="f14song">联系我们</a>
+			<a href="/home/store/us.html" class="f14song">联系我们</a>
 		</nav>
 		<section class="main-warp">
 			<div class="slide-side fl"> <!-- 商铺轮播图 -->

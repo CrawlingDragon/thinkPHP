@@ -112,7 +112,11 @@ header{
 	font-size: 12px;
 	background: #f5f8fa;
 }
-.hr2{box-sizing: border-box;}
+header .hr2{
+	width: 100%;
+	height: 1px;
+	background: #e5e5e5;
+}
 header article{
 	width: 1190px;
 	margin:0 auto;
@@ -125,18 +129,36 @@ header .header-left{
 	line-height: 31px;
 	height: inherit;
 	width: 129px;
-	box-sizing:border-box;
+	border:1px solid #f5f8fa;
+	border-bottom: none;
+	border-top: none;
+	
+}
+header .header-left .message-title .downImg{
+	display: inline-block;
+    background: url(../images/bj.png) no-repeat;
+    background-position: -218px -30px;
+    width: 20px;
+    height: 18px;
+    margin-left: -2px;
+}
+header .header-left .message-title .downImg.ac{
+	background: url(../images/bj2.png) no-repeat;
+	background-position: 5px 12px;
 }
 header .header-left .message-title{
+	padding-left: 10px;
 	display: inline-block;
-	width: 107px;
-	height: 32px;
-	background: url(../images/bj.png) no-repeat;
-	background-position: -124px -28px;
+	width: 128px;
+	height: 31px;
+	z-index: 222;
+	position: relative;
+	box-sizing:border-box;
 }
-header .header-left .message-title.active{
-	background: url(../images/bj2.png) no-repeat;
-	background-position: 99px 12px;
+header .header-left.active{
+	border:none;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;	
 }
 header .header-left .message-title img{
 	vertical-align: middle;
@@ -153,19 +175,17 @@ header .header-left a div .messageNum{
 	width: 234px;
 	height: 208px;
 	border:1px solid #e5e5e5;
-	border-top: none;
 	position: relative;
-	z-index: 9999999999999;
-	padding:0 8px;
+	z-index: 14;
 	box-sizing:border-box;
-	margin-top: -1px;
+	margin-top: -2px;
 	margin-left: -1px;
 }
 .header-left .messageBox li{
 	border-bottom: 1px solid #e5e5e5;
 	height: 59px;
 	overflow: hidden;
-	padding:15px 0;
+	padding:15px 8px;
 	box-sizing:border-box;
 	font-size: 12px;
 	color: #999;
@@ -192,11 +212,13 @@ header .header-left a div .messageNum{
 	text-indent: 22px;
 	background: url(../images/set.png) no-repeat;
 	background-position: 3px 7px;
+	margin-left: 5px;
 }
 .header-left .messageBox .messageAll{
 	float: right;
 	font-size: 12px;
 	color: #666;
+	margin-right: 5px;
 }
 header .header-right{
 	float: right;
@@ -206,11 +228,11 @@ header .header-right{
 header .header-right ul li{
 	display: inline-block;
 	line-height: 31px;
-	padding:0 15px;
 	position: relative;
-	margin-right: 15px;	
 	font-size: 12px;
-	box-sizing:border-box;
+	border-left: 1px solid #f5f8fa;
+	border-right: 1px solid #f5f8fa;
+	padding: 0 10px 0 16px;
 }
 
 header .header-right ul li.list1 a{
@@ -240,25 +262,25 @@ header .header-right ul li.list3 .list1-cont,
 header .header-right ul li.list4 .list1-cont{
 	position: absolute;
 	height: auto;
-	width: 104px;
+	width: 100%;
 	top: 30px;
 	left: -1px;
 	background: #fff;
-	padding:10px 0;
+	padding:5px 0;
 	z-index: 999999999;
 	border:1px solid #e5e5e5;
 	border-top: none;
+	line-height: 20px;
 }
 header .header-right ul li .list1-cont li{
 	width: 100%;
 	padding:0;
-	height: 18px;
-	line-height: 18px;
+	height: 30px;
+	line-height: 30px;
 	padding: 0;
 	margin:0;
 	border:none;
-	padding-left: 15px;
-	box-sizing:border-box;
+	text-align: center;
 }
 header .header-right ul li.list1 .list1-cont li a,
 header .header-right ul li.list2 .list1-cont li a,

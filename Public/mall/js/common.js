@@ -3,22 +3,25 @@ $(document).ready(function(){
 		// 顶部消息的显示效果
 		$('.message-title').hover(function(){
 			$('.messageBox').show();
-			$('.header-left').css({"background":"#fff","border":"1px solid #e5e5e5","border-bottom":"none","border-top":"none"});
-			$(this).addClass('active');
+			$(this).css("background","#fff");
+			$(this).parent().addClass('active');
+			$('.downImg').addClass('ac');
 		},function(){
 			$('.messageBox').hide();
-			$('.header-left').css({"background":"#f5f8fa","border":"none"});
-			$(this).removeClass('active');
+			$(this).css("background","#f5f8fa");
+			$(this).parent().removeClass('active');
+			$('.downImg').removeClass('ac');
 		})
 		$('.messageBox').hover(function(){
 			$(this).show();
-			$('.message-title').addClass("active");
-			$('.header-left').css({"border":"1px solid #e5e5e5","border-bottom":"none","border-top":"none","background":"#fff"});
-			console.log("aa");
+			$('.message-title').css("background","#fff");
+			$('.header-left').addClass('active');
+			$('.downImg').addClass('ac');
 		},function(){
 			$(this).hide();
-			$('.header-left').css({"background":"#f5f8fa","border":"none"});
-			$('.message-title').removeClass("active");
+			$('.header-left').removeClass('active');
+			$('.message-title').css("background","#f5f8fa");
+			$('.downImg').removeClass('ac');
 		});
 
 		//账户显示

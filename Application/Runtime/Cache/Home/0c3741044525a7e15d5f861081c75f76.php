@@ -18,6 +18,7 @@
 	<![endif]-->
 </head>
 <body>
+<a href="/home/goods/pay.html">支付页</a>
 	<header><!-- 头部开始 -->
 		<article class="headerTop clear">
 			<section class="header-left"> <!-- 头部左边 未读消息 -->
