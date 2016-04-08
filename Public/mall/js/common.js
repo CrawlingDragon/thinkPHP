@@ -145,13 +145,13 @@ $(document).ready(function(){
 		});
 
 //快速导航显示
-    $(".shopTitle").click(function(){
-      var a = $(this).next();
+    $(".shopTitle").on('click',function(){
+      var a = $('.fastNav-cont');
       if(a.css("display")!="none"){
         $(".shopTitle").find('img').attr('src',"/Public/mall/images/moreup.png");
-        a.hide();
-      }else{
         a.show();
+      }else{
+        a.hide();
         $(".shopTitle").find('img').attr('src',"/Public/mall/images/moredown.png");
       }
     });

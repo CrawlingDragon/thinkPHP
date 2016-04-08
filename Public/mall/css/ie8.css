@@ -2,7 +2,13 @@
 	background: #666;
 }
 .adWrap .adBottom .adBm-cont .adBm-text{
-	background: #333;
+	background: #000;
+	filter: Alpha(Opacity=35);/*IE7 fix*/
+}
+.adWrap .adBottom .adBm-cont .adBm-text:hover,
+.adWrap .adBottom .adBm-cont:hover .adBm-text{
+		background: #000;
+	filter: Alpha(Opacity=75);/*IE7 fix*/
 }
 .goodsDetail-top-midden .dataBox .buyerNum-wrap input[type=text]{
 	padding-top: 10px;
@@ -20,4 +26,10 @@
 #showBox2 .cont1 .cont1-bottom .imgBox img{
 	margin-left: -250px\0;
 	margin-top: -235px\0;
+}
+.sellerHr .goodsNav .ul1 li{
+	margin-top: -1px
+}
+.sellerHr .goodsNav .ul1 li.ac1{
+	background-position: 58px 0px;
 }

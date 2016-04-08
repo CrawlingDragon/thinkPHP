@@ -7,6 +7,7 @@
 	height: 530px;
 	background: #f5f5f5;
 	padding-top: 10px;
+	border-bottom: 1px solid #e5e5e5;
 }
 .adWrap .adCont{
 	width: 1190px;
@@ -29,7 +30,7 @@
 	width: 274px;
 	height: 210px;
 	float: left;
-	margin-right: 10px;
+	margin-right: 9px;
 	overflow: hidden;
 	position: relative;
 }

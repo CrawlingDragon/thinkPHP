@@ -23,7 +23,7 @@ select {
   -moz-appearance:none;
   -webkit-appearance:none;
   /*在选择框的最右侧中间显示小箭头图片*/
-  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+  background: url(../images/select.png) no-repeat scroll right center transparent;
   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
   padding-right: 14px;
   padding-right: 0px\0;
@@ -348,7 +348,7 @@ header .logo img,header .logo2 img{
 header .headerBottom{
 	background: #fff;
 	width: 100%;
-	height: 110px;
+	height: 113px;
 }
 header .headerBottom-box{
 	width: 1190px;
@@ -378,6 +378,7 @@ header .searchBox .serachBar{
     color: #999999;
 	cursor: pointer;
 	overflow: hidden;
+	/*border-bottom: 1px solid #589325;*/
 }
 header .searchBox .active{
 	overflow: visible;
@@ -391,6 +392,15 @@ header .searchBox .serachBar li{
 	background: #fff;
 	z-index: 99999;
 	position: relative;
+	border: 1px solid #589325;
+    border-top: none;
+    border-bottom: none;
+    width: 66px;
+    box-sizing: border-box;
+    left: -1px;
+}
+header .searchBox .serachBar li:last-child{
+	border-bottom: 1px solid #589325;
 }
 header .searchBox .serachBar li:hover{
 	background: #f5f8fa;
@@ -399,9 +409,6 @@ header .searchBox input[type=text]{
 	width: 300px;
 	height: 36px;
 	border:1px solid #589325;
-	background: url(../images/search.png) no-repeat;
-	background-position: 6px 10px;
-	text-indent: 23px;
 	margin-left: 65px;
 	margin-right: 72px;
 }
@@ -421,7 +428,7 @@ header .searchBox input[type=submit]{
     right: 0;
 }
 header .searchBox .searchList{
-	margin-top: 11px;
+	margin-top: 10px;
 }
 header .searchBox .searchList ul li{
 	display: inline-block;
@@ -471,10 +478,10 @@ header .searchBox .goodsCar a p span{
 }
  .sellerNav dl dt,header .sellerNav dl dd{
 	float: left;
-	font-size: 16px;
+	font-size: 12px;
 	color: #000;
-	height: 40px;
-	line-height: 40px;
+	height: 33px;
+	line-height: 34px;
 	font-weight: bold;
 }
 .sellerNav dl a{
@@ -528,7 +535,6 @@ header .searchBox .goodsCar a p span{
     height: 40px;
     clear: both;
     line-height: 40px;
-    padding-left: 38px;
     box-sizing:border-box;
 }
 .sellerHr .goodsNav .ul1 li{
@@ -555,6 +561,7 @@ header .searchBox .goodsCar a p span{
 .sellerHr .goodsNav .ul1 .ul1-rightBorder{
   	float: left;
   	font-size: 12px;
+  	color: #e5e5e5;
   }
 .sellerHr .goodsNav .ul1 li .ul2{
 	position: absolute;
@@ -562,37 +569,37 @@ header .searchBox .goodsCar a p span{
 	background: #fff;
 	border:1px solid #e5e5e5;
 	border-right: none;
-	padding:12px 0px 26px 10px;
+	padding:12px 0px 10px 0px;
 	z-index: 111;
 	left: 0;
 	top: 40px;
 	box-sizing:border-box;
 	display: none;
+	border-right: none;
+	border-top: none;
 }
 .sellerHr .goodsNav .ul1 li .ul2 li{
 	width: 50%;
 	padding:0;
-	margin-bottom: 7px;
 	height: 25px;
 	line-height: 25px;
 	float: left;
 	box-sizing:border-box;
 	background: #fff;
+	border-right: 1px solid #e5e5e5;
+	text-indent: 10px;
+	padding-left: 5px;
 }
 .sellerHr .goodsNav .ul1 li .ul2 li a{
-	width: 92%;
+	width: 95%;
 	display: block;
-
 }
 .sellerHr .goodsNav .ul1 li .ul2 li:hover{
-	border:none;
-}
+ 	border-bottom:none;
+ }
 .sellerHr .goodsNav .ul1 li .ul2 li a:hover{
-	height: 25px;
-	line-height: 25px;
-	background: #599524;
 	color: #fff;
-	padding-right: 6px;
+	background: #599524;
 }
 
 .sellerHr .goodsNav .ul1 li .ul2 li a:hover{
@@ -667,18 +674,17 @@ header .searchBox .goodsCar a p span{
 	position: relative;
 }
 .bannarBox .bannarLeft{
-	width: 165px;
 	float: left;
 	position: relative;
-	margin-left: 16px;
+	margin-left: -12px;
+	margin-right: 60px;
+	font-size: 14px;
 }
 .bannarBox .bannarLeft .title{
-	width: 165px;
 	height: 40px;
 	line-height: 40px;
 	background: #589325;
 	color: #fff;
-	font-size: 16px;
 }
 .bannarBox .bannarLeft .title img{
 	display: inline-block;
@@ -694,11 +700,11 @@ header .searchBox .goodsCar a p span{
 .bannarBox .bannarMiddle ul li{
 	display: inline-block;
 	line-height: 40px;
-	margin-left: 33px;
+	margin-right: 60px;
 	height: 40px;
 }
 .bannarBox .bannarMiddle ul li a{
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 }
 .bannarBox .bannarMiddle ul li a:hover{
@@ -800,11 +806,12 @@ header .searchBox .goodsCar a p span{
 	top: 40px;
 	left: 0;
 	width: 343px;
-	height: 579px;
+	height: 581px;
 	border:1px solid #e5e5e5;
 	background: #fff;
 	box-sizing:border-box;
 	z-index: 1;
+	border-top: none;
 }
 .loginedWrap .logined-title{
 	width: 100%;
@@ -842,7 +849,7 @@ header .searchBox .goodsCar a p span{
 /*未登陆状态*/
 .bfloginWrap .bflogin-title{
 	width: 100%;
-	height: 115px;
+	height: 125px;
 	border-bottom: 1px solid #e5e5e5;
 	padding-top: 20px;
 	box-sizing:border-box;
@@ -867,9 +874,12 @@ header .searchBox .goodsCar a p span{
 }
 .bfloginWrap .bflogin-title .go a{
 	color: #fff;
+	font-size: 14px;
 }
 .shoppes{
 	margin:20px 0 10px 20px;
+	font-size: 16px;
+	font-weight: bolder;
 }
 .shoppes img{
 	vertical-align: middle;
@@ -878,16 +888,17 @@ header .searchBox .goodsCar a p span{
  .other{
 	position: absolute;
 	width: 65px;
-	height: 25px;
 	bottom: 20px;
 	left: 50%;
 	margin-left: -34px;
 	cursor: pointer;
+	color: #999;
 }
 .other img{
-	margin-right: 5px;
-	display: inline-block;
-	vertical-align: middle;
+	margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
 }
 .other img.ans,
 .goodsList-bottom .change-one img.ans{
@@ -905,11 +916,11 @@ header .searchBox .goodsCar a p span{
 		transform: rotate(0deg); 
 	}
 	to{
-		-moz-transform: rotate(-360deg); 
-		-webkit-transform: rotate(-360deg); 
-		-o-transform: rotate(-360deg); 
-		-ms-transform: rotate(-360deg); 
-		transform: rotate(-360deg);
+		-moz-transform: rotate(360deg); 
+		-webkit-transform: rotate(360deg); 
+		-o-transform: rotate(360deg); 
+		-ms-transform: rotate(360deg); 
+		transform: rotate(360deg);
 	}
 	0%{
 		-moz-transform: rotate(0deg); 
@@ -962,7 +973,7 @@ header .searchBox .goodsCar a p span{
 /*未申请开店的*/
 /*已经申请的店铺*/
 .apply .apply-title{
-		font-size:14px;
+		font-size:12px;
 		margin:20px;
 	}
 .apply .order-active{
@@ -1013,12 +1024,12 @@ header .searchBox .goodsCar a p span{
 }
 /*我加入的商铺赋值部分*/
 .fastNav select{
-	width: 93px;
+	width: 95px;
 	height: 33px;
 	border:1px solid #e5e5e5;
 	text-indent: 5px;
 	font-size: 14px;
-	margin: 12px 5px;
+	margin: 12px 3px;
 }
 .fastNav select:first-child{
 	margin-left: 15px;
@@ -1029,6 +1040,8 @@ header .searchBox .goodsCar a p span{
 .fastNav dl{
 	width: 341px;
 	clear: both;
+	padding-right: 20px;
+    box-sizing: border-box;
 }
 .fastNav dl dd{
 	clear: both;
@@ -1063,7 +1076,7 @@ header .searchBox .goodsCar a p span{
 	[;margin-right: -4px;];
 }
 .fastNav dl dd p{
-	width: 243px;
+	width: 241px;
 	text-indent: 17px;
 	font-weight: normal;
 	overflow: hidden;
@@ -1087,14 +1100,14 @@ header .searchBox .goodsCar a p span{
 .fastNav .changeBtn p a{
 	display: inline-block;
 	color:#999999;
-	line-height: 24px;
 }
 .fastNav .searchWrap{
 	margin-left: 16px;
 	font-size: 0;
+	margin-bottom: 10px;
 }
 .fastNav .searchWrap .txt{
-	width: 223px;
+	width: 210px;
 	height: 34px;
 	border:1px solid #e5e5e5;
 	line-height: 34px;

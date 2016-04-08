@@ -182,8 +182,8 @@
 							快速导航
 						</div>
 						<div class="fastNav-cont"><!-- 隐藏盒子 -->
-							<div class="loginedWrap" style="display: none;"><!-- 已经登录的状态 -->
-								<div class="logined-title">HI! 您好，<span class="fb">王思聪</span></div>
+							<div class="loginedWrap" ><!-- 已经登录的状态 -->
+								<div class="logined-title">HI! 您好，<span class="fb f12">王思聪</span></div>
 								<div class="logined-cont">
 									<ul id="login-btn">
 										<li class="active">我加入的商铺</li>
@@ -205,6 +205,10 @@
 													<option value="">萧山</option>
 												</select>
 											</form>
+											<div class="searchWrap">
+												<input type="text" name="" id="" class="txt" placeholder="直接输入要查找的公司">
+												<input type="button" value="查找" class="btn">
+											</div>
 											<dl>
 												<dd>
 													<a href="">
@@ -276,8 +280,8 @@
 													</dd>
 													</dl>
 											<div class="changeBtn clear">
-												<p style="text-align: right;"><a href=""><span>&lt;</span>上一页</a></p>
-												<p style="float: right;"><a href=""><span>下一页</span>&gt;</a></p>
+												<p style="text-align: right;"><a href=""><span><i class="fb">&lt;</i></span>上一页</a></p>
+												<p style="float: right;"><a href=""><span>下一页</span><i class="fb">&gt;</i></a></p>
 											</div>
 										</div><!-- 内容1结束 -->
 										<div class="showCont hide"><!-- 内容2开始 -->
@@ -369,8 +373,8 @@
 															</span></a></dd>
 													</dl>
 											<div class="changeBtn clear">
-												<p style="text-align: right;"><a href=""><span>&lt;</span>上一页</a></p>
-												<p style="float: right;"><a href=""><span>下一页</span>&gt;</a></p>
+												<p style="text-align: right;"><a href=""><span><i class="fb">&lt;</i></span>上一页</a></p>
+												<p style="float: right;"><a href=""><span>下一页</span><i class="fb">&gt;</i></a></p>
 											</div><!-- 内容2结束 -->
 										</div>
 									</div>
@@ -463,9 +467,9 @@
 										<img src="/Public/mall/images/changeone.png" alt=""><span>换一组</span>
 									</div>
 							</div><!-- 未登录的状态end -->
-							<div class="notapply" style="display: none;"><!-- 未申请店铺的 -->
+							<div class="notapply hide"><!-- 未申请店铺的 -->
 								<div class="notapply-title">
-									<p>HI! 您好，<span class="fb">宁波金泰惠多利农资有限公司</span></p>
+									<p>HI! 您好，<span class="fb f12">宁波金泰惠多利农资有限公司</span></p>
 									<a href="">申请开店</a>
 								</div>
 								<form action="">
@@ -559,8 +563,8 @@
 										<img src="/Public/mall/images/changeone.png" alt=""><span>换一组</span>
 									</div>
 							</div><!-- 未申请店铺的end -->
-							<div class="apply"><!-- 已经申请店铺的end -->
-								<div class="apply-title">HI! 您好，<span class="fb">宁波金泰惠多利农资连锁公司</span></div>
+							<div class="apply hide"><!-- 已经申请店铺的end -->
+								<div class="apply-title">HI! 您好，<span class="fb f12">宁波金泰惠多利农资连锁公司</span></div>
 								<div class="order-active">
 									<div class="list">
 										<a href="">
@@ -1369,6 +1373,9 @@
 		navigationText: ["",""],
 		autoPlay: true
 	});//5F轮播
+
+		$(".shopTitle").off("click");//移除快速导航事件
+
 	})
 	</script>
 	<script type="text/javascript">
@@ -1380,6 +1387,13 @@
 			$(this).siblings().find(".z1").show();
 			$(this).prev().find(".z1").css("border-bottom","none");
 		});
+
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+		})
 	</script>
 </body>
 </html>
