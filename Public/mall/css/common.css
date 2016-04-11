@@ -1068,8 +1068,8 @@ header .searchBox .goodsCar a p span{
 }
 .fastNav dl dd img{
 	display: inline-block;
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 10px;
 	vertical-align: middle;
 	margin-top: -6px;
 	text-align: right;
@@ -1294,4 +1294,31 @@ select{ [;color:#666;] }
 	[;margin-left: -250px;]
 	[;margin-top: -235px;]
 }
+}
+
+#gotop{
+	width: 50px;
+	height: 61px;
+	background: url(../images/gotop.png) no-repeat;
+	background-position: 0px 0px;
+	position: fixed;left: 50%;
+	margin-right: 600px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: -656px;
+	top: 313px;
+	padding-top: 32px;
+	box-sizing:border-box;
+	text-align: center;
+	font-size: 16px;
+	display: none;
+}
+#gotop:hover{
+	background: url(../images/gotop.png) no-repeat;
+	background-position: 0px -62px;
+}
+@media (max-width: 1280px){
+#gotop{
+   	 margin-left: -628px;
+	}
 }

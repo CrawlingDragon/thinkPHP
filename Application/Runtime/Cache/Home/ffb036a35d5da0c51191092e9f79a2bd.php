@@ -27,7 +27,7 @@
 	<header><!-- 头部开始 -->
 		<article class="headerTop clear">
 			<section class="header-left"> <!-- 头部左边 未读消息 -->
-				<a href="消息.html" class="message-title">
+				<a href="/home/goods/goodslist.html" class="message-title">
 					<div><img src="/Public/mall/images/messageImg3.png" alt="">未读消息<span class="fb messageNum">10</span></div></a>
 					<ul class="messageBox hide">
 							<li>
@@ -95,7 +95,7 @@
 				</ul>
 			</section>
 		</article>
-		<div class="hr2" style="width: 100%;height: 0;border:1px solid #eeeeee;"></div>
+		<div class="hr2"></div>
 		<article class="headerBottom clear">
 			<section class="headerBottom-box">
 			<section class="logo"> <!-- 中农在线Logo -->
@@ -136,6 +136,7 @@
 			<article class="bannarBox  sellerNav">
 				<div class="bannarLeft" style="width: auto;"> <!-- 所有商品分类开始 -->
 					<div class="title" style="width: auto;">
+						<!-- <img src="/Public/mall/images/bannartitle.png" alt="所有商品分类"> -->
 						<span class="fb">首页</span>
 					</div>
 				</div><!-- 所有商品分类结束 -->
@@ -151,9 +152,9 @@
 				<div class="areaShops fastNav"> <!-- 区域商铺开始 -->
 						<div class="shopTitle">
 							快速导航
-              <img src="/Public/mall/images/moreup.png" alt="">
+							<img src="/Public/mall/images/moreup.png" alt="">
 						</div>
-						<div class="fastNav-cont hide"><!-- 显示盒子 -->
+						<div class="fastNav-cont" style="display: none;"><!-- 显示盒子 -->
 							<div class="loginedWrap" style="display: none;"><!-- 已经登录的状态 -->
 								<div class="logined-title">HI! 您好，<span class="fb">王思聪</span></div>
 								<div class="logined-cont">
@@ -715,12 +716,23 @@
 							<strong><i class="">¥</i>8.00-109.00</strong>
 						</div>
 						<div class="dealer-wrap" style="width: 562px">
-							<span class="labels">经 销 商:</span>
-							<select name="" id="">
-								<option value="">宁波金泰惠多利农资连锁有限公司</option>
-								<option value="">北京金泰惠多利农资连锁有限公司</option>
-								<option value="">伤害金泰惠多利农资连锁有限公司</option>
-							</select>
+							<span class="labels" style="float: left;">经 销 商:</span>
+							<!-- 选择经销商模拟下拉菜单 -->
+							<dl class="select">
+								<dt>宁波金泰农业生产公司<img src="/Public/mall/images/moreup.png"></dt>
+								
+								<dd>
+									<ul>
+										<li><a href="#">宁波金泰农业生产公司1</a></li>
+										<li><a href="#">宁波金泰农业生产公司2</a></li>
+										<li><a href="#">宁波金泰农业生产公司3</a></li>
+										<li><a href="#">宁波金泰农业生产公司4宁波金泰农业生产公司4</a></li>
+										<li><a href="#">宁波金泰农业生产公司5</a></li>
+										<li><a href="#">宁波金泰农业生产公司6</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<!-- 选择经销商模拟下拉菜单 -->
 						</div>
 						<div class="specification-wrap">
 							<span class="labels">选择规格:</span>

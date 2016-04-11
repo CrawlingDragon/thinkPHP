@@ -80,9 +80,9 @@ $(document).ready(function(){
 
 
         //区域商铺显示
-		 $(".areaShops .shopTitle").click(function(){
-			  $(".areaShops .shopContent").fadeToggle(500);
-		});
+		//  $(".areaShops .shopTitle").click(function(){
+		// 	  $(".areaShops .shopContent").fadeToggle(500);
+		// });
 
 
 
@@ -149,17 +149,48 @@ $(document).ready(function(){
       var a = $('.fastNav-cont');
       if(a.css("display")!="none"){
         $(".shopTitle").find('img').attr('src',"/Public/mall/images/moreup.png");
-        a.show();
-      }else{
         a.hide();
+      }else{
+        a.show();
         $(".shopTitle").find('img').attr('src',"/Public/mall/images/moredown.png");
       }
     });
 
+    // 商品详情页选择生产商上下拉菜单
+    $('.select').each(function(){
+    	var s = $(this);
+    	var z = parseInt(s.css("z-index"));
+    	var dt = s.find("dt");
+    	var dd = s.find("dd");
+    	var imgs = s.find("img");
+    	var _show = function(){
+    		dd.slideDown(200);
+    		console.log(1);
+    		dt.addClass('cur');
+    		s.css("z-index",z+1);
+    		imgs.attr("src","/Public/mall/images/moredown.png")
+    	}
+    	var _hide = function(){
+    		console.log(2);
+    		dd.slideUp(200);
+    		dt.removeClass("cur");
+    		s.css("z-index",z);
+    		imgs.attr("src","/Public/mall/images/moreup.png")
+    	}
+    	dt.click(function(){
+    		dd.is(":hidden")?_show():_hide();
+    	})
+    	dd.find("a").click(function(){
+    		dt.html($(this).html());
+    		_hide();	
+    	})
+    })
 
 
 
 
+
+    // 商品详情页选择生产商上下拉菜单
 
 })
  function numLess(){   //商品详情页减

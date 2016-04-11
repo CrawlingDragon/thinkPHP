@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="/Public/mall/css/goods.css" type="text/css">
 	<script type="text/javascript" src="/Public/mall/js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="/Public/mall/js/common.js"></script>
+	<script type="text/javascript" src="/Public/mall/js/scroll.js"></script>
 <!-- 	<script type="text/javascript" src="/Public/mall/js/jquery.rotate.min.js"></script> -->
 	<!--[if IE]> 
 	<script> 
@@ -92,7 +93,7 @@
 				</ul>
 			</section>
 		</article>
-		<div class="hr2" ></div>
+		<div class="hr2"></div>
 		<article class="headerBottom clear">
 			<section class="headerBottom-box">
 			<section class="logo"> <!-- 中农在线Logo -->
@@ -1150,6 +1151,7 @@
 			<p>增值电信业务经营许可证:浙B2-20150086</p>
 		</section> 
 	</footer><!-- 脚部结束 -->
+	<div id="gotop">顶部</p></div>
 <script type="text/javascript">
 	$(function(){	
 		//缩略图对应大图
@@ -1220,17 +1222,7 @@
 		})
 
 
-		//快速导航显示
-	    $(".shopTitle").click(function(){
-	      var a = $(this).next();
-	      if(a.css("display")!="none"){
-	        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moreup.png");
-	        a.hide();
-	      }else{
-	        a.show();
-	        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moredown.png");
-	      }
-	    });
+		
 
 
 

@@ -66,12 +66,14 @@
 .boxMain{
 	width: 1190px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .boxMain .title{
 	width: 100%;
 	border-bottom: 2px solid #548d35;
 	height: 36px;
+	z-index: 11;
+	position: relative;
 }
 .boxMain .title h3{
 	float: left;
@@ -107,6 +109,7 @@
     height: 115px;
     background: #ffddcc;
     padding-top: 24px;
+    font-family: "微软雅黑";
 }
 .boxMain section .left .brand p{
 	font-size: 30px;
@@ -123,6 +126,7 @@
 	float: left;
 	box-sizing:border-box;
 	font-size: 0;
+	margin-top: -1px;
 }
 .boxMain section .left .pic #owl-demo1 a,
 .boxMain section .left .pic #owl-demo2 a,
@@ -175,9 +179,10 @@
 	width: 211px;
 	width: 201px\0;
 	height: 225px;
-	margin:0px 10px 10px 10px;
+	margin:0px 10px 13px 10px;
 	text-align: center;
 	border:1px solid #e5e5e5;
+	margin-top: -3px;
 }
 .boxMain section .right ul li:hover{
 	border:2px solid #9cb98d;
@@ -225,6 +230,7 @@
 	overflow: hidden;
 	position: relative;
 	width: 226px\9;
+	margin-top: -1px;
 }
 .boxMain .agriculturalRight ul li:first-child{
 	margin-left: 0;

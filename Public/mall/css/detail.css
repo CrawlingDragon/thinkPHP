@@ -824,3 +824,58 @@
 	white-space: nowrap;
 }
 /*收藏按钮*/
+
+
+.select{
+	width: 445px;
+	display: inline-block;
+	font-size: 14px;
+	position: relative;
+	height: 33px;
+	text-align: left;
+	text-indent: 0;
+	margin-left: -10px;
+	padding-right: 4px;
+}
+.select img{
+	display: inline-block;
+	margin-left: 5px;
+}
+.select dt{
+	text-indent: 10px;
+	position: relative;
+	display: inline-block;
+	height: 33px;
+	line-height: 33px;
+	cursor: pointer;
+	padding-right: 4px;
+}
+.select dt.cur{
+	background:#fff;
+	border:1px solid #e5e5e5;
+	border-bottom: 1px solid #fff;
+	z-index: 99;
+
+}
+.select dd{
+	text-indent: 10px;
+	text-align:left;
+	position: absolute;
+	top: 34px;
+	left: 0px;
+	border:1px solid #e5e5e5;
+	background:#fff;
+	display: none;
+}
+.select dd a{
+	display: block;
+	/*width: 100%;*/
+	height: 100%;
+	padding-right: 40px;
+}
+.select dd li:hover{
+	background:#ff6600;
+}
+.select dd a:hover{
+	color: #fff;
+}

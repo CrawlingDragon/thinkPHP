@@ -1,10 +1,11 @@
 ﻿window.onload = function(){
 	var osTop = document.documentElement.scrollTop || document.body.scrollTop ;//距离显示器顶端的距离
 	var clientHeight = document.documentElement.clientHeight;//获取页面可视区的高度 
+	var avail = window.screen.availHeight; //屏幕可工作区域高度
 	var myBar = document.getElementById('leftbar');
 	window.onscroll =function(){
 		var osTop = document.documentElement.scrollTop || document.body.scrollTop;
-		console.log(osTop);
+		// console.log(osTop);
 		if(osTop<=800){
 			$('#leftbar').hide();
 		}
@@ -52,5 +53,70 @@
 			$("#a5").prev().find(".z1").css("border-bottom","none");
 			$('#leftbar').hide();
 		}
+		if(osTop>=avail ){
+			gotop.style.display = "block";
+		}else{
+			gotop.style.display = "none";
+		}
+		console.log(osTop)
 	}
+
+
+
+
+
+//
+	var gotop = document.getElementById('gotop');
+	var timer = null;
+	var mTop = true; 
+	
+	
+	// window.onmousewheel = function(){ //滚动事件
+	// 	if(!mTop){  //!mTop,!表示取反
+	// 		console.log("aa");
+	// 		clearInterval(timer);
+	// 	}else{
+	// 		mTop = false;
+	// 	}
+	// }
+
+	gotop.onclick = function(){
+		$('#leftbar').hide();
+		var timer = setInterval(function(){
+			var iTop = document.documentElement.scrollTop || document.body.scrollTop; //IE兼容性获取屏幕距离顶部的距离
+			var iSpeed = Math.floor(-iTop/6);//Math向下取舍小数点，/6是为了速度从快到慢，都是不同的值
+			document.documentElement.scrollTop = document.body.scrollTop = iTop + iSpeed; //为了后面判断scrollTop小于0，采取负数
+			mTop = true;
+			if(iTop == 0){
+				clearInterval(timer);
+			}
+		},30)
+	}
+	// 获取gotop距离浏览器顶部的距离
+	// window.onscroll = function(){
+	// 	var iTop = document.documentElement.scrollTop || document.body.scrollTop; //IE兼容性获取屏幕距离顶部的距离
+	// 	if(iTop >= avail){
+	// 		gotop.style.display = "block";
+	// 	}else{
+	// 		gotop.style.display = "none";
+	// 	}
+	// }
+	// console.log(avail);
+//	
+	$("#a1").click(function() {
+      $("html,body").animate({scrollTop:811}, 300);
+	  }); 
+	  $("#a2").click(function() {
+	      $("html,body").animate({scrollTop:1338}, 300);
+	  }); 
+	  $("#a3").click(function() {
+	      $("html,body").animate({scrollTop:1871}, 300);
+	  }); 
+	  $("#a4").click(function() {
+	      $("html,body").animate({scrollTop:2253}, 300);
+	  }); 
+		$("#a5").click(function() {
+	      $("html,body").animate({scrollTop:2774}, 300);
+	  }); 
+
 }
