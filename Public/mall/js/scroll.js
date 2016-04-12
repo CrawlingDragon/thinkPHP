@@ -92,31 +92,26 @@
 			}
 		},30)
 	}
-	// 获取gotop距离浏览器顶部的距离
-	// window.onscroll = function(){
-	// 	var iTop = document.documentElement.scrollTop || document.body.scrollTop; //IE兼容性获取屏幕距离顶部的距离
-	// 	if(iTop >= avail){
-	// 		gotop.style.display = "block";
-	// 	}else{
-	// 		gotop.style.display = "none";
-	// 	}
-	// }
-	// console.log(avail);
-//	
-	$("#a1").click(function() {
-      $("html,body").animate({scrollTop:811}, 300);
-	  }); 
-	  $("#a2").click(function() {
-	      $("html,body").animate({scrollTop:1338}, 300);
-	  }); 
-	  $("#a3").click(function() {
-	      $("html,body").animate({scrollTop:1871}, 300);
-	  }); 
-	  $("#a4").click(function() {
-	      $("html,body").animate({scrollTop:2253}, 300);
-	  }); 
-		$("#a5").click(function() {
-	      $("html,body").animate({scrollTop:2774}, 300);
-	  }); 
+	
+
+	//点击左边导航回到相对位置
+	// $("#a1").click(function() {
+ //      $("html,body").animate({scrollTop:900}, 300);
+	//   }); 
+	//   $("#a2").click(function() {
+	//       $("html,body").animate({scrollTop:1500}, 300);
+	//   }); 
+	//   $("#a3").click(function() {
+	//       $("html,body").animate({scrollTop:2000}, 300);
+	//       // console.log(11)
+	//   }); 
+	//   $("#a4").click(function() {
+	//       $("html,body").animate({scrollTop:2500}, 300);
+	//       // console.log(22)
+	//   }); 
+	// 	$("#a5").click(function() {
+	//       $("html,body").animate({scrollTop:3000}, 300);
+	//      console.log(3)
+	//   }); 
 
 }

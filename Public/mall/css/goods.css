@@ -56,24 +56,25 @@
 .goodsList-Cont .goodsNav-box{
 	width: 100%;
 	height: auto;
-	border:1px solid #e5e5e5;
+	border:1px solid #eee;
 	box-sizing:border-box;
 }
 .goodsList-Cont .goodsNav-box .goodsWrap{
-	width: 960px;
+	width: 950px;
 	height: auto;
 	overflow: hidden;
-	border-bottom:1px dotted #e5e5e5;
+	border-bottom:1px dashed #e5e5e5;
 	margin-left: 20px;
 	font-size: 0;
 	position: relative;
+	font-family: 'Microsoft Yahei';
 }
 .goodsList-Cont .goodsNav-box .goodsWrap:last-child{
 	border-bottom:none;
 }
 .goodsList-Cont .goodsNav-box .goodsWrap h2{
 	display: inline-block;
-	width: 96px;
+	width: 71px;
 	text-align: right;
 	margin-right: 25px;
 	margin-top: 20px;
@@ -96,15 +97,15 @@
 	display: inline-block;
 	line-height: 1;
 	color: #333;
-	margin:10px 40px 10px 0;
+	margin:10px 40px 9px 0;
 }
 .goodsList-Cont .goodsNav-box .goodsWrap .goodsNav-list a:hover{
 	color: #ff6600;
 }
 .goodsList-Cont .goodsNav-box .goodsWrap .showBtn{
 	position: absolute;
-	top: 25px;
-	right: 4px;
+	top: 21px;
+	right: 0px;
 	width: 40px;
 	font-size: 12px;
 	color: #999;
@@ -121,8 +122,8 @@
 	background-position: 29px 5px;
 }
 .goodsList-filter{
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	font-size: 0;
 }
 .goodsList-filter .goodsList-filterTop{
@@ -130,7 +131,7 @@
 	height: 50px;
 	border:1px solid #eeeeee;
 	line-height: 50px;
-	padding-left: 40px;
+	padding-left: 20px;
 	box-sizing:border-box;
 	font-size: 0px;
 	color: #999;
@@ -212,7 +213,7 @@
 }
 .goodsList-ul{
 	width: 1019px;
-	min-height:1935px;
+	min-height:2232px;
 }
 .goodsList-ul li{
 	margin-right: 26px;
@@ -240,7 +241,7 @@
 .spec-scroll .items ul{position:absolute;width:230px;height:35px;}
 .spec-scroll .items ul li{float:left;width:35px;text-align:center;height: 35px;overflow: hidden;margin-right: 5px;border:1px solid #eee;}
 .spec-scroll .items ul li img{width:98%;height:98%;}
-.spec-scroll .items ul li.active{border:2px solid #FF6600;box-sizing:border-box;}
+.spec-scroll .items ul li.active{border:1px solid #FF6600;box-sizing:border-box;}
 .spec-preview .spec-bottom{
 	position: absolute;
 	bottom: 0;
@@ -265,9 +266,11 @@
 	font-size: 14px;
 	color: #333;
 	line-height: 20px;
-	margin:15px 0;
+	margin:10px 0 10px 0;
 	height: 42px;
 	overflow: hidden;
+	font-weight: normal;
+	font-family: 'Microsoft Yahei';
 	/*display: -webkit-box!important;
 	text-overflow: ellipsis;
 	word-break: break-all;
@@ -278,18 +281,19 @@
 	margin-right: 35px;
 }
 .goodsList-wrap .btns{
-	margin-top: 22px;
-	margin-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
 .goodsList-wrap .btns .car{
   display: inline-block;
   background-color: rgb(255, 85, 0);
   width: 85px;
-  height: 25px;
+  height: 29px;
+  vertical-align: top;
   font-size: 12px;
   color: #fff;
   text-align: center;
-  line-height: 25px;
+  line-height: 29px;
   border-radius: 17px;
   margin-right: 25px;
   behavior: url(css/ie-css3.htc);
@@ -317,48 +321,63 @@
 .pageBox{
 	width: 100%;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 80px;
 }
 .pageBox dl dd{
 	display: inline-block;
 	margin-right: 5px;
 }
 .pageBox dl .active{
-	background: #589325;
+	background: #ff6600;
 }
-.pageBox dl .active a{
+.pageBox dl dd.active a{
 	color: #fff;
+	border:1px solid #ff6600;
+	
 }
-.pageBox dl .active +dd{
+.pageBox dl dd.active a:hover{
+	background:#ff6600;
+}
+.pageBox dl dd a:hover{
 	background: #e5e5e5;
 }
 .pageBox dl dd a{
 	display: block;
-	width: 21px;
+	width: 35px;
 	height: 26px;
 	border:1px solid #e5e5e5;
 	text-align: center;
 	line-height: 26px;
 }
 .pageBox dl dd p input[type=text]{
-		width: 31px;
-		height: 26px;
+		width: 45px;
+		height: 28px;
 		border:1px solid #e5e5e5;
 		text-align: center;
-		line-height: 26px;
+		line-height: 28px;
 		margin-right: 5px;
+		padding:0;
+		margin-top: -4px;
 	}
 .pageBox dl dd p input[type=button]{
 	font-size: 12px;
-	background: #589325;
-	width: 38px;
-	height: 26px;
+	background: #e5e5e5;
+	width: 45px;
+	height: 28px;
+	line-height: 28px;
 	border:none;
 	cursor: pointer;
 	vertical-align: middle;
 	color: #fff;
-	margin-top: -3px;
 	margin-left: 3px;
+	margin-top: -4px;
+	color: #666;
+}
+.pageBox .left,
+.pageBox .right,
+.pageBox .left a,
+.pageBox .right a{
+	width: 20px;
 }
 .pageBox dl .pageBtn{
 	margin-left: 20px;
@@ -372,9 +391,10 @@
 }
 
 .right-ad h4{
-	margin:19px 0 15px 0;
+	margin:13px 0 15px -2px;
 	font-size: 18px;
-
+	font-family: '微软雅黑';
+	font-weight: normal;
 }
 .right-ad .topUl li{
 	width: 100%;
@@ -406,6 +426,7 @@
 	height: 36px;
 	overflow: hidden;
 	line-height: 20px;
+	font-family: '微软雅黑';
 }
 .right-ad .bottomUl li{
 	width: 180px;
@@ -422,7 +443,7 @@
 .goodsList-bottom{
 	width: 1195px;
 	margin:0 auto;
-	margin-top: 105px;
+	margin-top: 100px;
 }
 .goodsList-bottom .ul-nav span{
 	display: inline-block;

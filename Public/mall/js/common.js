@@ -148,11 +148,11 @@ $(document).ready(function(){
     $(".shopTitle").on('click',function(){
       var a = $('.fastNav-cont');
       if(a.css("display")!="none"){
-        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moreup.png");
+        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moreup2.png");
         a.hide();
       }else{
         a.show();
-        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moredown.png");
+        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moredown2.png");
       }
     });
 
@@ -181,7 +181,7 @@ $(document).ready(function(){
     		dd.is(":hidden")?_show():_hide();
     	})
     	dd.find("a").click(function(){
-    		dt.html($(this).html());
+    		dt.find('.txt').html($(this).html());
     		_hide();	
     	})
     })

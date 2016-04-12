@@ -69,19 +69,20 @@
 	margin-top: 30px;
 }
 .boxMain .title{
-	width: 100%;
+	width: 1184px;
 	border-bottom: 2px solid #548d35;
-	height: 36px;
+	height: 40px;
 	z-index: 11;
 	position: relative;
 }
 .boxMain .title h3{
 	float: left;
 	font-size: 22px;
-	margin-bottom: 14px;
+	font-family: '微软雅黑';
+	font-weight: normal;
 }
 .boxMain .title h3 small{
-	margin-left: 19px;
+	margin-left: 10px;
 	font-size: 14px;
 	color: #999999;
 }
@@ -89,7 +90,9 @@
 	float: right;
 	margin-top: 11px;
 	font-size: 12px;
-	color: #999999;
+}
+.boxMain .title p a{
+	color: #999;
 }
 .boxMain section{
 	width: 100%;
@@ -115,6 +118,7 @@
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
+	color: #333;
 }
 .boxMain section .left .pic{
 	width: 213px;
@@ -161,7 +165,7 @@
 	overflow: hidden;
 }
 .boxMain section .midden .img1{
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 }
 .boxMain section .midden a img{
 	width: 100%;
@@ -182,7 +186,8 @@
 	margin:0px 10px 13px 10px;
 	text-align: center;
 	border:1px solid #e5e5e5;
-	margin-top: -3px;
+	margin-top: -2px;
+	font-family: '微软雅黑';
 }
 .boxMain section .right ul li:hover{
 	border:2px solid #9cb98d;
@@ -192,7 +197,7 @@
 	margin-right: 0;
 }
 .boxMain section .right ul li a h5{
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 	color: #333333;
 	margin:19px 0 8px 0;
@@ -244,14 +249,16 @@
 	left: 10px;
 	bottom: 10px;
 	text-align: center;
+	font-family: '微软雅黑';
+	font-weight: normal;
 }
 .boxMain .agriculturalRight ul li a div h5{
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: bold;
 	margin:19px 0 6px 0;
 }
 .boxMain .agriculturalRight ul li a div p{
-	font-size: 14px;
+	font-size: 12px;
 	color: #666666;
 }
 #leftbar{
@@ -304,6 +311,7 @@
     border: 1px solid #548d35;
     display: none;
     color: #548d35;
+    font-family: 'Microsoft Yahei';
 }
 
 #leftbar ul li .z2 p:first-child{

@@ -554,7 +554,7 @@ header .searchBox .goodsCar a p span{
   	display: block;
   	max-height: 312px;
  }
-.sellerHr .goodsNav .ul1 li.ac1{
+.sellerHr .goodsNav .ul1 li:first-child{
 	background: url(../images/bj3.png) no-repeat;
 	background-position: 58px 0px;
 }
@@ -679,6 +679,9 @@ header .searchBox .goodsCar a p span{
 	margin-left: -12px;
 	margin-right: 60px;
 	font-size: 14px;
+}
+.bannarBox .mr{
+	margin-left: -1px
 }
 .bannarBox .bannarLeft .title{
 	height: 40px;

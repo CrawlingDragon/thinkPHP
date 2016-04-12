@@ -355,7 +355,9 @@
 }
 .layer-sendBox .sendCont .sendAds select{
 	width: 300px;
-	height: 20px;
+	height: 33px;
+	line-height: 33px;
+	background:#fff;
 	margin:0 5px 0 5px;
 }
 .layer-sendBox .sendCont .sendAds .sendEdit{

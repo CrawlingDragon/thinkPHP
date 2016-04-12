@@ -132,7 +132,7 @@
 		</article>
 		<div class="bannarBox-bj clear"><!-- 公司导航栏开始 -->
 			<article class="bannarBox  sellerNav">
-				<div class="bannarLeft" style="width: auto;"> <!-- 所有商品分类开始 -->
+				<div class="bannarLeft mr" style="width: auto;"> <!-- 所有商品分类开始 -->
 					<div class="title" style="width: auto;">
 						<!-- <img src="__PUBLIC__/mall/images/bannartitle.png" alt="所有商品分类"> -->
 						<span class="fb">首页</span>
@@ -150,7 +150,7 @@
 				<div class="areaShops fastNav"> <!-- 区域商铺开始 -->
 						<div class="shopTitle">
 							快速导航
-							<img src="__PUBLIC__/mall/images/moreup.png" alt="">
+							<img src="__PUBLIC__/mall/images/moreup2.png" alt="">
 						</div>
 						<div class="fastNav-cont" style="display: none;"><!-- 显示盒子 -->
 							<div class="loginedWrap" style="display: none;"><!-- 已经登录的状态 -->
@@ -717,9 +717,9 @@
 								<div class="btn-show">更多</div>
 						</div>
 					</div>
-					<div class="goodsWrap">
+					<div class="goodsWrap" >
 						<h2>农膜：</h2>
-						<div class="goodsNav-list">
+						<div class="goodsNav-list" >
 							<a href="">全部</a>
 							<a href="">棚膜</a>
 							<a href="">地魔</a>
@@ -793,12 +793,11 @@
 						</span>
 						<span class="page">
 							<a href=""><</a>
-							<strong>2</strong>
-							/31
+							<strong>2</strong>/31
 							<a href="">></a>
 						</span>
 					</div>
-					<div class="goodsList-filterBottom">
+					<!-- <div class="goodsList-filterBottom">
 						<span class="origin">产地：</span>
 						<div class="originBox">
 							<select name="" id="">
@@ -818,7 +817,7 @@
 								<option value="">下沙</option>
 							</select>
 						</div>
-					</div>
+					</div> -->
 				</div><!-- 筛选栏结束 -->
 				<div><!-- 商品列表展示区域 -->
 					<ul class="goodsList-ul clear">
@@ -1003,7 +1002,7 @@
 					</ul>
 					<div class="pageBox"> <!-- 分页开始 -->
 					<dl>
-						<dd><a href=""><</a></dd>
+						<dd class="left"><a href=""><</a></dd>
 						<dd ><a href="">1</a></dd>
 						<dd class="active"><a href="">2</a></dd>
 						<dd><a href="">3</a></dd>
@@ -1013,7 +1012,7 @@
 						<dd>...</dd>
 						<dd><a href="">33</a></dd>
 						<dd><a href="">34</a></dd>
-						<dd><a href="">></a></dd>
+						<dd class="right"><a href="">></a></dd>
 						<dd class="pageBtn">
 							<p>到第
 								<input type="text" name="" id="" value="15">页
@@ -1193,7 +1192,7 @@
 			}else{                   //按钮为收起的时候
 				$(this).text("更多");  //按钮变成更多
 				$(this).removeClass('active'); //按钮的箭头变成向下
-				$(this).parent().prev().css("height","33px"); //导航高度为34px，超出部分隐藏
+				$(this).parent().prev().css("height","33px"); //导航高度为33px，超出部分隐藏
 			}
 		})
 
