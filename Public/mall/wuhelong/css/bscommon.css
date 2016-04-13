@@ -29,6 +29,7 @@ select {
 select::-ms-expand { display: none; }
 button,input, select, textarea { font-size:100%;vertical-align:middle;outline: none;} 
 table { border-collapse:collapse; border-spacing:0; }
+/*第一个改的*/
 ul,dl{font-size:0;}
 ul li,dl dd{
 	font-size: 12px;
