@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/css/loginRegister.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/js/loginRegiter.js"></script>
+	<link rel="stylesheet" href="/Public/mall/wuhelong/css/loginRegister.css" type="text/css">
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/loginRegiter.js"></script>
 	
 
 	<!--[if IE]> 
@@ -15,7 +15,7 @@
 	</script> 
 	<![endif]-->
 	<!--[if lt IE 8]>
-	<script type="text/javascript" src="/Public/mall/js/IE8.js"></script>
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/IE8.js"></script>
 	<![endif]-->
 	<script type="text/javascript"> 
 	var countdown=60; 

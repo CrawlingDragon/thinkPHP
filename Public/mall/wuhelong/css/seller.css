@@ -3775,3 +3775,139 @@
 .wealthOrderDetails .btnBox .billing{
 	background: #ff6600;
 }
+
+
+/*gaoyuqi2016.03.22*/
+.atten{font-size:12px;}
+.atten label{color:#ff6600;}
+.atten .msg{color:#666;}
+input[type=button].buttons-off{cursor:default;}
+.buttons:hover{background:#366b08;}
+.buttons-off{
+	display: inline-block;
+	background: #ccc;
+	color: #fff;
+	border:none;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bolder;
+	cursor:default;
+}
+.titP12{font-size:12px;color:#999;line-height:28px;padding-left:170px;}
+.titP12 lable{color:#599524;font-weight:bold;}
+.titErro{padding-left:200px;color:#ff6600;font-size:12px;}
+.fl{display:block;float:left;}
+.fr{display:block;float:right;}
+.selectWrap{display:inline-block;}
+.companyCheck{position:relative;}
+.companyCheckOk, .companyCheckNo{position:absolute;display:block;width:30px;height:30px;top:-15px;right:-8px;}
+.companyCheckNo{background:url(../images/companyCheck.jpg) no-repeat;}
+.companyCheckOk{background:url(../images/companyCheck.jpg) no-repeat 0 -40px;}
+.btn{position: relative;display:inline-block;cursor:pointer;border:1px dashed #e5e5e5;width:100px;height:100px;}
+.btn input {position:absolute;top:0;left:0;margin:0;border: solid transparent;opacity: 0;filter:alpha(opacity=0);cursor:pointer;width:100px;height:100px;}
+.fileImgBtn{position:absolute;bottom:0;left:0;width:100px;height:26px;}
+.fileImgBtn.fbg{background:#000;background:rgba(0,0,0,0.5);filter:alpha(opacity=50);}
+
+.fileImgBtn .blowUp, .fileImgBtn .deleImg{display:inline-block;width:20px;height:20px;}
+.fileImgBtn .blowUp{background:url(../images/fileImgBtn.png) no-repeat center 2px;margin-left:5px;}
+.fileImgBtn .deleImg{background:url(../images/fileImgBtn.png) no-repeat center -30px;margin-left:45px;}
+#preview{position:absolute;top:0;left:0;}
+#preview>img{width:100px;height:100px;}
+.img30{width:30px;height:30px;margin-left:130px;}
+.buyerProfile .company form label.green16{color:#589325;font-weight:bold;line-height:30px;font-size:16px;text-align:left;padding-left:10px;}
+.buyerProfile .company form>div.checkWait, .buyerProfile .company form>div.checkOk, .buyerProfile .company form>div.checkNo{margin:40px 0 100px 0;}
+.buyerProfile .company .conpanyBtns02{display:block;width:110px;height:50px;line-height:50px;margin:20px 0 80px 170px;}
+.formtips{padding-left:170px;font-size:12px;color:#ff6600;line-height:20px;}
+.formtips2{padding-left:200px;font-size:12px;color:#ff6600;line-height:20px;}
+
+
+::-webkit-input-placeholder { color:#999;font-size:12px; }
+::-moz-placeholder { color:#999;font-size:12px; } /* firefox 19+ */
+::-ms-input-placeholder { color:#999;font-size:12px; } /* ie */
+input:-moz-placeholder { color:#999;font-size:12px; }
+input:-ms-input-placeholder { color:#999;font-size:12px; }
+input:focus {border: 1px solid #599524;}
+input:focus {outline:none;}
+.item input[type=button] {background:#f7f7f7;height:34px;padding:0;}
+option.holdOpt{color:#999;}
+input[type=button].smsValBtn{background:#ff6600;color:#fff;}
+input[type=button].smsValBtn:hover{background:#ff4400;}
+
+.applyShopWrap{padding:20px 0 0 20px;position: relative;}
+.applyShopWrap .applyH2{font-size:26px;color:#333;font-weight:bold;}
+.applyShopWrap .applyHelp{font-size:12px;color:#589325;background:url(../images/applySTwo.png) no-repeat;padding-left:20px;line-height:14px;display:inline-block;height:14px;position:absolute;top:28px;left:150px;}
+.applyShopWrap .P12c66{font-size:12px;color:#666;line-height:24px;}
+.applyShopWrap>ul{}
+.applyShopWrap>ul>li{font-family: '宋体';background:url(../images/applySStep.png) no-repeat;width:250px;height:50px;line-height:50px;text-align:center;display:block;float:left;}
+.applyShopWrap .applyH3{font-size:14px;color:#333;font-weight:bold;padding:40px 0 20px 0;}
+.applyShopWrap .applyRule{font-size:12px;color:#589325;background:url(../images/applySTwo.png) no-repeat 0 -26px;padding-left:20px;line-height:14px;margin:15px 0 0 100px;}
+.applyShopWrap .applyRule:after{content:"";display:block;clear:both;}
+.applySBtn{display:block;margin:100px 0 0 0;color:#fff;width:110px;height:50px;clear:left;line-height:50px;}
+
+#dropdown{width:248px;height:33px;border:1px solid #e5e5e5;position:relative;display:inline-block;} 
+#dropdown p{width:240px;line-height:34px; padding-left:10px;background:url(../images/dropDown.png) no-repeat 220px center; color:#999; cursor:pointer;text-indent: 0;}
+#dropdown ul{width:248px;background:#fff;border:1px solid #e5e5e5;position:absolute;top:33px;left:-1px;display:none;} 
+#dropdown ul li{width:100%;height:33px; line-height:33px;margin-bottom:5px;color:#333;text-indent:10px;font-size:14px;} 
+#dropdown ul li:hover{background:#ff6600;}
+#dropdown .drpP{color:#333;} 
+.addBankCardBtn, .sureMoneyBtn{line-height:50px;}
+.Editbankcard-sub {width: 110px;height: 50px;margin: 30px 0 0 200px;}
+.outForm{padding-left:30px;}
+.outForm>label{display:inline-block;width:192px;text-align:right;}
+.Editbankcard input[type=text].Editbankcard-codetxt {display:inline-block;height:35px;width:100px;}
+.ajaxErro{display:inline-block;text-align:right;}
+
+.PersonalData form select, .PersonalData form input[type=text], .buyerProfile .company FORM INPUT[type=text]{
+    line-height:35px; 
+}
+/*gaoyuqi16-4-12*/
+.containerBox .rightPart {float:right;}
+.layer-sendBox .sendCont, .modifyCont, .deletCont {
+    background: #f5f8fa;
+    border: 4px solid #f5f8fa;
+}
+.layer-sendBox {border-width:4px;border-style:solid;border-color:#f5f8fa;background:#f5f8fa;}
+.layer-sendBox .sendCont .sendTitle {
+    font-size: 12px;
+    color: #999999;
+    text-indent: 20px;
+    margin: 10px 0 30px 0;
+}
+.modifyCont p input[type=button]{
+	width: 70px;
+	height: 31px;
+	font-size: 14px;
+	margin-right: 18px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+/*.modifyCont>p:first-child+p{background: #000;}ie8*/
+.layui-layer-content, .layui-layer{overflow:hidden;}
+.pupopItem{margin:15px 0 0 0;line-height: 35px;}
+.pupopItem input[type=text]{
+	height: 33px;
+    border: 1px solid #e5e5e5;
+	padding-left:10px;}
+.margin40{margin:40px 0;}
+.popupText180{display:inline-block;width:180px;text-align:right;}
+.popupText100{display:inline-block;width:100px;text-align:right;}
+.Cancelorder, .confirmReceipt-btn, .payForBtn, .buyAgainBtn{
+	display: block;
+    text-align: center;
+    border: none;
+    height: 33px;
+    width: 88px;
+    margin: 0 auto;
+    border: 1px solid #d1d1d1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.Cancelorder{
+	background: #fff;
+	color:#000;
+}
+.confirmReceipt-btn, .payForBtn{
+	background: #ff6600;
+    color: #fff;
+}
