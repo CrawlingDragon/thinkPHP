@@ -765,7 +765,7 @@
 							<li><span class="titles">卖家类型：</span><span class="f12">厂家</span></li>
 							<li>
 								<span class="titles">描述相符：</span>
-								<strong>4.9</strong>
+								<strong>4.9<span class="fn c6 mt">分</span></strong>
 								<img src="/Public/mall/images/start2.png" alt="">
 								<img src="/Public/mall/images/start2.png" alt="">
 								<img src="/Public/mall/images/start2.png" alt="">
@@ -773,7 +773,7 @@
 							</li>
 							<li>
 								<span class="titles">服务态度：</span>
-								<strong>4.9</strong>
+								<strong>4.9<span class="fn c6 mt">分</span></strong>
 								<img src="/Public/mall/images/start2.png" alt="">
 								<img src="/Public/mall/images/start2.png" alt="">
 								<img src="/Public/mall/images/start2.png" alt="">
@@ -781,7 +781,7 @@
 							</li>
 							<li>
 								<span class="titles">发货速度：</span>
-								<strong>4.9</strong>
+								<strong>4.9<span class="fn c6 mt">分</span></strong>
 								<img src="/Public/mall/images/start2.png" alt="">
 								<img src="/Public/mall/images/start2.png" alt="">
 								<img src="/Public/mall/images/start2.png" alt="">
@@ -811,7 +811,7 @@
 							<form action="">
 								<div>
 									<label for="">关键字：</label>
-									<input type="text" name="" id="" style="width: 110px">
+									<input type="text" name="" id="" style="width: 118px">
 								</div>
 								<div>
 									<label for="">价格：</label>
@@ -932,7 +932,7 @@
 										<table>
 											<tr>
 												<td>描述相符：</td>
-												<td class="num"><span>4.9</span>分</td>
+												<td class="num"><span class="">4.9</span><i class="c6 mt f12">分<i></td>
 												<td>
 													<img src="/Public/mall/images/start2.png" alt="">
 													<img src="/Public/mall/images/start2.png" alt="">
@@ -942,7 +942,7 @@
 											</tr>
 											<tr>
 												<td>服务态度：</td>
-												<td class="num"><span>4.9</span>分</td>
+												<td class="num"><span class="">4.9</span><i class="c6 mt f12">分<i></td>
 												<td>
 													<img src="/Public/mall/images/start2.png" alt="">
 													<img src="/Public/mall/images/start2.png" alt="">
@@ -952,7 +952,7 @@
 											</tr>
 											<tr>
 												<td>发货速度：</td>
-												<td class="num"><span>4.9</span>分</td>
+												<td class="num"><span class="">4.9</span><i class="c6 mt f12">分<i></td>
 												<td>
 													<img src="/Public/mall/images/start2.png" alt="">
 													<img src="/Public/mall/images/start2.png" alt="">
@@ -1144,13 +1144,14 @@
 			$(this).show();
 		})
 		//分享部分显示end
+
 		//选择规格效果
 		$('.specification-num').click(function(){
 			$(this).addClass('active').siblings().removeClass('active');
-		})
+		});
 		//选择规格效果end
 
-		$(".proxy").click(function(){  //修改价格按钮弹出
+		$(".proxy").click(function(){  //申请代理按钮弹出
 			_this = $(this);
 			layer.open({
 				    type: 1,
@@ -1175,7 +1176,7 @@
 				});
 			});//修改价格按钮弹出end
 
-		$(".Application").click(function(){  //修改价格按钮弹出
+		$(".Application").click(function(){  //申请认证客户按钮弹出
 			_this = $(this);
 			layer.open({
 				    type: 1,
@@ -1210,12 +1211,9 @@
 				    shift: 0,
 				    area: ['485px', '286px'],
 				    shadeClose: false, //开启遮罩关闭
-				    content: '<h4><img src="/Public/mall/images/right.png" alt="">您已经收藏了该商品</h4><h5>您还可以购买的商品推荐：</h5><ul><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%</a></li><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%</a></li><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%富岛尿素 46.4%</a></li><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%</a></li></ul>',
+				    content: '<h4><img src="/Public/mall/images/right.png" alt="">您已经收藏了该商品</h4><h5>您还可以购买的商品推荐：</h5><ul><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%</a></li><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%</a></li><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%富岛尿素 46.4%</a></li><li><a href="" class="imgc"><img src="" alt=""></a><a href="" class="txt">富岛尿素 46.4%</a></li></ul><div class="collectBtn ">X</div>',
 				    success:function(){
-				    	$(".modifyBtn2").click(function(){ //取消按钮
-				    		layer.closeAll('page');
-				    	});
-				    	$(".proxybtn").click(function(){ //确定按钮
+				    	$(".collectBtn").click(function(){ //确定按钮
 				    		
 				    		layer.closeAll('page');
 				    		_this.text("申请中");

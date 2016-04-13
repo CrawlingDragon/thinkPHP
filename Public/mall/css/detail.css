@@ -128,7 +128,7 @@
 .goodsDetail-top-numbering{
 	clear: both;
 	color: #666;
-	font-size: 14px;
+	font-size: 12px;
 	padding-top: 30px;
 }
 .goodsDetail-top-numbering .goodsDetail-top-num i{
@@ -201,6 +201,7 @@
 	color: #ff6600;
 	margin-right: 5px;
 	vertical-align: bottom;
+	display:inline-block;
 }
 .goodsDetail-top-midden .dataBox .price-wrap em{
 	    vertical-align: bottom;
@@ -227,11 +228,15 @@
 }
 .goodsDetail-top-midden .dataBox .specification-wrap .specification-num{
 	border:1px solid #e7e7e7;
-	margin-right: 2px;
+	margin-right: -3px;
 	padding:9px 12px 8px 11px;
 	font-size: 14px;
 	color: #666;
 	cursor: default;
+}
+.goodsDetail-top-midden .dataBox .specification-wrap .specification-num:hover{
+	background: #f8f8f8;
+	/*border:1px solid #e5e5e5;*/
 }
 .goodsDetail-top-midden .dataBox .specification-wrap .active{
 	border:2px solid #ff6600;
@@ -273,14 +278,14 @@
 	color: #666;
 }
 .goodsDetail-top-midden .dataBox .buyerNum-wrap i{
-	font-size: 14px;
+	font-size: 12px;
 	color: #666;
 	margin-left: 10px;
 	margin-right: 15px;
 	vertical-align: middle;
 }
 .goodsDetail-top-midden .dataBox .buyerNum-wrap strong{
-	font-size: 14px;
+	font-size: 12px;
 	color: #666;
 	font-weight: normal;
 	vertical-align: middle;
@@ -299,6 +304,9 @@
   margin:80px 5px 0 64px;
   font-family: 'Microsoft Yahei';
 }
+.goodsDetail-top-midden .btns .btns-left:hover{
+	background: #3f7b0c;
+}
 .goodsDetail-top-midden .btns .btns-right{
 	display: inline-block;
   border-width: 1px;
@@ -315,6 +323,9 @@
   margin-top: 80px;
   font-family: 'Microsoft Yahei';
 }
+.goodsDetail-top-midden .btns .btns-right:hover{
+	background: #e9e9e9;
+}
 .goodsDetail-top .dealer-box{
 	float: right;
 	border:1px solid #f7f7f7;
@@ -323,6 +334,9 @@
 	padding-left: 15px;
 	box-sizing:border-box;
 	padding-bottom: 40px;
+}
+.goodsDetail-top .dealer-box:hover{
+	border:1px solid #3f7b0c;
 }
 .goodsDetail-top .dealer-box h4{
 	margin:15px 0 20px 0;
@@ -373,6 +387,10 @@
 	font-weight: bolder;
 	margin-right: 10px;
 }
+.goodsDetail-top .dealer-box ul li strong .mt{
+	margin-left: 2px;
+	font-size: 12px;
+}
 .goodsDetail-top .dealer-box ul li .address{
 	font-size: 12px;
 	float: left;
@@ -397,12 +415,15 @@
   font-size: 12px;
   margin-top: 28px;
 }
-
+.goodsDetail-top .dealer-box .inshop:hover,
+.goodsDetail-top .dealer-box .Application:hover{
+	background: #3f7b0c;
+}
 /*优惠活动*/
 .goodsDetail-bottom{
 	width: 100%;
 	height: auto;
-	margin-top: 80px;
+	margin-top: 50px;
 }
 .goodsDetail-bottom .goodsDetail-bottom-title{
 	width: 100%;
@@ -437,7 +458,7 @@
 .goodsDetail-bottomBox{
 	width: 100%;
 	height: auto;
-	margin-top: 20px;
+	margin-top: 10px;
 	clear: both;
 	min-height: 1600px;
 }
@@ -445,7 +466,7 @@
 	width: 200px;
 	float: left;
 	font-size: 12px;
-	color: #333;
+	color: #666;
 	height: auto;
 }
 .goodsDetail-bottomBox .leftBar .storeSearch-box{
@@ -455,7 +476,7 @@
 }
 .goodsDetail-bottomBox .leftBar h5{
 	width: inherit;
-	text-indent: 20px;
+	text-indent: 10px;
 	height: 40px;
 	font-size: 14px;
 	color: #666;
@@ -466,15 +487,16 @@
 }
 .goodsDetail-bottomBox .leftBar .storeSearch-box label{
 	display: inline-block;
-	width: 68px;
+	width: 60px;
 	text-align: right;
+	font-size: 12px;
 }
 .goodsDetail-bottomBox .leftBar .storeSearch-box form div{
 	margin-bottom: 10px;
 }
 .goodsDetail-bottomBox .leftBar .storeSearch-box input[type=text]{
 	display: inline-block;
-	width: 45px;
+	width: 50px;
 	height: 30px;
 	border:1px solid #e5e5e5;
 }
@@ -490,15 +512,18 @@
 	height: auto;
 	padding-bottom: 10px;
 	border:1px solid #e5e5e5;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .leftBar .storeSort-box p{
-	text-indent: 20px;
+	text-indent: 10px;
 	margin-bottom: 15px;
 	margin-top: 10px;
 }
+.leftBar .storeSort-box p a:hover{
+	color: #ff6600;
+}
 .leftBar .recommendHot-box{
-	margin-top: 20px;
+	margin-top: 10px;
 	border:1px solid #e5e5e5;
 	width: inherit;
 	height: auto;
@@ -540,6 +565,7 @@
 	line-height: 40px;
 	background: #f8f8f8;
 	border:1px solid #e5e5e5;
+	box-sizing: border-box;
 }
 .rightBar #box2.fix{
 	position: fixed;
@@ -656,6 +682,9 @@
 #showBox2 .cont3 .cont3-top .cont3-top-mid .num{
 	width: 55px;
 	text-align: center;
+}
+#showBox2 .cont3 .cont3-top .cont3-top-mid .num .mt{
+	margin-left: 2px;
 }
 #showBox2 .cont3 .cont3-top .cont3-top-mid tr td{
 	padding-bottom: 10px;
@@ -843,6 +872,13 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.collectBox .collectBtn{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-family: '微软雅黑';
+	cursor: pointer;
+}
 /*收藏按钮*/
 
 
@@ -868,7 +904,7 @@
 	height: 33px;
 	line-height: 33px;
 	cursor: pointer;
-	padding-right: 4px;
+	padding-right: 20px;
 }
 .select dt.cur{
 	background:#fff;

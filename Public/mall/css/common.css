@@ -55,6 +55,9 @@ h4{
 .fh{
 	font-family: '黑体';
 }
+.fn{
+	font-weight: normal;
+}
 .f25{
 	font-size: 25px;
 }
