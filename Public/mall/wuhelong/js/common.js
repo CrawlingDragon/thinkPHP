@@ -148,11 +148,11 @@ $(document).ready(function(){
     $(".shopTitle").on('click',function(){
       var a = $('.fastNav-cont');
       if(a.css("display")!="none"){
-        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moreup2.png");
+        $(".shopTitle").find('img').attr('src',"/Public/mall/wuhelong/images/moreup2.png");
         a.hide();
       }else{
         a.show();
-        $(".shopTitle").find('img').attr('src',"/Public/mall/images/moredown2.png");
+        $(".shopTitle").find('img').attr('src',"/Public/mall/wuhelong/images/moredown2.png");
       }
     });
 

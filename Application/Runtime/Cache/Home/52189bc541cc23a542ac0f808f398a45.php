@@ -19,6 +19,7 @@
 	<![endif]-->
 </head>
 <body>
+<a href="/home/goods/pay.html"></a>
 	<header><!-- 头部开始 -->
 		<article class="headerTop clear">
 			<section class="header-left"> <!-- 头部左边 未读消息 -->
@@ -653,12 +654,12 @@
 				<input type="button" value="合并删除" id="delete">
 			</div>
 			<ul class="table-title">
-				<li style="margin-right: 127px;">商品图片</li>
-				<li style="margin-right: 187px;">商品信息</li>
-				<li style="margin-right: 127px;">单价</li>
-				<li style="margin-right: 118px;">购买数量</li>
-				<li style="margin-right: 124px">实际付款</li>
-				<li style="margin-right: ">交易操作</li>
+				<li style="width: 164px">商品图片</li>
+				<li style="width: 235px;">商品信息</li>
+				<li style="width: 151px;">单价</li>
+				<li style="width: 166px;">购买数量</li>
+				<li style="width: 176px;">实际付款</li>
+				<li style="">交易操作</li>
 			</ul>
 			<table>
 				<tr style="border:none;">
@@ -711,6 +712,61 @@
 						<p class="del">删除</p>
 					</td>
 				</tr>
+			</table>
+			<table>
+				<tr style="border:none;">
+					<th colspan="7"><a href="">商铺：宁波金泰惠多利有限公司</a></th>
+				</tr>
+				<tr>
+					<td class="td1"><input type="checkbox" name="" id=""></td>
+					<td class="td2"><a href="#" class="cartimg"><img src="/Public/mall/wuhelong/images/goods5.png" alt=""></a></td>
+					<td class="td3">
+						<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬</h5>
+						<p><span>17-17-17</span>40kg/包</p>
+					</td>
+					<td class="td4">100.00</td>
+					<td class="td5">
+						<span class="less">-</span>
+						<input type="text" name="" class="nums" value="20" onkeyup="value=value.replace(/[^\d]/g,'')">
+						<span class="add">+</span>
+					</td>
+					<td class="td6">
+						<i class="orange fb">2000.00</i>
+					</td>
+					<td class="td7">
+						<p>移入收藏夹</p>
+						<p class="del">删除</p>
+					</td>
+				</tr>
+			</table><table>
+				<tr style="border:none;">
+					<th colspan="7"><a href="">商铺：宁波金泰惠多利有限公司</a></th>
+				</tr>
+				<tr>
+					<td class="td1"><input type="checkbox" name="" id=""></td>
+					<td class="td2"><a href="#" class="cartimg"><img src="/Public/mall/wuhelong/images/goods5.png" alt=""></a></td>
+					<td class="td3">
+						<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬</h5>
+						<p><span>17-17-17</span>40kg/包</p>
+					</td>
+					<td class="td4">100.00</td>
+					<td class="td5">
+						<span class="less">-</span>
+						<input type="text" name="" class="nums" value="20" onkeyup="value=value.replace(/[^\d]/g,'')">
+						<span class="add">+</span>
+					</td>
+					<td class="td6">
+						<i class="orange fb">2000.00</i>
+					</td>
+					<td class="td7">
+						<p>移入收藏夹</p>
+						<p class="del">删除</p>
+					</td>
+				</tr>
+			</table><table>
+				<tr style="border:none;">
+					<th colspan="7"><a href="">商铺：宁波金泰惠多利有限公司</a></th>
+				</tr>
 				<tr>
 					<td class="td1"><input type="checkbox" name="" id=""></td>
 					<td class="td2"><a href="#" class="cartimg"><img src="/Public/mall/wuhelong/images/goods5.png" alt=""></a></td>
@@ -733,13 +789,39 @@
 					</td>
 				</tr>
 			</table>
-			<div class="cartFoot">
+			<table>
+				<tr style="border:none;">
+					<th colspan="7"><a href="">商铺：宁波金泰惠多利有限公司</a></th>
+				</tr>
+				<tr>
+					<td class="td1"><input type="checkbox" name="" id=""></td>
+					<td class="td2"><a href="#" class="cartimg"><img src="/Public/mall/wuhelong/images/goods5.png" alt=""></a></td>
+					<td class="td3">
+						<h5>道尔纯硫酸钾复合肥葡萄专用多功能棚膜果蔬</h5>
+						<p><span>17-17-17</span>40kg/包</p>
+					</td>
+					<td class="td4">100.00</td>
+					<td class="td5">
+						<span class="less">-</span>
+						<input type="text" name="" class="nums" value="20" onkeyup="value=value.replace(/[^\d]/g,'')">
+						<span class="add">+</span>
+					</td>
+					<td class="td6">
+						<i class="orange fb">2000.00</i>
+					</td>
+					<td class="td7">
+						<p>移入收藏夹</p>
+						<p class="del">删除</p>
+					</td>
+				</tr>
+			</table>
+			<div class="cartFoot" id="cartFooter">
 				<input type="button" value="清空购物车" class="buttons delAll">
 				<input type="button" value="继续购物" class="buttons goSh">
 				<a href="" class="goPay">结算</a>
 				<div class="moneyBox">
-					<p>已选2件商品</p>
-					<p>价格总结(不含运费):<span class="orange fb fw">8000.00</span></p>
+					<span class="mb-left">已选2件商品</span>
+					<span>价格总结(不含运费):<span class="orange fb fw f26">800011.00</span></span>
 				</div>
 			</div>
 		</div>
@@ -879,7 +961,40 @@
 					$(this).parent().find('.nums').val(1);//add改成起订量
 				}
 			})
-
+			
 		})
+
+			
+	</script>
+	<script type="text/javascript">
+			//底部结算栏目效果
+			function foots(){
+				var footers = document.getElementById("cartFooter");
+				var cn = footers.className;
+				var fh = footers.offsetTop;//底边栏距离浏览器顶部的距离
+				var wh = document.documentElement.clientHeight;//整个页面的高度(包括隐藏部分)，为了兼容IE ，所以不能用window.innerHeight
+				if(fh>wh){
+					footers.className = cn + " cur";
+				}else{
+					footers.className = cn;
+				}
+			} 
+			window.onload = function(){foots();}
+			window.onresize = function(){foots();}	
+
+			$(document).ready(function(){
+				
+				$(window).scroll(function(){
+					var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop()+60; //距离浏览器底部的距离
+					console.log($(document).height());
+					console.log($(window).height());
+					console.log()
+					if (scrollBottom <= 499) {
+						$('#cartFooter').removeClass('cur');
+					}else{
+						$('#cartFooter').addClass('cur');
+					}
+				})
+			})
 	</script>
 </body>
