@@ -213,7 +213,7 @@
 											<dl>
 												<dd>
 													<a href="">
-														<p>宁波金泰惠多利农资连锁公司</p>
+														<p class="login-before">宁波金泰惠多利农资连锁公司</p>
 														<span>
 															<img src="/Public/mall/wuhelong/images/start.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
@@ -1414,7 +1414,14 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.goodsNav').find('.ul1-rightBorder:last').css("display","none")
+			$('.goodsNav').find('.ul1-rightBorder:last').css("display","none");
+
+
+
+
+
+
+			
 		})
 	</script>
 </body>

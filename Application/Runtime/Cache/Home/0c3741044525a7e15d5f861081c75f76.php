@@ -673,26 +673,40 @@
 					</div>
 					<!-- 进度条部分结束 -->
 				</div>
-				<div class="payment-address">收货地址：<span>浙江省 宁波市 鄞州区 集北路1888号</span><i>车春华收</i><strong>手机13355845286</strong></div>
-					<div class="payment-orderNum f14 green fb">订单号：10012015060862394 </div>
+				<div class="payment-address clear"><!-- 收货地址开始 -->
+					<div class="payAd-title">选择收货地址：</div>
+					<div class="payAd-list">
+						<ul class="payAd-ul">
+							<li class="active"><input type="radio" name="payAd" id="" checked="">浙江省 宁波市 鄞州区 集北路1888号<i>车春华收</i><strong>手机13355845286</strong></li>
+							<li><input type="radio" name="payAd" id="">浙江省 宁波市 鄞州区 集北路1888号<i>车春华收1</i><strong>手机13355845286</strong></li>
+							<li><input type="radio" name="payAd" id="">北路1888号<i>车春华收2</i><strong>手机13355845286</strong></li>
+							<li><input type="radio" name="payAd" id="">浙江省 宁波市 鄞州区 集北路1888号<i>车春华收3</i><strong>手机13355845286</strong></li>
+							<li><input type="radio" name="payAd" id="">浙江省 宁波市 鄞州区 集北路1888号<i>车春华收4</i><strong>手机13355845286</strong></li>
+							<li><input type="radio" name="payAd" id="">浙江省 宁波市 鄞州区 集北路1888号<i>车春华收5</i><strong>手机13355845286</strong></li>
+							<div class="def">默认地址</div>
+						</ul>
+						<div class="payAd-bt">
+							<span class="allAd">全部地址</span>
+							<a href="地址管理.HTML">管理收货地址</a>
+						</div>
+					</div>
+					<div id="payAd-edit">编辑地址</div>
+				</div><!-- 收货地址开始end -->
+				<!-- <div class="payment-orderNum f14 green fb">订单号：10012015060862394 </div> -->
 				<div class="wealthOrderDetails-title green">订单号：1234567890987654</div>
 				<table>
 					<tr style="border:1px solid #e5e5e5;border-bottom:none;">
-						<th style="width: 190px">商品图片</th>
-						<th style="width: 170px">商品名称</th>
+						<th style="width: 362px">商品</th>
 						<th style="width: 110px">规格</th>
-						<th style="width: 90px">数量</th>
-						<th style="width: 100px">单价</th>
-						<th style="width: 90px">总价</th>
-						<th style="width: 100px">运费</th>
-						<th style="width: 130px">订单总金额</th>
-						<th style="width: 210px">实际付款</th>
+						<th style="width: 90px">单价/数量</th>
+						<th style="width: 100px">总价(元)</th>
+						<th style="width: 90px">运费(元)</th>
+						<th style="width: 181px">订单总金额</th>
+						<th style="width: 260px">实际付款</th>
 					</tr>
 					<tr>
 						<td>
 							<div class="imgs"><a href=""><img src="/Public/mall/wuhelong/images/goods5.png" alt=""></a></div>
-						</td>
-						<td class="tableTxt">
 							<a href="">道儿纯硫酸复合葡萄酸专用多功能棚摸过果蔬钙肥</a>
 						</td>
 						<td>
@@ -700,31 +714,44 @@
 							<p>80kg/包</p>
 						</td>
 						<td>
-							<p>100</p>
-							<p>100</p>
+							<p>
+								100<br>
+								x10
+							</p>
+							<p>
+								100<br>
+								x10
+							</p>
 						</td>
 						<td>
-							<p>5.0</p>
-							<p>5.0</p>
+							<p>
+								<span class="oldPrice">1000.00</span><br>
+								2000.00
+							</p>
+							<p>
+								<span class="oldPrice">1000.00</span><br>
+								2000.00
+							</p>
 						</td>
 						<td>
-							<p>500</p>
-							<p>500</p>
+							<p>10</p>
+							<p>10</p>
 						</td>
 						<td>
-							10.00
+							<div>
+								<div>3 件商品，总商品金额：</div>
+								<div>¥ 3000.00</div>
+								<div>运费：</div>
+								<div>¥ 30.00</div>
+							</div>
 						</td>
-						<td>51.00</td>
 						<td>
-							<div class="f14 c3 fb">实收款</div>
-							<div class="f25 fh orange">510.00</div>
+							<div class="f25 fh orange">3030.00</div>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<div class="imgs"><a href=""><img src="/Public/mall/wuhelong/images/goods5.png" alt=""></a></div>
-						</td>
-						<td class="tableTxt">
 							<a href="">道儿纯硫酸复合葡萄酸专用多功能棚摸过果蔬钙肥</a>
 						</td>
 						<td class="tableTxtP">
@@ -742,7 +769,6 @@
 						<td>
 							10.00
 						</td>
-						<td>51.00</td>
 						<td>
 							<div class="f14 c3 fb">实收款</div>
 							<div class="f25 fh orange">510.00</div>
@@ -861,12 +887,38 @@
 		</section> 
 	</footer><!-- 脚部结束 -->
 <script type="text/javascript">
-	$(function(){
+	$(function(){	//支付方式的卡片切换
 		$('.box2 li').click(function(){
 			$(this).addClass('active').siblings().removeClass('active');
 			$('.showBox2 .showCont:eq('+$(this).index()+')').show().siblings().hide();
 		})
 		
+
+
+
+		$('.allAd').click(function(){	//全部地址切换
+			if($(this).text()=="全部地址"){
+				$(this).text("收起地址");
+				$(".payAd-bt").css("margin-top","0");
+				$(".payAd-list ul").css("height","auto");
+			}else{
+				$(this).text("全部地址");
+				$(".payAd-bt").css("margin-top","10px");
+				$(".payAd-list ul").css({"overflow":"hidden","height":"114px"});
+			}
+		})
+
+
+		$(".payAd-list :input[type=radio]").each(function(){
+			$(this).click(function(){
+				var $li = $(this).parent();
+				if($(this).prop("checked")){
+					$(this).parent().addClass("active").siblings().removeClass("active");
+					$(this).parent().fadeOut().fadeIn();
+					$(".payAd-ul").prepend($li);
+				}
+			})
+		})
 	})
 </script>
 </body>

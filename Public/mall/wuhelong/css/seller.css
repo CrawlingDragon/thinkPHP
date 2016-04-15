@@ -2213,7 +2213,7 @@
 }
 .wealthOrderDetails .wealthOrderDetails-title{
 	margin-top: 10px;
-	width: 1193px;
+	width: 1191px;
 	border: 1px solid #e5e5e5;
 	font-weight: bolder;
 	font-size: 14px;
@@ -2222,7 +2222,7 @@
 	border-bottom: none;
 }
 .wealthOrderDetails table{
-	width: 1193px;
+	width: 1191px;
 	font-size: 12px;
 	color: #333;
 }
@@ -3592,18 +3592,80 @@
 }
 .paymentWrap .payment-address{
 	color: #589325;
-	font-size: 14px;
-	margin:40px 0 37px 0;
-	font-weight: bolder;
+	font-size: 12px;
+	margin:10px 0;
+	border:1px solid #e5e5e5;
+	height: auto;
+	padding:10px 0 0 20px;
+	box-sizing:border-box;
+	position: relative;
 }
-.paymentWrap .payment-address span,
-.paymentWrap .payment-address i,
-.paymentWrap .payment-address strong{
-	margin-left: 35px;
+.payment-address .payAd-title{
+	width: 116px;
+	float: left;
+	font-size: 14px;
+	color: #333;
+	font-weight: bolder;
+	
+}
+.payment-address .payAd-list{
+	float: left;
+	font-size: 12px;
 	color: #333;
 }
-.paymentWrap .payment-orderNum{
-	margin-bottom: 20px;
+.payment-address #payAd-edit{
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	cursor: pointer;
+}
+.paymentWrap .payment-address ul{
+	height: 114px;
+	overflow: hidden;
+	padding-right: 130px;
+	position: relative;
+}
+.def{
+	position: absolute;
+	right: 10px;
+	top: 3px;
+	font-size: 12px;
+}
+.paymentWrap .payment-address li{
+	margin-bottom: 18px;
+}
+.paymentWrap .payment-address li.active{
+	font-size: 14px;
+	color: #ff6600;
+	font-weight: bolder;
+}
+.paymentWrap .payment-address li.active strong{
+	font-weight: bolder;
+}
+.paymentWrap .payment-address li input[type=radio]{
+	margin-right: 20px;
+}
+.paymentWrap .payment-address i{
+	margin-left: 15px;
+}
+.paymentWrap .payment-address strong{
+	margin-left: 25px;
+	font-weight: normal;
+}
+.paymentWrap .payAd-bt{
+	margin: 20px 30px;
+	color: #589325;
+	font-size: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.paymentWrap .payAd-bt a{
+	margin-left: 10px;
+	color: #589325;
 }
 .payment-way #box1{
 	margin-top: 40px;
