@@ -797,7 +797,7 @@
 							<a href="">></a>
 						</span>
 					</div>
-					<!-- <div class="goodsList-filterBottom">
+					<div class="goodsList-filterBottom">
 						<span class="origin">产地：</span>
 						<div class="originBox">
 							<select name="" id="">
@@ -817,7 +817,7 @@
 								<option value="">下沙</option>
 							</select>
 						</div>
-					</div> -->
+					</div>
 				</div><!-- 筛选栏结束 -->
 				<div><!-- 商品列表展示区域 -->
 					<ul class="goodsList-ul clear">

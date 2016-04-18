@@ -2136,7 +2136,7 @@
 	margin:20px 0;
 }
 .wealthOrderDetails .wealthOrderDetails-head .wealthOrderDetails-headBar{
-	margin:0 0 0 75px;
+	margin:0 0 0 145px;
 }
 .wealthOrderDetails .wealthOrderDetails-head .wealthOrderDetails-headBar p span{
 	font-size: 12px;
@@ -2258,28 +2258,22 @@
 	width: 100%;
 	height: 100%;
 }
+
 .wealthOrderDetails table tr td .tableTxt{
-	float: left;
+	display: inline-block;
 	width: 143px;
-	display:table;
-	height: 75px;   
-}
-.wealthOrderDetails table tr td .tableTxt a{
-	display: block;
-	width: 143px;
-	 vertical-align:middle;   
-  display:table-cell;
+	margin-top: 20px;
 }
 .wealthOrderDetails table tr td p{
 	padding-top: 40px;
 	box-sizing:border-box;
 	width: 100%;
 	height: 100px;
-	/*line-height: 101px;*/
 	border-bottom: 1px solid #e5e5e5;
 }
-.wealthOrderDetails table tr td p span{
+.wealthOrderDetails table tr td .oldPrice{
 	display: block;
+	text-decoration: line-through;
 }
 .wealthOrderDetails table tr td p span.tableP{
 	text-decoration: line-through;
@@ -2287,6 +2281,14 @@
 }
 .wealthOrderDetails table tr td p:last-child{
 	border-bottom:none;
+}
+.wealthOrderDetails table tr .allPrice{
+	text-align: right;
+	padding-right: 20px;
+	line-height: 20px;
+}
+.wealthOrderDetails table tr .allPrice .shipment{
+	margin-top: 10px;
 }
 .wealthOrderDetails .tableBottom{
 	width: 1193px;
@@ -2330,6 +2332,88 @@
 	font-family: '微软雅黑';
 	font-size: 24px;
 	color: #ff6600;
+}
+.payWrap{
+	border:5px solid #595959;
+	width: 586px;
+	height: 551px;
+	background: #f5f8fa;
+	font-size: 14px;
+	color: #333;
+}
+.payWrap .title{
+	margin:10px 0 35px 20px;
+	color: #999;
+	font-size: 12px;
+	color: #666666;
+}
+.payWrap .list{
+	margin:0 0 20px 0;
+	position: relative;
+}
+.payWrap label{
+	display: inline-block;
+	width: 105px;
+	text-align: right;
+}
+.payWrap .list select{
+	width: 100px;
+	height: 33px;
+	border:1px solid #e5e5e5;
+	margin-right: 10px;
+}
+.payWrap .list .textarea{
+	width: 430px;
+	height: 73px;
+	max-height: 73px;
+	min-height: 73px;
+	max-width: 430px;
+	border:1px solid #e5e5e5;
+	padding-top: 10px;
+}
+.payWrap .list input[type=text]{
+	width: 340px;
+	height: 33px;
+	border:1px solid #e5e5e5;
+}
+.payWrap  .btns{
+	margin-top: 5px;
+	font-size: 12px;
+	color: #333;
+}
+.payWrap  .btns input[type=radio]{
+	margin:-2px 5px 0 0;
+}
+.payWrap .list .closeBtn1,
+.payWrap .list .closeBtn2{
+	display: inline-block;
+	width: 71px;
+	height: 33px;
+	text-align: center;
+	line-height: 33px;
+	margin-top: 30px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.payWrap .list .closeBtn1{
+	background: #589325;
+	color: #fff;
+	margin-right: 18px;
+}
+.payWrap .list .closeBtn2{
+	background: #fff;
+	color: #589325;
+	border:1px solid #e5e5e5;
+}
+.payWrap .list .formTip{
+	position: absolute;
+	font-size: 12px;
+	color: #ff6600;
+	left: 105px;
+	top: 35px;
+}
+.payWrap .list .textareaMsg{
+	top: 75px;
 }
 
 /*账户管理-我的财富-账户设置*/
