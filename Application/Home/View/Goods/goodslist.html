@@ -652,11 +652,8 @@
 				<div class="goodsList-topBox"><!-- 首页位置搜索按钮上面部分 -->
 					<a href="">首页</a><span class="leftHook">></span>
 					<a href="">产品库</a><span class="leftHook">></span>
-					<a href="">全部</a>
-					<form action="" method="">
-						<input type="text" name="" id="" placeholder="输入关键字">
-						<input type="button" value="搜索">
-					</form>
+					<a href="">全部</a><span class="leftHook">></span>
+					<a href="" class="actives">植物种子</a>
 					<p class="right-txt">搜索到<span>13390</span>件</p>
 				</div><!-- 首页位置搜索按钮上面部分结束 -->
 				<div class="goodsNav-box"><!-- 列表导航 -->

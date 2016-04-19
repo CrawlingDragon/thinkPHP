@@ -694,9 +694,9 @@
 					<div id="payAd-edit">编辑地址</div>
 				</div><!-- 收货地址开始end -->
 				<!-- <div class="payment-orderNum f14 green fb">订单号：10012015060862394 </div> -->
-				<div class="wealthOrderDetails-title green">订单号：1234567890987654</div>
+				<div class="wealthOrderDetails-title green">订单号：1234567890987654<span class="times">创建时间：2016-03-15 15:23:25</span></div>
 				<table>
-					<tr style="border:1px solid #e5e5e5;border-bottom:none;">
+					<tr>
 						<th style="width: 362px">商品</th>
 						<th style="width: 110px">规格</th>
 						<th style="width: 90px">单价/数量</th>
@@ -739,15 +739,15 @@
 							<p>10</p>
 						</td>
 						<td rowspan="2" class="allPrice">
-							<div>
-								<div class="orange f12">3 件商品，总商品金额:</div>
-								<div class="f14">¥ 3000.00</div>
+							<div class="c6">
+								<div class="f12 c6"><i class="orange">3 </i>件商品，总商品金额:</div>
+								<div class="f14 orange fm">¥ 3000.00</div>
 								<div class="f12 shipment">运费:</div>
-								<div class="f14">¥ 30.00</div>
+								<div class="f14 orange fm">¥ 30.00</div>
 							</div>
 						</td>
 						<td rowspan="2">
-							<div class="f25 fh orange fb">3030.00</div>
+							<div class="f28 fm orange fb">3030.00</div>
 						</td>
 					</tr>
 					<tr>
@@ -821,7 +821,7 @@
 								<span class="green setPass">设置支付密码</span>
 							</div>
 							<div>
-								<input type="button" value="担保支付" class="buttons">
+								<input type="button" value="担保支付" class="buttons" style="margin-bottom: 20px;">
 							</div>
 						</div>
 					</div>
@@ -899,7 +899,7 @@
 				$(".payAd-list ul").css("height","auto");
 			}else{
 				$(this).text("全部地址");
-				$(".payAd-bt").css("margin-top","10px");
+				$(".payAd-bt").css("margin-top","20px");
 				$(".payAd-list ul").css({"overflow":"hidden","height":"114px"});
 			}
 		})
@@ -927,7 +927,7 @@
 			    shift: 0,
 			    area: ['557px', '551px'],
 			    shadeClose: false, //开启遮罩关闭
-			    content: '<p class="title">编辑地址</p><form action="" method=""><div class="list"><label for="">所在地区：</label><span><select name="" id="ads1"><option value="0">杭州</option><option value="1">杭州2</option></select></span><span><select name="" id="ads2"><option value="0">滨江</option><option value="1">滨江2</option></select></span><span><select name="" id="ads3"><option value="0">浦沿</option><option value="1">浦沿2</option></select></span></div><div class="list"><label for="">详细地址：</label><textarea class="textarea"></textarea></div><div class="list"><label for="">邮政编码：</label><input type="text" name="" id="zipCode" placeholder="请输入邮编号码"></div><div class="list"><label for="">收货人姓名：</label><input type="text" name="" id="name" placeholder="请输入收货人姓名"></div><div class="list"><label for="">手机号码：</label><input type="text" name="" id="phone" placeholder="请输入收货人手机号码"></div><div class="list"><label>座机号码：</label><input type="text" name="" id="homePhone" placeholder="电话号码、手机号码必须填一项"></div><div class="btns"><label for=""></label><input type="radio" name="" id="" checked="">设置为默认收获地址</div><div class="list"><label for=""></label><span class="closeBtn1">确认</span><span class="closeBtn2">取消</span></div></form>',
+			    content: '<p class="title">编辑地址</p><form action="" method=""><div class="list"><label for="">所在地区：</label><span class="selectBox"><select name="" id="ads1"><option value="0">杭州</option><option value="1">杭州2</option></select></span><span class="selectBox"><select name="" id="ads2"><option value="0">滨江</option><option value="1">滨江2</option></select></span><span class="selectBox"><select name="" id="ads3"><option value="0">浦沿</option><option value="1">浦沿2</option></select></span></div><div class="list"><label for="">详细地址：</label><textarea class="textarea"></textarea></div><div class="list"><label for="">邮政编码：</label><input type="text" name="" id="zipCode" placeholder="请输入邮编号码"></div><div class="list"><label for="">收货人姓名：</label><input type="text" name="" id="name" placeholder="请输入收货人姓名"></div><div class="list"><label for="">手机号码：</label><input type="text" name="" id="phone" placeholder="请输入收货人手机号码"></div><div class="list"><label>座机号码：</label><input type="text" name="" id="homePhone" placeholder="电话号码、手机号码必须填一项"></div><div class="btns"><label for=""></label><input type="radio" name="" id="" checked="">设置为默认收获地址</div><div class="list"><label for=""></label><span class="closeBtn1">保存</span><span class="closeBtn2">取消</span></div></form>',
 			    success:function(layero, index){
 			    	$(".closeBtn2").click(function(){ //取消按钮
 			    		layer.closeAll('page');
@@ -935,11 +935,13 @@
 			    	$('select').click(function(){ //验证下拉菜单
 						var $parent = $(this).parent();
 						// $parent.find('.formTip').remove();
+						$parent.parent().removeAttr("style");
 						$(this).removeAttr("style");
 						if($(this).is("#ads1")){
 							if($(this).val()==0){
 								var errorMsg = "请选择地址";
 								$parent.append("<span class='formTip errorLen selectMsg'>"+ errorMsg+"</span>");
+								$parent.parent().css("margin-bottom","30px");
 								$(this).css("border","1px solid #ff6600");
 							}else{
 								$parent.find('.formTip').remove();
@@ -948,6 +950,7 @@
 							if($(this).val()==0){
 								var errorMsg = "请选择地址";
 								$parent.append("<span class='formTip errorLen selectMsg'>"+ errorMsg+"</span>");
+								$parent.parent().css("margin-bottom","30px");
 								$(this).css("border","1px solid #ff6600");
 							}else{
 								$parent.find('.formTip').remove();
@@ -956,6 +959,7 @@
 							if($(this).val()==0){
 								var errorMsg = "请选择地址";
 								$parent.append("<span class='formTip errorLen selectMsg'>"+ errorMsg+"</span>");
+								$parent.parent().css("margin-bottom","30px");
 								$(this).css("border","1px solid #ff6600");
 							}else{
 								$parent.find('.formTip').remove();
@@ -968,10 +972,12 @@
 			    	$('textarea').blur(function(){ //验证输入框
 			    		var $parent = $(this).parent();
 						$parent.find('.formTip').remove();
+						$parent.removeAttr("style");
 						$(this).removeAttr("style");
 						if($(this).val()==''){
 							var errorMsg = "请输入具体地址";
 							$parent.append("<p class='formTip errorLen textareaMsg'>"+ errorMsg +"</p>");
+							$parent.css("margin-bottom","30px");
 							$(this).css("border","1px solid #ff6600");
 						}
 			    	}).keyup(function(){
@@ -980,12 +986,14 @@
 			    	$('.list :input[type=text]').blur(function(){  //验证输入框
 			    		var $parent = $(this).parent();
 						$parent.find('.formTip').remove();
+						$parent.removeAttr("style");
 						$(this).removeAttr("style");
 			    		if($(this).is("#zipCode")){	//验证邮编
 			    			var re= /^[1-9][0-9]{5}$/
 			    			if($(this).val()=='' || (!re.test(this.value))){
 			    				var errorMsg = "请输入正确的邮编";
 			    				$parent.append("<p class='formTip errorLen'>"+errorMsg+"</p>");
+			    				$parent.css("margin-bottom","30px");
 			    				$(this).css("border","1px solid #ff6600");
 			    			}
 			    		}
@@ -993,15 +1001,17 @@
 			    			if($(this).val()==''){
 			    				var errorMsg = "请输入姓名";
 			    				$parent.append("<p class='formTip errorLen'>"+errorMsg+"</p>");
+			    				$parent.css("margin-bottom","30px");
 			    				$(this).css("border","1px solid #ff6600");
 			    			}
 			    		}
 			    		if($(this).is("#phone")){    //手机号码
-			    				var phones = /^1[3|4|5|8|9]\d{9}$/;
+			    				var phones = /^1\d{10}$/;
 			    				var homePhones = /^((0\d{2,3}-\d{7,8}))$/;
 			    				if($(this).val()=='' || (!phones.test(this.value))){
 			    					var errorMsg = "请输入正确的手机号码";
 			    					$parent.append("<p class='formTip errorLen'>"+errorMsg+"</p>");
+			    					$parent.css("margin-bottom","30px");
 			    					$(this).css("border","1px solid #ff6600");
 			    				}else if($("#homePhone").val()==''){
 			    					console.log("cc");
@@ -1014,6 +1024,7 @@
 			    				if($(this).val()=='' ||(!homePhones.test(this.value))){
 			    					var errorMsg = "请输入正确的座机号码";
 			    					$parent.append("<p class='formTip errorLen'>"+errorMsg+"</p>");
+			    					$parent.css("margin-bottom","30px");
 			    					$(this).css("border","1px solid #ff6600");
 			    				}else if($("#phone").val()==''){
 			    					$("#phone").parent().find('.formTip').remove();

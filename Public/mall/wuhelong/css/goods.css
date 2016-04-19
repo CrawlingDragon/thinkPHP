@@ -18,6 +18,12 @@
 	color: #999;
 	margin-right: 15px;
 }
+.goodsList-Cont .goodsList-topBox a.actives{
+	padding: 4px 19px 4px 7px;
+	line-height: 1;
+	border:1px solid #e5e5e5;
+	background: url(../images/shutDwon.png) no-repeat right center;
+}
 .goodsList-Cont .goodsList-topBox form{
 	display: inline-block;
 }

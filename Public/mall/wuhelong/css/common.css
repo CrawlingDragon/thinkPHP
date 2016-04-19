@@ -55,6 +55,9 @@ h4{
 .fh{
 	font-family: '黑体';
 }
+.fm{
+	font-family: '微软雅黑';
+}
 .fn{
 	font-weight: normal;
 }
@@ -63,6 +66,9 @@ h4{
 }
 .f26{
 	font-size: 26px;
+}
+.f28{
+	font-size: 28px;
 }
 .orange{
 	color: #ff6600;

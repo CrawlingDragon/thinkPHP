@@ -2147,7 +2147,7 @@
 	width: 875px;
     height: 33px;
     background: url(../images/active1.png) no-repeat;
-    margin: 10px 0 20px 12px;
+    margin: 10px 0 15px 12px;
 }
 .wealthOrderDetails-head .wealthOrderDetails-headBartimes span{
 	font-size: 12px;
@@ -2214,12 +2214,18 @@
 .wealthOrderDetails .wealthOrderDetails-title{
 	margin-top: 10px;
 	width: 1191px;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #e4f7d4;
 	font-weight: bolder;
 	font-size: 14px;
 	box-sizing:border-box;
-	padding: 30px 0 20px 50px;
+	padding: 20px 0 20px 20px;
 	border-bottom: none;
+}
+.wealthOrderDetails .wealthOrderDetails-title span{
+	color: #333;
+	font-size: 12px;
+	margin-left: 58px;
+	font-weight: normal;
 }
 .wealthOrderDetails table{
 	width: 1191px;
@@ -2233,11 +2239,11 @@
 	height: 35px;
 	font-size: 12px;
 	color:#666;
-	background: #f4f7f7;
+	background: #e4f7d4;
 }
 .wealthOrderDetails table tr td{
 	text-align: center;
-	border:1px solid #e5e5e5;
+	border:1px solid #e4f7d4;
 }
 .wealthOrderDetails table tr td.tableActive{
 	font-size: 16px;
@@ -2263,17 +2269,19 @@
 	display: inline-block;
 	width: 143px;
 	margin-top: 20px;
+	margin-left: -47px;
 }
 .wealthOrderDetails table tr td p{
 	padding-top: 40px;
 	box-sizing:border-box;
 	width: 100%;
 	height: 100px;
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e4f7d4;
 }
 .wealthOrderDetails table tr td .oldPrice{
 	display: block;
 	text-decoration: line-through;
+	color: #999;
 }
 .wealthOrderDetails table tr td p span.tableP{
 	text-decoration: line-through;
@@ -2337,19 +2345,28 @@
 	border:5px solid #595959;
 	width: 586px;
 	height: 551px;
-	background: #f5f8fa;
 	font-size: 14px;
 	color: #333;
 }
+.payWrap .layui-layer-content{
+		background-color: #f5f8fa;
+}
 .payWrap .title{
-	margin:10px 0 35px 20px;
+	margin:10px 0 30px 20px;
 	color: #999;
 	font-size: 12px;
 	color: #666666;
 }
 .payWrap .list{
-	margin:0 0 20px 0;
 	position: relative;
+	margin-bottom: 20px;
+}
+.payWrap .selectBox{
+	display: inline-block;
+	background: #fff;
+	width: 100px;
+	height: 33px;
+	margin-right: 10px;
 }
 .payWrap label{
 	display: inline-block;
@@ -2357,10 +2374,8 @@
 	text-align: right;
 }
 .payWrap .list select{
-	width: 100px;
+	width: 100%;
 	height: 33px;
-	border:1px solid #e5e5e5;
-	margin-right: 10px;
 }
 .payWrap .list .textarea{
 	width: 430px;
@@ -2410,10 +2425,11 @@
 	font-size: 12px;
 	color: #ff6600;
 	left: 105px;
-	top: 35px;
+	top: 38px;
+	line-height: 1;
 }
 .payWrap .list .textareaMsg{
-	top: 75px;
+	top: 78px;
 }
 
 /*账户管理-我的财富-账户设置*/
@@ -3668,7 +3684,7 @@
 /*买家中心-付款*/
 .wealthOrderDetails .paymentCont{
 	height: 134px;
-	padding:25px 0 25px 0; 
+	padding:15px 0 25px 0; 
 	box-sizing:border-box;
 }
 .wealthOrderDetails .paymentCont .paymentCont-headBar .wealthOrderDetails-headBarbg{
@@ -3680,7 +3696,7 @@
 	margin:10px 0;
 	border:1px solid #e5e5e5;
 	height: auto;
-	padding:10px 0 0 20px;
+	padding:20px 0 0 20px;
 	box-sizing:border-box;
 	position: relative;
 }
@@ -3704,16 +3720,17 @@
 	cursor: pointer;
 }
 .paymentWrap .payment-address ul{
-	height: 114px;
+	height: 116px;
 	overflow: hidden;
 	padding-right: 130px;
 	position: relative;
 }
 .def{
 	position: absolute;
-	right: 10px;
+	right: 45px;
 	top: 3px;
 	font-size: 12px;
+	color: #999;
 }
 .paymentWrap .payment-address li{
 	margin-bottom: 18px;
@@ -3752,7 +3769,7 @@
 	color: #589325;
 }
 .payment-way #box1{
-	margin-top: 40px;
+	margin-top: 10px;
 }
 .payment-way #box1 li{
 	padding: 13px 28px;
@@ -3779,7 +3796,7 @@
 	padding:30px 0 0 25px;
 }
 .payment-way #showBox .showCont1{
-	height: 173px;
+	padding-bottom: 20px;
 }
 .payment-way #showBox .showCont1 label{
 	margin-right: 20px;
@@ -3810,10 +3827,10 @@
 	width: 110px;
 	height: 50px;
 	font-size: 16px;
-	margin-top: 34px;
+	margin-top: 20px;
 }
 .payment-way #showBox .showCont2{
-	height: 242px;
+	padding-bottom: 20px;
 }
 .payment-way #showBox .showCont div{
 	margin-bottom: 20px;
