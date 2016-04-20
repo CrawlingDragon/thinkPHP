@@ -1,0 +1,91 @@
+.rightBar{
+	width: 980px;
+	float: right;
+	background: #fff;
+	border:1px solid #e5e5e5;
+	padding:20px 0 0 20px;
+	box-sizing:border-box;
+	margin-top: 30px;
+}
+.smallTitle{
+	height: 20px;
+	line-height: 20px;
+	padding-left: 14px;
+	background: url(../../Common/Image/smallTitle.png) no-repeat ;
+}
+.rightBar .safeLv{
+	height: 30px;
+	width: 940px;
+	background: #fdfbe9;
+	padding-left: 15px;
+	box-sizing:border-box;
+	margin-top: 13px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 10px;
+}
+.rightBar .safeLv span{
+	font-weight: bolder;
+	color: #ff6600;
+	margin:0 30px 0 10px;
+}
+.rightBar .safeLv i{
+	color: #333;
+}
+.safeBox{
+	width: 940px;
+
+}
+.safeBox li{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.safeBox li+li+li+li+li{
+	border:none;
+}
+.safeBox li img{
+	vertical-align: middle;
+	margin:0 45px 0 43px;
+}
+.safeBox li .right{
+	margin-left: 33px;
+	margin-right: 28px;
+}
+.safeBox li h5{
+	display: inline;
+	font-size: 20px;
+	font-family: '微软雅黑';
+	margin-right: 40px;
+	vertical-align: middle;
+}
+.safeBox li span i{
+	color: #ff6600;
+	margin-left: 5px;
+}
+.safeBox li .now{
+	margin-left: 20px;
+	font-size: 12px;
+	color: #599524;
+}
+.safeBox li .change{
+	float: right;
+	font-size: 12px;
+	color: #559524;
+	margin-right: 58px;
+}
+.safeBox li .btn{
+	float: right;
+	margin-right: 32px;
+	border:1px solid #bef092;
+	background: #f7fef0;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+	width: 76px;
+	margin-top: 34px;
+	color: #559524;
+}

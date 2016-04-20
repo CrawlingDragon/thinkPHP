@@ -1,0 +1,45 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+a,a:hover{color:#333;text-decoration:none;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+/* Div1 */
+.Div1{width:1190px;height:auto;margin:30px auto;overflow:hidden;position:relative;}
+.Div1_title{height:32px;width:1000px;padding-bottom:3px;background:url(../images/lizi_img001.jpg) repeat-x;}
+.Div1_title em{float:left;font-style:normal;line-height:32px;padding-left:13px;font-size:14px;}
+.Div1_title span{float:right;display:block;padding:8px 15px 0 0;height: 20px;}
+.Div1_title span b , .Div1_title span a{display:block;float:left;}
+.Div1_title span b , .Div1_title span b img{width:11px;height:11px;}
+.Div1_title span b img{cursor:pointer;}
+.Div1_prev{padding:2px 10px 0 0;}
+.Div1_next{padding:2px 0 0 0px;}
+.Div1_title span a{font-size:12px;background:url(../images/lizi_img005.jpg) no-repeat left center; padding-left:15px;margin-right:10px;}
+.Div1_title span a:hover{color:#f34d01;background:url(../images/lizi_img004.jpg) no-repeat left center;}
+.Div1_title span a.Div1_title_a1{color:red;background:url(../images/lizi_img004.jpg) no-repeat left center;}
+
+.Div1_main{padding-top:13px;height:480px;width:50000px;overflow:hidden;position:relative;z-index:1;}
+.Div1_main div{width:1190px;height:480px;float:left;}
+.Div1_main div span{background:url(../images/lizi_img006.jpg) no-repeat;width:120px;height:120px;display:block;float:left;margin-right: 28px;}
+.Div1_main div span a{display:block;}
+.Div1_main_a1{padding:4px 3px 4px 4px;margin-bottom:4px;}
+.Div1_main_a1 , .Div1_main_a1 img{width:120px;height:122px;}
+.Div1_main div span b{display:block;padding-left:10px;color:#787878;}
+.Div1_main div span p{line-height:20px;padding:0 10px;height:87px;color:#787878;}
+.Div1_main_a2{background:url(../images/lizi_img009.jpg) no-repeat;width:77px;height:19px;color:#fff;text-align:center;line-height:19px;
+ margin-left:10px;}
+.Div1_main_a2:hover{background:url(../images/lizi_img008.jpg) no-repeat;}
+
+.Div1_main div span.Div1_main_span1 .Div1_main_a1{background:url(../images/lizi_img010.jpg) no-repeat;}
+.Div1_main div span.Div1_main_span1 b , .Div1_main div span.Div1_main_span1 p{color:#33a0ff;}
+.Div1_main div span.Div1_main_span1 .Div1_main_a2{background:url(../images/lizi_img008.jpg) no-repeat;}
+.Div1_main div span.Div1_main_span1 .Div1_main_a2:hover{background:url(../images/lizi_img009.jpg) no-repeat;}
+
+.Div1 .Div1_prev1 ,.Div1 .Div1_next1{display:block;width:31px;height:30px;position:absolute;cursor:pointer;z-index:2;top:102px;}
+.Div1 .Div1_prev1 img ,.Div1 .Div1_next1 img{width:31px;height:30px;}
+.Div1 .Div1_prev1:hover ,.Div1 .Div1_next1:hover{opacity:0.7;.filter:alpha(opacity=70)}
+.Div1 .Div1_prev1{left:18px;}
+.Div1 .Div1_next1{left:954px;}
+
+
+

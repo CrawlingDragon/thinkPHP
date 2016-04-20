@@ -235,7 +235,7 @@
 .zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:350px;height:350px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
 .jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff /*url(../images/zoom.png) 50% center no-repeat*/;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}
 /*图片小图预览列表*/
-.spec-preview{width:230px;height:231px;border:1px solid #eeeeee;box-sizing:border-box;position: relative;}
+.spec-preview{width:230px;height:231px;border:1px solid #eeeeee;box-sizing:border-box;position: relative;overflow: hidden;}
 .spec-preview:hover{
 	border:1px solid #ff5500;
 }
@@ -332,17 +332,15 @@
 .pageBox dl dd{
 	display: inline-block;
 	margin-right: 5px;
+	clear: both;
 }
 .pageBox dl .active{
 	background: #ff6600;
-}
-.pageBox dl dd.active a{
 	color: #fff;
-	border:1px solid #ff6600;
-	
 }
-.pageBox dl dd.active a:hover{
+.pageBox dl dd a.active:hover{
 	background:#ff6600;
+	color: #fff;
 }
 .pageBox dl dd a:hover{
 	background: #e5e5e5;
@@ -354,6 +352,8 @@
 	border:1px solid #e5e5e5;
 	text-align: center;
 	line-height: 26px;
+	float: left;
+	margin-right: 5px;
 }
 .pageBox dl dd p input[type=text]{
 		width: 45px;
@@ -387,6 +387,8 @@
 }
 .pageBox dl .pageBtn{
 	margin-left: 20px;
+	vertical-align: top;
+    margin-top: 4px;
 }
 .containerBox .right-ad{
 	float: right;

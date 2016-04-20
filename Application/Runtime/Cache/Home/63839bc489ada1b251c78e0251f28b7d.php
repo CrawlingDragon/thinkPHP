@@ -213,7 +213,7 @@
 											<dl>
 												<dd>
 													<a href="">
-														<p class="login-before">宁波金泰惠多利农资连锁公司</p>
+														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
 															<img src="/Public/mall/wuhelong/images/start.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
