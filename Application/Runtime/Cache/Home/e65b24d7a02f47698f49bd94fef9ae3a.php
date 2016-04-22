@@ -91,45 +91,44 @@
 			<span class="dropDownWrap">
 				<strong>海南正业中农高科股份有限公司</strong>
 				<span class="drop-down"></span>
+				<div class="store-intro" style="display: none;">
+					<div style="overflow: hidden;">
+						<img src="/Public/mall/wuhelong/images/stor-logo.gif" class="fl">
+						<dl class="fl">
+							<dt>海南正业中农高科股份有限公司</dt>
+							<dd>会员号：12345678987654321 </dd>
+						</dl>
+					</div>
+					<p>卖家类型： 厂家</p>
+					<div>描述相符：<em>4.9</em>分
+						<ul class="star-level">
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+						</ul>
+					</div>
+					<div>服务态度：<em>4.9</em>分
+						<ul class="star-level">
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+						</ul>
+					</div>
+					<div>发货速度：<em>4.9</em>分
+						<ul class="star-level">
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+						</ul>
+					</div>
+					<p>主营：公司主要产品有合成氨、尿素、纯碱、氯化铵、复合肥、脲铵氮肥、甲醇、各类加氢产品、乙酰类氨基酸及D型...</p>
+				</div>
 			</span>
 			<a href="" class="collect-shop">收藏商铺</a>
 			<a href="" class="apply-ident">申请认证用户</a>
-			<div class="store-intro" style="display: none;">
-				<div style="overflow: hidden;">
-					<img src="/Public/mall/wuhelong/images/stor-logo.gif" class="fl">
-					<dl class="fl">
-						<dt>海南正业中农高科股份有限公司</dt>
-						<dd>会员号：12345678987654321 </dd>
-					</dl>
-				</div>
-				<p>卖家类型： 厂家</p>
-				<div>描述相符：<em>4.9</em>分
-					<ul class="star-level">
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-					</ul>
-				</div>
-				<div>服务态度：<em>4.9</em>分
-					<ul class="star-level">
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-					</ul>
-				</div>
-				<div>发货速度：<em>4.9</em>分
-					<ul class="star-level">
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-					</ul>
-				</div>
-				<p>主营：公司主要产品有合成氨、尿素、纯碱、氯化铵、复合肥、脲铵氮肥、甲醇、各类加氢产品、乙酰类氨基酸及D型...</p>
-
-			</div>
 		</div>
 		<nav class="store-nav"> <!-- 商铺导航 -->
 			<a href="/home/store/index.html" class="f14song">店铺首页</a>
@@ -138,10 +137,10 @@
 			<a href="###" class="f14song">优惠信息</a>
 			<a href="/home/store/test.html" class="f14song">试验示范</a>
 			<a href="###" class="f14song">采购咨询</a>
-			<a href="/home/store/corner.html" class="f14song curnav">植保园地</a>
+			<a href="/home/store/corner.html" class="f14song">植保园地</a>
 			<a href="/home/store/company.html" class="f14song">公司简介</a>
 			<a href="###" class="f14song">企业动态</a>
-			<a href="/home/store/us.html" class="f14song">联系我们</a>
+			<a href="/home/store/us.html" class="f14song curnav">联系我们</a>
 		</nav>
 		
 		<div class="side fl">
@@ -185,37 +184,22 @@
 		</div>
 
 		<div class="main fr">
-			<div class="article-list">
-				<h3 class="main_title f14song">植保园地</h3>
-				<ul> 
-					<li>
-						<a href=""><p>&middot;噻唑膦防治蔬菜根结线虫的有关技术原理</p>
-						<span>2015-06-11 11:22：45 </span>
-						<b>>></b></a>
-					</li>
-					<li><a href=""><p>&middot;辣椒晚疫病的化学防治技术</p>
-						<span>2015-06-11 11:22：45 </span>
-						<b>>></b></a>
-					</li>
-					<li><a href=""><p>&middot;科佳对荔枝霜疫霉病的防治及荔枝霜疫霉...</p>
-						<span>2015-06-11 11:22：45 </span>
-						<b>>></b></a>
-					</li>
-					<li><a href=""><p>&middot;梧宁霉素</p>
-						<span>2015-06-11 11:22：45 </span>
-						<b>>></b></a>
-					</li>
-					<li><a href=""><p>&middot;铜高尚---高科技超微粒三元铜离子杀菌剂</p>
-						<span>2015-06-11 11:22：45 </span>
-						<b>>></b></a>
-					</li>
-					<li><a href=""><p>&middot;新马歇特---高效安全广谱水田除草剂</p>
-						<span>2015-06-11 11:22：45 </span>
-						<b>>></b></a>
-					</li>
-				</ul>	
+			<div class="contact-us">
+				<h3 class="main_title f14song">联系我们</h3>
+				<div class="map"></div>
+				
+				<div class="contact-tit">
+					<ul>   
+						<li>联系人： 刘路宁</li>
+						<li>手  机： 15867199321</li>
+						<li>电  话： 0571-86911312</li>
+						<li>传  真： 0571-86913</li>
+						<li>地  址： 浙江省杭州市经济技术开发区3号大街51号</li>
+						<li>邮  编： 310018</li>
+						<li>邮  箱： 1305094345@qq.com </li>
+					</ul>
+				</div>
 			</div>
-
 		</div>
 	</section> <!-- 主体内容结束 -->
 

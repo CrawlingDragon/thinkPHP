@@ -9,7 +9,18 @@ $(function(){
 	    });
 	});
 
-	$(".drop-down").click(function(){
-		$(".store-intro").toggle();
+	$(".dropDownWrap").hover(function(e){
+		var intro = $(".store-intro"); 
+		intro.stop().slideDown("fast");
+		intro.mouseover(function(){});
+		e.stopPropagation();
+		$(document).one("click", function(){
+	        intro.hide();
+	    });
+	});
+
+	$(".dropDownWrap").mouseleave(function(){
+		var intro = $(".store-intro"); 
+		intro.stop().slideUp("fast"); 
 	});
 });

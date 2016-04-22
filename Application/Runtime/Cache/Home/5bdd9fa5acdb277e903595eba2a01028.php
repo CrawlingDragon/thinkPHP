@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/css/store-common.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/js/store.js"></script>
+	<link rel="stylesheet" href="/Public/mall/wuhelong/css/store-common.css" type="text/css">
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/store.js"></script>
 	<!--[if IE]> 
 	<script> 
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
 	<!--[if lt IE 8]>
-	<script src="/Public/mall/IE8.js" type="text/javascript"></script>
+	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
 </head>
 <body>
@@ -57,7 +57,7 @@
 		<article class="headerBottom clear">
 			<section class="headerBottom-box">
 			<section class="logo2"> <!-- 中农在线Logo -->
-				<img src="/Public/mall/images/logo2.png" alt="">
+				<img src="/Public/mall/wuhelong/images/logo2.png" alt="">
 			</section>
 			<section class="searchBox">   <!-- 搜索框 -->
 				<form action="" method="">
@@ -77,7 +77,7 @@
 				</div>
 				<div class="goodsCar">   <!-- 购物车按钮 -->
 					<a href="#">
-						<img src="/Public/mall/images/car.png" alt="">
+						<img src="/Public/mall/wuhelong/images/car.png" alt="">
 						<p>购物车<span>0</span></p>
 					</a>
 				</div>
@@ -88,52 +88,55 @@
 	
 	<section class="container"> <!-- 主体内容开始 -->
 		<div class="store-header">
-			<strong>海南正业中农高科股份有限公司</strong>
-			<span class="drop-down"></span>
-			<a href="" class="collect-shop">收藏商铺</a>
-			<a href="" class="apply-ident">申请认证用户</a>
-			<div class="store-intro" style="display: none;">
-				<div style="overflow: hidden;">
-					<img src="/Public/mall/images/stor-logo.gif" class="fl">
-					<dl class="fl">
-						<dt>海南正业中农高科股份有限公司</dt>
-						<dd>会员号：12345678987654321 </dd>
-					</dl>
+			<span class="dropDownWrap">
+				<strong>海南正业中农高科股份有限公司</strong>
+				<span class="drop-down"></span>
+				<div class="store-intro" style="display: none;">
+					<div style="overflow: hidden;">
+						<img src="/Public/mall/wuhelong/images/stor-logo.gif" class="fl">
+						<dl class="fl">
+							<dt>海南正业中农高科股份有限公司</dt>
+							<dd>会员号：12345678987654321 </dd>
+						</dl>
+					</div>
+					<p>卖家类型： 厂家</p>
+					<div>描述相符：<em>4.9</em>分
+						<ul class="star-level">
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+						</ul>
+					</div>
+					<div>服务态度：<em>4.9</em>分
+						<ul class="star-level">
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+						</ul>
+					</div>
+					<div>发货速度：<em>4.9</em>分
+						<ul class="star-level">
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+							<li class="star-full"></li>
+						</ul>
+					</div>
+					<p>主营：公司主要产品有合成氨、尿素、纯碱、氯化铵、复合肥、脲铵氮肥、甲醇、各类加氢产品、乙酰类氨基酸及D型...</p>
 				</div>
-				<p>卖家类型： 厂家</p>
-				<div>描述相符：<em>4.9</em>分
-					<ul class="star-level">
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-					</ul>
-				</div>
-				<div>服务态度：<em>4.9</em>分
-					<ul class="star-level">
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-					</ul>
-				</div>
-				<div>发货速度：<em>4.9</em>分
-					<ul class="star-level">
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-						<li class="star-full"></li>
-					</ul>
-				</div>
-				<p>主营：公司主要产品有合成氨、尿素、纯碱、氯化铵、复合肥、脲铵氮肥、甲醇、各类加氢产品、乙酰类氨基酸及D型...</p>
-
-			</div>
+			</span>
+			
+			<a href="###" class="collect-shop">收藏商铺</a>
+			<a href="###" class="apply-ident">申请认证用户</a>
+			
 		</div>
 		<nav class="store-nav"> <!-- 商铺导航 -->
 			<a href="/home/store/index.html" class="f14song curnav">店铺首页</a>
 			<a href="/home/store/storeList.html" class="f14song">全部商品</a>
 			<a href="/home/store/credit.html" class="f14song">信用评价</a>
-			<a href="" class="f14song">优惠信息</a>
+			<a href="###" class="f14song">优惠信息</a>
 			<a href="/home/store/test.html" class="f14song">试验示范</a>
 			<a href="###" class="f14song">采购咨询</a>
 			<a href="/home/store/corner.html" class="f14song">植保园地</a>
@@ -153,16 +156,16 @@
 				</div>
 				<div class="bd">
 					<ul>
-						<li><a href="###"><img src="/Public/mall/images/slid1.jpg" /></a></li>
-						<li><a href="###"><img src="/Public/mall/images/slid2.jpg" /></a></li>
-						<li><a href="###"><img src="/Public/mall/images/slid3.jpg" /></a></li>
+						<li><a href="###"><img src="/Public/mall/wuhelong/images/slid1.jpg" /></a></li>
+						<li><a href="###"><img src="/Public/mall/wuhelong/images/slid2.jpg" /></a></li>
+						<li><a href="###"><img src="/Public/mall/wuhelong/images/slid3.jpg" /></a></li>
 					</ul>
 				</div>
 				<!-- 左右切换 -->
 				<a class="prev" href="javascript:void(0)"></a>
 				<a class="next" href="javascript:void(0)"></a>
 			</div>
-			<script type="text/javascript" src="/Public/mall/js/jquery.SuperSlide.2.1.1.js"></script>
+			<script type="text/javascript" src="/Public/mall/wuhelong/js/jquery.SuperSlide.2.1.1.js"></script>
 			<script id="jsID" type="text/javascript">
 			 jQuery(".slideBox").slide({mainCell:".bd ul",effect:"leftLoop",autoPlay:true});
 			</script>
@@ -172,7 +175,7 @@
 				<div class="bd">
 					<ul><!-- 专家列表 -->
 					<li class="person-list"> 
-						<div class="icon"><img src="/Public/mall/images/peop.jpg" ></div>
+						<div class="icon"><img src="/Public/mall/wuhelong/images/peop.jpg" ></div>
 						<dl class="text">
 							<dt class="f14song">葛仁山</dt>
 							<dd>浙江省农业厅农药检定所教授，中农在线网上庄稼....</dd>
@@ -232,7 +235,7 @@
 			</div>
 			<div class="garden-sort">
 				<h3 class="main_title f14song">植保园地
-					<a href="植保园地.html" class="more">查看更多 >></a>
+					<a href="植保园地.html" class="more">查看更多></a>
 				</h3>
 				<ul>
 					<li><a href="">&middot;噻唑膦防治蔬菜根结线虫的有关技术原理</a></li>
@@ -256,11 +259,11 @@
 		<div class="main fr">
 			<div class="hot-goods"> <!-- 推荐商品 -->
 				<h3 class="main_title f14song">推荐商品
-					<a href="###" class="more">查看更多 >></a>
+					<a href="###" class="more">查看更多></a>
 				</h3>
 				<!-- 推荐商品列表 -->
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -268,7 +271,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -276,7 +279,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -284,7 +287,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -292,7 +295,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -300,7 +303,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -311,11 +314,11 @@
 
 			<div class="new-goods"> <!-- 新品推荐 -->
 				<h3 class="main_title f14song">推荐商品
-					<a href="###" class="more">查看更多 >></a>
+					<a href="###" class="more">查看更多></a>
 				</h3>
 				<!-- 推荐商品列表 -->
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -323,7 +326,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -331,7 +334,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -339,7 +342,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -347,7 +350,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
@@ -355,7 +358,7 @@
 					</dd>
 				</dl>
 				<dl class="goods-item fl"> 
-					<dt class="item-img"><a href=""><img src="/Public/mall/images/itemImg.jpg"></a></dt>
+					<dt class="item-img"><a href=""><img src="/Public/mall/wuhelong/images/itemImg.jpg"></a></dt>
 					<dd class="detail"><a href="">护花神-花卉病虫清 杀虫剂杀虫药花药杀等</a></dd>
 					<dd class="price-area">
 						<span class="new-price">￥5.60</span>
