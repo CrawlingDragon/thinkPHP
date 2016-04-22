@@ -17,10 +17,9 @@ $(function(){
 		$(document).one("click", function(){
 	        intro.hide();
 	    });
-	});
-
-	$(".dropDownWrap").mouseleave(function(){
+	},function(){
 		var intro = $(".store-intro"); 
 		intro.stop().slideUp("fast"); 
 	});
+
 });
