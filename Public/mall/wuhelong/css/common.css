@@ -27,9 +27,10 @@ select {
   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
   padding-right: 14px;
   padding-right: 0px\0;
+  font-style: normal;
 }
 /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
-select::-ms-expand { display: none; }
+select::-ms-expand{ display: none; }
 button,input, select, textarea { font-size:100%;vertical-align:middle;outline: none;} 
 table { border-collapse:collapse; border-spacing:0; }
 ul,dl{font-size:0;}

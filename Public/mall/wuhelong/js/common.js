@@ -212,3 +212,48 @@ function numAdd(){
 		document.getElementById('nums').value =1;
 	}
 }
+function tipRight(msg){  //正确的提示框
+             _this = $(this);
+            layer.open({
+                    type: 1,
+                    title:false,
+                    skin: 'layer-modify', //样式类名
+                    closeBtn: 0, //不显示关闭按钮
+                    shift: 0,
+                    area: ['489px', '165px'],
+                    shadeClose: false, //开启遮罩关闭
+                    content: '<div class="proxyBox"><h4><img src="/Public/mall/wuhelong/images/right.png" alt="">'+msg+'</h4><div class="proxybtn">确认</div></div>',
+                    success:function(){
+                        $(".modifyBtn2").click(function(){ //取消按钮
+                            layer.closeAll('page');
+                        });
+                        $(".proxybtn").click(function(){ //确定按钮
+                            
+                            layer.closeAll('page');
+                        });
+                    }
+                });
+        }
+
+        function tipError(msg){
+            
+            layer.open({
+                    type: 1,
+                    title:false,
+                    skin: 'layer-modify', //样式类名
+                    closeBtn: 0, //不显示关闭按钮
+                    shift: 0,
+                    area: ['489px', '165px'],
+                    shadeClose: false, //开启遮罩关闭
+                    content: '<div class="proxyBox"><h4><img src="/Public/mall/wuhelong/images/error.png" alt="">'+msg+'</h4><div class="proxybtn">确认</div></div>',
+                    success:function(){
+                        $(".modifyBtn2").click(function(){ //取消按钮
+                            layer.closeAll('page');
+                        });
+                        $(".proxybtn").click(function(){ //确定按钮
+                            
+                            layer.closeAll('page');
+                        });
+                    }
+            });//修改价格按钮弹出end
+        }

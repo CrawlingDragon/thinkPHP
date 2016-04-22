@@ -16,10 +16,10 @@ $(document).ready(function(){
 	//头部登录名效果
 	$(".ul1 .name").hover(function(){
 		$(this).find('.nameCont').show();
-		$(this).find('img').attr("src","/Public/mall/CommonPersonalCenter/Common/Image/headLoginNameDown.png");
+		$(this).find('img').attr("src","/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameDown.png");
 	},function(){
 		$(this).find('.nameCont').hide();
-		$(this).find('img').attr("src","/Public/mall/CommonPersonalCenter/Common/Image/headLoginNameUp.png");
+		$(this).find('img').attr("src","/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameUp.png");
 	})
 
 
