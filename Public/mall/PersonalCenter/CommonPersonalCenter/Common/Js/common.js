@@ -30,7 +30,7 @@ $(document).ready(function(){
 		$('.membrane').animate({top:"97px"},200);
 	});
 
-
+	
 
 
 })
@@ -52,8 +52,56 @@ function ship(){  //立即发货按钮弹出
 		    		layer.closeAll('page');
 		    		alert("编辑成功！");
 		    	});
+		    	//选择下拉框的弹出和隐藏关于立即发货弹窗
+				$("#dropdown p").click(function(e){ 
+					var ul = $("#dropdown ul"); 
+					if(ul.css("display")=="none"){ 
+						ul.slideDown("fast"); 
+					}else{ 
+						ul.slideUp("fast"); 
+					} 
+					e.stopPropagation();
+					$(document).one("click", function(){
+				        ul.hide();
+				    });
+				}); 	
+				$("#dropdown ul li").click(function(){
+					var val = $(this).text();
+					var dataVal = $(this).attr("data-value");
+					$("#dropdown p").html(val);
+					$("#dropdown p").addClass("drpP");
+					$("#dropdown ul").hide();
+					console.log("中文值是："+val);
+					console.log("数字值是："+dataVal);
+
+				});
+				//选择下拉框的弹出和隐藏关于立即发货弹窗end
 		    }
 		})
-		   }
+	};
 
+ function del(){//删除订单按钮弹出
+		var id = $(this).parent('h4').find('a span').html();
+		var _this = $(this).parent().parent();
+		layer.open({
+			    type: 1,
+			    title:false,
+			    skin: 'layer-delet', //样式类名
+			    closeBtn: 0, //不显示关闭按钮
+			    shift: 0,
+			    area: ['490px', '152px'],
+			    shadeClose: false, //开启遮罩关闭
+			    content: '<div class="deletCont"><p>交易完成，可删除无效订单，将不会产生任何影响</p><p><label>确认删除此订单:</label><input type="button" value="确认" class="deletBtn1"><input type="button" value="取消" class="deletBtn2"></p></div>',
+			    success:function(layero, index){
+			    	$(".deletBtn2").click(function(){ //取消按钮
+			    		layer.closeAll('page');
+			    	});
+			    	$(".deletBtn1").click(function(){ //确定按钮
+			    		_this.remove();
+			    		layer.closeAll('page');
+			    		alert("删除成功！")
+			    	});
+			    }
+			});
+	}
 	

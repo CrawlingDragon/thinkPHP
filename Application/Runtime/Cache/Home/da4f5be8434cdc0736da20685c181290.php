@@ -5,11 +5,9 @@
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/css/sellerIndex.css" type="text/css">
+	<link rel="stylesheet" href="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/css/buyerIndex.css" type="text/css">
 	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/layer/layer.js"></script>
 	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -135,34 +133,35 @@
 			<div class="rightBar"><!-- 右边内容开始 -->
 				<div class="titles clear">
 					<h3>Hi! 宁波金泰有限公司</h3>
-					<a href="">进入买家中心></a>
+					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
+					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
 				</div>
 				<ul class="activeNav clear">
 					<li>
 						<a href="">
-							<div class="imgs1 imgs"></div>
-							<h5 class="txt">已拍下</h5>
+							<div class="imgs3 imgs"></div>
+							<h5 class="txt">待付款</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
 					<li>
 						<a href="">
 							<div class="imgs2 imgs"></div>
-							<h5 class="txt">待发货</h5>
+							<h5 class="txt">待收货</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
 					<li>
 						<a href="">
 							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待改价</h5>
+							<h5 class="txt">待评价</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
 					<li>
 						<a href="">
 							<div class="imgs4 imgs"></div>
-							<h5 class="txt">新申请账户认证</h5>
+							<h5 class="txt">账户认证</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
@@ -170,20 +169,6 @@
 						<a href="">
 							<div class="imgs5 imgs"></div>
 							<h5 class="txt">授信申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="imgs6 imgs"></div>
-							<h5 class="txt">额度调整申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="imgs7 imgs"></div>
-							<h5 class="txt">代理申请</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
@@ -201,7 +186,7 @@
 						<dd class="dd3"><span>收货人:王思聪</span></dd>
 						<dd class="dd4"><span>状态:交易成功</span></dd>
 						<dd class="dd5">
-							<div class="btns now" onclick="ship()">立即发货</div>
+							<div class="btns now">立即发货</div>
 							<!-- <a href="" class="">评价</a> --><!-- 给买家的评价-->
 							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
 						</dd>

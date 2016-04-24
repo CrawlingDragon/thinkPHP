@@ -2,12 +2,23 @@
 	font-size: 14px;
 	font-weight: bold;
 	text-indent: 33px;
-	background: url(../images/bj.png) no-repeat;
-	background-position: -13px -611px;
+	background: url(/Public/Mall/PersonalCenter/CommonPersonalCenter/Common/Image/smallTitle.png) no-repeat;
+	background-position: 20px 13px;
 	line-height: 46px;
 	height: 46px;
 	margin-top: 10px;
 	color: #666666;
+}
+/*右边部分*/
+.rightPart .myPlace{
+	height: 39px;
+	line-height: 42px;
+	font-size: 12px;
+}
+.rightPart .rightCont{
+	border:1px solid #e4eaee;
+	width: 100%;
+	min-height: 1050px;
 }
 /*test*/
 .rightPart .rightCont form{
@@ -149,6 +160,11 @@
 }
 .tableBox .listBox .listCont .goodsInfo .goods1>div:first-child{
 	border:1px solid #e4eaee;
+}
+.tableBox .listBox .listCont .goodsInfo .goods1 .goodsImg{
+	width: 77px;
+	height: 80px;
+	overflow: hidden;
 }
 .tableBox .listBox .listCont .goodsInfo .goods1 .goodsName{
 	font-size: 12px;
@@ -692,7 +708,7 @@
 	height: inherit;
 	cursor: pointer;
 	z-index: 1111;
-	background: #fff;
+	background: #f8f8f8;
 	height: 45px;
 }
 .evaluateShow .navButton .active{
@@ -701,6 +717,7 @@
 	border-bottom: none;
 	color: #589325;
 	height: 46px;
+	background: #fff;
 }
 .evaluateShow .showBox{
 	
@@ -722,24 +739,24 @@
 	font-size: 14px;
 	font-weight: normal;
 }
-.evaluateShow .showBox table th:nth-child(1){
+.evaluateShow .showBox table th:first-child{
 	text-indent: 26px;
 	width: 158px;
 }
-.evaluateShow .showBox table th:nth-child(2){
+.evaluateShow .showBox table th:first-child+th{
 	width: 101px;
 	text-align: center;
 }
-.evaluateShow .showBox table th:nth-child(3){
+.evaluateShow .showBox table th:first-child+th+th{
 	width: 178px;
 	text-align: left;
 }
-.evaluateShow .showBox table th:nth-child(4){
+.evaluateShow .showBox table th:first-child+th+th+th{
 	width: 237px;
 	text-indent: 62px;
 	text-align: left;
 }
-.evaluateShow .showBox table th:nth-child(5){
+.evaluateShow .showBox table th:first-child+th+th+th+th{
 	width: auto;
 	text-align: left;
 }

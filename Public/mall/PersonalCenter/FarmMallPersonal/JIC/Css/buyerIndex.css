@@ -1,0 +1,94 @@
+.titles{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.titles h3{
+	float: left;
+	font-size: 18px;
+	color: #333333;
+	font-family: '微软雅黑';
+	font-weight: normal;
+}
+.titles .shopOpen{
+	width: 90px;
+	height: 35px;
+	border:1px solid #e5e5e5;
+	line-height: 35px;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+	margin-top: 7px;
+	background: #fff;
+	font-weight: bold;
+}
+.titles a{
+	float: right;
+	color: #333333;
+	font-size: 12px;
+	margin-right: 1px;
+}
+.activeNav li{
+	width: 196px;
+	height: 150px;
+	float: left;
+	border:1px solid #e5e5e5;
+	text-align: center;
+	box-sizing:border-box;
+	border-left: none;
+	background: #fff;
+}
+.activeNav li:first-child{
+	border-left: 1px solid #e5e5e5;
+}
+.activeNav li:hover{
+	background: #f8f8f8;
+}
+.activeNav li a{
+	padding-top: 33px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	box-sizing:border-box;
+}
+.activeNav li .imgs{
+	width: 40px;
+	height: 40px;
+	margin:0 auto;
+	background: url(/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/sellerNav.png) no-repeat center;
+}
+.activeNav li .txt{
+	font-size: 14px;
+	color: #666666;
+	font-weight: normal;
+	margin:18px 0 10px 0;
+}
+.activeNav li .num{
+	color: #ff6600;
+	font-weight: bolder;
+	font-size: 14px;
+}
+.activeNav li .imgs1{
+	background-position: -2px -2px;
+}
+.activeNav li .imgs2{
+	background-position: -2px -68px;
+}
+.activeNav li .imgs3{
+	background-position: -2px -139px;
+}
+.activeNav li .imgs4{
+	background-position: -2px -212px;
+}
+.activeNav li .imgs5{
+	background-position: -2px -281px;
+}
+.activeNav li .imgs6{
+	background-position: -2px -344px;
+}
+.activeNav li .imgs7{
+	background-position: -2px -411px;
+}
+.smallTitle{
+	margin-bottom: 28px;
+}

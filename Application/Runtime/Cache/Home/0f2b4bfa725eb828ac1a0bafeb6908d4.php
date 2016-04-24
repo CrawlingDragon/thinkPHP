@@ -5,9 +5,12 @@
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/css/index.css" type="text/css">
+	<link rel="stylesheet" href="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
 	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
+	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
+	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/layer/layer.js"></script>
+	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/laydate/laydate.js"></script>
 	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -17,33 +20,6 @@
 	<!--[if lt IE 8]>
 	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
-	<script type="text/javascript"> //判断ie8以下浏览器
-		var flag = true; 
-		var ua = navigator.userAgent.toLowerCase(); 
-		if(navigator.userAgent.indexOf("MSIE")>0)  
-		{   
-		    if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
-		    	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
-		   	 	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 8.0")>0){  
-		  		//alert("ie8");  
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
-		   		//alert("ie9");  
-		    }   
-		}else{  
-			flag = false;  
-			
-			}   
-		if(!flag){  
-
-		}  
-
-	</script>
-
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
@@ -131,97 +107,233 @@
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar"><!-- 右边内容开始 -->
-				<div class="titles clear">
-					<h3>Hi! 宁波金泰有限公司</h3>
-					<a href="">进入买家中心></a>
+				<div class="rightPart"> <!-- 右边主体内容 -->
+					<div class="myPlace"> <!-- 所在位置开始 -->
+						<span>当前位置:</span>
+						<a href="">首页</a>
+						<span>&gt;</span>
+						<a href="">卖家中心</a>
+						<span>&gt;</span>
+						<a href="">已卖出的商品</a>
+					</div> <!-- 所在位置结束 -->
+					<div class="rightCont"> <!-- 右边的正文内容 -->
+						<h3>已卖出的商品</h3>
+						<form action="">
+							<div class="searchTitle">
+								<label>交易状态:</label>
+								<select class="select1">
+									<option value="全部订单">全部订单</option>
+									<option value="未付款订单">未付款订单</option>
+									<option value="已付款订单">已付款订单</option>
+								</select>
+								<label>评价状态:</label>
+								<select class="select1">
+									<option value="全部">全部</option>
+									<option value="未付款">未付款</option>
+									<option value="已评价">已评价</option>
+								</select>
+								<div class="times">
+									<span>下单时间:</span>
+									<span><input type="text" class="laydate-icon" id="time1"></span>
+									<span>-</span>
+									<span><input type="text" class="laydate-icon" id="time2"></span>
+								</div>
+							</div>
+							<div class="searchBox">
+							<input type="text" name="" id=""  value="输入商品名称或者订单号进行搜索" placeholder="输入商品名称或者订单号进行搜索">
+							<input type="button" value="搜索">
+							</div>
+							<div class="batch">
+								<input type="checkbox" name="" id="" class="allCheck"><label>全选</label>
+								<input type="button" value="批量发货">
+							</div>
+							<div class="tableBox">
+								<dl class="tr1 clear">
+									<dd style="width: 248px;">商品</dd>
+									<dd style="width: 118px;">单价/数量</dd>
+									<dd style="width: 82px;">总价</dd>
+									<dd style="width: 90px;">运费</dd>
+									<dd style="width: 120px;">实际收款</dd>
+									<dd style="width: 122px;">交易状态</dd>
+									<dd style="width: 146px;text-align: left;text-indent: 34px;">交易操作</dd>
+								</dl>
+								<table class="listBox"><!-- 一个订单开始 -->
+									<tr style="width: 900px;height: 30px;"><!-- 订单标题 -->
+										<th colspan="5">
+											<a href="" class="listBox-title">
+												<input type="checkbox" name="" id="">
+												<span>1407241453498101</span>
+												<span>2015-05-28 14:53:48 </span>
+												<span>买家：王思聪</span>	
+											</a>
+											<div class="delet" onclick="del()"><img src="/Public/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/delete.png" alt=""></div><!-- 删除图片 -->
+										</th>
+										
+									</tr>
+									<tr style="border-bottom: 1px solid #e4f7d4;">
+										<td class="listCont listCont1" >
+											<div class="goodsInfo"><!-- 商品信息Start -->
+												<div class="goods1"> <!-- 单个商品的信息start -->
+													<div class="goodsImg"><a href=""><img src="/Public/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a></div>
+													<div class="goodsName">
+														<p><a href="">克无踪克无踪克无踪克无踪克无踪克无踪克无踪克无踪</a></p>
+														<span>规格:250ml</span>
+													</div>
+													<div class="price">
+														<p>800.00</p>
+														<p>x10</p>
+													</div>
+													<div class="goodsNum"><!-- 改价总价 -->
+														<p class="goodsNum-txt">1000.00</p>
+														<input onkeyup="if(this.value==this.value2)return;if(this.value.search(/^\d*(?:\.\d{0,2})?$/)==-1)this.value=(this.value2)?this.value2:'';else this.value2=this.value;" class="goodsNum-input">
+														<div class="changeNum">改价</div>
+														<div class="goodsNum-btn hide clear"><span class="left">确定</span><span class="right">取消</span></div>
+													</div><!-- 改价总价end -->
+													<div class="shipment goodsNum"><!-- 改价运费 -->
+														<p class="goodsNum-txt">10</p>
+														<input onkeyup="if(this.value==this.value2)return;if(this.value.search(/^\d*(?:\.\d{0,2})?$/)==-1)this.value=(this.value2)?this.value2:'';else this.value2=this.value;" class="goodsNum-input">
+														<div class="changeNum">改价</div>
+														<div class="goodsNum-btn hide clear">
+															<span class="left">确定</span>
+															<span class="right">取消</span>
+														</div>
+													</div><!-- 改价运费end -->
+												</div><!-- 单个商品的信息end -->
+												<div class="goods1"> <!-- 单个商品的信息start -->
+													<div><a href=""><img src="/Public/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a></div>
+													<div class="goodsName">
+														<p><a href="">克无踪</a></p>
+														<span>规格:250ml</span>
+													</div>
+													<div class="price">
+														<p>800.00</p>
+														<p>x10</p>
+													</div>
+													<div class="goodsNum">
+														<p class="goodsNum-txt">1000.00</p>
+														<input type="text" name="" id="" value="" class="goodsNum-input" >
+														<div class="changeNum">改价</div>
+														<div class="goodsNum-btn hide clear"><span class="left">确定</span><span class="right">取消</span></div>
+													</div>
+
+													<div class="shipment goodsNum">
+														<p class="goodsNum-txt">10</p>
+														<input type="text" name="" id="" class="goodsNum-input">
+														<div class="changeNum">改价</div>
+														<div class="goodsNum-btn hide clear">
+															<span class="left">确定</span>
+															<span class="right">取消</span>
+														</div>
+													</div>
+												</div><!-- 单个商品的信息end -->
+											</div><!-- 商品信息end -->
+										</td>
+										<td class="listCont listCont2" style="width: 110px;"><!-- 实际收款开始 -->
+											<div class="freight">
+												<div class="freightBox">
+													<p>1100.00</p>
+													<p>(含运费:0.00)</p>
+												</div>
+											</div>
+										</td><!-- 实际收款结束 -->
+										<td class="listCont listCont3" style="width: 110px;"><!-- 交易状态开始 -->
+											<div class="orderStatus">
+												<div class="orderStatusBox">
+													<p>交易成功</p>
+													<p>担保交易</p>
+													<p>余额支付</p>
+													<p>双方已评</p>
+													<p><a href="" class="green">查看详情</a></p>
+													<p>查看详情</p>
+												</div>
+											</div>
+										</td><!-- 交易状态结束 -->
+										<td class="listCont" style="width: 132px;">
+											<div class="operate">
+												<input type="button" value="立即发货" class="sendGoods" onclick="ship()">
+												<input type="button" value="评价">
+												<input type="button" value="修改价格" class="modify">
+												<input type="button" value="关闭订单" class="closeOrder">
+											</div>
+										</td>
+										<td class="listCont" style="width: 16px;">
+											<div class="printImg">
+												<a href="打印机.html"><img src="/Public/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/print.png" alt=""></a>
+											</div>
+										</td>
+									</tr>
+								</table><!-- 一个订单END -->
+								<table class="listBox"><!-- 一个订单开始 -->
+									<tr style="width: 900px;height: 30px;"><!-- 订单标题 -->
+										<th colspan="5" class="active">
+											<a href="" class="listBox-title">
+												<input type="checkbox" name="" id="">
+												<span>1407241453498101</span>
+												<span>2015-05-28 14:53:48 </span>
+												<span>买家：王思聪</span>	
+											</a>
+											<div class="delet"><img src="/Public/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/delete.png" alt=""></div><!-- 删除图片 -->
+										</th>
+										
+									</tr>
+									<tr style="border-bottom: 1px solid #e4f7d4;">
+										<td class="listCont listCont1" >
+											<div class="goodsInfo"><!-- 商品信息Start -->
+												<div class="goods1"> <!-- 单个商品的信息start -->
+													<div><a href=""><img src="/Public/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a></div>
+													<div class="goodsName">
+														<p><a href="">克无踪</a></p>
+														<span>规格:250ml</span>
+													</div>
+													<div class="price">800.00</div>
+													<div class="goodsNum">20</div>
+													<div class="shipment">
+														<p>10</p>
+														<div class="changePrice">改价</div>
+													</div>
+												</div><!-- 单个商
+												品的信息end -->
+											</div><!-- 商品信息end -->
+										</td>
+										<td class="listCont listCont2" style="width: 110px;"><!-- 实际收款开始 -->
+											<div class="freight">
+												<div class="freightBox">
+													<p>1100.00</p>
+													<p>(含运费:0.00)</p>
+												</div>
+											</div>
+										</td><!-- 实际收款结束 -->
+										<td class="listCont listCont3" style="width: 110px;"><!-- 交易状态开始 -->
+											<div class="orderStatus">
+												<div class="orderStatusBox">
+													<p>交易成功</p>
+													<p>担保交易</p>
+													<p>余额支付</p>
+													<p>双方已评</p>
+													<p><a href="" class="green">查看详情</a></p>
+													<p>查看详情</p>
+												</div>
+											</div>
+										</td><!-- 交易状态结束 -->
+										<td class="listCont" style="width: 132px;">
+											<div class="operate">
+												<input type="button" value="立即发货" class="sendGoods">
+												<input type="button" value="评价">
+												<input type="button" value="修改价格" class="modify">
+												<input type="button" value="关闭订单" class="closeOrder">
+											</div>
+										</td>
+										<td class="listCont" style="width: 16px;">
+											<div class="printImg">
+												<a href="打印机.html"><img src="/Public/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/print.png" alt=""></a>
+											</div>
+										</td>
+									</tr>
+								</table><!-- 一个订单END -->
+							</div>
+						</form>
+					</div>
 				</div>
-				<ul class="activeNav clear">
-					<li>
-						<a href="">
-							<div class="imgs1 imgs"></div>
-							<h5 class="txt">已拍下</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="imgs2 imgs"></div>
-							<h5 class="txt">待发货</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待改价</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="imgs4 imgs"></div>
-							<h5 class="txt">新申请账户认证</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="imgs5 imgs"></div>
-							<h5 class="txt">授信申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="imgs6 imgs"></div>
-							<h5 class="txt">额度调整申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="imgs7 imgs"></div>
-							<h5 class="txt">代理申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-				</ul>
-				<div class="orderWrap"><!-- 订单内容体 -->
-					<div class="smallTitle">安全中心</div>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<div class="btns now">立即发货</div>
-							<!-- <a href="" class="">评价</a> --><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<!-- <div class="btns now">立即发货</div> --><!-- 就是立即发货 to chen -->
-							 <a href="" class="assess">评价</a><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<a href="" class="lookMore">查看更多></a>
-				</div><!-- 订单内容体end -->
 			</div><!-- 右边内容开始end -->
 		</div>
 	</section>
@@ -441,5 +553,16 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
+	<script type="text/javascript">
+		// 日历1
+		laydate({
+		   elem: '#time1',  
+		});
+
+		// 日历2
+		laydate({
+		   elem: '#time2',
+		});
+	</script>
 </body>
 </html>

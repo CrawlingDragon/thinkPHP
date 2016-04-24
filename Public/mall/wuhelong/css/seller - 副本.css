@@ -337,7 +337,61 @@
 .rightPart .pageBox dl .pageBtn{
 	margin-left: 20px;
 }
-
+/*立即发货按钮弹出样式*/
+.layer-sendBox .sendCont{
+	background: #f5f8fa;
+	width: 472px;
+	height: 341px;
+	border:4px solid #ddd;
+}
+.layer-sendBox .sendCont .sendTitle{
+	font-size: 12px;
+	color: #999999;
+	text-indent: 20px;
+	margin:15px 0 29px 0;
+}
+.layer-sendBox .sendCont .sendAds{
+	font-size: 14px;
+	text-indent: 37px;
+}
+.layer-sendBox .sendCont .sendAds select{
+	width: 300px;
+	height: 33px;
+	line-height: 33px;
+	background:#fff;
+	margin:0 5px 0 5px;
+}
+.layer-sendBox .sendCont .sendAds .sendEdit{
+	color: #ff6600;
+	cursor: pointer;
+}
+.layer-sendBox .sendCont .sendBtns{
+	margin-top: 40px;
+	margin-left: 71px;
+	font-size: 14px;
+}
+.layer-sendBox .sendCont .sendBtns .sendBtn1{
+	display: inline-block;
+	width: 74px;
+	height: 33px;
+	border:none;
+	background: #589325;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+.layer-sendBox .sendCont .sendBtns .sendBtn2{
+	display: inline-block;
+	width: 74px;
+	height: 33px;
+	border:1px solid #dcdcdc;
+	background: #fff;
+	text-align: center;
+	color: #589325;
+	margin-left: 18px;
+	cursor: pointer;
+	z-index: 1;
+}
 /*修改价格按钮弹出样式*/
 .modifyCont{
 	width: 481px;
@@ -3791,7 +3845,12 @@ input[type=button].smsValBtn:hover{background:#ff4400;}
 .applyShopWrap .applyRule:after{content:"";display:block;clear:both;}
 .applySBtn{display:block;margin:100px 0 0 0;color:#fff;width:110px;height:50px;clear:left;line-height:50px;}
 
-
+#dropdown{width:248px;height:33px;border:1px solid #e5e5e5;position:relative;display:inline-block;} 
+#dropdown p{width:240px;line-height:34px; padding-left:10px;background:url(../images/dropDown.png) no-repeat 220px center; color:#999; cursor:pointer;text-indent: 0;margin:0;}
+#dropdown ul{width:248px;background:#fff;border:1px solid #e5e5e5;position:absolute;top:33px;left:-1px;display:none;} 
+#dropdown ul li{width:100%;height:33px; line-height:33px;margin-bottom:5px;color:#333;text-indent:10px;font-size:14px;} 
+#dropdown ul li:hover{background:#ff6600;}
+#dropdown .drpP{color:#333;} 
 .addBankCardBtn, .sureMoneyBtn{line-height:50px;}
 .Editbankcard-sub {width: 110px;height: 50px;margin: 30px 0 0 200px;}
 .outForm{padding-left:30px;}
@@ -3804,9 +3863,17 @@ input[type=button].smsValBtn:hover{background:#ff4400;}
 }
 /*gaoyuqi16-4-12*/
 .containerBox .rightPart {float:right;}
-
-
-
+.layer-sendBox .sendCont, .modifyCont, .deletCont {
+    background: #f5f8fa;
+    border: 4px solid #f5f8fa;
+}
+.layer-sendBox {border-width:4px;border-style:solid;border-color:#f5f8fa;background:#f5f8fa;}
+.layer-sendBox .sendCont .sendTitle {
+    font-size: 12px;
+    color: #999999;
+    text-indent: 20px;
+    margin: 10px 0 30px 0;
+}
 .modifyCont p input[type=button]{
 	width: 70px;
 	height: 31px;
@@ -3817,13 +3884,13 @@ input[type=button].smsValBtn:hover{background:#ff4400;}
 }
 /*.modifyCont>p:first-child+p{background: #000;}ie8*/
 .layui-layer-content, .layui-layer{overflow:hidden;}
-
+.pupopItem{margin:15px 0 0 0;line-height: 35px;}
 .pupopItem input[type=text]{
 	height: 33px;
     border: 1px solid #e5e5e5;
 	padding-left:10px;}
 .margin40{margin:40px 0;}
-
+.popupText180{display:inline-block;width:180px;text-align:right;}
 .popupText100{display:inline-block;width:100px;text-align:right;}
 .Cancelorder, .confirmReceipt-btn, .payForBtn, .buyAgainBtn{
 	display: block;
