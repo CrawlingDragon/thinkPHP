@@ -307,46 +307,25 @@
 }
 
 
+
 /*修改价格按钮弹出样式*/
 .modifyCont{
-	width: 481px;
-	height: 302px;
-	border: 4px solid #ddd;
+	/*border: 4px solid #ddd;*/
 	background: #f5f8fa;
 	font-size: 14px;
 }
-.modifyCont p:nth-child(1){
-	font-size: 12px;
-	color: #999999;
-	margin:15px 0 20px 30px;
-}
-.modifyCont p:nth-child(2){
+
+/*.modifyCont p:nth-child(2){
 	margin:0 0 19px 92px;
 }
 .modifyCont p:nth-child(3){
 	margin: 0 0 20px 80px;
-}
+}*/
 .modifyCont p input[type=text]{
 	width: 150px;
-	height: 21px;
-	border:1px solid #589325;
-	margin-left: 5px;
-}
-.modifyCont p:nth-child(4){
-	margin: 0 0 20px 80px;
-}
-.modifyCont p:nth-child(5){
-	margin-left: 50px;
-}
-.modifyCont p:nth-child(6){
-	margin: 40px 0 0px 164px;
-}
-.modifyCont p:nth-child(6) input[type=button]{
-	width: 70px;
-	height: 31px;
-	font-size: 14px;
-	margin-right: 18px;
-	cursor: pointer;
+	height: 33px;
+    border: 1px solid #589325;
+	padding-left:10px;
 }
 .modifyCont p .modifyBtn1{
 	border:none;
@@ -360,37 +339,12 @@
 }
 /*删除按钮弹出样式*/
 .deletCont{
-	width: 482px;
-	height: 144px;
-	border:4px solid #ddd;
 	font-size: 14px;
 }
-.deletCont p:nth-child(1){
-	font-size: 12px;
-	color: #999;
-	margin:17px 0 0 20px;
+.deletCont p:first-child+p{
+	margin:40px 0 0 83px;
 }
-.deletCont p:nth-child(2){
-	margin:39px 0 0 83px;
-}
-.deletCont p .deletBtn1,.deletCont p .closeBtn1{
-	border:none;
-	background: #589325;
-	color: #fff;
-}
-.deletCont p .deletBtn2,.deletCont p .closeBtn2{
-	border:1px solid #dcdcdc;
-	background: #fff;
-	color: #589325;
-}
-.deletCont p input[type=button]{
-	width: 70px;
-	height: 31px;
-	font-size: 14px;
-	margin-right: 18px;
-	margin-left: 5px;
-	cursor: pointer;
-}
+
 /*取消订单按钮*/
 .CancelorderCont{
 	height: 203px;
@@ -3776,9 +3730,6 @@ input[type=button].smsValBtn:hover{background:#ff4400;}
 }
 /*gaoyuqi16-4-12*/
 .containerBox .rightPart {float:right;}
-
-
-
 .modifyCont p input[type=button]{
 	width: 70px;
 	height: 31px;
@@ -3788,14 +3739,7 @@ input[type=button].smsValBtn:hover{background:#ff4400;}
 	cursor: pointer;
 }
 /*.modifyCont>p:first-child+p{background: #000;}ie8*/
-.layui-layer-content, .layui-layer{overflow:hidden;}
-
-.pupopItem input[type=text]{
-	height: 33px;
-    border: 1px solid #e5e5e5;
-	padding-left:10px;}
 .margin40{margin:40px 0;}
-
 .popupText100{display:inline-block;width:100px;text-align:right;}
 .Cancelorder, .confirmReceipt-btn, .payForBtn, .buyAgainBtn{
 	display: block;
