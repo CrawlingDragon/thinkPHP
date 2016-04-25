@@ -20,6 +20,7 @@
 	width: 100%;
 	min-height: 1050px;
 	background: #fff;
+	padding-bottom: 30px;
 }
 /*test*/
 .rightPart .rightCont form{
@@ -551,8 +552,8 @@
 	height: 20px;
 	font-size: 14px;
 	text-indent: 12px;
-	background: url(../images/bj.png) no-repeat;
-	background-position: -35px -623px;
+	background: url(/Public/Mall/PersonalCenter/CommonPersonalCenter/Common/Image/smallTitle.png) no-repeat;
+	background-position: 1px 0px;
     margin: 21px 0 22px 20px;
     color: #666666;
 }
@@ -2609,6 +2610,7 @@
 	display: inline-block;
 	width: 100px;
 	height: 22px;
+	line-height: 22px;
 }
 .useRecord form input[type=button]{
 	width: 70px;
@@ -2634,6 +2636,9 @@
 }
 .useRecord table tr:last-child td{
 	border-bottom: none;
+}
+.creditRelations{
+	margin-bottom: 30px;
 }
 .creditRelations .box1{
 	margin-top: 50px;
