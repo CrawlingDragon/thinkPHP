@@ -17,7 +17,8 @@
 	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
 	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
 	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common2.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/dropDownExtend.js"></script> <!-- 下拉菜单 -->
+	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>  <!-- 弹出遮罩层 -->
 	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/layer/layer.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/laydate/laydate.js"></script>
@@ -30,10 +31,36 @@
 	<!--[if lt IE 8]>
 	<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta)/IE8.js" type=”text/javascript”></script>
 	<![endif]-->
-	<style type="text/css">
+	<script type="text/javascript">
 		
- 
-	</style>
+$(function(){  
+	$(".Cancelorder").click(function(){
+		cancelOrder() 
+	});//取消订单按钮弹出
+
+	$(".confirmReceipt-btn").click(function(){
+		confirmReceipt()
+	});//确认收货按钮弹出
+
+	$(".delet").click(function(){
+		deletOrder()
+	});//删除订单按钮弹出
+
+	$(".sendGoods").click(function(){
+		sendGoods()
+	});//立即发货按钮弹出
+
+	$(".modify").click(function(){
+		changePrice()
+	});//修改价格按钮弹出
+
+	$(".closeOrder").click(function(){
+		closeOrder()
+	});//关闭订单按钮弹出
+});
+
+
+	</script>
 </head>
 <body>
 	<section class="container"><!-- 主体内容开始 -->
