@@ -538,13 +538,19 @@ body{
 }
 .layer-sendBox .sendCont, .modifyCont, .deletCont {
     background: #f5f8fa;
-    border: 4px solid #f5f8fa;
+   /* border: 4px solid #f5f8fa;*/
 }
-.layer-sendBox .sendCont{
+/*.layer-sendBox .sendCont{
 	background: #f5f8fa;
 	width: 472px;
 	height: 341px;
 	border:4px solid #ddd;
+}*/
+.layer-sendBox .sendCont .sendTitle{
+	font-size: 12px;
+	color: #999999;
+	text-indent: 20px;
+	margin:15px 0 29px 0;
 }
 .layer-sendBox .sendCont .sendTitle{
 	font-size: 12px;
@@ -554,7 +560,7 @@ body{
 }
 .layer-sendBox .sendCont .sendAds{
 	font-size: 14px;
-	text-indent: 37px;
+	text-indent: 126px;
 }
 .layer-sendBox .sendCont .sendAds select{
 	width: 300px;
@@ -569,7 +575,7 @@ body{
 }
 .layer-sendBox .sendCont .sendBtns{
 	margin-top: 40px;
-	margin-left: 71px;
+	margin-left: 56px;
 	font-size: 14px;
 }
 .layer-sendBox .sendCont .sendBtns .sendBtn1{
@@ -601,11 +607,38 @@ body{
     margin: 10px 0 30px 0;
 }
 .pupopItem{margin:15px 0 0 0;line-height: 35px;}
-.popupText180{display:inline-block;width:180px;text-align:right;}
 #dropdown{width:248px;height:33px;border:1px solid #e5e5e5;position:relative;display:inline-block;} 
 #dropdown p{width:240px;line-height:34px; padding-left:10px;background:url(../images/dropDown.png) no-repeat 220px center; color:#999; cursor:pointer;text-indent: 0;margin:0;}
 #dropdown ul{width:248px;background:#fff;border:1px solid #e5e5e5;position:absolute;top:33px;left:-1px;display:none;} 
 #dropdown ul li{width:100%;height:33px; line-height:33px;margin-bottom:5px;color:#333;text-indent:10px;font-size:14px;} 
 #dropdown ul li:hover{background:#ff6600;}
-#dropdown .drpP{color:#333;} 
+#dropdown .drpP{color:#333;}
+.popupCommom{
+	width:100%;
+	height:100%;
+	background: #f5f8fa;
+}
+.popupCommom>p:first-child{
+	font-size: 12px;
+	color: #999999;
+	padding:15px 0 0 20px;
+} 
+.popupCommom p .deletBtn1,.popupCommom p .closeBtn1{
+	border:none;
+	background: #589325;
+	color: #fff;
+}
+.popupCommom p .deletBtn2,.popupCommom p .closeBtn2{
+	border:1px solid #dcdcdc;
+	background: #fff;
+	color: #589325;
+}
+.popupCommom p input[type=button]{
+	width: 70px;
+	height: 31px;
+	font-size: 14px;
+	margin-right: 18px;
+	cursor: pointer;
+}
+
 /*立即发货按钮弹出样式end*/
