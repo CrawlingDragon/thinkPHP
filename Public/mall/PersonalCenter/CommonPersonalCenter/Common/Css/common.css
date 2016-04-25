@@ -23,7 +23,7 @@ select {
   -moz-appearance:none;
   -webkit-appearance:none;
   /*在选择框的最右侧中间显示小箭头图片*/
-  background: url(../images/select.png) no-repeat scroll right center transparent;
+  background: url(../Image/select.png) no-repeat scroll right center transparent;
   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
   padding-right: 14px;
   padding-right: 0px\0;
@@ -307,6 +307,21 @@ body{
 .leftBar .lb-nav dd a:hover{
 	color: #ff6600;
 }
+
+.leftBar .buyer-lb-nav dl dd{
+	font-weight: normal;
+	font-size: 12px;
+	margin-bottom: 18px;
+}
+.leftBar .buyer-lb-nav dl dd a{
+	color: #333;
+}
+.leftBar .buyer-lb-nav dl{
+	margin-bottom: 18px;
+}
+.leftBar .buyer-lb-nav dl dt a:hover{
+	color: #ff6600;
+}
 .rightBar{
 	width: 980px;
 	float: right;
@@ -529,6 +544,74 @@ body{
 	margin-top: 10px;
 	margin-right: 1px;
 }
+/*分页样式*/
+.pageBox{
+	width: 100%;
+	text-align: center;
+	margin-top: 80px;
+}
+.pageBox dl dd{
+	display: inline-block;
+	margin-right: 5px;
+	clear: both;
+}
+.pageBox dl .active{
+	background: #ff6600;
+	color: #fff;
+}
+.pageBox dl dd a.active:hover{
+	background:#ff6600;
+	color: #fff;
+}
+.pageBox dl dd a:hover{
+	background: #e5e5e5;
+}
+.pageBox dl dd a{
+	display: block;
+	width: 35px;
+	height: 26px;
+	border:1px solid #e5e5e5;
+	text-align: center;
+	line-height: 26px;
+	float: left;
+	margin-right: 5px;
+}
+.pageBox dl dd p input[type=text]{
+		width: 45px;
+		height: 28px;
+		border:1px solid #e5e5e5;
+		text-align: center;
+		line-height: 28px;
+		margin-right: 5px;
+		padding:0;
+		margin-top: -4px;
+	}
+.pageBox dl dd p input[type=button]{
+	font-size: 12px;
+	background: #e5e5e5;
+	width: 45px;
+	height: 28px;
+	line-height: 28px;
+	border:none;
+	cursor: pointer;
+	vertical-align: middle;
+	color: #fff;
+	margin-left: 3px;
+	margin-top: -4px;
+	color: #666;
+}
+.pageBox .left,
+.pageBox .right,
+.pageBox .left a,
+.pageBox .right a{
+	width: 20px;
+}
+.pageBox dl .pageBtn{
+	margin-left: 20px;
+	vertical-align: top;
+    margin-top: 4px;
+}
+/*分页样式end*/
 /*立即发货弹窗的css*/
 .layer-sendBox{
 	border-width:4px;

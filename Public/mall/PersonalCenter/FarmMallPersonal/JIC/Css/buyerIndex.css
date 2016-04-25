@@ -22,6 +22,9 @@
 	background: #fff;
 	font-weight: bold;
 }
+.titles .shopOpen:hover{
+	color: #ff6600;
+}
 .titles a{
 	float: right;
 	color: #333333;

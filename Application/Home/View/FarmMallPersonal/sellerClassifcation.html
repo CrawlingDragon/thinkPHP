@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中农在线</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
+	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
+	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE]> 
+	<script type="text/javascript"> 
+		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
+	</script> 
+	<![endif]-->
+	<!--[if lt IE 8]>
+	<script src="__PUBLIC__/mall/wuhelong/IE8.js" type="text/javascript"></script>
+	<![endif]-->
+</head>
+<body>
+	<include file = "Public/CommonPersonalHeader"/>
+	<section class="containar"><!-- 主体内容开始 -->
+		<div class="containarWrap clear">
+			<include file = "Public/FarmMallSellerLeft"/>
+			<div class="rightBar"><!-- 右边内容开始 -->
+				<div class="rightPart"> <!-- 右边主体内容 -->
+					<div class="myPlace"> <!-- 所在位置开始 -->
+						<span>当前位置:</span>
+						<a href="">首页</a>
+						<span>&gt;</span>
+						<a href="">卖家中心</a>
+						<span>&gt;</span>
+						<a href="">商品分类管理</a>
+					</div> <!-- 所在位置结束 -->
+					<div class="goodsSort"> <!-- 右边评价部分 -->
+						<h4>商品分类管理</h4>
+						<div class="sortBox">
+							<form action="" method="">
+								<input type="checkbox" name="" id="checkAll"><label>全选<span id="batchRemove">批量删除</span></label>
+								<table id="test">
+									<tr style="border:1px solid #e5e5e5;width: 100%;text-align: left;">
+										<th style="width: 322px;text-indent: 31px;">分类名称</th>
+										<th style="width: 112px;">上移</th>
+										<th style="width: 136px;">下移</th>
+										<th style="width: auto;">操作</th>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" name="" id=""><input type="text" name="" id="" value="11">
+										</td>
+										<td>
+											<div class="img1"></div>
+										</td>
+										<td><div class="img2"></div></td>
+										<td><span class="del">删除</span></td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" name="" id=""><input type="text" name="" id="" value="22">
+										</td>
+										<td><div class="img1"></div></td>
+										<td><div class="img2"></div></td>
+										<td><span class="del">删除</span></td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" name="" id=""><input type="text" name="" id="" value="333">
+										</td>
+										<td><div class="img1"></div></td>
+										<td><div class="img2"></div></td>
+										<td><span class="del">删除</span></td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" name="" id=""><input type="text" name="" id="" value="44">
+										</td>
+										<td><div class="img1"></div></td>
+										<td><div class="img2"></div></td>
+										<td><span class="del">删除</span></td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" name="" id=""><input type="text" name="" id="" value="55">
+										</td>
+										<td><div class="img1"></div></td>
+										<td><div class="img2"></div></td>
+										<td><span class="del">删除</span></td>
+									</tr>
+									<tr>
+										<td>
+											<input type="checkbox" name="" id=""><input type="text" name="" id="" value="66">
+										</td>
+										<td><div class="img1"></div></td>
+										<td><div class="img2"></div></td>
+										<td><span class="del">删除</span></td>
+									</tr>
+								</table>
+								<div class="goAdd">
+									<img src="__PUBLIC__/mall/personalCenter/FarmMallPersonal/JIC/Image/issueGoodsAdd.png" alt=""><span>继续添加分类</span>
+								</div>
+							</form>
+						</div>
+					</div><!-- 右边评价结束 -->
+				</div>
+			</div><!-- 右边内容开始end -->
+		</div>
+	</section>
+	<include file ="Public/CommonPersonalFooter"/>
+	<script type="text/javascript">
+$(function(){
+	//全选按钮
+	$('#checkAll').click(function(){
+		if($(this).prop("checked")){
+			$('#test input[type=checkbox]').each(function(){
+				$(this).prop("checked",true);                //复选框全选中
+			})
+		}else{
+			$('#test input[type=checkbox]').each(function(){
+				$(this).prop("checked",false); 				//复选框全取消
+			})
+		}
+	})
+	//批量删除按钮
+	$('#batchRemove').click(function(){
+		$('#test input[type=checkbox]').each(function(){
+				if($(this).prop("checked")){
+					$(this).parent().parent().remove();              
+				}
+				
+			})
+	})
+	//上移
+	$('.img1').on("click",function(){
+		var up = $('.img1');
+		var $tr	= $(this).parent().parent('tr');
+		if ($tr.index() !=1) {
+			$tr.fadeOut().fadeIn();
+			$tr.prev().before($tr);
+		}
+	})
+	//下移
+	
+	$('.img2').on("click",function(){
+		var $tr = $(this).parent().parent('tr'); //下移图标的父元素
+		var down = $('.img2');					//下图标
+		var len = down.length;					
+		if($tr.index() != len){
+			$tr.fadeOut().fadeIn();
+			$tr.next().after($tr);
+		}
+	})
+	//删除按钮
+	$('.del').click(function(){ 
+		$(this).parent().parent('tr').remove(); //删除父元素之内的tr内容
+	})
+
+//继续添加分类
+	$('.goAdd').click(function(){
+		$("#test").append('<tr><td><input type="checkbox" name="" id=""><input type="text" name="" id="" ></td><td><div class="img1"></div></td><td><div class="img2"></div></td><td><span class="del">删除</span></td></tr>');
+		//上移
+	$('.img1').on("click",function(){	//新添加元素的重复绑定函数	
+		var up = $('.img1');
+		var $tr	= $(this).parent().parent('tr');
+		if ($tr.index() !=1) {
+			$tr.fadeOut().fadeIn();
+			$tr.prev().before($tr);
+		}
+	})
+	//下移
+	
+	$('.img2').on("click",function(){   //新添加元素的重复绑定函数	
+		var $tr = $(this).parent().parent('tr'); //下移图标的父元素
+		var down = $('.img2');					//下图标
+		var len = down.length;					
+		if($tr.index() != len){	
+			$tr.fadeOut().fadeIn();
+			$tr.next().after($tr);
+		  }
+		})
+
+		//删除按钮
+		$('.del').on("click",function(){ 
+			$(this).parent().parent('tr').remove(); //删除父元素之内的tr内容
+		})
+	})
+
+
+	
+
+})
+</script>
+</body>
+</html>

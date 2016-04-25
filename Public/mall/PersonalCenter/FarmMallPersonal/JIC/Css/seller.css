@@ -19,6 +19,7 @@
 	border:1px solid #e4eaee;
 	width: 100%;
 	min-height: 1050px;
+	background: #fff;
 }
 /*test*/
 .rightPart .rightCont form{
@@ -304,55 +305,7 @@
 	background: #ff6600;
 	color: #fff;
 }
-.rightPart .pageBox{
-	width: 100%;
-	text-align: right;
-	margin-top: 30px;
-}
-.rightPart .pageBox dl dd{
-	display: inline-block;
-	margin-right: 5px;
-}
-.rightPart .pageBox dl .active{
-	background: #589325;
-}
-.rightPart .pageBox dl .active a{
-	color: #fff;
-}
-.rightPart .pageBox dl .active +dd{
-	background: #e5e5e5;
-}
-.rightPart .pageBox dl dd a{
-	display: block;
-	width: 21px;
-	height: 26px;
-	border:1px solid #e5e5e5;
-	text-align: center;
-	line-height: 26px;
-}
-.rightPart .pageBox dl dd p input[type=text]{
-		width: 31px;
-		height: 26px;
-		border:1px solid #e5e5e5;
-		text-align: center;
-		line-height: 26px;
-		margin-right: 5px;
-	}
-.rightPart .pageBox dl dd p input[type=button]{
-	font-size: 12px;
-	background: #589325;
-	width: 38px;
-	height: 26px;
-	border:none;
-	cursor: pointer;
-	vertical-align: middle;
-	color: #fff;
-	margin-top: -3px;
-	margin-left: 3px;
-}
-.rightPart .pageBox dl .pageBtn{
-	margin-left: 20px;
-}
+
 
 /*修改价格按钮弹出样式*/
 .modifyCont{
@@ -791,13 +744,14 @@
 	min-height: 546px;
 	border:1px solid #e4eaee;
 	border-right: none;
+	background: #fff;
 }
 .goodsSort h4{
 	line-height: 20px;
     height: 20px;
     text-indent: 12px;
-    background: url(../images/bj.png) no-repeat;
-    background-position: -35px -623px;
+    background: url(/Public/Mall/PersonalCenter/CommonPersonalCenter/Common/Image/smallTitle.png) no-repeat;
+    background-position: 1px 0px;
     margin: 21px 0 22px 20px;
 }
 .goodsSort .sortBox{
@@ -845,25 +799,25 @@
 .sortBox table tr td .img1{	
 	width: 17px;
 	height: 17px;
-	background: url(../images/up1.png) no-repeat;
+	background: url(../Image/up1.png) no-repeat;
 }
 .sortBox table tr td .img1:hover{
-	background: url(../images/up2.png) no-repeat;
+	background: url(../Image/up2.png) no-repeat;
 }
 .sortBox table tr td .img2{	
 	width: 17px;
 	height: 17px;
-	background: url(../images/down1.png) no-repeat;
+	background: url(../Image/down1.png) no-repeat;
 }
 .sortBox table tr td .img2:hover{
-	background: url(../images/down2.png) no-repeat;
+	background: url(../Image/down2.png) no-repeat;
 }
 .sortBox table tr td span{
 	color: #589325;
 	cursor: pointer;
 }
 .sortBox .goAdd{
-	margin:18px 0 0 10px;
+	margin:18px 0 20px 10px;
 	font-size: 14px;
 	color: #333333;
 	cursor: default;
@@ -988,8 +942,8 @@
 	line-height: 25px;
 }
 /*商品交易-发布商品*/
-.containerBox .current{
-    margin-top: 51px;
+.category-article .current{
+    margin-top: 15px;
     font-size: 12px;
     float: none;
 }
@@ -1357,6 +1311,7 @@
 	font-weight: bolder;
 	margin:50px 0 0 155px;
 	border:none;
+	cursor: pointer;
 }
 /*店铺管理-运费模版*/
 .freightTemplate-title{
