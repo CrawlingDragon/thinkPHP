@@ -1,3 +1,22 @@
+.rightBar input[type=text]{
+	width: 250px;
+	height: 33px;
+	line-height: 33px;
+	border:1px solid #e5e5e5;
+	padding-left: 10px;
+	box-sizing:border-box;
+	color: #333;
+}
+::-webkit-input-placeholder{
+	color: #999;
+	font-size: 12px;
+}
+select{
+	width: 75px;
+	height: 35px;
+	line-height: 35px;
+	border:1px solid #e5e5e5;
+}
 .rightBar{
 	width: 980px;
 	float: right;
@@ -11,8 +30,10 @@
 	height: 20px;
 	line-height: 20px;
 	padding-left: 14px;
-	background: url(../../Common/Image/smallTitle.png) no-repeat ;
+	background: url(../../Common/Image/smallTitle.png) no-repeat;
+	font-weight: bolder;
 }
+/*安全中心*/
 .rightBar .safeLv{
 	height: 30px;
 	width: 940px;
@@ -88,4 +109,140 @@
 	width: 76px;
 	margin-top: 34px;
 	color: #559524;
+}
+/*基本信息*/
+.biWrap .smallTips{
+	font-size: 12px;
+	color: #999999;
+	margin:20px 0 20px 12px;
+}
+.biWrap .smallTips span{
+	color: #ff6600;
+	margin:0 5px;
+}
+.bi-form .list{
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+.bi-form label{
+	display: inline-block;
+	/*float: left;*/
+	width: 155px;
+	text-align: right;
+	font-size: 14px;
+	color: #666666;
+}
+.bi-form label i {
+	color: #ff6600;
+	margin-right: 5px;
+}
+.bi-form .list .nameTxt{
+	font-size: 12px;
+	color: #d1d1d1;
+}
+.bi-form .list .sex{
+	font-size: 14px;
+	color: #666666;
+	margin-left: -5px;
+	margin-right: 16px;
+}
+.bi-form .list .timeTxt{
+	font-size: 14px;
+	color: #333333;
+}
+.bi-form .list .timeTip{
+	font-size: 12px;
+	color: #999999;
+}
+.bi-form .list .marriage{
+	color: #666666;
+	font-size: 14px;
+	margin-left: -5px;
+	margin-right: 16px;
+}
+.bi-form .list select{
+	width: 102px;
+	height: 34px;
+}
+.bi-form .list .ads{
+	display: block;
+	margin-top: 20px;
+	margin-left: 162px;
+}
+.biSub{
+ 	width: 110px;
+ 	height: 50px;
+ 	background: #589325;
+ 	font-size: 16px;
+ 	color: #ffffff;
+ 	border:none;
+ 	margin:50px 0 70px 162px;
+}
+/*公司信息*/
+.cyWrap{
+	font-size: 14px;
+}
+.cyWrap .cyTitle{
+	font-size: 14px;
+	color: #589325;
+	margin-bottom: 20px;
+}
+.cyForm .list{
+	margin-bottom: 20px;
+	color: #666666;
+	font-size: 14px;
+}
+.cyForm .list label{
+	display: inline-block;
+	width: 160px;
+	text-align: right;
+}
+.cyForm .list textarea{
+	border-color:#e5e5e5;
+	padding-top: 10px;
+	box-sizing:border-box;
+	min-height: 100px;
+	max-height: 100px;
+	max-width: 400px;
+	min-width: 400px;
+	vertical-align: top;
+}
+.cyForm .list .range{
+	margin-top: 10px
+}
+.cyForm .list .photo{
+	margin-top: 10px;
+}
+.cyForm .list .upBox{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.cyForm .list .upBox .upCont{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border:1px dashed #e5e5e5;
+	text-align: center;
+	line-height: 100px;
+	font-size: 100px;	
+	color: #e5e5e5;
+}
+.cyForm .list .upBox span{
+	display: block;
+	font-size: 12px;
+	color: #d1d1d1;
+	margin-top: 10px;
+}
+.cyForm .list .upBox .img1{
+	position: absolute;
+	bottom: 28px;
+	left: 80px;
+	cursor: pointer;
+}
+.cyForm .list .upBox .img2{
+	position: absolute;
+	bottom: 28px;
+	left: 5px;
+	cursor: pointer;
 }
