@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!-- <link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/bscommon.css" type="text/css"> -->
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
 	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
@@ -19,33 +18,6 @@
 	<!--[if lt IE 8]>
 	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
-	<script type="text/javascript"> //判断ie8以下浏览器
-		var flag = true; 
-		var ua = navigator.userAgent.toLowerCase(); 
-		if(navigator.userAgent.indexOf("MSIE")>0)  
-		{   
-		    if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
-		    	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
-		   	 	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 8.0")>0){  
-		  		//alert("ie8");  
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
-		   		//alert("ie9");  
-		    }   
-		}else{  
-			flag = false;  
-			
-			}   
-		if(!flag){  
-
-		}  
-
-	</script>
-
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
@@ -129,50 +101,43 @@
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
-			<div class="rightBar"><!-- 右边内容 -->
-				<div class="smallTitle">安全中心</div>
-				<div class="safeLv">
-					安全级别:
-					<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeLv1.png" alt="" style="display: none;">
-					<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeLv2.png" alt="">
-					<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeLv3.png" alt="" style="display: none;">
-					<span>中级</span>
-					<i>建议您启动全部安全设置，以保障账户及资金安全</i>
-				</div>
-				<ul class="safeBox">
+			<div class="rightBar bcWrap" style="height: 700px;"><!-- 右边内容 -->
+				<div class="smallTitle">银行卡管理</div>
+				<div class="saTitle">已天机&nbsp2&nbsp张储蓄卡,&nbsp0&nbsp张信用卡</div>
+				<ul class="bcUl clear">
 					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeRight.png" alt="" class="right"><!-- 正确时的图片 -->
-						<!-- <img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">警告时的图片 -->
-						<!--<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeError.png" alt="" class="error">错误时的图片 --> 
-						<h5>登录密码</h5>
-						<span>密码强度为:<i>中</i></span>
-						<a href="" class="change">修改</a>
+						<div class="top">
+							<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/bank.png" alt="" class="bankImg">
+							<span class="bankName">中国农业银行</span>
+							<span class="tailNum">尾号7643</span>
+							<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/bankCard.png" alt="" class="bankType">
+							<a href="" class="del">删除</a>
+							<a href="" class="do">编辑</a>
+						</div>
+						<div class="bottom">
+							<p>户名：宁波金泰惠多利农资连锁有限公司</p>
+							<p>分行/支行：浙江省宁波市北仑区凤凰街道凤凰支行</p>
+						</div>
 					</li>
 					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">
-						<h5>邮箱验证</h5>
-						<span>已添加的邮箱：28***4@163.com</span>
-						<a href="" class="now">马上验证</a>
-						<a href="" class="change">修改</a>
+						<div class="top">
+							<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/bank.png" alt="" class="bankImg">
+							<span class="bankName">中国农业银行</span>
+							<span class="tailNum">尾号7643</span>
+							<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/bankCard.png" alt="" class="bankType">
+							<a href="" class="del">删除</a>
+							<a href="" class="do">编辑</a>
+						</div>
+						<div class="bottom">
+							<p>户名：宁波金泰惠多利农资连锁有限公司</p>
+							<p>分行/支行：浙江省宁波市北仑区凤凰街道凤凰支行</p>
+						</div>
 					</li>
-					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">
-						<h5>绑定手机</h5>
-						<span>已添加的手机：158****47</span>
-						<a href="" class="now">立即绑定</a>
-						<a href="" class="change">修改</a>
-					</li>
-					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeError.png" alt="" class="error">
-						<h5>支付密码</h5>
-						<span>密码强度为:<i>强</i></span>
-						<a href="" class="change">修改</a>
-					</li>
-					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeError.png" alt="" class="error">
-						<h5>安全问题</h5>
-						<span>设置完成后，找回密码时可通过回答问题迅速找回</span>
-						<a href="" class="btn">立即设置</a>
+					<li class="add">
+						<a href="">
+						<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/add.png" alt="">
+						添加银行卡
+						</a>
 					</li>
 				</ul>
 			</div><!-- 右边内容end -->

@@ -1338,3 +1338,35 @@ select{ [;color:#666;] }
    	 margin-left: -628px;
 	}
 }
+/*申请按钮弹出*/
+.proxyBox{
+	width: 481px;
+	height: 157px;
+	border: 4px solid #ddd;
+	background: #f5f8fa;
+	font-size: 14px;
+}
+.proxyBox h4{
+	font-size: 14px;
+	margin:32px 0 0 57px;
+	color: #333;
+	width: 346px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 26px;
+}
+.proxyBox h4 img{
+	vertical-align: middle;
+	margin:-2px 5px 0 0;
+}
+.proxyBox .proxybtn{
+	width: 75px;
+	height: 33px;
+	background: #599325;
+	text-align: center;
+	line-height: 33px;
+	color: #fff;
+	margin:0 auto;
+	cursor: pointer;
+	margin-top: 20px;
+}

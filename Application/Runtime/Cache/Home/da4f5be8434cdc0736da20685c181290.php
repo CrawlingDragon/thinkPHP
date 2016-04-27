@@ -4,9 +4,8 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!-- <link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/bscommon.css" type="text/css"> -->
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
+	<link rel="stylesheet" href="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/css/buyerIndex.css" type="text/css">
 	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
@@ -93,91 +92,112 @@
 						<a href="" class="membrane">编辑资料</a><!-- 阴影 -->
 					</div>
 				</div><!-- 头像end -->
-				<div class="lb-nav"><!-- 左边导航 -->
+				<div class="lb-nav buyer-lb-nav"><!-- 左边导航 -->
 					<dl>
-						<dt>个人信息设置</dt>
-						<dd><a href="" class="active">基本信息</a></dd>
-						<dd><a href="">公司信息</a></dd>
-						<dd><a href="">头像设置</a></dd>
+						<dd><a href="">已买到的商品</a></dd>
 					</dl>
 					<dl>
-						<dt>账户绑定</dt>
-						<dd><a href="">邮箱绑定</a></dd>
-						<dd><a href="">手机号码绑定</a></dd>
+						<dd><a href="goods/cart.html">我的购物车</a></dd>
 					</dl>
 					<dl>
-						<dt>账户安全</dt>
-						<dd><a href="">安全中心</a></dd>
-						<dd><a href="">登录密码</a></dd>
-						<dd><a href="">支付密码</a></dd>
-						<dd><a href="">实名账户</a></dd>
-						<dd><a href="">安全保护问题</a></dd>
-						<dd><a href="">银行卡管理</a></dd>
+						<dd><a href="">收藏的商铺</a></dd>
+						<dd><a href="">收藏的商品</a></dd>
 					</dl>
 					<dl>
-						<dt>帐户设置(管理员)</dt>
-						<dd><a href="">已有账户</a></dd>
-						<dd><a href="">添加账户</a></dd>
+						<dd><a href="">我加入的商铺</a></dd>
 					</dl>
 					<dl>
-						<dt>消息设置</dt>
-						<dd><a href="">消息设置</a></dd>
+						<dd><a href="">授信申请</a></dd>
+						<dd><a href="">授信额度调整</a></dd>
+						<dd><a href="">授信使用记录</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
-						<dt>界面设置</dt>
-						<dd><a href="">自定义菜单</a></dd>
+						<dd><a href="">我的评价</a></dd>
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
-			<div class="rightBar"><!-- 右边内容 -->
-				<div class="smallTitle">安全中心</div>
-				<div class="safeLv">
-					安全级别:
-					<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeLv1.png" alt="" style="display: none;">
-					<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeLv2.png" alt="">
-					<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeLv3.png" alt="" style="display: none;">
-					<span>中级</span>
-					<i>建议您启动全部安全设置，以保障账户及资金安全</i>
+			<div class="rightBar"><!-- 右边内容开始 -->
+				<div class="titles clear">
+					<h3>Hi! 宁波金泰有限公司</h3>
+					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
+					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
 				</div>
-				<ul class="safeBox">
+				<ul class="activeNav clear">
 					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeRight.png" alt="" class="right"><!-- 正确时的图片 -->
-						<!-- <img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">警告时的图片 -->
-						<!--<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeError.png" alt="" class="error">错误时的图片 --> 
-						<h5>登录密码</h5>
-						<span>密码强度为:<i>中</i></span>
-						<a href="" class="change">修改</a>
+						<a href="">
+							<div class="imgs3 imgs"></div>
+							<h5 class="txt">待付款</h5>
+							<p class="num">11</p>
+						</a>
 					</li>
 					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">
-						<h5>邮箱验证</h5>
-						<span>已添加的邮箱：28***4@163.com</span>
-						<a href="" class="now">马上验证</a>
-						<a href="" class="change">修改</a>
+						<a href="">
+							<div class="imgs2 imgs"></div>
+							<h5 class="txt">待收货</h5>
+							<p class="num">11</p>
+						</a>
 					</li>
 					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">
-						<h5>绑定手机</h5>
-						<span>已添加的手机：158****47</span>
-						<a href="" class="now">立即绑定</a>
-						<a href="" class="change">修改</a>
+						<a href="">
+							<div class="imgs3 imgs"></div>
+							<h5 class="txt">待评价</h5>
+							<p class="num">11</p>
+						</a>
 					</li>
 					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeError.png" alt="" class="error">
-						<h5>支付密码</h5>
-						<span>密码强度为:<i>强</i></span>
-						<a href="" class="change">修改</a>
+						<a href="">
+							<div class="imgs4 imgs"></div>
+							<h5 class="txt">账户认证</h5>
+							<p class="num">11</p>
+						</a>
 					</li>
 					<li>
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeError.png" alt="" class="error">
-						<h5>安全问题</h5>
-						<span>设置完成后，找回密码时可通过回答问题迅速找回</span>
-						<a href="" class="btn">立即设置</a>
+						<a href="">
+							<div class="imgs5 imgs"></div>
+							<h5 class="txt">授信申请</h5>
+							<p class="num">11</p>
+						</a>
 					</li>
 				</ul>
-			</div><!-- 右边内容end -->
+				<div class="orderWrap"><!-- 订单内容体 -->
+					<div class="smallTitle">待处理的订单</div>
+					<dl class="clear">
+						<dd class="dd1">
+							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
+						</dd>
+						<dd class="dd2">
+							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
+							<p>2015-05-28<span class="times">14:53:48</span></p>
+						</dd>
+						<dd class="dd3"><span>收货人:王思聪</span></dd>
+						<dd class="dd4"><span>状态:交易成功</span></dd>
+						<dd class="dd5">
+							<div class="btns now">立即发货</div>
+							<!-- <a href="" class="">评价</a> --><!-- 给买家的评价-->
+							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
+						</dd>
+					</dl>
+					<dl class="clear">
+						<dd class="dd1">
+							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
+						</dd>
+						<dd class="dd2">
+							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
+							<p>2015-05-28<span class="times">14:53:48</span></p>
+						</dd>
+						<dd class="dd3"><span>收货人:王思聪</span></dd>
+						<dd class="dd4"><span>状态:交易成功</span></dd>
+						<dd class="dd5">
+							<!-- <div class="btns now">立即发货</div> --><!-- 就是立即发货 to chen -->
+							 <a href="" class="assess">评价</a><!-- 给买家的评价-->
+							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
+						</dd>
+					</dl>
+					<a href="" class="lookMore">查看更多></a>
+				</div><!-- 订单内容体end -->
+			</div><!-- 右边内容开始end -->
 		</div>
-	</section>	<!-- 主体内容end -->
+	</section>
 	<div class="footer"><!-- 公共底部 -->
 		<div class="footerWrap">
 			<dl class="clear">
