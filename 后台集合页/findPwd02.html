@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中农在线</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="__PUBLIC__/mall/css/vipdate.css" type="text/css">
+	<script type="text/javascript" src="__PUBLIC__/mall/js/jquery.1.11.3.min.js"></script>
+
+	<!--[if IE]> 
+	<script> 
+	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
+	</script> 
+	<![endif]-->
+	<!--[if lt IE 8]>
+	<script type="text/javascript" src="__PUBLIC__/mall/js/IE8.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript"> 
+	var countdown=60; 
+	function settime(obj) { 
+	    if (countdown == 0) { 
+	        obj.removeAttribute("disabled");
+	        obj.removeAttribute("style");    
+	        obj.value="重新获取验证码"; 
+	        countdown = 60; 
+	        return;
+	    } else { 
+	        obj.style.cursor = "auto";
+	        obj.style.backgroundColor = "#e5e5e5";
+	        obj.setAttribute("disabled", true); 
+	        obj.value="(" + countdown + ")秒倒计时"; 
+	        countdown--; 
+	    } 
+	setTimeout(function() { 
+	    settime(obj) }
+	    ,1000) 
+	}
+	</script>
+
+	<script type="text/javascript">
+	$(function(){
+
+		//手机验证码 form
+        $('.tel-form :input').blur(function(){
+			var $parent = $(this).parent();
+            $parent.find(".formtips").remove();
+            $(this).removeAttr("style");
+            //验证码
+            if( $(this).is('#smsValue') ){
+	                if( this.value=="" ){
+	                      var errorMsg = '请输入验证码！';
+	                      $parent.append('<p class="formtips onError">'+errorMsg+'</p>');
+	                      $(this).css("border","1px solid #ff6600");
+	                }
+	             }
+		}).keyup(function(){
+           $(this).triggerHandler("blur");
+        });
+
+		//手机验证码 提交  验证手机号
+        $('.form-btn-tel').click(function(){
+            $(".tel-form :input.require").trigger('blur');//点击btn之后再次检测一遍form的内容
+            var numError = $('form .onError').length;
+            if(numError){
+                return false;
+            }
+        });
+        
+
+        //提交  验证邮箱
+        $('.form-btn-email').click(function(){
+        	if (true) {
+        		window.location = "findPwd02emailSuccess.html";
+        	} else{
+        		window.location = "findPwd02emailFail.html";
+        	}
+            
+        });
+
+        
+
+	});
+	</script>
+</head>
+<body>
+	<include file="Public:header"/>
+
+	<section class="main-wrap">
+		<h3>找回密码</h3>
+		<img src="__PUBLIC__/mall/images/find-pwd2.png" class="pwd-path">
+		<div class="main-form">
+			
+				<div class="item">
+					<span>请选择验证身份方式：</span>
+					<select name="" id="" onChange="javascript:optionCheck(this.value)" class="input250">
+			            <option value="1">已验证手机</option>
+			            <option value="2">邮箱</option>
+			        </select>
+				</div>
+
+
+				<!-- 手机找回密码 -->
+				<form action="" method="" class="tel-form">
+					<div id="tel-find" style="display:block;">
+						<div class="item">
+						<span>登录名：</span>
+						<strong>wsc123456</strong>
+						</div>
+						<div class="item">
+							<span>已验证手机：</span>
+							<strong class="fl">156*****487</strong>
+							<a href="appeal1.html" class="no-sms fl">手机号码丢失、更换怎么办？</a>
+						</div>
+						<div class="item">
+							<span>请填写手机验证码：</span>
+							<input type="text" name="smsValue" id="smsValue" value="" class="input120 require" />
+							<input type="button" name="" id="smsValueGet" value="发送手机验证码" class="send-sms" onclick="settime(this);">
+						</div>
+						<div class="item">
+							<span> </span>
+							<a href="findPwd03.html" class="form-btn form-btn-tel">下一步</a>
+						</div>
+					</div>
+				</form>
+
+				<!-- 邮箱找回密码 -->
+				<form action="" method="" class="email-form">
+					<div id="email-find" style="display:none;"> 
+						<div class="item">
+						<span>登录名：</span>
+						<strong>wsc123456</strong>
+						</div>
+						<div class="item">
+							<span>邮箱地址：</span>
+							<strong>156*****487@156.com</strong>
+						</div>
+						<div class="item">
+							<span> </span>
+							<a href="javascript:void(0);" class="form-btn form-btn-email">发送验证邮件</a>
+						</div>
+					</div>
+				</form>
+
+		</div>
+	</section>
+<script language="javascript">
+	function optionCheck(cvalue){
+		if(cvalue == "1"){
+			document.getElementById("tel-find").style.display="block";
+			document.getElementById("email-find").style.display="none";
+		}else if(cvalue == "2"){
+			document.getElementById("email-find").style.display="block";
+			document.getElementById("tel-find").style.display="none";
+		}
+	}
+</script>
+
+	<include file="Public:footer"/>
+</body>
+</html>

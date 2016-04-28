@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中农在线</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="__PUBLIC__/mall/css/vipdate.css" type="text/css">
+	<script type="text/javascript" src="__PUBLIC__/mall/js/jquery.1.11.3.min.js"></script>
+
+	<!--[if IE]> 
+	<script> 
+	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
+	</script> 
+	<![endif]-->
+	<!--[if lt IE 8]>
+	<script type="text/javascript" src="__PUBLIC__/mall/js/IE8.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<include file="Public:header"/>
+
+	<section class="main-wrap">
+		<h3>找回登录名</h3>
+		<div class="main-form">
+			<form action="" method="">
+				<div class="item">
+					<span>姓名：</span>
+					<strong>王思聪</strong>
+				</div>
+				<div class="item">
+					<span>身份证号：</span>
+					<strong>336**********25428</strong>   <!-- 身份证号码中间隐藏10位 -->
+				</div>
+				<div class="item">  <!-- 找回的登录名可能有三种。按照名字-手机-邮箱的优先级排序。 -->
+					<div class="findLogin-pic fl" style="background:url(__PUBLIC__/mall/images/appealError.png) no-repeat right 0;"></div>
+					<div class="findLogin-text fl">
+						<p>对不起，没有找到相对应的登录名，请检查 姓名或身份证号是否和注册时保持一致。</p>
+					</div>
+				</div>
+				<div class="item">
+					<span> </span>
+					<a href="findLoginName.html" class="form-btn" style="margin-top:0;">重新输入</a>
+				</div>
+
+			</form>
+		</div>
+	</section>
+
+	<include file="Public:footer"/>
+
+</body>
+</html>

@@ -183,7 +183,7 @@
 							快速导航
 						</div>
 						<div class="fastNav-cont"><!-- 隐藏盒子 -->
-							<div class="loginedWrap" ><!-- 已经登录的状态 -->
+							<div class="loginedWrap" style="display: ;"><!-- 已经登录的状态 -->
 								<div class="logined-title">HI! 您好，<span class="fb f12">王思聪</span></div>
 								<div class="logined-cont">
 									<ul id="login-btn">
@@ -207,11 +207,11 @@
 												</select>
 											</form>
 											<div class="searchWrap">
-												<input type="text" name="" id="" class="txt" placeholder="直接输入要查找的公司">
+												<input type="text" name="" id="loginedCy1" class="txt" placeholder="直接输入要查找的公司">
 												<input type="button" value="查找" class="btn">
 											</div>
-											<dl>
-												<dd>
+											<dl id="logined1">
+												<!-- <dd>
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
@@ -235,14 +235,17 @@
 														</span>
 													</a>
 												</dd>
-												<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
-													<span>
-														<img src="/Public/mall/wuhelong/images/start.png" alt="">
-														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
-														<img src="/Public/mall/wuhelong/images/start3.png" alt="">
-														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
-														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
-													</span></a></dd>
+												<dd>
+													<a href=""><p>苍南县永丰农业生产资料有限公司</p>
+														<span>
+															<img src="/Public/mall/wuhelong/images/start.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start3.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														</span>
+													</a>
+												</dd>
 												<dd>
 													<a href=""><p>杭州萧山农业生产资料有限公司</p>
 														<span>
@@ -251,24 +254,32 @@
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start3.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start3.png" alt="">
-														</span></a>
-													</dd>
-													<dd><a href=""><p>杭州市农业生产资料有限公司</p>
+														</span>
+													</a>
+												</dd>
+												<dd>
+													<a href=""><p>杭州市农业生产资料有限公司</p>
 														<span>
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
-														</span></a></dd>
-													<dd><a href=""><p>浙北惠多利农资销售有限公司</p>
+														</span>
+													</a>
+												</dd>
+												<dd>
+													<a href="">
+														<p>浙北惠多利农资销售有限公司</p>
 														<span>
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
-														</span></a></dd>
-													<dd><a href=""><p>嘉兴市金泰农资有限公司</p>
+													    </span>
+													</a>
+												</dd>
+												<dd><a href=""><p>嘉兴市金泰农资有限公司</p>
 														<span>
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">		
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
@@ -282,7 +293,8 @@
 																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 																</span>
 															</a></dd>
-													<dd><a href=""><p>建德市新安植保有限责任公司</p>
+												<dd>
+													<a href=""><p>建德市新安植保有限责任公司</p>
 														<span>
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
@@ -290,11 +302,11 @@
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															</span></a>
-													</dd>
-													</dl>
+												</dd> -->
+											</dl>
 											<div class="changeBtn clear">
-												<p style="text-align: right;"><a href=""><span><i class="fb">&lt;</i></span>上一页</a></p>
-												<p style="float: right;"><a href=""><span>下一页</span><i class="fb">&gt;</i></a></p>
+												<p style="text-align: right;" onclick="loginedUp()"><a href="#"><span><i class="fb">&lt;</i></span>上一页</a></p>
+												<p style="float: right;" onclick="loginedNext()"><a href="#"><span>下一页</span><i class="fb">&gt;</i></a></p>
 											</div>
 										</div><!-- 内容1结束 -->
 										<div class="showCont hide"><!-- 内容2开始 -->
@@ -416,8 +428,8 @@
 									<img src="/Public/mall/wuhelong/images/shoppes.png" alt="">
 									<span>名铺推荐</span>
 								</div>
-								<dl>
-												<dd>
+								<dl id="#test">
+										<!-- <dd>
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
@@ -428,8 +440,8 @@
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span>
 													</a>
-												</dd>
-												<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
+										</dd>
+										<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
 													<span>
 														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
@@ -437,7 +449,7 @@
 														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 													</span></a></dd>
-												<dd>
+										<dd>
 													<a href=""><p>杭州萧山农业生产资料有限公司</p>
 														<span>
 															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
@@ -475,7 +487,8 @@
 																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 																</span>
-															</a></dd>
+															</a>
+													</dd>
 													<dd>
 														<a href=""><p>建德市新安植保有限责任公司</p>
 															<span>
@@ -487,10 +500,10 @@
 															</span>
 														</a>
 													</dd>
-													</dl>
-									<div class="other">
-										<img src="/Public/mall/wuhelong/images/changeone.png" alt=""><span>换一组</span>
-									</div>
+													</dl> -->
+								<div class="other">
+									<img src="/Public/mall/wuhelong/images/changeone.png" alt=""><span>换一组</span>
+								</div>
 							</div><!-- 未登录的状态end -->
 							<div class="notapply hide"><!-- 未申请店铺的 -->
 								<div class="notapply-title">
@@ -1334,7 +1347,7 @@
 				<dd><a href="">中农在线</a></dd>
 			</dl>
 			</section>
-			<section class="footnote clear">
+			<section class="footnote clear" onclick="conts()">
 				<p>© &nbsp;2015 &nbsp;网上农资商城&nbsp; 版权所有，&nbsp;并保留所有权利</p>
 				<p>增值电信业务经营许可证:浙B2-20150086</p>
 			</section> 
@@ -1414,15 +1427,97 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.goodsNav').find('.ul1-rightBorder:last').css("display","none");
-
-
-
-
-
-
-			
+			$('.goodsNav').find('.ul1-rightBorder:last').css("display","none"); //最后一个| 不显示 导航栏	
 		})
+	</script>
+
+
+
+	<script type="text/javascript">
+	var page = 1;
+	function conts(){ //个人已登录状态
+		$.get("http://192.168.115.173/Index/Index/getStoreList",{page:page,limit:8},
+			function(rel){
+				page++; //页数
+				var obj = rel.list; 
+				var str = '';
+				var imgs = ''; //全星图片
+				var imgs2 = ''; //半星图片
+				if(obj.length <8){	//最后一页时
+					return page=1;
+				}
+				for(var i=0;i<obj.length;i++){
+					str =str+'<dd><a href="http://192.168.115.173/Index/Store/index/user/'+obj[i].user_id+'"><p>'+obj[i].store_name+'</p><span></span></a></dd>';
+					var startNum = obj[i].score.configScore;
+					var startNum2 = obj[i].score.is_float;
+				}
+				for(var j=0;j<startNum;j++){
+					imgs = imgs +'<img src="/Public/mall/wuhelong/images/start2.png" alt="">';	
+				}
+				if(startNum2 !=0){
+					imgs2 = '<img src="/Public/mall/wuhelong/images/start3.png" alt="">'
+				}
+				
+			$("#test").html(str);
+			$("#test").find('span').html(imgs+imgs2);
+		},'json')
+	};
+
+	var page =1;
+	function loginedNext(){		//已登录状态下一页
+		var title = $("#loginedCy1").val();
+		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title},function(rel){
+			page++;
+			var obj = rel.list;
+			var str = '';
+			var imgs = '';
+			var imgsHalf = '';
+			if(obj.length <8){	//最后一页时
+					page = 1;
+				}
+			for(var i =0;i<obj.length;i++){
+				var startNum = obj[i].score.configScore; //全星数
+				var startNum2 = obj[i].score.is_float;	//半星数
+				str = str + '<dd><a href="http://192.168.115.173/Index/Store/index/user/'+obj[i].user_id+'"><p>'+obj[i].store_name+'</p><span></span></a></dd>';
+			}
+			for(var j = 0;j<startNum;j++){
+				imgs = imgs + '<img src="/Public/mall/wuhelong/images/start2.png" alt="">';
+			}
+			if(startNum2!=0){
+				imgsHalf = '<img src="/Public/mall/wuhelong/images/start3.png" alt="">';
+			}
+			$("#logined1").html(str);
+			$("#logined1").find("span").append(imgs+imgsHalf);
+		},'json')
+	}
+	function loginedUp(){	//已登录状态上一页
+		var title = $("#loginedCy1").val();
+		page--;
+		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title},function(rel){			
+			var obj = rel.list;
+			var str = '';
+			var imgs = '';
+			var imgsHalf = '';
+			if(page <= 1){
+				page = 1;
+				alert("已经是第一页了！");
+			}
+			alert(page);
+			for(var i=0;i<obj.length;i++){
+				var startNum = obj[i].score.configScore;
+				var startNum2 = obj[i].score.is_float;
+				str = str + '<dd><a href="http://192.168.115.173/Index/Store/index/user/'+obj[i].user_id+'"><p>'+obj[i].store_name+'</p><span></span></a></dd>';
+			}
+			for(var j=0;j<startNum;j++){
+				imgs = imgs + '<img src="/Public/mall/wuhelong/images/start2.png" alt="">';
+			}
+			if(startNum2!=0){
+				imgsHalf = '<img src="/Public/mall/wuhelong/images/start3.png" alt="">';
+			}
+			$("#logined1").html(str);
+			$("#logined1").find('span').append(imgs+imgsHalf);
+		},'json')
+	}
 	</script>
 </body>
 </html>

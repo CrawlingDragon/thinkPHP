@@ -132,7 +132,7 @@
 							快速导航
 						</div>
 						<div class="fastNav-cont"><!-- 隐藏盒子 -->
-							<div class="loginedWrap" ><!-- 已经登录的状态 -->
+							<div class="loginedWrap" style="display: ;"><!-- 已经登录的状态 -->
 								<div class="logined-title">HI! 您好，<span class="fb f12">王思聪</span></div>
 								<div class="logined-cont">
 									<ul id="login-btn">
@@ -156,11 +156,11 @@
 												</select>
 											</form>
 											<div class="searchWrap">
-												<input type="text" name="" id="" class="txt" placeholder="直接输入要查找的公司">
+												<input type="text" name="" id="loginedCy1" class="txt" placeholder="直接输入要查找的公司">
 												<input type="button" value="查找" class="btn">
 											</div>
-											<dl>
-												<dd>
+											<dl id="logined1">
+												<!-- <dd>
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
@@ -184,14 +184,17 @@
 														</span>
 													</a>
 												</dd>
-												<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
-													<span>
-														<img src="__PUBLIC__/mall/wuhelong/images/start.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start3.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													</span></a></dd>
+												<dd>
+													<a href=""><p>苍南县永丰农业生产资料有限公司</p>
+														<span>
+															<img src="__PUBLIC__/mall/wuhelong/images/start.png" alt="">
+															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="__PUBLIC__/mall/wuhelong/images/start3.png" alt="">
+															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+														</span>
+													</a>
+												</dd>
 												<dd>
 													<a href=""><p>杭州萧山农业生产资料有限公司</p>
 														<span>
@@ -200,24 +203,32 @@
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start3.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start3.png" alt="">
-														</span></a>
-													</dd>
-													<dd><a href=""><p>杭州市农业生产资料有限公司</p>
+														</span>
+													</a>
+												</dd>
+												<dd>
+													<a href=""><p>杭州市农业生产资料有限公司</p>
 														<span>
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														</span></a></dd>
-													<dd><a href=""><p>浙北惠多利农资销售有限公司</p>
+														</span>
+													</a>
+												</dd>
+												<dd>
+													<a href="">
+														<p>浙北惠多利农资销售有限公司</p>
 														<span>
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														</span></a></dd>
-													<dd><a href=""><p>嘉兴市金泰农资有限公司</p>
+													    </span>
+													</a>
+												</dd>
+												<dd><a href=""><p>嘉兴市金泰农资有限公司</p>
 														<span>
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">		
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
@@ -231,7 +242,8 @@
 																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 																</span>
 															</a></dd>
-													<dd><a href=""><p>建德市新安植保有限责任公司</p>
+												<dd>
+													<a href=""><p>建德市新安植保有限责任公司</p>
 														<span>
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
@@ -239,11 +251,11 @@
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 															</span></a>
-													</dd>
-													</dl>
+												</dd> -->
+											</dl>
 											<div class="changeBtn clear">
-												<p style="text-align: right;"><a href=""><span><i class="fb">&lt;</i></span>上一页</a></p>
-												<p style="float: right;"><a href=""><span>下一页</span><i class="fb">&gt;</i></a></p>
+												<p style="text-align: right;" onclick="loginedUp()"><a href="#"><span><i class="fb">&lt;</i></span>上一页</a></p>
+												<p style="float: right;" onclick="loginedNext()"><a href="#"><span>下一页</span><i class="fb">&gt;</i></a></p>
 											</div>
 										</div><!-- 内容1结束 -->
 										<div class="showCont hide"><!-- 内容2开始 -->
@@ -365,8 +377,8 @@
 									<img src="__PUBLIC__/mall/wuhelong/images/shoppes.png" alt="">
 									<span>名铺推荐</span>
 								</div>
-								<dl>
-												<dd>
+								<dl id="#test">
+										<!-- <dd>
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
@@ -377,8 +389,8 @@
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 														</span>
 													</a>
-												</dd>
-												<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
+										</dd>
+										<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
 													<span>
 														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
@@ -386,7 +398,7 @@
 														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 													</span></a></dd>
-												<dd>
+										<dd>
 													<a href=""><p>杭州萧山农业生产资料有限公司</p>
 														<span>
 															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
@@ -424,7 +436,8 @@
 																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
 																</span>
-															</a></dd>
+															</a>
+													</dd>
 													<dd>
 														<a href=""><p>建德市新安植保有限责任公司</p>
 															<span>
@@ -436,10 +449,10 @@
 															</span>
 														</a>
 													</dd>
-													</dl>
-									<div class="other">
-										<img src="__PUBLIC__/mall/wuhelong/images/changeone.png" alt=""><span>换一组</span>
-									</div>
+													</dl> -->
+								<div class="other">
+									<img src="__PUBLIC__/mall/wuhelong/images/changeone.png" alt=""><span>换一组</span>
+								</div>
 							</div><!-- 未登录的状态end -->
 							<div class="notapply hide"><!-- 未申请店铺的 -->
 								<div class="notapply-title">

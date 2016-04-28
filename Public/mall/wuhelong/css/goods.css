@@ -239,15 +239,27 @@
 .spec-preview:hover{
 	border:1px solid #ff5500;
 }
-.spec-scroll{clear:both;margin-top:10px;width:230px;height: 37px;}
+.spec-scroll{clear:both;margin-top:10px;width:230px;height: 42px;}
 .spec-scroll .prev{float:left;margin-right:4px;}
 .spec-scroll .next{float:right;}
 .spec-scroll .prev,.spec-scroll .next{display:block;font-family:"宋体";text-align:center;width:10px;height:54px; line-height:54px;border:1px solid #CCC;background:#EBEBEB;cursor:pointer;text-decoration:none;}
-.spec-scroll .items{float:left;position:relative;width:230px;height:37px;overflow:hidden;}
+.spec-scroll .items{float:left;position:relative;width:230px;height:42px;overflow:hidden;}
 .spec-scroll .items ul{position:absolute;width:230px;height:35px;}
-.spec-scroll .items ul li{float:left;width:35px;text-align:center;height: 35px;overflow: hidden;margin-right: 5px;border:1px solid #eee;}
-.spec-scroll .items ul li img{width:98%;height:98%;}
-.spec-scroll .items ul li.active{border:1px solid #FF6600;box-sizing:border-box;}
+.spec-scroll .items ul li{float:left;width:35px;text-align:center;height: 35px;overflow: hidden;margin-right: 5px;margin-top: 7px;border:1px solid #eee;}
+.spec-scroll .items ul li img{
+	width: 32px;
+	height: 32px;
+	margin:0 auto;
+}
+.spec-scroll .items ul li.active{
+	padding-top: 8px;
+	height: 42px;
+	box-sizing:border-box;
+	background: url(../images/specScrollBg.png) no-repeat;
+	background-size: cover;
+	margin-top: 0;
+	border:none;
+}
 .spec-preview .spec-bottom{
 	position: absolute;
 	bottom: 0;

@@ -681,7 +681,7 @@
 				<dd><a href="">中农在线</a></dd>
 			</dl>
 			</section>
-			<section class="footnote clear">
+			<section class="footnote clear" onclick="conts()">
 				<p>© &nbsp;2015 &nbsp;网上农资商城&nbsp; 版权所有，&nbsp;并保留所有权利</p>
 				<p>增值电信业务经营许可证:浙B2-20150086</p>
 			</section> 
@@ -761,15 +761,96 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.goodsNav').find('.ul1-rightBorder:last').css("display","none");
-
-
-
-
-
-
-			
+			$('.goodsNav').find('.ul1-rightBorder:last').css("display","none"); //最后一个| 不显示 导航栏	
 		})
+	</script>
+
+
+
+	<script type="text/javascript">
+	var page = 1;
+	function conts(){ //个人已登录状态
+		$.get("http://192.168.115.173/Index/Index/getStoreList",{page:page,limit:8},
+			function(rel){
+				page++; //页数
+				var obj = rel.list; 
+				var str = '';
+				var imgs = ''; //全星图片
+				var imgs2 = ''; //半星图片
+				if(obj.length <8){	//最后一页时
+					return page=1;
+				}
+				for(var i=0;i<obj.length;i++){
+					str =str+'<dd><a href="http://192.168.115.173/Index/Store/index/user/'+obj[i].user_id+'"><p>'+obj[i].store_name+'</p><span></span></a></dd>';
+					var startNum = obj[i].score.configScore;
+					var startNum2 = obj[i].score.is_float;
+				}
+				for(var j=0;j<startNum;j++){
+					imgs = imgs +'<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">';	
+				}
+				if(startNum2 !=0){
+					imgs2 = '<img src="__PUBLIC__/mall/wuhelong/images/start3.png" alt="">'
+				}
+				
+			$("#test").html(str);
+			$("#test").find('span').html(imgs+imgs2);
+		},'json')
+	};
+
+	var page =1;
+	function loginedNext(){		//已登录状态下一页
+		var title = $("#loginedCy1").val();
+		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title},function(rel){
+			page++;
+			var obj = rel.list;
+			var str = '';
+			var imgs = '';
+			var imgsHalf = '';
+			if(obj.length <8){	//最后一页时
+					page = 1;
+				}
+			for(var i =0;i<obj.length;i++){
+				var startNum = obj[i].score.configScore; //全星数
+				var startNum2 = obj[i].score.is_float;	//半星数
+				str = str + '<dd><a href="http://192.168.115.173/Index/Store/index/user/'+obj[i].user_id+'"><p>'+obj[i].store_name+'</p><span></span></a></dd>';
+			}
+			for(var j = 0;j<startNum;j++){
+				imgs = imgs + '<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">';
+			}
+			if(startNum2!=0){
+				imgsHalf = '<img src="__PUBLIC__/mall/wuhelong/images/start3.png" alt="">';
+			}
+			$("#logined1").html(str);
+			$("#logined1").find("span").append(imgs+imgsHalf);
+		},'json')
+	}
+	function loginedUp(){	//已登录状态上一页
+		var title = $("#loginedCy1").val();
+		page--;
+		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title},function(rel){			
+			var obj = rel.list;
+			var str = '';
+			var imgs = '';
+			var imgsHalf = '';
+			if(page <= 1){
+				page = 1;
+				alert("已经是第一页了！");
+			}
+			for(var i=0;i<obj.length;i++){
+				var startNum = obj[i].score.configScore;
+				var startNum2 = obj[i].score.is_float;
+				str = str + '<dd><a href="http://192.168.115.173/Index/Store/index/user/'+obj[i].user_id+'"><p>'+obj[i].store_name+'</p><span></span></a></dd>';
+			}
+			for(var j=0;j<startNum;j++){
+				imgs = imgs + '<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">';
+			}
+			if(startNum2!=0){
+				imgsHalf = '<img src="__PUBLIC__/mall/wuhelong/images/start3.png" alt="">';
+			}
+			$("#logined1").html(str);
+			$("#logined1").find('span').append(imgs+imgsHalf);
+		},'json')
+	}
 	</script>
 </body>
 </html>
