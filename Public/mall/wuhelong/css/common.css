@@ -909,12 +909,16 @@ header .searchBox .goodsCar a p span{
 	margin-left: -34px;
 	cursor: pointer;
 	color: #999;
+	font-size: 12px;
 }
 .other img{
 	margin-right: 8px;
     display: inline-block;
     vertical-align: middle;
     margin-top: -4px;
+}
+.other span{
+	font-size: 12px;
 }
 .other img.ans,
 .goodsList-bottom .change-one img.ans{

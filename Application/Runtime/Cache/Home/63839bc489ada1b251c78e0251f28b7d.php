@@ -183,7 +183,7 @@
 							快速导航
 						</div>
 						<div class="fastNav-cont"><!-- 隐藏盒子 -->
-							<div class="loginedWrap" style="display: ;"><!-- 已经登录的状态 -->
+							<div class="loginedWrap" style="display: none;"><!-- 已经登录的状态 -->
 								<div class="logined-title">HI! 您好，<span class="fb f12">王思聪</span></div>
 								<div class="logined-cont">
 									<ul id="login-btn">
@@ -417,7 +417,7 @@
 									</div>
 								</div>
 							</div><!-- 已经登录的状态end -->
-							<div class="bfloginWrap" style="display: none;"><!-- 未登录的状态 -->
+							<div class="bfloginWrap" style="display: ;"><!-- 未登录的状态 -->
 								<div class="bflogin-title">
 									<p>HI! 您好，请先登录/注册</p>
 									<div class="go" style="margin-left: 20px"><a href="">登录</a></div>
@@ -428,7 +428,7 @@
 									<img src="/Public/mall/wuhelong/images/shoppes.png" alt="">
 									<span>名铺推荐</span>
 								</div>
-								<dl id="#test">
+								<dl id="test">
 										<!-- <dd>
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
@@ -499,13 +499,13 @@
 																<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															</span>
 														</a>
-													</dd>
-													</dl> -->
-								<div class="other">
+													</dd>-->
+													</dl> 
+								<div class="other" onclick="conts()" id="other1">
 									<img src="/Public/mall/wuhelong/images/changeone.png" alt=""><span>换一组</span>
 								</div>
 							</div><!-- 未登录的状态end -->
-							<div class="notapply hide"><!-- 未申请店铺的 -->
+							<div class="notapply " style="display:none; "><!-- 未申请店铺的 -->
 								<div class="notapply-title">
 									<p>HI! 您好，<span class="fb f12">宁波金泰惠多利农资有限公司</span></p>
 									<a href="">申请开店</a>
@@ -1347,7 +1347,7 @@
 				<dd><a href="">中农在线</a></dd>
 			</dl>
 			</section>
-			<section class="footnote clear" onclick="conts()">
+			<section class="footnote clear">
 				<p>© &nbsp;2015 &nbsp;网上农资商城&nbsp; 版权所有，&nbsp;并保留所有权利</p>
 				<p>增值电信业务经营许可证:浙B2-20150086</p>
 			</section> 
@@ -1360,12 +1360,12 @@
 			 	$('#showBox .showCont:eq('+$(this).index()+')').show().siblings().hide();
 			 })
 
-			 // 换一组的动画效果
-			 $('.other').click(function(){
-			 	// $(this).find('img').css("border","1px solid red");
-			 	$(this).find('img').addClass('ans'); //开始旋转
-			 	//$(this).find('img').removeClass('ans');//停止旋转
-			 })	
+			 // // 换一组的动画效果
+			 // $('.other').click(function(){
+			 // 	// $(this).find('img').css("border","1px solid red");
+			 // 	$(this).find('img').addClass('ans'); //开始旋转
+			 // 	//$(this).find('img').removeClass('ans');//停止旋转
+			 // })	
 
 
 		 })
@@ -1436,6 +1436,8 @@
 	<script type="text/javascript">
 	var page = 1;
 	function conts(){ //个人已登录状态
+		 $("#other1").find('img').addClass('ans');
+
 		$.get("http://192.168.115.173/Index/Index/getStoreList",{page:page,limit:8},
 			function(rel){
 				page++; //页数
@@ -1456,17 +1458,17 @@
 				}
 				if(startNum2 !=0){
 					imgs2 = '<img src="/Public/mall/wuhelong/images/start3.png" alt="">'
-				}
-				
+				}	
 			$("#test").html(str);
 			$("#test").find('span').html(imgs+imgs2);
+			$('#other1').find('img').removeClass('ans');
 		},'json')
 	};
 
 	var page =1;
 	function loginedNext(){		//已登录状态下一页
 		var title = $("#loginedCy1").val();
-		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title},function(rel){
+		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title,province:2,city:6,area:100},function(rel){
 			page++;
 			var obj = rel.list;
 			var str = '';
@@ -1493,7 +1495,7 @@
 	function loginedUp(){	//已登录状态上一页
 		var title = $("#loginedCy1").val();
 		page--;
-		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title},function(rel){			
+		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title,province:2,city:6,area:100},function(rel){			
 			var obj = rel.list;
 			var str = '';
 			var imgs = '';
@@ -1502,7 +1504,6 @@
 				page = 1;
 				alert("已经是第一页了！");
 			}
-			alert(page);
 			for(var i=0;i<obj.length;i++){
 				var startNum = obj[i].score.configScore;
 				var startNum2 = obj[i].score.is_float;

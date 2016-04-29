@@ -681,7 +681,7 @@
 				<dd><a href="">中农在线</a></dd>
 			</dl>
 			</section>
-			<section class="footnote clear" onclick="conts()">
+			<section class="footnote clear">
 				<p>© &nbsp;2015 &nbsp;网上农资商城&nbsp; 版权所有，&nbsp;并保留所有权利</p>
 				<p>增值电信业务经营许可证:浙B2-20150086</p>
 			</section> 
@@ -694,12 +694,12 @@
 			 	$('#showBox .showCont:eq('+$(this).index()+')').show().siblings().hide();
 			 })
 
-			 // 换一组的动画效果
-			 $('.other').click(function(){
-			 	// $(this).find('img').css("border","1px solid red");
-			 	$(this).find('img').addClass('ans'); //开始旋转
-			 	//$(this).find('img').removeClass('ans');//停止旋转
-			 })	
+			 // // 换一组的动画效果
+			 // $('.other').click(function(){
+			 // 	// $(this).find('img').css("border","1px solid red");
+			 // 	$(this).find('img').addClass('ans'); //开始旋转
+			 // 	//$(this).find('img').removeClass('ans');//停止旋转
+			 // })	
 
 
 		 })
@@ -770,6 +770,8 @@
 	<script type="text/javascript">
 	var page = 1;
 	function conts(){ //个人已登录状态
+		 $("#other1").find('img').addClass('ans');
+
 		$.get("http://192.168.115.173/Index/Index/getStoreList",{page:page,limit:8},
 			function(rel){
 				page++; //页数
@@ -790,17 +792,17 @@
 				}
 				if(startNum2 !=0){
 					imgs2 = '<img src="__PUBLIC__/mall/wuhelong/images/start3.png" alt="">'
-				}
-				
+				}	
 			$("#test").html(str);
 			$("#test").find('span').html(imgs+imgs2);
+			$('#other1').find('img').removeClass('ans');
 		},'json')
 	};
 
 	var page =1;
 	function loginedNext(){		//已登录状态下一页
 		var title = $("#loginedCy1").val();
-		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title},function(rel){
+		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title,province:2,city:6,area:100},function(rel){
 			page++;
 			var obj = rel.list;
 			var str = '';
@@ -827,7 +829,7 @@
 	function loginedUp(){	//已登录状态上一页
 		var title = $("#loginedCy1").val();
 		page--;
-		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title},function(rel){			
+		$.get('http://192.168.115.173/Index/Index/getStoreList',{page:page,limit:9,mystore:1,title:title,province:2,city:6,area:100},function(rel){			
 			var obj = rel.list;
 			var str = '';
 			var imgs = '';
