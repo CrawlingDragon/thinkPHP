@@ -2662,6 +2662,9 @@
 	height: 54px;
 	border-bottom: 1px solid #e5e5e5;
 }
+.creditAdjustment table tr td.active{
+	color: #000
+}
 .creditAdjustment table tr:last-child td{
 	border:none;
 }
@@ -2758,8 +2761,9 @@
 	color: #589325;
 	border:1px solid #e5e5e5;
 	border-top: 2px solid #589325;
-	border-bottom: 2px solid #fff;
-	margin-bottom: -2px;
+	border-bottom: none;
+	margin-bottom: -1px;
+	background:#fff;
 }
 .creditRelations .restore{
 	cursor: pointer;

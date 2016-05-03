@@ -1,25 +1,25 @@
-﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/wuhelong/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/wuhelong/css/detail.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/wuhelong/js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/wuhelong/js/jquery.jqzoom.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/wuhelong/js/ad.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/wuhelong/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/wuhelong/js/layer/layer.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/wuhelong/js/baidu.js"></script>
-  <!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="/Public/mall/wuhelong/css/common.css" type="text/css">
+	<link rel="stylesheet" href="/Public/mall/wuhelong/css/detail.css" type="text/css">
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/jquery.jqzoom.js"></script>
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/ad.js"></script>
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/common.js"></script>
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/layer/layer.js"></script>
+	<script type="text/javascript" src="/Public/mall/wuhelong/js/baidu.js"></script>
+  <!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script> 
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
 	<!--[if lt IE 8]>
-	<script src="__PUBLIC__/mall/wuhelong/IE8.js" type="text/javascript"></script>
+	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
 </head>
 <body>
@@ -28,7 +28,7 @@
 		<article class="headerTop clear">
 			<section class="header-left"> <!-- 头部左边 未读消息 -->
 				<a href="/home/goods/goodslist.html" class="message-title">
-					<div><img src="__PUBLIC__/mall/wuhelong/images/messageImg3.png" alt="">未读消息<span class="fb messageNum">10</span></div></a>
+					<div><img src="/Public/mall/wuhelong/images/messageImg3.png" alt="">未读消息<span class="fb messageNum">10</span></div></a>
 					<ul class="messageBox hide">
 							<li>
 								<div>2015-05-05<i>10:53:48</i></div>
@@ -99,7 +99,7 @@
 		<article class="headerBottom clear">
 			<section class="headerBottom-box">
 			<section class="logo"> <!-- 中农在线Logo -->
-				<img src="__PUBLIC__/mall/wuhelong/images/logo.png" alt="">
+				<img src="/Public/mall/wuhelong/images/logo.png" alt="">
 			</section>
 			<section class="searchBox">   <!-- 搜索框 -->
 				<form action="" method="">
@@ -125,7 +125,7 @@
 				</div>
 				<div class="goodsCar">   <!-- 购物车按钮 -->
 					<a href="#">
-						<img src="__PUBLIC__/mall/wuhelong/images/car.png" alt="">
+						<img src="/Public/mall/wuhelong/images/car.png" alt="">
 						<p>购物车<span>0</span></p>
 					</a>
 				</div>
@@ -136,7 +136,7 @@
 			<article class="bannarBox  sellerNav">
 				<div class="bannarLeft mr" style="width: auto;"> <!-- 所有商品分类开始 -->
 					<div class="title" style="width: auto;">
-						<!-- <img src="__PUBLIC__/mall/wuhelong/images/bannartitle.png" alt="所有商品分类"> -->
+						<!-- <img src="/Public/mall/wuhelong/images/bannartitle.png" alt="所有商品分类"> -->
 						<span class="fb">首页</span>
 					</div>
 				</div><!-- 所有商品分类结束 -->
@@ -152,7 +152,7 @@
 				<div class="areaShops fastNav"> <!-- 区域商铺开始 -->
 						<div class="shopTitle">
 							快速导航
-							<img src="__PUBLIC__/mall/wuhelong/images/moreup2.png" alt="">
+							<img src="/Public/mall/wuhelong/images/moreup2.png" alt="">
 						</div>
 						<div class="fastNav-cont" style="display: none;"><!-- 显示盒子 -->
 							<div class="loginedWrap" style="display: none;"><!-- 已经登录的状态 -->
@@ -183,68 +183,68 @@
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span>
 													</a>
 												</dd>
 												<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
 													<span>
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 													</span></a></dd>
 												<dd>
 													<a href=""><p>杭州萧山农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a>
 													</dd>
 													<dd><a href=""><p>杭州市农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 													<dd><a href=""><p>浙北惠多利农资销售有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 													<dd><a href=""><p>嘉兴市金泰农资有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">		
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt=""></span></a></dd>
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">		
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt=""></span></a></dd>
 															<dd><a href=""><p>浙江惠多利农资连锁有限公司</p>
 																<span>
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 																</span>
 															</a></dd>
 													<dd><a href=""><p>建德市新安植保有限责任公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															</span></a>
 													</dd>
 													</dl>
@@ -277,68 +277,68 @@
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span>
 													</a>
 												</dd>
 												<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
 													<span>
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 													</span></a></dd>
 												<dd>
 													<a href=""><p>杭州萧山农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a>
 													</dd>
 													<dd><a href=""><p>杭州市农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 													<dd><a href=""><p>浙北惠多利农资销售有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 													<dd><a href=""><p>嘉兴市金泰农资有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">		
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt=""></span></a></dd>
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">		
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt=""></span></a></dd>
 															<dd><a href=""><p>浙江惠多利农资连锁有限公司</p>
 																<span>
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 																</span>
 															</a></dd>
 													<dd><a href=""><p>建德市新安植保有限责任公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															</span></a></dd>
 													</dl>
 											<div class="changeBtn clear">
@@ -357,7 +357,7 @@
 									<div class="go"><a href="">申请开店</a></div>
 								</div>
 								<div class="shoppes">
-									<img src="__PUBLIC__/mall/wuhelong/images/shoppes.png" alt="">
+									<img src="/Public/mall/wuhelong/images/shoppes.png" alt="">
 									<span>名铺推荐</span>
 								</div>
 								<dl>
@@ -365,75 +365,75 @@
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span>
 													</a>
 												</dd>
 												<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
 													<span>
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 													</span></a></dd>
 												<dd>
 													<a href=""><p>杭州萧山农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a>
 													</dd>
 													<dd><a href=""><p>杭州市农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 													<dd><a href=""><p>浙北惠多利农资销售有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 													<dd><a href=""><p>嘉兴市金泰农资有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">		
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt=""></span></a></dd>
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">		
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt=""></span></a></dd>
 															<dd><a href=""><p>浙江惠多利农资连锁有限公司</p>
 																<span>
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 																</span>
 															</a></dd>
 													<dd>
 														<a href=""><p>建德市新安植保有限责任公司</p>
 															<span>
-																<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+																<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															</span>
 														</a>
 													</dd>
 													</dl>
 									<div class="other">
-										<img src="__PUBLIC__/mall/wuhelong/images/changeone.png" alt=""><span>换一组</span>
+										<img src="/Public/mall/wuhelong/images/changeone.png" alt=""><span>换一组</span>
 									</div>
 							</div><!-- 未登录的状态end -->
 							<div class="notapply" style="display: none;"><!-- 未申请店铺的 -->
@@ -464,72 +464,72 @@
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span>
 													</a>
 												</dd>
 												<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
 													<span>
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 													</span></a></dd>
 												<dd>
 													<a href=""><p>杭州萧山农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a>
 													</dd>
 													<dd><a href=""><p>杭州市农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 													<dd><a href=""><p>浙北惠多利农资销售有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 													<dd><a href=""><p>嘉兴市金泰农资有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">		
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt=""></span></a></dd>
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">		
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt=""></span></a></dd>
 															<dd><a href=""><p>浙江惠多利农资连锁有限公司</p>
 																<span>
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-																	<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+																	<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 																</span>
 															</a></dd>
 													<dd><a href=""><p>建德市新安植保有限责任公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 															</span></a></dd>
 													</dl>
 									<div class="other">
-										<img src="__PUBLIC__/mall/wuhelong/images/changeone.png" alt=""><span>换一组</span>
+										<img src="/Public/mall/wuhelong/images/changeone.png" alt=""><span>换一组</span>
 									</div>
 							</div><!-- 未申请店铺的end -->
 							<div class="apply"><!-- 已经申请店铺的end -->
@@ -557,31 +557,31 @@
 								<div class="goodsList clear "><!-- 出售中的商品 -->
 									<div class="list1">
 										<a href="">
-											<img src="__PUBLIC__/mall/wuhelong/images/indexlist1.png" alt="">
+											<img src="/Public/mall/wuhelong/images/indexlist1.png" alt="">
 											<p>出售中的商品</p>
 										</a>
 									</div>
 									<div class="list1" style="border-right: none;">
 										<a href="">
-											<img src="__PUBLIC__/mall/wuhelong/images/indexlist2.png" alt="">
+											<img src="/Public/mall/wuhelong/images/indexlist2.png" alt="">
 											<p>仓库中的商品</p>
 										</a>
 									</div>
 									<div class="list1">
 										<a href="">
-											<img src="__PUBLIC__/mall/wuhelong/images/indexlist3.png" alt="">
+											<img src="/Public/mall/wuhelong/images/indexlist3.png" alt="">
 											<p>我的客户</p>
 										</a>
 									</div>
 									<div class="list1" style="border-right: none;">
 										<a href="">
-											<img src="__PUBLIC__/mall/wuhelong/images/indexlist4.png" alt="">
+											<img src="/Public/mall/wuhelong/images/indexlist4.png" alt="">
 											<p>新申请客户</p>
 										</a>
 									</div>
 								</div><!-- 出售中的商品 -->
 								<div class="shoppes">
-									<img src="__PUBLIC__/mall/wuhelong/images/shoppes.png" alt="">
+									<img src="/Public/mall/wuhelong/images/shoppes.png" alt="">
 									<span>名铺推荐</span>
 								</div>
 								<dl>
@@ -589,57 +589,57 @@
 													<a href="">
 														<p>宁波金泰惠多利农资连锁公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span>
 													</a>
 												</dd>
 												<dd><a href=""><p>苍南县永丰农业生产资料有限公司</p>
 													<span>
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-														<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+														<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 													</span></a></dd>
 												<dd>
 													<a href=""><p>杭州萧山农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a>
 													</dd>
 													<dd><a href=""><p>杭州市农业生产资料有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 													<dd><a href=""><p>浙北惠多利农资销售有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>
 														<dd><a href=""><p>浙北惠多利农资销售有限公司</p>
 														<span>
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-															<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+															<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 														</span></a></dd>												
 													</dl>
 								<div class="other">
-										<img src="__PUBLIC__/mall/wuhelong/images/changeone.png" alt="" ><span>换一组</span>
+										<img src="/Public/mall/wuhelong/images/changeone.png" alt="" ><span>换一组</span>
 								</div>
 							</div><!-- 已经申请店铺的end -->
 						</div><!-- 显示盒子end -->
@@ -688,7 +688,7 @@
 						<span class="goodsDetail-top-num">商品编号<i>ZNZX92ZNZX92</i></span>
 						<span class="shareBox">
 							<i class="share-title" style="position: relative;">
-								<img src="__PUBLIC__/mall/wuhelong/images/share.png" alt="">分享
+								<img src="/Public/mall/wuhelong/images/share.png" alt="">分享
 								<div class="bdsharebuttonbox shareCont"><!-- 百度分享插件 -->
 									<a href="#" class="bds_more" data-cmd="more"></a>
 									<a href="#" class="bds_qzone" data-cmd="qzone"></a>
@@ -699,10 +699,10 @@
 								</div><!-- 百度分享插件end -->
 							</i>
 							<i id="collect">
-								<img src="__PUBLIC__/mall/wuhelong/images/greenstar.png" alt="">收藏
+								<img src="/Public/mall/wuhelong/images/greenstar.png" alt="">收藏
 							</i>
 							<i class="proxy">
-								<img src="__PUBLIC__/mall/wuhelong/images/proxy.png" alt=""><i>申请代理</i>
+								<img src="/Public/mall/wuhelong/images/proxy.png" alt=""><i>申请代理</i>
 							</i>
 						</span>
 					</div><!-- 商品编号end -->
@@ -719,7 +719,7 @@
 							<span class="labels" style="float: left;">经 销 商:</span>
 							<!-- 选择经销商模拟下拉菜单 -->
 							<dl class="select">
-								<dt><span class="txt">宁波金泰农业生产公司</span><img src="__PUBLIC__/mall/wuhelong/images/moreup.png"></dt>
+								<dt><span class="txt">宁波金泰农业生产公司</span><img src="/Public/mall/wuhelong/images/moreup.png"></dt>
 								
 								<dd>
 									<ul>
@@ -765,7 +765,7 @@
 				<div class="dealer-box"><!-- 经销商信息 -->
 						<h4 class="f14 c3">经销商信息：</h4>
 						<div class="company-logo">
-							<div class="imgs"><img src="__PUBLIC__/mall/wuhelong/images/company.jpg" alt=""></div>
+							<div class="imgs"><img src="/Public/mall/wuhelong/images/company.jpg" alt=""></div>
 							<div class="f14 c6 company-logo-name">宁波金泰惠多利农资连锁</div>
 						</div>
 						<ul>
@@ -773,27 +773,27 @@
 							<li>
 								<span class="titles">描述相符：</span>
 								<strong>4.9<span class="fn c6 mt">分</span></strong>
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 							</li>
 							<li>
 								<span class="titles">服务态度：</span>
 								<strong>4.9<span class="fn c6 mt">分</span></strong>
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 							</li>
 							<li>
 								<span class="titles">发货速度：</span>
 								<strong>4.9<span class="fn c6 mt">分</span></strong>
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-								<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+								<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 							</li>
 							<li class="clear"><span class="titles">所 在 地：</span><span class="address">浙江省杭州市萧山区萧山区</span></li>
 						</ul>
@@ -845,23 +845,23 @@
 						<div class="recommendHot-box"><!-- 热门推荐 -->
 							<h5>热门推荐</h5>
 							<div class="recommendHot-list">
-								<div class="imgs"><img src="__PUBLIC__/mall/wuhelong/images/goods7.jpg" alt=""></div>
+								<div class="imgs"><img src="/Public/mall/wuhelong/images/goods7.jpg" alt=""></div>
 								<p>保利 氯基复合肥 15-15-15保利 氯基复合肥 15-15-15</p>
 							</div>
 							<div class="recommendHot-list">
-								<div class="imgs"><img src="__PUBLIC__/mall/wuhelong/images/goods7.jpg" alt=""></div>
+								<div class="imgs"><img src="/Public/mall/wuhelong/images/goods7.jpg" alt=""></div>
 								<p>保利 氯基复合肥 15-15-15</p>
 							</div>
 							<div class="recommendHot-list">
-								<div class="imgs"><img src="__PUBLIC__/mall/wuhelong/images/goods7.jpg" alt=""></div>
+								<div class="imgs"><img src="/Public/mall/wuhelong/images/goods7.jpg" alt=""></div>
 								<p>保利 氯基复合肥 15-15-15</p>
 							</div>
 							<div class="recommendHot-list">
-								<div class="imgs"><img src="__PUBLIC__/mall/wuhelong/images/goods7.jpg" alt=""></div>
+								<div class="imgs"><img src="/Public/mall/wuhelong/images/goods7.jpg" alt=""></div>
 								<p>保利 氯基复合肥 15-15-15</p>
 							</div>
 							<div class="recommendHot-list">
-								<div class="imgs"><img src="__PUBLIC__/mall/wuhelong/images/goods7.jpg" alt=""></div>
+								<div class="imgs"><img src="/Public/mall/wuhelong/images/goods7.jpg" alt=""></div>
 								<p>保利 氯基复合肥 15-15-15</p>
 							</div>
 						</div><!-- 热门推荐end -->
@@ -905,7 +905,7 @@
 									<h5>促根壮苗</h5>
 									<div class="txt">本产品含有促根生长因子和高效活性有机质，能够调节土壤养分失衡，改善作物生长环境，全面调节作物生理过程，提高作物体内多种酶活性，提高根系活力，促进根系发育，增强植物的抗旱能力，使作物苗壮、茎粗、叶绿、长势旺盛。</div>
 									<div class="imgBox">
-										<img src="__PUBLIC__/mall/wuhelong/images/goods3.png" alt="">
+										<img src="/Public/mall/wuhelong/images/goods3.png" alt="">
 									</div>
 									<h5>施用方法</h5>
 									<div class="txt">
@@ -941,30 +941,30 @@
 												<td>描述相符：</td>
 												<td class="num"><span class="">4.9</span><i class="c6 mt f12">分<i></td>
 												<td>
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 												</td>
 											</tr>
 											<tr>
 												<td>服务态度：</td>
 												<td class="num"><span class="">4.9</span><i class="c6 mt f12">分<i></td>
 												<td>
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 												</td>
 											</tr>
 											<tr>
 												<td>发货速度：</td>
 												<td class="num"><span class="">4.9</span><i class="c6 mt f12">分<i></td>
 												<td>
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
-													<img src="__PUBLIC__/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
+													<img src="/Public/mall/wuhelong/images/start2.png" alt="">
 												</td>
 											</tr>
 										</table>
@@ -991,7 +991,7 @@
 								<div class="cont3-cont">
 									<ul>
 										<li>
-											<div class="imgs"><img src="__PUBLIC__/mall/wuhelong/images/sellerIndex.jpg" alt=""></div>
+											<div class="imgs"><img src="/Public/mall/wuhelong/images/sellerIndex.jpg" alt=""></div>
 										</li>
 										<li class="names">
 											wsc123456
@@ -1008,7 +1008,7 @@
 									</ul>
 									<ul>
 										<li>
-											<div class="imgs"><img src="__PUBLIC__/mall/wuhelong/images/sellerIndex.jpg" alt=""></div>
+											<div class="imgs"><img src="/Public/mall/wuhelong/images/sellerIndex.jpg" alt=""></div>
 										</li>
 										<li class="names">
 											wsc123456
@@ -1045,32 +1045,32 @@
 			</ul>
 			<ul class="ul-cont clear">
 				<li>
-					<div class="imgs"><a href=""><img src="__PUBLIC__/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
+					<div class="imgs"><a href=""><img src="/Public/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
 					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
 					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
 				</li>
 				<li>
-					<div class="imgs"><a href=""><img src="__PUBLIC__/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
+					<div class="imgs"><a href=""><img src="/Public/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
 					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
 					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
 				</li>
 				<li>
-					<div class="imgs"><a href=""><img src="__PUBLIC__/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
+					<div class="imgs"><a href=""><img src="/Public/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
 					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
 					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
 				</li>
 				<li>
-					<div class="imgs"><a href=""><img src="__PUBLIC__/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
+					<div class="imgs"><a href=""><img src="/Public/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
 					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
 					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
 				</li>
 				<li>
-					<div class="imgs"><a href=""><img src="__PUBLIC__/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
+					<div class="imgs"><a href=""><img src="/Public/mall/wuhelong/images/goodslist2.jpg" alt=""></a></div>
 					<h5><a href="">杜邦农得时肥料农药剂杀菌抗菌业防治杀菌抗菌业防治</a></h5>
 					<div class="ul-cont-bottom"><span class="ul-cont-buyer">16879人已购买</span><span>浙江杭州</span></div>
 				</li>
 			</ul>
-			<div class="change-one"><img src="__PUBLIC__/mall/wuhelong/images/changeone.png" alt="">换一批</div>
+			<div class="change-one"><img src="/Public/mall/wuhelong/images/changeone.png" alt="">换一批</div>
 		</section><!-- 底部热门分类END -->
 	</section><!-- 主体内容结束 -->
 
@@ -1133,7 +1133,7 @@
 
     // $(".shopTitle").click(function(){
     //   $(this).next().toggle(function(){
-    //     $(".shopTitle").find('img').attr('src',"__PUBLIC__/mall/wuhelong/images/moredown.png")
+    //     $(".shopTitle").find('img').attr('src',"/Public/mall/wuhelong/images/moredown.png")
     //   });
     // })
 
@@ -1168,7 +1168,7 @@
 				    shift: 0,
 				    area: ['489px', '165px'],
 				    shadeClose: false, //开启遮罩关闭
-				    content: '<div class="proxyBox"><h4><img src="__PUBLIC__/mall/wuhelong/images/right.png" alt="">只有零售商或农户/专业合作社/家庭农场/种植基地才能申请会员</h4><div class="proxybtn">确认</div></div>',
+				    content: '<div class="proxyBox"><h4><img src="/Public/mall/wuhelong/images/right.png" alt="">只有零售商或农户/专业合作社/家庭农场/种植基地才能申请会员</h4><div class="proxybtn">确认</div></div>',
 				    success:function(){
 				    	$(".modifyBtn2").click(function(){ //取消按钮
 				    		layer.closeAll('page');
@@ -1193,7 +1193,7 @@
 				    shift: 0,
 				    area: ['489px', '165px'],
 				    shadeClose: false, //开启遮罩关闭
-				    content: '<div class="proxyBox"><h4><img src="__PUBLIC__/mall/wuhelong/images/error.png" alt="">只有零售商或农户/专业合作社/家庭农场/种植基地才能申请会员</h4><div class="proxybtn">确认</div></div>',
+				    content: '<div class="proxyBox"><h4><img src="/Public/mall/wuhelong/images/error.png" alt="">只有零售商或农户/专业合作社/家庭农场/种植基地才能申请会员</h4><div class="proxybtn">确认</div></div>',
 				    success:function(){
 				    	$(".modifyBtn2").click(function(){ //取消按钮
 				    		layer.closeAll('page');

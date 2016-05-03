@@ -103,7 +103,7 @@
 }
 .goodsDetail-top{
 	width: 100%;
-	height: 532px;
+	height: 600px;
 	margin-top: 10px;
 }
 /*放大镜效果*/
@@ -170,12 +170,13 @@
 	line-height: 20px;
 	font-family: '宋体';
 	font-weight: normal;
-	margin-bottom: 20px;
+
 }
 .goodsDetail-top-midden .dataBox{
 	border-top: 1px dashed #e5e5e5;
 	padding-top: 12px;
 	width: 100%;
+	margin-bottom: 20px;
 }
 .goodsDetail-top-midden .dataBox .labels{
 	font-size: 12px;
@@ -226,6 +227,11 @@
 .goodsDetail-top-midden .dataBox .specification-wrap{
 	margin-bottom: 25px;
 }
+.specification-wrap .specification-list{
+	margin:-20px 0 0 60px;
+	display: block;
+	float: left;
+}
 .goodsDetail-top-midden .dataBox .specification-wrap .specification-num{
 	border:1px solid #e7e7e7;
 	margin-right: -3px;
@@ -233,6 +239,9 @@
 	font-size: 14px;
 	color: #666;
 	cursor: default;
+	display: inline-block;
+	margin-bottom: 5px;
+	box-sizing:border-box;
 }
 .goodsDetail-top-midden .dataBox .specification-wrap .specification-num:hover{
 	background: #f8f8f8;
