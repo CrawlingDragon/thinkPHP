@@ -249,15 +249,14 @@ header .header-right ul li{
 }
 
 header .header-right ul li.list1 a{
-	background: url(../images/bj.png) no-repeat;
-	background-position: -166px -28px;
+	background: url(../images/bj5.png) no-repeat right center;
+	/*background-position: -166px -28px;*/
 	padding-right: 20px;
 	line-height: 31px;
 	cursor: pointer;
 }
 header .header-right ul li .list-title.active{
-	background: url(../images/bj2.png) no-repeat;
-	background-position: 55px 13px;
+	background: url(../images/bj4.png) no-repeat right center;
 }
 
 header .header-right ul li.list3 .list-title.active{

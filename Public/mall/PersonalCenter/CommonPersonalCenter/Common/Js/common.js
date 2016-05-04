@@ -33,7 +33,7 @@ $(document).ready(function(){
 })
 
 //确认收货按钮弹出
-function confirmReceipt(){
+function confirmReceipt(test,fn){
 	layer.open({
 	    type: 1,
 	    title:false,
@@ -42,14 +42,16 @@ function confirmReceipt(){
 	    shift: 0,
 	    area: ['490px', '150px'],
 	    shadeClose: false, //开启遮罩关闭
-	    content: '<div class="confirmReceiptCont popupCommom"><p>请收到货后，再确认收货！</p><p style="margin:40px 0 40px 83px;"><label>确认收货：</label><input type="button" value="确认" class="deletBtn1"><input type="button" value="取消" class="deletBtn2"></p></div>',
+	    content: '<div class="confirmReceiptCont popupCommom"><p>'+test+'</p><p style="margin:40px 0 40px 83px;"><label>确认收货：</label><input type="button" value="确认" class="deletBtn1"><input type="button" value="取消" class="deletBtn2"></p></div>',
 	    success:function(layero, index){
 	    	$(".deletBtn2").click(function(){ //取消按钮
 	    		layer.closeAll('page');
+	    		
 	    	});
 	    	$(".deletBtn1").click(function(){ //确定按钮
 	    		layer.closeAll('page');
 	    		alert("删除成功！")
+	    		fn();
 	    	});
 	    }
 	});

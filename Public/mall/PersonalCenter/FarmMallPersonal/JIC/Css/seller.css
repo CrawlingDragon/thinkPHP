@@ -2819,6 +2819,9 @@
 	font-style: normal;
 	cursor: pointer;
 }
+.creditRelations i.mr{
+	margin-right: 10px;
+}
 /*卖家中心-首页样式*/
 .sellerIndex .sellerIndex-left{
 	width: 700px;
