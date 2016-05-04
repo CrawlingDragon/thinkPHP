@@ -195,6 +195,15 @@ function closeOrder(){
 	});
 };
 
-
-
-	
+//用户名验证
+function userName(x){
+		 $(".errorMsg").hide();
+         var $parent = $(this).parent();
+         $(this).removeAttr("style");
+         //公司名称
+        if(x.value==""){
+        	$(".errorMsg").show();
+            $(".errorMsg").text('请输入用户名!');
+            $(this).css("border","1px solid #ff6600");
+        }
+}

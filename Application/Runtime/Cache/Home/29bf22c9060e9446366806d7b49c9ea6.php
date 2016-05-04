@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-		<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
+	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
 	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -109,19 +109,19 @@
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar emailWrap" style="height: 580px;"><!-- 右边内容 -->
-				<div class="smallTitle">邮箱绑定</div>
+				<div class="smallTitle">手机绑定</div>
 				<form action="" class="emForm">
 					<div class="list">
-						<label for="">邮箱地址:</label>
+						<label for="">手机号码:</label>
 						<input type="text" name="" id="">
 						<span class="nameTxt"><div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div></span>
-						<span class="c3 f12 ml">用于登录</span>
+						<span class="c6 f12 ml">用于登录</span>
 					</div>
 					<div class="list">
-						<label for="">请填写邮箱验证码:</label>
+						<label for="">请填写手机验证码:</label>
 						<input type="text" name="" id="" class="emCode">
 						<input type="button" value="发送邮箱验证码" class="emBtn">
-						<a href="#" class="green f12">没有收到邮件?</a>
+						<a href="#" class="green f12">没有收到短信?</a>
 					</div>
 					<div class="list">
 						<label for="">验证码:</label>
@@ -130,7 +130,7 @@
 						<span class="codeTxt">看不清楚<i >换一张</i></span>
 					</div>
 					<div class="list">
-						<label for="">开启邮箱登录</label>
+						<label for="">开启手机号码登录</label>
 						<input type="radio" name="" id="">
 						<span class="yes">是</span>
 						<input type="radio" name="" id="">

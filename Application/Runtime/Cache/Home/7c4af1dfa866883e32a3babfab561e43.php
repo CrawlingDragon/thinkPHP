@@ -4,13 +4,12 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/bscommon.css" type="text/css">
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/multi-switch.min.css" type="text/css">
 	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-		<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
 	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -20,11 +19,33 @@
 	<!--[if lt IE 8]>
 	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
-	<script type="text/javascript">
-		$(function(){
-			$('.multi-switch').multiSwitch();
-		});
+	<script type="text/javascript"> //判断ie8以下浏览器
+		var flag = true; 
+		var ua = navigator.userAgent.toLowerCase(); 
+		if(navigator.userAgent.indexOf("MSIE")>0)  
+		{   
+		    if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
+		    	window.location.href="http:tip.html";
+		    }   
+		    if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
+		   	 	window.location.href="http:tip.html";
+		    }   
+		    if(navigator.userAgent.indexOf("MSIE 8.0")>0){  
+		  		//alert("ie8");  
+		    }   
+		    if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
+		   		//alert("ie9");  
+		    }   
+		}else{  
+			flag = false;  
+			
+			}   
+		if(!flag){  
+
+		}  
+
 	</script>
+
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
@@ -108,36 +129,54 @@
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
-			<div class="rightBar emailWrap" style="height: 580px;"><!-- 右边内容 -->
-				<div class="smallTitle">邮箱绑定</div>
-				<form action="" class="emForm">
-					<div class="list">
-						<label for="">邮箱地址:</label>
-						<input type="text" name="" id="">
-						<span class="nameTxt"><div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div></span>
-						<span class="c3 f12 ml">用于登录</span>
-					</div>
-					<div class="list">
-						<label for="">请填写邮箱验证码:</label>
-						<input type="text" name="" id="" class="emCode">
-						<input type="button" value="发送邮箱验证码" class="emBtn">
-						<a href="#" class="green f12">没有收到邮件?</a>
-					</div>
-					<div class="list">
-						<label for="">验证码:</label>
-						<input type="text" name="" id="" class="code">
-						<img src="" alt="" class="codeImg">
-						<span class="codeTxt">看不清楚<i >换一张</i></span>
-					</div>
-					<div class="list">
-						<label for="">开启邮箱登录</label>
-						<input type="radio" name="" id="">
-						<span class="yes">是</span>
-						<input type="radio" name="" id="">
-						<span class="yes">否</span>
-					</div>
-					<input type="submit" value="保存" class="biSub">
-				</form>
+			<div class="rightBar"><!-- 右边内容 -->
+				<div class="smallTitle">已有账户</div>
+				<div class="existingAccount">
+					<ul class="ulForm">
+						<li class="liTh">
+							<span class="row01">ID</span>
+							<span class="row02">姓名</span>
+							<span class="row03">用户名</span>
+							<span class="row04">邮箱</span>
+							<span class="row05">座机</span>
+							<span class="row06">手机</span>
+							<span class="row07">级别</span>
+							<span class="row08">状态</span>
+							<span class="row09">操作</span>
+						</li>
+						<li class="liTr">
+							<span class="row01">12015041515048</span>
+							<span class="row02">王思聪</span>
+							<span class="row03">wsc123456</span>
+							<span class="row04">15625845962@qq.com</span>
+							<span class="row05">021-25845962</span>
+							<span class="row06">12356489556</span>
+							<span class="row07">超级管理员</span>
+							<span class="row08">有效</span>
+							<span class="row09 btnCheck">
+								<a href="javascript:;" class="modityBtn"></a>
+								<a href="javascript:;" class="lockBtnYes"></a>
+								<a href="javascript:;" class="deletBtn"></a>
+							</span>
+						</li>
+						<li class="liTr">
+							<span class="row01">12015041515048</span>
+							<span class="row02">王思聪</span>
+							<span class="row03">wsc123456</span>
+							<span class="row04">15625845962@qq.com</span>
+							<span class="row05">021-25845962</span>
+							<span class="row06">12356489556</span>
+							<span class="row07">超级管理员</span>
+							<span class="row08">有效</span>
+							<span class="row09 btnCheck">
+								<a href="javascript:;" class="modityBtn"></a>
+								<a href="javascript:;" class="lockBtnYes"></a>
+								<a href="javascript:;" class="deletBtn"></a>
+							</span>
+						</li>
+					</ul>
+					<a href="javascript:;" class="clickAdd">+ 增加新账户</a>
+				</div>
 			</div><!-- 右边内容end -->
 		</div>
 	</section>	<!-- 主体内容end -->

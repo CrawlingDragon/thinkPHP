@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/bscommon.css" type="text/css">
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/multi-switch.min.css" type="text/css">
+	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
 	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-		<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
+	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
 	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -20,11 +21,36 @@
 	<!--[if lt IE 8]>
 	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
-	<script type="text/javascript">
+	<script type="text/javascript"> //判断ie8以下浏览器
+		var flag = true; 
+		var ua = navigator.userAgent.toLowerCase(); 
+		if(navigator.userAgent.indexOf("MSIE")>0)  
+		{   
+		    if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
+		    	window.location.href="http:tip.html";
+		    }   
+		    if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
+		   	 	window.location.href="http:tip.html";
+		    }   
+		    if(navigator.userAgent.indexOf("MSIE 8.0")>0){  
+		  		//alert("ie8");  
+		    }   
+		    if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
+		   		//alert("ie9");  
+		    }   
+		}else{  
+			flag = false;  
+			
+			}   
+		if(!flag){  
+
+		}  
+
 		$(function(){
 			$('.multi-switch').multiSwitch();
 		});
 	</script>
+
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
@@ -108,36 +134,58 @@
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
-			<div class="rightBar emailWrap" style="height: 580px;"><!-- 右边内容 -->
-				<div class="smallTitle">邮箱绑定</div>
-				<form action="" class="emForm">
-					<div class="list">
-						<label for="">邮箱地址:</label>
-						<input type="text" name="" id="">
-						<span class="nameTxt"><div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div></span>
-						<span class="c3 f12 ml">用于登录</span>
+			<div class="rightBar"><!-- 右边内容 -->
+				<div class="smallTitle">消息设置</div>
+				<div class="infoSet">
+					<p class="promptMessage">选择“是”，消息提醒将开启，收到该条件下的有关通知内容；选择“否”，消息提醒将关闭，不会收到有关条件下的任何通知内容</p>
+					<div class="infoSetItem">
+						<strong>物流消息</strong>
+						<p>当订单发货、送货、收货时的消息通知</p>
+						<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div>
 					</div>
-					<div class="list">
-						<label for="">请填写邮箱验证码:</label>
-						<input type="text" name="" id="" class="emCode">
-						<input type="button" value="发送邮箱验证码" class="emBtn">
-						<a href="#" class="green f12">没有收到邮件?</a>
+					<div class="infoSetItem">
+						<strong>评论消息</strong>
+						<p>当你购买的商品在交易成功后，会收到来自卖家评论的消息提醒</p>
+						<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div>
 					</div>
-					<div class="list">
-						<label for="">验证码:</label>
-						<input type="text" name="" id="" class="code">
-						<img src="" alt="" class="codeImg">
-						<span class="codeTxt">看不清楚<i >换一张</i></span>
+					<div class="infoSetItem">
+						<strong>购物车</strong>
+						<p>当你选中的商品在购物车未付款超过一定时间后，会收到购物车提醒付款的提醒</p>
+						<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="2" /></div>
 					</div>
-					<div class="list">
-						<label for="">开启邮箱登录</label>
-						<input type="radio" name="" id="">
-						<span class="yes">是</span>
-						<input type="radio" name="" id="">
-						<span class="yes">否</span>
+					<div class="infoSetItem">
+						<strong>付款</strong>
+						<p>当你付款成功后，会收到成功付款的信息</p>
+						<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div>
 					</div>
-					<input type="submit" value="保存" class="biSub">
-				</form>
+					<div class="infoSetItem">
+						<strong>审核反馈</strong>
+						<p>当提交申请后，会收到审核结果的消息提醒</p>
+						<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="2" /></div>
+					</div>
+					<div class="infoSetItem">
+						<strong>系统消息</strong>
+						<p>开启将收到系统内部消息</p>
+						<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div>
+					</div>
+					<div class="infoSetItem">
+						<strong>私信</strong>
+						<p>开启将实现商家和客户之间的沟通交流</p>
+						<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="2" /></div>
+					</div>
+					<div class="infoSetItem">
+						<strong>短信接收</strong>
+						<p>当你在电脑端收到的消息，手机端将同步已短信方式接收消息提醒</p>
+						<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div>
+						<a href="javascript:;" class="setUP">设置</a>
+					</div>
+					<div class="infoSetItem">
+						<strong>邮箱接收</strong>
+						<p>当你在电脑端收到的消息，你的邮箱将同步接收消息提醒</p>
+						<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="2" /></div>
+						<a href="javascript:;" class="setUP">设置</a>
+					</div>
+				</div>
 			</div><!-- 右边内容end -->
 		</div>
 	</section>	<!-- 主体内容end -->
@@ -357,5 +405,6 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
+
 </body>
 </html>
