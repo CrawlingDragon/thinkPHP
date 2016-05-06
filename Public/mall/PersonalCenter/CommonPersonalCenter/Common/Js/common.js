@@ -195,15 +195,154 @@ function closeOrder(){
 	});
 };
 
+
+// js键盘事件的初始化
+ function keyUp(e) {  
+       var currKey=0,e=e||event;  
+       currKey=e.keyCode||e.which||e.charCode;  
+       var keyName = String.fromCharCode(currKey);  
+       // alert("按键码: " + currKey + " 字符: " + keyName);  
+   }  
+   document.onkeyup = keyUp;  
 //用户名验证
 function userName(x){
-		 $(".errorMsg").hide();
-         var $parent = $(this).parent();
-         $(this).removeAttr("style");
+	     var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
          //公司名称
-        if(x.value==""){
-        	$(".errorMsg").show();
-            $(".errorMsg").text('请输入用户名!');
-            $(this).css("border","1px solid #ff6600");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langUserName1);
+            $(x).css("border","1px solid #ff6600");
+        }
+        var str = $.trim(x.value);
+}
+
+//真实姓名
+function realNames(x){
+		 var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+         //公司名称
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langPeopleName1);
+            $(x).css("border","1px solid #ff6600");
+        }
+        var str = $.trim(x.value);
+}
+function IDnumber(x){
+	var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+         //公司名称
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langCardId1);
+            $(x).css("border","1px solid #ff6600");
+        }else if(!IdentityCodeValid(x.value)){
+        	$msg.show();
+            $msg.text(langCardId2);
+            $(x).css("border","1px solid #ff6600");
         }
 }
+//详细地址认证
+function deAds(x){
+	var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langDetailAds1);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+
+//公司名字名臣验证
+function comName(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langComName1);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//营业执照注册号
+function bisLicense(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langBisLicense1);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//营业范围
+function bisScope(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langBisScope1);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//营业资本
+function capital(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langCapital);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//注册资本
+function loginAds(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langLoginAds);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//法人代表
+function corporate(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langCorporate);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//注册时间
+// function setupTime(x){
+// 		var $msg = $(x).parent().find('.errorMsg');
+// 		 $msg.hide();
+// 		 $msg.text("");
+//          $(x).removeAttr("style");
+//         if(x.value==''){
+//         	$msg.show();
+//             $msg.text(langSetupTime);
+//             $(x).css("border","1px solid #ff6600");
+//         }
+// }

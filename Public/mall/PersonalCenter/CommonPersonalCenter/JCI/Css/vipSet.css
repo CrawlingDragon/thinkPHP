@@ -633,3 +633,10 @@ select{
 .vipFormItem>.switchBtn .multi-switch .switch-content.active .switch-circle{/*background-color:#599524;*/background-position: right 0;left:36%;margin-left:0;}
 .switchBtn .multi-switch .switch-content.disable .switch-circle{left:0;margin-left:0;background-position: 0 -20px;}
 .switchBtn .multi-switch .switch-content.initial .switch-circle{left:50%;margin-left:-22px;background-color:#fff;}
+.errorMsg{
+	margin-left: 161px;
+    margin-top: 10px;
+    margin-bottom: -8px;
+    color: #999;
+    display: none;
+}

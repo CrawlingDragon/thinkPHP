@@ -9,8 +9,10 @@
 	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/JCI/css/multi-switch.min.css" type="text/css">
 	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/mall/common/js/Validation.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/birthday.js"></script>
 	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -37,7 +39,7 @@
 				<form action="" class="bi-form">
 					<div class="list"><!-- 登陆名 -->
 						<label for=""><i>*</i>用户名:</label>
-						<input type="text" name="" id="user" onblur="userName(this)">
+						<input type="text" name="" id="user" onblur="userName(this)" onkeyup="userName(this)">
 						<span class="nameTxt"><div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div></span>
 						<span class="c3 f12 ml">用于登录</span>
 						<p class="errorMsg"></p>
@@ -53,15 +55,15 @@
 					</div>
 					<div class="list"><!-- 生日 -->
 						<label for="">生日:</label>
-						<select name="" id="">
+						<select name="" id="selYear">
 							<option value="">请选择</option>
 						</select>
 						<span class="timeTxt">年</span>
-						<select name="" id="">
+						<select name="" id="selMonth">
 							<option value="">请选择</option>
 						</select>
 						<span class="timeTxt">月</span>
-						<select name="" id="">
+						<select name="" id="selDay">
 							<option value="">请选择</option>
 						</select>
 						<span class="txt">日</span>
@@ -69,11 +71,13 @@
 					</div>
 					<div class="list"><!-- 真实姓名 -->
 						<label for=""><i>*</i>真实姓名:</label>
-						<input type="text" name="" id="">
+						<input type="text" name="realName" id="realName" onblur="realNames(this)" onkeyup="realNames(this)">
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list"><!-- 身份证号 -->
 						<label for="">身份证号:</label>
-						<input type="text" name="" id="">
+						<input type="text" name="" id="IDnum" onblur="IDnumber(this)" onkeyup="IDnumber(this)">
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list"><!-- 婚姻状况 -->
 						<label for="">婚姻状况:</label>
@@ -107,13 +111,40 @@
 						<select name="" id="">
 							<option value="">滨江区</option>
 						</select>
-						<input type="text" name="" id="" class="ads">
+						<input type="text" name="" id="" class="ads" onblur="deAds(this)" onkeyup="deAds(this)">
+						<p class="errorMsg"></p>
 					</div>
-					<input type="submit" value="保存" class="biSub">
+					<input type="submit" value="保存" class="biSub" id="sub">
 				</form>
 			</div><!-- 右边内容end -->
 		</div>
 	</section>	<!-- 主体内容end -->
 	<include file ="Public/CommonPersonalFooter"/>
+<script>  
+	$(function(){
+		$.ms_DatePicker({
+	            YearSelector: "#selYear",
+	            MonthSelector: "#selMonth",
+	            DaySelector: "#selDay"
+	    });
+		$.ms_DatePicker();
+
+		
+
+
+		$('#sub').click(function(){
+			$('input[type=text]').trigger('blur');
+			// var len = $('.errorMsg').length;
+			var txt = $('.errorMsg').text();
+			if($('.errorMsg').text()!==''){
+				return false;
+			}else{
+				return true;
+
+			}
+		})
+		
+	});
+	</script>
 </body>
 </html>

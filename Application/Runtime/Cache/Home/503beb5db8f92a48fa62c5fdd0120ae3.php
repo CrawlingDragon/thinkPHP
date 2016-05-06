@@ -6,13 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
 	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/multi-switch.min.css" type="text/css">
 	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/common/js/Validation.js"></script>
 	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/birthday.js"></script>
+		<script type="text/javascript" src="/Public/mall/common/js/Validation.js"></script>
+	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/laydate/laydate.js"></script>
 	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -22,15 +20,6 @@
 	<!--[if lt IE 8]>
 	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
-	<script type="text/javascript">
-		$(function(){
-			$('.multi-switch').multiSwitch();
-		});
-		function idCard(x,txt,IDtxt){
-			nulls(x,txt);
-			IDnumber(x,IDtxt);
-		}
-	</script>
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
@@ -114,89 +103,54 @@
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
-			<div class="rightBar biWrap"><!-- 右边内容 -->
-				<div class="smallTitle">基本信息</div>
-				<div class="smallTips">带<span>*</span>为必填项</div>
-				<form action="" class="bi-form">
-					<div class="list"><!-- 登陆名 -->
-						<label for=""><i>*</i>用户名:</label>
-						<input type="text" name="" id="user" onblur="userName(this)" onkeyup="userName(this)">
-						<span class="nameTxt"><div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div></span>
-						<span class="c3 f12 ml">用于登录</span>
+			<div class="rightBar cyWrap"><!-- 右边内容 -->
+				<div class="cyTitle">请填写真实的资料！</div>
+				<form action="" class="cyForm">
+					<div class="list">
+						<label for="">公司名称:</label>
+						<input type="text" name="" id="" onblur="comName(this)" onkeyup="comName(this)">
 						<p class="errorMsg"></p>
 					</div>
-					<div class="list"><!-- 性别 -->
-						<label for=""><i>*</i>性别:</label>
-						<input type="radio" name="sex" id="" checked="">
-						<span class="sex">男</span>
-						<input type="radio" name="sex" id="">
-						<span class="sex">女</span>
-						<input type="radio" name="sex" id="">
-						<span class="sex">保密</span>
-					</div>
-					<div class="list"><!-- 生日 -->
-						<label for="">生日:</label>
-						<select name="" id="selYear">
-							<option value="">请选择</option>
-						</select>
-						<span class="timeTxt">年</span>
-						<select name="" id="selMonth">
-							<option value="">请选择</option>
-						</select>
-						<span class="timeTxt">月</span>
-						<select name="" id="selDay">
-							<option value="">请选择</option>
-						</select>
-						<span class="txt">日</span>
-						<span class="timeTip">填真实生日有惊喜哦~</span>
-					</div>
-					<div class="list"><!-- 真实姓名 -->
-						<label for=""><i>*</i>真实姓名:</label>
-						<input type="text" name="realName" id="realName" onblur="realNames(this)" onkeyup="realNames(this)">
+					<div class="list">
+						<label for="">营业执照注册号:</label>
+						<input type="text" name="" id="" onblur="bisLicense(this)" onkeyup="bisLicense(this)">
 						<p class="errorMsg"></p>
 					</div>
-					<div class="list"><!-- 身份证号 -->
-						<label for="">身份证号:</label>
-						<input type="text" name="" id="IDnum" onblur="IDnumber(this)" onkeyup="IDnumber(this)">
+					<div class="list">
+						<label for="" class="photo">营业执照副本照片:</label>
+						<div class="upBox">
+							<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/delete.png" alt="" class="img1">
+							<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/search.png" alt="" class="img2">
+							<div class="upCont">+</div>
+							<span>单张图片最大不能超过1M，图片格式仅限：jpg, gif, png, jpeg</span>
+						</div>
+					</div>
+					<div class="list">
+						<label for="" class="range">经营范围:</label>
+						<textarea placeholder="请用简短文字描述经营范围" cols="40" rows="" onblur="bisScope(this)" onkeyup="bisScope(this)"></textarea>
 						<p class="errorMsg"></p>
 					</div>
-					<div class="list"><!-- 婚姻状况 -->
-						<label for="">婚姻状况:</label>
-						<input type="radio" name="marriage" id="" checked="">
-						<span class="marriage">已婚</span>
-						<input type="radio" name="marriage" id="">
-						<span class="marriage">未婚</span>
-						<input type="radio" name="marriage" id="">
-						<span class="marriage">保密</span>
-					</div>
-					<div class="list"><!-- 教育程度 -->
-						<label for="">教育程度:</label>
-						<select name="" id="">
-							<option value="">请选择</option>
-						</select>
-					</div>
-					<div class="list"><!-- 所在行业 -->
-						<label for="">所在行业:</label>
-						<select name="" id="">
-							<option value="">请选择</option>
-						</select>
-					</div>
-					<div class="list"><!-- 所在地区 -->
-						<label for=""><i>*</i>所在地区:</label>
-						<select name="" id="">
-							<option value="">浙江省</option>
-						</select>
-						<select name="" id="">
-							<option value="">杭州市</option>
-						</select>
-						<select name="" id="">
-							<option value="">滨江区</option>
-						</select>
-						<input type="text" name="" id="" class="ads" onblur="deAds(this)" onkeyup="deAds(this)">
+					<div class="list">
+						<label for="">注册资本:</label>
+						<input type="text" name="" id="" onkeyup="capital(this)" onblur="capital(this)">
 						<p class="errorMsg"></p>
 					</div>
-					<input type="submit" value="保存" class="biSub" id="sub">
-					<div class="aaa">2312</div>
+					<div class="list">
+						<label for="">注册地址:</label>
+						<input type="text" name="" id="" onkeyup="loginAds(this)" onblur="loginAds(this)">
+						<p class="errorMsg"></p>
+					</div>
+					<div class="list">
+						<label for="">法人代表:</label>
+						<input type="text" name="" id="" onblur="corporate(this)" onkeyup="corporate(this)">
+						<p class="errorMsg"></p>
+					</div>
+					<div class="list">
+						<label for="">成立时间:</label>
+						<input type="text" name="" id="time1">
+						<p class="errorMsg"></p>
+					</div>
+					<input type="submit" value="提交" class="biSub" id="sub">
 				</form>
 			</div><!-- 右边内容end -->
 		</div>
@@ -417,34 +371,27 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
-<script>  
-	$(function(){
-		$.ms_DatePicker({
-	            YearSelector: "#selYear",
-	            MonthSelector: "#selMonth",
-	            DaySelector: "#selDay"
-	    });
-		$.ms_DatePicker();
+<script type="text/javascript">
 
-		
-
-
+		// 日历1
+		laydate({
+		   elem: '#time1',  
+		});
 		$('#sub').click(function(){
 			$('input[type=text]').trigger('blur');
 			// var len = $('.errorMsg').length;
 			var txt = $('.errorMsg').text();
 			if($('.errorMsg').text()!==''){
 				return false;
+			}else if($('#time1').val()==''){
+				$('#time1').focus();
+				alert('请输入成立时间');
+				return false;
 			}else{
 				return true;
 
 			}
 		})
-		
-		$('.aaa').click(function(){
-			alert($('#user').val().length);
-		})
-	});
-	</script>
+</script>
 </body>
 </html>

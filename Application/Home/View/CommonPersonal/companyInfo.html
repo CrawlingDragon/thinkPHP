@@ -9,6 +9,8 @@
 	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/mall/common/js/Validation.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/laydate/laydate.js"></script>
 	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -29,11 +31,13 @@
 				<form action="" class="cyForm">
 					<div class="list">
 						<label for="">公司名称:</label>
-						<input type="text" name="" id="">
+						<input type="text" name="" id="" onblur="comName(this)" onkeyup="comName(this)">
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list">
 						<label for="">营业执照注册号:</label>
-						<input type="text" name="" id="">
+						<input type="text" name="" id="" onblur="bisLicense(this)" onkeyup="bisLicense(this)">
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list">
 						<label for="" class="photo">营业执照副本照片:</label>
@@ -46,29 +50,56 @@
 					</div>
 					<div class="list">
 						<label for="" class="range">经营范围:</label>
-						<textarea placeholder="请用简短文字描述经营范围" cols="40" rows=""></textarea>
+						<textarea placeholder="请用简短文字描述经营范围" cols="40" rows="" onblur="bisScope(this)" onkeyup="bisScope(this)"></textarea>
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list">
 						<label for="">注册资本:</label>
-						<input type="text" name="" id="">
+						<input type="text" name="" id="" onkeyup="capital(this)" onblur="capital(this)">
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list">
 						<label for="">注册地址:</label>
-						<input type="text" name="" id="">
+						<input type="text" name="" id="" onkeyup="loginAds(this)" onblur="loginAds(this)">
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list">
 						<label for="">法人代表:</label>
-						<input type="text" name="" id="">
+						<input type="text" name="" id="" onblur="corporate(this)" onkeyup="corporate(this)">
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list">
 						<label for="">成立时间:</label>
-						<input type="text" name="" id="">
+						<input type="text" name="" id="time1">
+						<p class="errorMsg"></p>
 					</div>
-					<input type="submit" value="提交" class="biSub">
+					<input type="submit" value="提交" class="biSub" id="sub">
 				</form>
 			</div><!-- 右边内容end -->
 		</div>
 	</section>	<!-- 主体内容end -->
 	<include file ="Public/CommonPersonalFooter"/>
+<script type="text/javascript">
+
+		// 日历1
+		laydate({
+		   elem: '#time1',  
+		});
+		$('#sub').click(function(){
+			$('input[type=text]').trigger('blur');
+			// var len = $('.errorMsg').length;
+			var txt = $('.errorMsg').text();
+			if($('.errorMsg').text()!==''){
+				return false;
+			}else if($('#time1').val()==''){
+				$('#time1').focus();
+				alert('请输入成立时间');
+				return false;
+			}else{
+				return true;
+
+			}
+		})
+</script>
 </body>
 </html>

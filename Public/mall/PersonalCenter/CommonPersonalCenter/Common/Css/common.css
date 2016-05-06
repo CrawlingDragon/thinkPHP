@@ -30,6 +30,7 @@ select {
 }
 /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
 select::-ms-expand { display: none; }
+input::-ms-clear{display:none;}
 button,input, select, textarea { font-size:100%;vertical-align:middle;outline: none;} 
 table { border-collapse:collapse; border-spacing:0; }
 ul,dl{font-size:0;}
