@@ -68,16 +68,17 @@ input:-moz-placeholder { color:#999;font-size:12px; }
 input:focus {border: 1px solid #599524;}
 input:focus {outline:none;}
 
-.lfSide, .rtSide{margin-top:60px;width:440px;}
+.lfSide, .rtSide{margin-top:60px;width:415px;}
 .lfSide h3{font-size:20px;color:#333;padding:0 0 32px 10px;}
 .item {overflow:hidden;margin-bottom:20px;}
-.item span{width:100px;height:44px;line-height:44px;font-size:14px;color:#000;float:left;text-align:right;}
-.item input{float:left;}
-.input310, .input150{padding-left: 10px;border:1px solid #e5e5e5;color:#000;margin-right:10px;line-height:38px;}
-.input310{width:308px;height:38px;}
-.input150{width:150px;height:38px;}
-#randimg{width:80px;height:44px;margin:0 10px;}
-.item em{line-height:44px;color:#666;font-size:14px;}
+.item:last-child{margin-top: -10px;}
+.item span{width:100px;height:40px;line-height:40px;font-size:14px;color:#000;float:left;text-align:right;}
+.item input{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+.input310, .input150{padding-left: 10px;border:1px solid #e5e5e5;color:#000;line-height:38px;}
+.input310{width:310px;height:40px;}
+.input150{width:150px;height:40px;}
+#randimg{width:80px;height:40px;margin:0 10px;}
+.item em{line-height:40px;color:#666;font-size:14px;}
 .logTip{font-size:13px;color:#999;}
 input[type=button]{background:#f7f7f7;height: 40px;}
 
@@ -85,3 +86,5 @@ input[type=button]{background:#f7f7f7;height: 40px;}
 .subBtn:hover{background:#df5a01;}
 .two-code{background:url(../images/two-code.png) no-repeat;width:450px;height:420px;margin-top: 10px;}
 .formtips{font-size:12px;color:#ff6600;padding-left: 100px;}
+.onError{margin-top:5px;}
+#verify{float: left;}
