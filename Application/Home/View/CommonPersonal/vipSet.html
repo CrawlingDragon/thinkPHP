@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<!-- <link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/bscommon.css" type="text/css"> -->
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<!-- <link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/css/bscommon.css" type="text/css"> -->
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/Css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/CommonPersonal/Css/vipSet.css" type="text/Css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/Validation.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -56,46 +57,46 @@
 				<div class="smallTitle">安全中心</div>
 				<div class="safeLv">
 					安全级别:
-					<img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeLv1.png" alt="" style="display: none;">
-					<img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeLv2.png" alt="">
-					<img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeLv3.png" alt="" style="display: none;">
+					<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeLv1.png" alt="" style="display: none;">
+					<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeLv2.png" alt="">
+					<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeLv3.png" alt="" style="display: none;">
 					<span>中级</span>
 					<i>建议您启动全部安全设置，以保障账户及资金安全</i>
 				</div>
 				<ul class="safeBox">
 					<li>
-						<img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeRight.png" alt="" class="right"><!-- 正确时的图片 -->
-						<!-- <img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">警告时的图片 -->
-						<!--<img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeError.png" alt="" class="error">错误时的图片 --> 
+						<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeRight.png" alt="" class="right"><!-- 正确时的图片 -->
+						<!-- <img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">警告时的图片 -->
+						<!--<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeError.png" alt="" class="error">错误时的图片 --> 
 						<h5>登录密码</h5>
 						<span>密码强度为:<i>中</i></span>
-						<a href="" class="change">修改</a>
+						<a href="/home/CommonPersonal/logoPwd.html" class="change">修改</a>
 					</li>
 					<li>
-						<img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">
+						<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">
 						<h5>邮箱验证</h5>
 						<span>已添加的邮箱：28***4@163.com</span>
-						<a href="" class="now">马上验证</a>
-						<a href="" class="change">修改</a>
+						<a href="/home/CommonPersonal/emailSet.html" class="now">马上验证</a>
+						<a href="/home/CommonPersonal/emailSet.html" class="change">修改</a>
 					</li>
 					<li>
-						<img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">
+						<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeWarn.png" alt="" class="warn">
 						<h5>绑定手机</h5>
 						<span>已添加的手机：158****47</span>
-						<a href="" class="now">立即绑定</a>
-						<a href="" class="change">修改</a>
+						<a href="/home/CommonPersonal/phoneSet.html" class="now">立即绑定</a>
+						<a href="/home/CommonPersonal/phoneSet.html" class="change">修改</a>
 					</li>
 					<li>
-						<img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeError.png" alt="" class="error">
+						<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeError.png" alt="" class="error">
 						<h5>支付密码</h5>
 						<span>密码强度为:<i>强</i></span>
-						<a href="" class="change">修改</a>
+						<a href="/home/CommonPersonal/payPwd.html" class="change">修改</a>
 					</li>
 					<li>
-						<img src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Image/safeError.png" alt="" class="error">
+						<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/safeError.png" alt="" class="error">
 						<h5>安全问题</h5>
 						<span>设置完成后，找回密码时可通过回答问题迅速找回</span>
-						<a href="" class="btn">立即设置</a>
+						<a href="/home/CommonPersonal/safeAnswer.html" class="btn">立即设置</a>
 					</li>
 				</ul>
 			</div><!-- 右边内容end -->

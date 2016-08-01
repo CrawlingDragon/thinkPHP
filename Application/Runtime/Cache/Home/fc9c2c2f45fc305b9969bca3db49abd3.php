@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
+	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -24,14 +24,14 @@
 		<div class="header-wrap">
 			<div class="header-top"><!-- 头部上面部分 -->
 				<div class="left">
-					<img src="/Public/mall/wuhelong/images/bslogo.png" alt=""><!-- logo -->
+					<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bslogo.png" alt=""><!-- logo -->
 				</div>
 				<div class="right"><!-- 右边内容 -->
 					<ul class="ul1 clear"><!-- 帮助中心 -->
-						<li style="cursor: default;">服务热线：0571-87661678</li>
+						<li style="cursor: default;">服务热线：0571-87661693</li>
 						<li onclick="AddFavorite('中农在线','http://www.baidu.com')">收藏本站</li>
-						<li><a href="" class="f12 cf">帮助中心</a></li>
-						<li class="name">Hi,ceshiyi<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameUp.png">
+						<li><a href="/home/CommonPersonal/help.html" class="f12 cf">帮助中心</a></li>
+						<li class="name">Hi,ceshiyi<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/headLoginNameUp.png">
 							<div class="nameCont">
 								<a href="">退出登录</a>
 								<a href="">帐号管理</a>
@@ -40,19 +40,19 @@
 						<li>请登录</li>
 					</ul>
 					<ul class="ul2 clear"><!-- 商城链接 -->
-						<li><a href="">中农在线</a></li>
-						<li><a href="">网上庄稼医院</a><span>|</span></li>
-						<li><a href="">农资商城</a><span>|</span></li>	
+						<li><a href="http://www.114nz.com" target="_blank">中农在线</a></li>
+						<li><a href="http://wen.114nz.com" target="_blank">网上庄稼医院</a><span>|</span></li>
+						<li><a href="http://mall.114nz.com" target="_blank">农资商城</a><span>|</span></li>	
 					</ul>
 				</div>
 			</div>
 		</div><!-- 头部上面部分end -->
 		<div class="header-nav"><!-- 头部导航部分 -->
 			<div class="navCont">
-				<a href="" class="active"><span>首页</span></a>
-				<a href="" class="active1"><span class="active2">会员设置</span></a>
-				<a href="" class="active"><span>农资商城管理</span></a>
-				<a href="" class="active"><span>网上庄稼医院管理</span></a>
+				<a href="/home/CommonPersonal/index.html" class="active1"><span class="active2">首页</span></a>
+				<a href="/home/CommonPersonal/BasicInfo.html" class="active"><span>会员设置</span></a>
+				<a href="/home/FarmMallPersonal/buyerIndex.html" class="active"><span>农资商城管理</span></a>
+				<a href="/home/FarmMallPersonal/sellerIndex.html" class="active"><span>网上庄稼医院管理</span></a>
 			</div>
 		</div><!-- 头部上面部分end -->
 	</div><!-- 头部开始end -->
@@ -61,46 +61,44 @@
 			<div class="leftBar"><!-- 左边导航公共部分 -->
 				<div class="lb-head"><!-- 头像 -->
 					<div class="lb-head-bj">
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/lufei.jpg" alt="">
+						<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/lufei.jpg" alt="">
 						<a href="" class="membrane">编辑资料</a><!-- 阴影 -->
 					</div>
 				</div><!-- 头像end -->
 				<div class="lb-nav buyer-lb-nav"><!-- 左边导航 -->
 					<dl>
-						<dd><a href="">已买到的商品</a></dd>
+						<dd><a href="buyerBuyedGoods.html">已买到的商品</a></dd>
 					</dl>
 					<dl>
 						<dd><a href="goods/cart.html">我的购物车</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="">收藏的商铺</a></dd>
-						<dd><a href="">收藏的商品</a></dd>
+						<dd><a href="buyerCollectStore.html">收藏的商铺</a></dd>
+						<dd><a href="buyerCollectGoods.html">收藏的商品</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="">我加入的商铺</a></dd>
+						<dd><a href="buyerJoinShop.html">我加入的商铺</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="">授信申请</a></dd>
-						<dd><a href="">授信额度调整</a></dd>
-						<dd><a href="">授信使用记录</a></dd>
+						<dd><a href="buyerCredit.html">授信申请</a></dd>
+						<dd><a href="buyerCreditChange.html">授信额度调整</a></dd>
+						<dd><a href="buyerCreditHistory.html">授信使用记录</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
-						<dd><a href="">我的评价</a></dd>
+						<dd><a href="buyerEvaluation.html">我的评价</a></dd>
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar"><!-- 右边内容开始 -->
-				<div class="rightPart"> <!-- 右边主体内容 -->
-					<div class="myPlace"> <!-- 所在位置开始 -->
-						<span>当前位置:</span>
-						<a href="">首页</a>
-						<span>&gt;</span>
-						<a href="">卖家中心</a>
-						<span>&gt;</span>
-						<a href="">已卖出的商品</a>
-					</div> <!-- 所在位置结束 -->
+					<div class="titles clear" style="background: #f9f9f9;">
+						<h3>Hi! 我是买家</h3>
+						<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
+						<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
+					</div>
+				<div class="rightPart" style="background: #fff;box-sizing:border-box"> <!-- 右边主体内容 -->
+					
 					<div class="right"> <!-- 右边评价部分 -->
-						<div class="myEvaluate"> <!-- 我的评价部分开始 -->
+						<div class="myEvaluate" style="background: #fff;border:none;padding-top: 1px"> <!-- 我的评价部分开始 -->
 							<h4>我的评价</h4>
 							<h5>我的好评率:<span>100.00%</span></h5>
 							<table border="1">
@@ -140,10 +138,10 @@
 						</div><!-- 我的评价部分结束 -->
 						<div class="evaluateShow"> <!-- 来自卖家买家的评价开始 -->
 							<div class="navButton">
-								<span class="active">来自卖家的评论</span>
-								<span>给卖家的评论</span>
+								<span class="active" style="background: #fff">来自卖家的评论</span>
+								<span style="background: #fff">给卖家的评论</span>
 							</div>
-							<div class="showBox">
+							<div class="showBox" >
 								<div class="showBox1">
 									<table cellPadding="0" cellSpacing="0" border-spacing="0">
 										<tr>

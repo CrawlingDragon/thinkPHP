@@ -4,20 +4,19 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/laydate/laydate.js"></script>
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Js/setGoods.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/laydate/laydate.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/layer/layer.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
-	<![endif]-->
-	<!--[if lt IE 8]>
-	<script src="__PUBLIC__/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
 </head>
 <body>
@@ -27,55 +26,61 @@
 			<include file = "Public/FarmMallSellerLeft"/>
 			<div class="rightBar"><!-- 右边内容开始 -->
 				<div class="rightPart"> <!-- 右边主体内容 -->
-					<div class="myPlace"> <!-- 所在位置开始 -->
-						<span>当前位置:</span>
-						<a href="">首页</a>
-						<span>&gt;</span>
-						<a href="">卖家中心</a>
-						<span>&gt;</span>
-						<a href="">认证客户</a>
-					</div> <!-- 所在位置结束 -->
+					<div class="titles clear">
+						<h3>Hi! 我是卖家</h3>
+						<a href="">进入买家中心></a>
+					</div>
 					<div class="rightCont"> <!-- 右边的正文内容开始 -->
 						<h3>认证客户</h3>
 						<!-- 右边内容输入框，按钮 -->
 						<form action="" method="" class="approveClientele-box">
 							<div>
 								<label for="">所在区域：</label>
-								<select name="" id="">
-									<option value="">浙江省</option>
-									<option value="">上海市</option>
-								</select>
-								<select name="" id="">
-									<option value="">浙江省</option>
-									<option value="">上海市</option>
-								</select>
-								<select name="" id="">
-									<option value="">浙江省</option>
-									<option value="">上海市</option>
-								</select>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">浙江省</option>
+										<option value="">上海市</option>
+									</select>
+								</div>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">浙江省</option>
+										<option value="">上海市</option>
+									</select>
+								</div>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">浙江省</option>
+										<option value="">上海市</option>
+									</select>
+								</div>
 								<label for="" class="approveClientele-label">客户级别：</label>
-								<select name="" id="">
-									<option value="">浙江省</option>
-									<option value="">上海市</option>
-								</select>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">浙江省</option>
+										<option value="">上海市</option>
+									</select>
+								</div>
 								<span class="green approveClientele-change">编辑</span>
 								<label for="">当前状态：</label>
-								<select name="" id="">
-									<option value="">新申请</option>
-									<option value="">后申请</option>
-								</select>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">新申请</option>
+										<option value="">后申请</option>
+									</select>
+								</div>
 							</div>
 							<div>
 								<label for="">申请时间：</label>
-								<input type="text" name="" id="time1">
+								<input type="text" name="" id="time1" class="laydate-icon">
 								<span>-</span>
-								<input type="text" name="" id="time2">
+								<input type="text" name="" id="time2" class="laydate-icon">
 								<input type="button" value="搜索" class="approveClientele-btn">
 							</div>
 						</form>	
 						<!-- 认证客户开始 -->
 						<div class="approveClientele-content">
-							<ul class="ul1">
+							<ul class="ul1" style="position: relative;">
 								<li class="active">新申请<span>(2)</span></li>
 								<li>审核中<span>(47)</span></li>
 								<li>审核通过<span>(316)</span></li>
@@ -84,6 +89,62 @@
 							</ul>
 							<div id="showbox">
 								<div class="show">
+									<table>    <!-- 新申请 -->
+										<tr style="border:1px solid #e5e5e5;">
+											<th style="width: 115px;">申请时间</th>
+											<th style="width: 164px;">申请人</th>
+											<th style="width: 130px;">会员号</th>
+											<th style="width: 174px;">所在地区</th>
+											<th style="width: 150px;">客户级别</th>
+											<th style="width: 128px;">操作</th>
+										</tr>
+										<tr>
+											<td>2015-06-04</td>
+											<td>王世聪</td>
+											<td>11111111222233442</td>
+											<td>浙江省杭州市萧山区</td>
+											<td>未指定</td>
+											<td class="recovery">我去审核</td>
+										</tr>
+										<tr>
+											<td>2015-06-04</td>
+											<td>王世聪</td>
+											<td>11111111222233442</td>
+											<td>浙江省杭州市萧山区</td>
+											<td>未指定</td>
+											<td class="recovery">我去审核</td>
+										</tr>
+									</table>
+								</div>
+								<div class="hide">
+									<table>   <!-- 审核中 -->
+										<tr style="border:1px solid #e5e5e5;">
+											<th style="width: 115px;">申请时间</th>
+											<th style="width: 164px;">申请人</th>
+											<th style="width: 130px;">会员号</th>
+											<th style="width: 174px;">所在地区</th>
+											<th style="width: 150px;">客户级别</th>
+											<th style="width: 128px;">操作</th>
+										</tr>
+										<tr>
+											<td>2015-06-04</td>
+											<td>王世聪</td>
+											<td>11111111222233442</td>
+											<td>浙江省杭州市萧山区</td>
+											<td>未指定</td>
+											<td class="recovery" onclick="checks()">审核</td>
+										</tr>
+										<tr>
+											<td>2015-06-04</td>
+											<td>王世聪</td>
+											<td>11111111222233442</td>
+											<td>浙江省杭州市萧山区</td>
+											<td>未指定</td>
+											<td class="recovery" onclick="checks()">审核</td>
+										</tr>
+									</table>
+								</div>
+								<div class="hide">  <!-- 审核通过 -->
 									<table>
 										<tr style="border:1px solid #e5e5e5;">
 											<th style="width: 115px;">申请时间</th>
@@ -98,20 +159,20 @@
 											<td>王世聪</td>
 											<td>11111111222233442</td>
 											<td>浙江省杭州市萧山区</td>
-											<td>零售商3</td>
-											<td class="recovery">恢复</td>
+											<td>零售商5<a href="/home/FarmMallPersonal/sellerLevelSet.html" class="green ml">设置</a></td>
+											<td><span class="orange cur f14">终止</span><span class="fb green ml cur f14" onclick="setGoods()">设置商品</span></td>
 										</tr>
 										<tr>
 											<td>2015-06-04</td>
 											<td>王世聪</td>
 											<td>11111111222233442</td>
 											<td>浙江省杭州市萧山区</td>
-											<td>零售商</td>
-											<td class="recovery">恢复</td>
+											<td>零售商<a href="/home/FarmMallPersonal/sellerLevelSet.html" class="green ml">设置</a></td>
+											<td><span class="orange cur f14">终止</span><span class="fb green ml cur f14">设置商品</span></td>
 										</tr>
 									</table>
 								</div>
-								<div class="hide">
+								<div class="hide">   <!-- 审核拒绝 -->
 									<table>
 										<tr style="border:1px solid #e5e5e5;">
 											<th style="width: 115px;">申请时间</th>
@@ -119,15 +180,7 @@
 											<th style="width: 130px;">会员号</th>
 											<th style="width: 174px;">所在地区</th>
 											<th style="width: 150px;">客户级别</th>
-											<th style="width: 128px;">操作</th>
-										</tr>
-										<tr>
-											<td>2015-06-04</td>
-											<td>王世聪</td>
-											<td>11111111222233442</td>
-											<td>浙江省杭州市萧山区</td>
-											<td>零售商4</td>
-											<td class="recovery">恢复</td>
+											<th style="width: 128px;"></th>
 										</tr>
 										<tr>
 											<td>2015-06-04</td>
@@ -135,67 +188,19 @@
 											<td>11111111222233442</td>
 											<td>浙江省杭州市萧山区</td>
 											<td>零售商</td>
-											<td class="recovery">恢复</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>2015-06-04</td>
+											<td>王世聪</td>
+											<td>11111111222233442</td>
+											<td>浙江省杭州市萧山区</td>
+											<td>零售商</td>
+											<td></td>
 										</tr>
 									</table>
 								</div>
-								<div class="hide">
-									<table>
-										<tr style="border:1px solid #e5e5e5;">
-											<th style="width: 115px;">申请时间</th>
-											<th style="width: 164px;">申请人</th>
-											<th style="width: 130px;">会员号</th>
-											<th style="width: 174px;">所在地区</th>
-											<th style="width: 150px;">客户级别</th>
-											<th style="width: 128px;">操作</th>
-										</tr>
-										<tr>
-											<td>2015-06-04</td>
-											<td>王世聪</td>
-											<td>11111111222233442</td>
-											<td>浙江省杭州市萧山区</td>
-											<td>零售商5</td>
-											<td class="recovery">恢复</td>
-										</tr>
-										<tr>
-											<td>2015-06-04</td>
-											<td>王世聪</td>
-											<td>11111111222233442</td>
-											<td>浙江省杭州市萧山区</td>
-											<td>零售商</td>
-											<td class="recovery">恢复</td>
-										</tr>
-									</table>
-								</div>
-								<div class="hide">
-									<table>
-										<tr style="border:1px solid #e5e5e5;">
-											<th style="width: 115px;">申请时间</th>
-											<th style="width: 164px;">申请人</th>
-											<th style="width: 130px;">会员号</th>
-											<th style="width: 174px;">所在地区</th>
-											<th style="width: 150px;">客户级别</th>
-											<th style="width: 128px;">操作</th>
-										</tr>
-										<tr>
-											<td>2015-06-04</td>
-											<td>王世聪</td>
-											<td>11111111222233442</td>
-											<td>浙江省杭州市萧山区</td>
-											<td>零售商</td>
-											<td class="recovery">恢复</td>
-										</tr>
-										<tr>
-											<td>2015-06-04</td>
-											<td>王世聪</td>
-											<td>11111111222233442</td>
-											<td>浙江省杭州市萧山区</td>
-											<td>零售商</td>
-											<td class="recovery">恢复</td>
-										</tr>
-									</table>
-								</div>
-								<div class="hide">
+								<div class="hide">   <!-- 终止 -->
 									<table>
 										<tr style="border:1px solid #e5e5e5;">
 											<th style="width: 115px;">申请时间</th>
@@ -243,7 +248,7 @@
 							<dd class="pageBtn">
 								<p>到第
 									<input type="text" name="" id="" value="15">页
-									<input type="button" value="确定">
+									<input type="button" value="确定" onclick="">
 								</p>
 							</dd>
 						</dl>
@@ -251,27 +256,206 @@
 				</div>
 			</div><!-- 右边内容开始end -->
 		</div>
-	</section>
+	<div class="layer_checks" style="display: none;"> <!-- 审核内容的弹出内容 -->
+		<h5 class="lch5 fn">指定客户级别和确定审核结果</h5>
+		<div class="lcList clear">
+			<p>指定客户级别：</p>
+			<dl class="select">    <!-- 模拟下拉菜单 -->
+				<dt>
+					<span class="txt01 txt">请选择</span>
+					<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/dropDown.png" alt="" class="ml">    <!-- 下拉箭头 -->
+				</dt>
+				<dd style="display: none;">
+					<ul>
+						<li>a客户a客户a客户</li>
+						<li>厂家</li>
+						<li>B客户</li>
+					</ul>
+				</dd>
+			</dl>
+			<a href="/home/FarmMallPersonal/sellerLevelSet.html" class="green ml f12">编辑</a>
+		</div>
+		<div class="lcList clear">
+			<p>审核结果：</p>
+			<dl class="select">    <!-- 模拟下拉菜单 -->
+				<dt>
+					<span class="txt02 txt">请选择</span>
+					<img src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/dropDown.png" alt="" class="ml">    <!-- 下拉箭头 -->
+				</dt>
+				<dd style="display: none;">
+					<ul>
+						<li>通过</li>
+						<li>拒绝</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div class="clear">
+			<div class="lcSure">确认</div>
+			<div class="lcCancel">取消</div>
+		</div>
+	</div><!-- 审核内容的弹出内容 -->
+	</section> 
+	<div class="ATset" style="display: none;"> <!-- 审核通过之设置商品 -->
+		<div class="smallTitle">选择限制购买的商品</div>
+		<table border="1">
+			<tr>
+				<th>申请时间</th><th>申请人</th><th>会员号</th><th>所在区域</th><th>客户级别</th>
+			</tr>
+			<tr>
+				<td>2015-06-04</td>
+				<td>王世聪</td>
+				<td>12015051216928</td>
+				<td>浙江省杭州市萧山区</td>
+				<td>零售商</td>
+			</tr>
+		</table>
+			<form action="" class="forms">
+				<div class="clear">
+					<label for="">商品编码：</label>
+					<input type="text" name="" id="">
+					<label for="">商品名称：</label>
+					<input type="text" name="" id="">
+					<label for="">厂家名称：</label>
+					<input type="text" name="" id="">
+				</div>
+				<div class="clear ATads">
+					<label for="" class="f12 c6">选择区域：</label>
+					<select name="" id="">
+						<option value="">浙江省</option>
+					</select>
+					<select name="" id="">
+						<option value="">杭州市</option>
+					</select>
+					<select name="" id="">
+						<option value="">萧山区</option>
+					</select>
+					<input type="submit" value="搜索" class="sub">
+				</div>
+			</form>
+			<div class="ATall">
+				<div class="checkBox">
+					<input type="checkbox" name="" id="checkAll">
+					<label for="" class="checkBtn"></label>
+				</div>
+				<label for="">全部选中</label>
+			</div>
+			<ul class="ATcont">
+					<li class="on">
+						<div class="checkBox"  >
+							<input type="checkbox" name="" id="" class="companyCheck">
+							<label for="" class="checkBtn"></label>
+						</div>
+						<span>华昌化工有限公司</span>
+						<dl style="display: block">
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>优美达-ZNZX151</span></dd>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>康朴 多元微肥-ZNZX1011</span></dd>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>嘉施利50%14-06-30大量元素水溶肥-ZNZX1217</span></dd>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>嘉施利50%14-06-30大量元素水溶肥-ZNZX1217</span></dd>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>嘉施利50%14-06-30大量元素水溶肥-ZNZX1217</span></dd>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>嘉施利50%14-06-30大量元素水溶肥-ZNZX1217</span></dd>
+						</dl>
+					</li>
+					<li>
+						<div class="checkBox" >
+							<input type="checkbox" name="" id="" class="companyCheck">
+							<label for="" class="checkBtn"></label>
+						</div>
+						<span>华昌化工有限公司</span>
+						<dl>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>优美达-ZNZX151</span></dd>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>康朴 多元微肥-ZNZX1011</span></dd>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>嘉施利50%14-06-30大量元素水溶肥-ZNZX1217</span></dd>
+						</dl>
+					</li>
+					<li>
+						<div class="checkBox" >
+							<input type="checkbox" name="" id="" class="companyCheck">
+							<label for="" class="checkBtn"></label>
+						</div>
+						<span>华昌化工有限公司</span>
+						<dl>
+							<dd>
+								<div class="checkBox">
+									<input type="checkbox" name="" id="" class="">
+									<label for="" class="checkBtn"></label>
+								</div>
+								<span>优美达-ZNZX151</span>
+							</dd>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>康朴 多元微肥-ZNZX1011</span></dd>
+							<dd><div class="checkBox">
+					<input type="checkbox" name="" id="" class="">
+					<label for="" class="checkBtn"></label>
+				</div><span>嘉施利50%14-06-30大量元素水溶肥-ZNZX1217</span></dd>
+						</dl>
+					</li>
+				</ul>
+		<div class="ATbtn clear">
+			<div class="ATSure">保存</div>
+			<div class="ATCancel">取消</div>
+		</div>
+	</div><!-- 审核通过之设置商品结束 -->
 	<include file ="Public/CommonPersonalFooter"/>
 <script type="text/javascript">
-	$(function(){
-		// 日历1
-		laydate({
-		   elem: '#time1',  
-		});
-
-		// 日历2
-		laydate({
-		   elem: '#time2',
-		});
-
-	// tab切换
-	$(".approveClientele-content ul li").on('click',function(){
-			$(this).addClass('active').siblings().removeClass('active');
-			$('#showbox>div:eq('+$(this).index()+')').show().siblings().hide();
-		})
-	// tab切换结束	
-	})
+	// 商品详情页选择生产商上下拉菜单
+    $('.select').each(function(){
+    	var s = $(this);
+    	var z = parseInt(s.css("z-index"));
+    	var dt = s.find("dt");
+    	var dd = s.find("dd");
+    	var imgs = s.find("img");
+    	var _show = function(){
+    		dd.slideDown(200);
+    		console.log(1);
+    		dt.addClass('cur');
+    		s.css("z-index",z+1);
+    		imgs.attr("src","{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/dropDown.png")
+    	}
+    	var _hide = function(){
+    		console.log(2);
+    		dd.slideUp(200);
+    		dt.removeClass("cur");
+    		s.css("z-index",z);
+    		imgs.attr("src","{$Think.config.STYLE_URL}/PersonalCenter/Common/Image/dropDown.png")
+    	}
+    	dt.click(function(){
+    		dd.is(":hidden")?_show():_hide();
+    	})
+    	dd.find("li").click(function(){
+    		dt.find('.txt').html($(this).html());
+    		_hide();	
+    	})
+    })
 </script>
 </body>
 </html>

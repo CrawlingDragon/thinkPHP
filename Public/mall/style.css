@@ -1,0 +1,376 @@
+.openBox{
+	width: 1190px;
+	margin:0 auto;
+	padding:53px 0 0 0;
+}
+.openBox h5{
+	margin-left: 50px;
+	margin-bottom: 35px;
+	font-size: 14px;
+	color: #333;
+}
+.imgs{
+	width: 710px;
+	margin:0 auto;
+}
+.openBox table{
+	width: 710px;
+	margin:0 auto;
+	margin-top: 50px;
+}
+.openBox table .trh{
+	border:1px solid #e5e5e5;
+	color: #666;
+
+}
+.openBox table tr{
+	border-bottom:1px solid #e5e5e5;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+}
+.openBox table tr td{
+	font-size: 14px;
+}
+.openBox .passImg{
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-right: 5px;
+}
+.openBox table .td1{
+	text-indent: 30px;
+}
+.openBox table .td3{
+	color: #ff6600;
+}
+.openBox table tr:hover td{
+	background: #fafafa;
+}
+.openBox .subs{
+		display: block;
+	width: 110px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	border:none;
+	background: #599524;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.openBox .subs:hover{
+	background: #528b20;
+}
+.openBox .noSub{
+	display: block;
+	margin:72px auto 100px;
+}
+.openBox .pass{
+	padding-top: 115px;
+	width: 250px;
+	margin:0 auto;
+	text-align: center;
+}
+.openBox .pass span{
+	font-size: 16px;
+	color: #333333;
+	font-weight: bold;
+}
+.openBox .passBtn{
+	margin-top: 38px;
+}
+.openBox .passBtn>a{
+	float: left;
+}
+.openBox .passBtn .passLook{
+	display: block;
+	margin-left: 40px;
+	line-height: 50px;
+	font-size: 14px;
+	color: #599524;
+}
+.openBox .moneyTitle{
+	text-align: center;
+	margin-top: 65px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 50px;
+}
+.openBox .moneyBtn{
+	text-align: center;
+}
+.openBox .moneyBtn .prve{
+	float: left;
+	margin-left: 20px;
+}
+.openBox .moneyBtn .moneyBtnSure{
+	float: left;
+	display: block;
+	margin-left: 455px;
+}
+.openBox .openedBtn{
+	margin:0 auto;
+}
+/*认证客户*/
+.layer_checks{
+
+}
+.layer_checks .lch5{
+	font-size: 12px;
+	color: #999999;
+	margin:17px 0 30px 20px;
+}
+.lcList{
+	margin-bottom: 24px;
+	position: relative;
+}
+.lcList p{
+	float: left;
+	width: 120px;
+	text-align: right;
+	font-size: 14px;
+	color: #333;
+}
+.lcList .select{
+	font-size: 12px;
+	color: #333;
+	float: left;
+}
+.lcList .select dt{
+	border:1px solid #dcdcdc;
+	cursor: pointer;
+	padding:10px;
+	margin-top: -9px;
+}
+.lcList .select dd{
+	position: absolute;
+	width: auto;
+	background: #fff;
+	border:1px solid #e5e5e5;
+	z-index: 1;
+	cursor: pointer;
+	line-height: 18px;
+	text-indent: 5px;
+	margin-top: -1px;
+	padding-top: 2px;
+}
+.lcList .select dd ul li{
+	padding-right: 5px;
+	min-width: 72px;
+}
+.lcList .select dd ul li:hover{
+	background: #ff6600;
+	color: #fff;
+}
+.layer_checks .lcSure,
+.layer_checks .lcCancel{
+	float: left;
+	display: block;
+	width: 71px;
+	height: 33px;
+	text-align: center;
+	line-height: 33px;
+	cursor: pointer;
+	font-size: 14px;
+}
+.layer_checks .lcSure{
+	background: #589325;
+	color: #fff;
+	margin:15px 18px 0 120px;
+}
+.layer_checks .lcCancel{
+	margin:15px 0 0 0;
+	color: #589325;
+	border:1px solid #e5e5e5;
+}
+/*认证客户的设置商品弹出按钮*/
+.ATset{
+	padding:21px 18px 20px 20px;
+	box-sizing:border-box;
+}
+.ATset .smallTitle{
+	font-size: 14px;
+	color: #666666;
+	font-weight: bold;
+}
+.ATset table{
+	border:1px solid #e5e5e5;
+	text-align: center;
+	width: 880px;
+	margin:22px 0;
+}
+.ATset table th,
+.ATset table td{
+	font-size: 14px;
+	color: #666666;
+	width: 20%;
+	height: 32px;
+}
+
+.ATset .forms label{
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #666;
+}
+.ATset .forms input[type=text]{
+	display: block;
+	float: left;
+	margin-right: 50px;
+	width: 120px;
+	height: 22px;
+	line-height: 22px;
+	margin-top: -3px;
+}
+.ATset .forms .ATads{
+	margin:20px 0 30px;
+}
+.ATset .forms .ATads label{
+	display: block;
+	float: left;
+}
+.ATset .forms .ATads select{
+	display: block;
+	float: left;
+	width: 82px;
+	height: 24px;
+	line-height: 24px;
+	margin-top: -3px;
+	margin-right: 10px;
+	color: #333;
+	font-size: 12px;
+}
+.ATset .forms .ATads .sub{
+	margin-top: -5px;
+	float: left;
+	display: block;
+	margin-left: 40px;
+	width: 70px;
+	height: 33px;
+	border:none;
+	background: #589325;
+	color: #fff;
+}
+.ATset .ATall{
+	margin-bottom: 13px;
+}
+.ATset .ATall label{
+	color: #333;
+	font-size: 12px;	
+}
+.ATset .ATcont{
+	width: 880px;
+	overflow: auto;
+	height: 470px;
+	border:1px solid #e5e5e5;
+}
+.ATset .ATcont li{
+	border-bottom:1px solid #e5e5e5;
+	/*height: 43px;*/
+	height: auto;
+	line-height: 43px;
+	width: 100%;
+	text-indent: 10px;
+	clear: both;
+	cursor: pointer;
+}
+.ATset .ATcont li.on{
+	background: #f4f5fa;
+}
+.ATset .ATcont li dl{
+	display: none;
+	background: #f4f5fa;
+	clear: both;
+	overflow: hidden;
+	margin-left: -15px;
+	cursor: default;
+}
+.ATset .ATcont li dl dd{
+	float: left;
+	margin-left: 53px;
+}
+.ATset .ATcont li dl dd span{
+	margin-left: 5px;
+}
+.ATset .ATbtn{
+	margin-top: 20px;
+}
+.ATset .ATbtn .ATSure,
+.ATset .ATbtn .ATCancel{
+	float: left;
+	width: 110px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	background: #589325;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.ATset .ATbtn .ATSure{
+	margin-left: 324px;
+}
+.ATset .ATbtn .ATCancel{
+	margin-left: 30px;
+}
+.ATset .checkBox{
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+    margin: 5px;
+}
+.ATset input[type=checkbox]{
+	display: block;
+	opacity: 0;
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	z-index: 1;
+
+}
+.ATset input[type=checkbox] + .checkBtn{
+	position: absolute;
+	display: block;
+	width: 12px;
+	height: 12px;
+	border:1px solid #000;
+	background: #fff;
+}
+.ATset input[type=checkbox]:checked+.checkBtn:after{
+	display: block;
+	content: '';
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	border:1px solid #589325;
+	background: #589325;
+	top: -1px;
+	left: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

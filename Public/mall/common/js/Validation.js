@@ -16,6 +16,27 @@ var langCapital = "注册资本不能为空";
 var langLoginAds = "注册地址不能为空";
 var langCorporate = "法人代表不能为空";
 var langSetupTime = "成立时间不能为空";
+var langEmail1 = "邮箱不能为空";
+var langEmail2 = "请填写正确的邮箱";
+var langEmCode1 = "邮箱验证码不能为空";
+var langEmCode2 = "邮箱验证码错误";
+var langCode1 = "验证码不能为空";
+var langCode2 = "请填写正确的验证码";
+var langPhoneNum1 = "手机号码不能为空";
+var langPhoneNum2 = "请填写正确的手机号码";
+var langPhoneCode1 = "手机验证码不能为空";
+var langPhoneCode2 = "手机验证码错误";
+var langPwd1 = "密码不能为空";
+var langPwd2 = "密码由6-20位字母、数字、特殊符号的任意二种以上组合";
+var langPwd3 = "请输入相同的密码";
+
+ 
+
+
+//正则表达
+var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; //邮箱正则
+var telReg= /^1\d{10}$/; //手机号码正则
+var pwdReg = /^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{6,20}$/;//密码正则
 //身份证正则验证
  function IdentityCodeValid(code) { 
     var city={11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",21:"辽宁",22:"吉林",23:"黑龙江 ",31:"上海",32:"江苏",33:"浙江",34:"安徽",35:"福建",36:"江西",37:"山东",41:"河南",42:"湖北 ",43:"湖南",44:"广东",45:"广西",46:"海南",50:"重庆",51:"四川",52:"贵州",53:"云南",54:"西藏 ",61:"陕西",62:"甘肃",63:"青海",64:"宁夏",65:"新疆",71:"台湾",81:"香港",82:"澳门",91:"国外 "};
@@ -59,6 +80,33 @@ var langSetupTime = "成立时间不能为空";
     if(!pass);
     return pass;
  }
+
+
+ //验证码倒计时
+	var countdown=60;
+	function settime(obj) { 
+		 
+	    if (countdown == 0) { 
+	        obj.removeAttribute("disabled");
+	        obj.removeAttribute("style");    
+	        obj.value="重新获取验证码"; 
+	        countdown = 60; 
+	        return;
+	    } else { 
+	        obj.style.cursor = "auto";
+	        obj.style.backgroundColor = "#e5e5e5";
+	        obj.style.color = "#333";
+	        obj.setAttribute("disabled", true); 
+	        obj.value="(" + countdown + ")秒倒计时"; 
+	        countdown--; 
+	    } 
+		setTimeout(function() { 
+		    settime(obj) }
+		    ,1000) 
+	}
+
+
+
 //不能为空的判断
 function isNone(x){
 	var r = /^[^/ ]*$/;
@@ -68,3 +116,5 @@ function isNone(x){
 		return true;
 	}
 }
+
+

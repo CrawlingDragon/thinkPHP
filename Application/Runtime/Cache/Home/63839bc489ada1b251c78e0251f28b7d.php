@@ -48,7 +48,7 @@
 	</script>
 </head>
 <body>
-<a href="/home/goods/goodslist.html">列表页</a><a href="/home/goods/goodsdetail.html">详情页</a>
+<a href="http://192.168.115.175/home/goods/wap.html" style="display: block;height: 40px;">zaaaaa</a>
 	<header><!-- 头部开始 -->
 		<article class="headerTop clear">
 			<section class="header-left"> <!-- 头部左边 未读消息 -->
@@ -1376,7 +1376,8 @@
 		items: 1,
 		navigation: true,
 		navigationText: ["",""],
-		autoPlay: true
+		autoPlay: true,
+
 	});//大轮播
 	$('#owl-demo1').owlCarousel({
 		items: 1,

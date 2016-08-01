@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -26,36 +26,36 @@
 			<include file = "Public/FarmMallSellerLeft"/>
 			<div class="rightBar"><!-- 右边内容开始 -->
 				<div class="rightPart"> <!-- 右边主体内容 -->
-					<div class="myPlace"> <!-- 所在位置开始 -->
-						<span>当前位置:</span>
-						<a href="">首页</a>
-						<span>&gt;</span>
-						<a href="">卖家中心</a>
-						<span>&gt;</span>
-						<a href="">已卖出的商品</a>
-					</div> <!-- 所在位置结束 -->
+					<div class="titles clear">
+						<h3>Hi! 我是卖家</h3>
+						<a href="">进入买家中心></a>
+					</div>
 					<div class="rightCont"> <!-- 右边的正文内容开始 -->
-						<h3>已卖出的商品</h3>
+						<h3 style="margin-bottom: 35px;">出售中的商品</h3>
 						<!-- 右边内容输入框，按钮 -->
 						<form action="" method="" class="goods-selling">
 							<div class="goods-selling-btntop">
-								<label for="">商品名称:</label><input type="text" placeholder="输入商品名称">
-								<label for="">商品编码:</label><input type="text" placeholder="输入商品编码">
-								<label for="">商品分类:</label>
-								<select>
-									<option value="">全部</option>
-									<option value="">农药</option>
-									<option value="">杀虫剂</option>
-								</select>
+								<label for="">商品名称：</label><input type="text" placeholder="输入商品名称">
+								<label for="">商品编码：</label><input type="text" placeholder="输入商品编码">
+								<label for="">商品分类：</label>
+								<div class="selectBox">
+									<select>
+										<option value="">全部</option>
+										<option value="">农药</option>
+										<option value="">杀虫剂</option>
+									</select>
+								</div>
 							</div>
 							<div class="goods-selling-btnmid">	
-								<label for="" class="goods-selling-source">来源:</label>
-								<select>
-									<option value="">全部</option>
-									<option value="">农药</option>
-									<option value="">杀虫剂</option>
-								</select>
-								<input type="button" value="搜索">
+								<label for="" class="goods-selling-source">来源：</label>
+								<div class="selectBox">
+									<select>
+										<option value="">全部</option>
+										<option value="">农药</option>
+										<option value="">杀虫剂</option>
+									</select>
+								</div>
+								<input type="button" value="搜索" style="margin-left: 45px;">
 							</div> 
 							<div class="goods-selling-btnbom">
 								<input type="checkbox" name="" id="checkAll">
@@ -89,9 +89,9 @@
 									<td>代理</td>
 									<td>2015-05-26<i>14:48</i></td>
 									<td class="td6">
-										<a href="">编辑商品</a>
-										<a href="">下架商品</a>
-										<a href="">掌柜推荐</a>
+										<a href="/home/FarmMallPersonal/sellerPost.html" class="orange">编辑商品</a>
+										<a href="" class="orange">下架商品</a>
+										<a href="javascript:;" class="orange cancel">掌柜推荐</a>
 									</td>
 								</tr>
 								<!-- 第二个商品展示列表 -->
@@ -110,9 +110,9 @@
 									<td>代理</td>
 									<td>2015-05-26<i>14:48</i></td>
 									<td class="td6">
-										<a href="">编辑商品</a>
-										<a href="">下架商品</a>
-										<a href="">掌柜推荐</a>
+										<a href="/home/FarmMallPersonal/sellerPost.html" class="orange">编辑商品</a>
+										<a href="" class="orange">下架商品</a>
+										<a href="javascript:;" class="green cancel">取消推荐</a>
 									</td>
 								</tr>
 							</table>
@@ -147,7 +147,7 @@
 	<include file ="Public/CommonPersonalFooter"/>
 <script type="text/javascript">
 	$(function(){
-		$('#checkAll').click(function(){
+		$('#checkAll').click(function(){   //复选框效果
 			if($(this).prop("checked")){
 				$('.goods-selling-table input[type=checkbox]').each(function(){
 					$(this).prop("checked",true);
@@ -157,6 +157,21 @@
 					$(this).prop("checked",false);
 				})
 			}
+		})
+		$('.cancel').click(function(){
+			var cont = $(this).text();
+			var gfather = $(this).parent().parent();
+			var txt = gfather.find(".td2 span");
+			if(cont == "掌柜推荐"){
+				$(this).addClass("green").removeClass("orange");
+				txt.text("已推荐");
+				$(this).text("取消推荐");
+			}else if(cont == "取消推荐"){
+				$(this).addClass("orange").removeClass("green");
+				txt.text(" ");
+				$(this).text("掌柜推荐");;
+			}
+
 		})
 		
 	})

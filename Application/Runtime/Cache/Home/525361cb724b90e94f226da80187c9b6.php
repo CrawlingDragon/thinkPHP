@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/layer/layer.js"></script>
+	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -24,14 +25,14 @@
 		<div class="header-wrap">
 			<div class="header-top"><!-- 头部上面部分 -->
 				<div class="left">
-					<img src="/Public/mall/wuhelong/images/bslogo.png" alt=""><!-- logo -->
+					<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bslogo.png" alt=""><!-- logo -->
 				</div>
 				<div class="right"><!-- 右边内容 -->
 					<ul class="ul1 clear"><!-- 帮助中心 -->
-						<li style="cursor: default;">服务热线：0571-87661678</li>
+						<li style="cursor: default;">服务热线：0571-87661693</li>
 						<li onclick="AddFavorite('中农在线','http://www.baidu.com')">收藏本站</li>
-						<li><a href="" class="f12 cf">帮助中心</a></li>
-						<li class="name">Hi,ceshiyi<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameUp.png">
+						<li><a href="/home/CommonPersonal/help.html" class="f12 cf">帮助中心</a></li>
+						<li class="name">Hi,ceshiyi<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/headLoginNameUp.png">
 							<div class="nameCont">
 								<a href="">退出登录</a>
 								<a href="">帐号管理</a>
@@ -40,19 +41,19 @@
 						<li>请登录</li>
 					</ul>
 					<ul class="ul2 clear"><!-- 商城链接 -->
-						<li><a href="">中农在线</a></li>
-						<li><a href="">网上庄稼医院</a><span>|</span></li>
-						<li><a href="">农资商城</a><span>|</span></li>	
+						<li><a href="http://www.114nz.com" target="_blank">中农在线</a></li>
+						<li><a href="http://wen.114nz.com" target="_blank">网上庄稼医院</a><span>|</span></li>
+						<li><a href="http://mall.114nz.com" target="_blank">农资商城</a><span>|</span></li>	
 					</ul>
 				</div>
 			</div>
 		</div><!-- 头部上面部分end -->
 		<div class="header-nav"><!-- 头部导航部分 -->
 			<div class="navCont">
-				<a href="" class="active"><span>首页</span></a>
-				<a href="" class="active1"><span class="active2">会员设置</span></a>
-				<a href="" class="active"><span>农资商城管理</span></a>
-				<a href="" class="active"><span>网上庄稼医院管理</span></a>
+				<a href="/home/CommonPersonal/index.html" class="active1"><span class="active2">首页</span></a>
+				<a href="/home/CommonPersonal/BasicInfo.html" class="active"><span>会员设置</span></a>
+				<a href="/home/FarmMallPersonal/buyerIndex.html" class="active"><span>农资商城管理</span></a>
+				<a href="/home/FarmMallPersonal/sellerIndex.html" class="active"><span>网上庄稼医院管理</span></a>
 			</div>
 		</div><!-- 头部上面部分end -->
 	</div><!-- 头部开始end -->
@@ -61,62 +62,61 @@
 						<div class="leftBar"><!-- 左边导航公共部分 -->
 				<div class="lb-head"><!-- 头像 -->
 					<div class="lb-head-bj">
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/lufei.jpg" alt="">
+						<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/lufei.jpg" alt="">
 						<a href="" class="membrane">编辑资料</a><!-- 阴影 -->
+					</div>
+					<div class="bj">
+						
 					</div>
 				</div><!-- 头像end -->
 				<div class="lb-nav"><!-- 左边导航 -->
 					<dl>
 						<dt>交易管理</dt>
-						<dd><a href="" class="active">已卖出的商品</a></dd>
-						<dd><a href="">评价管理</a></dd>
+						<dd><a href="sellerSelledGoods.html" class="active">已卖出的商品</a></dd>
+						<dd><a href="sellerEvaluationManagement.html">评价管理</a></dd>
 					</dl>
 					<dl>
 						<dt>商品管理</dt>
-						<dd><a href="">发布商品</a></dd>
-						<dd><a href="">出售中的商品</a></dd>
-						<dd><a href="">仓库中的商品</a></dd>
-						<dd><a href="">商品分类管理</a></dd>
+						<dd><a href="sellerPost.html">发布商品</a></dd>
+						<dd><a href="sellerSellingGoods.html">出售中的商品</a></dd>
+						<dd><a href="sellerWarehouse.html">仓库中的商品</a></dd>
+						<dd><a href="sellerClassifcation.html">商品分类管理</a></dd>
 					</dl>
 					<dl>
 						<dt>商铺管理</dt>
-						<dd><a href="">查看我的商铺</a></dd>
-						<dd><a href="">商铺设置</a></dd>
-						<dd><a href="">掌柜推荐</a></dd>
-						<dd><a href="">运费模板</a></dd>
+						<dd><a href="/home/Store/index.html">查看我的商铺</a></dd>
+						<dd><a href="sellerShopSet.html">商铺设置</a></dd>
+						<dd><a href="sellerShopkeeper.html">掌柜推荐</a></dd>
+						<dd><a href="sellerShipMent.html">运费模板</a></dd>
 						<dd><a href="">子账号设置</a></dd>
 					</dl>
 					<dl>
 						<dt>进货渠道</dt>
-						<dd><a href="">我代理的</a></dd>
-						<dd><a href="">代理我的</a></dd>
+						<dd><a href="sellerMeAgented.html">我代理的</a></dd>
+						<dd><a href="sellerAgencyMe.html">代理我的</a></dd>
 					</dl>
 					<dl>
 						<dt>客户管理</dt>
-						<dd><a href="">认证客户</a></dd>
-						<dd><a href="">级别设置</a></dd>
+						<dd><a href="sellerClient.html">认证客户</a></dd>
+						<dd><a href="sellerLevelSet.html">级别设置</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
 						<dt>授信管理</dt>
-						<dd><a href="">授信关系</a></dd>
-						<dd><a href="">额度调整</a></dd>
-						<dd><a href="">使用记录</a></dd>
+						<dd><a href="sellerCreditNexus.html">授信关系</a></dd>
+						<dd><a href="sellerCreditAdjustment.html">额度调整</a></dd>
+						<dd><a href="sellerUseHistroy.html">使用记录</a></dd>
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar"><!-- 右边内容开始 -->
 				<div class="rightPart"> <!-- 右边主体内容 -->
-					<div class="myPlace"> <!-- 所在位置开始 -->
-						<span>当前位置:</span>
-						<a href="">首页</a>
-						<span>&gt;</span>
-						<a href="">卖家中心</a>
-						<span>&gt;</span>
-						<a href="">额度调整</a>
-					</div> <!-- 所在位置结束 -->
+					<div class="titles clear">
+						<h3>Hi! 我是卖家</h3>
+						<a href="">进入买家中心></a>
+					</div>
 					<!-- 右边的正文内容开始 -->
 					<div class="rightCont creditAdjustment" style="min-height: 114px;"> 
-						<h3>授信关系</h3>
+						<h3 style="margin-bottom: 35px;">授信关系</h3>
 						<form action="" method="">
 							<div>
 								<label for="">申请人：</label>
@@ -124,11 +124,13 @@
 								<label for="">会员号：</label>
 								<input type="text" name="" id="" placeholder="输入会员号">
 								<label for="">审核状态：</label>
-								<select name="" id="">
-									<option value="">全部</option>
-									<option value="">新申请</option>
-									<option value="">审核通过</option>
-								</select>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">全部</option>
+										<option value="">新申请</option>
+										<option value="">审核通过</option>
+									</select>
+								</div>
 							</div>
 							<div>
 								<label for="">授信额度：</label>
@@ -136,11 +138,13 @@
 								<span>-</span>
 								<input type="text" name="" id="" style="width: 100px;">
 								<label for="">会员性质：</label>
-								<select name="" id="">
-									<option value="">厂家</option>
-									<option value="">合作社</option>
-								</select>
-								<input type="button" value="搜索">
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">厂家</option>
+										<option value="">合作社</option>
+									</select>
+								</div>
+								<input type="button" value="搜索" style="margin-left: 45px;">
 							</div>
 						</form>
 						<div class="creditRelations">
@@ -171,8 +175,8 @@
 													<td>王思聪</td>
 													<td>12015052517311</td>
 													<td>厂家</td>
-													<td class="orange fb">20000.00</td>
-													<td class="green fb"><i class="go f14">我去审核</i></td>
+													<td><i class="orange fb">20000.00</i></td>
+													<td><i class="fb go f14 green">我去审核</i></td>
 												</tr>
 											</table>
 										</div>
@@ -195,16 +199,16 @@
 												<td>王思聪</td>
 												<td>12015052517311</td>
 												<td>厂家</td>
-												<td class="orange fb">20000.00</td>
-												<td class="orange fb"><span class="underPass f14">通过</span><span class="underDeny f14">拒绝</span></td>
+												<td><i class="orange fb">20000.00</i></td>
+												<td class="fb"><span class="underPass f14 orange">通过</span><span class="underDeny f14 orange">拒绝</span></td>
 											</tr>
 											<tr>
 												<td>2015-06-09</td>
 												<td>王思聪</td>
 												<td>12015052517311</td>
 												<td>厂家</td>
-												<td class="orange fb">20000.00</td>
-												<td class="orange fb"><span class="underPass f14">通过</span><span class="underDeny f14">拒绝</span></td>
+												<td><i class="orange fb">20000.00</i></td>
+												<td class="fb"><span class="underPass f14 orange">通过</span><span class="underDeny f14 orange">拒绝</span></td>
 											</tr>
 										</table>	
 									</div>
@@ -229,20 +233,20 @@
 													<td>王思聪</td>
 													<td>12015052517311</td>
 													<td>厂家</td>
-													<td class="orange fb">20000.00</td>
+													<td><i class="orange fb">20000.00</i></td>
 													<td>900.00</td>
-													<td class="green fb">110000.00</td>
-													<td class="green fb"><span class="passed-adjustment f14">调整额度</span><span class="passed-termination f14">终止</span></td>
+													<td><i class="green fb">110000.00</i></td>
+													<td class="fb"><span class="passed-adjustment f14 green">调整额度</span><span class="passed-termination f14 green">终止</span></td>
 												</tr>
 												<tr>
 													<td>2015-06-09</td>
 													<td>王思聪</td>
 													<td>12015052517311</td>
 													<td>厂家</td>
-													<td class="orange fb">20000.00</td>
+													<td><i class="orange fb">20000.00</i></td>
 													<td>900.00</td>
-													<td class="green fb">110000.00</td>
-													<td class="green fb"><span class="passed-adjustment f14">调整额度</span><span class="passed-termination f14">终止</span></td>
+													<td><i class="green fb">110000.00</i></td>
+													<td class="fb"><span class="passed-adjustment f14 green">调整额度</span><span class="passed-termination f14 green">终止</span></td>
 												</tr>
 											</table>
 										</div>
@@ -267,9 +271,9 @@
 													<td>王思聪</td>
 													<td>12015052517311</td>
 													<td>厂家</td>
-													<td class="orange fb">20000.00</td>
+													<td><i class="orange fb">20000.00</i></td>
 													<td>900.00</td>
-													<td class="green fb">110000.00</td>
+													<td><i class="green fb">110000.00</i></td>
 													<td class="orange fb restore"></td>
 												</tr>
 												<tr>
@@ -277,9 +281,9 @@
 													<td>王思聪</td>
 													<td>12015052517311</td>
 													<td>厂家</td>
-													<td class="orange fb">20000.00</td>
+													<td><i class="orange fb">20000.00</i></td>
 													<td>900.00</td>
-													<td class="green fb">110000.00</td>
+													<td><i class="green fb">110000.00</i></td>
 													<td class="orange fb restore"></td>
 												</tr>
 											</table>
@@ -305,20 +309,20 @@
 												<td>王思聪</td>
 												<td>12015052517311</td>
 												<td>厂家</td>
-												<td class="orange fb">20000.00</td>
+												<td><i class="orange fb">20000.00</i></td>
 												<td>900.00</td>
-												<td class="green fb">110000.00</td>
-												<td class="orange fb restore"><i class="f14">恢复</i></td>
+												<td><i class="green fb">110000.00</i></td>
+												<td class=" fb restore"><i class="f14 orange">恢复</i></td>
 											</tr>
 											<tr>
 												<td>2015-06-09</td>
 												<td>王思聪</td>
 												<td>12015052517311</td>
 												<td>厂家</td>
-												<td class="orange fb">20000.00</td>
+												<td><i class="orange fb">20000.00</i></td>
 												<td>900.00</td>
-												<td class="green fb">110000.00</td>
-												<td class="orange fb restore"><i class="f14">恢复</i></td>
+												<td><i class="green fb">110000.00</i></td>
+												<td class=" fb restore"><i class="f14 orange">恢复</i></td>
 											</tr>
 										</table>
 									</div>
@@ -555,7 +559,60 @@
 				$(this).addClass('active').siblings().removeClass('active');
 				$('.showBox .showCont:eq('+$(this).index()+')').show().siblings().hide();
 			});
+
+
+			$(".passed-termination").click(function(){  //拒绝按钮弹出
+				layer.open({
+				    type: 1,
+				    title:false,
+				    skin: 'layer-modify', //样式类名
+				    closeBtn: 0, //不显示关闭按钮
+				    shift: 0,
+				    area: ['489px', '143px'],
+				    shadeClose: false, //开启遮罩关闭
+				    content: '<div class="byCont"><p>拒绝审核用户，用户在购买认证商品时，只能通过其他方式支付货款</p><p><label>确认拒绝审核：</label><input type="button" value="是" class="buttons refuseBtn1"><input type="button" value="否" class="buttons refuseBtn2"></p></div>',
+				    success:function(){
+				    	$(".refuseBtn2").click(function(){ //取消按钮
+				    		layer.closeAll('page');
+				    	});
+				    	$(".refuseBtn1").click(function(){ //确定按钮
+				    		
+				    		layer.closeAll('page');
+				    		alert("修改成功！");
+				    	});
+				    }
+				});
+			  });
+
+		$(".passed-adjustment").click(function(){  //调整额度按钮弹出
+
+				  layer.open({
+				    type: 1,
+				    title:false,
+				    skin: 'layer-modify', //样式类名
+				    closeBtn: 0, //不显示关闭按钮
+				    shift: 0,
+				    area: ['489px', '287px'],
+				    shadeClose: false, //开启遮罩关闭
+				    content: '<div class="paCont"><p class="paTxt">授信额度调整</p><p><label>当前授信总额：</label><span>30000.00元</span></p><p><label>当前授信余额：</label><span>30000.00元</span></p><p><label>调整额度：</label><select name="" id=""><option value="">增加 +</option><option value="">减少 -</option></select><input type="text" name="" id="nums">元</p><p><label>当前授信总额：</label><span>30000.00元</span></p><p><input type="button" value="是" class="buttons paBtn1"><input type="button" value="否" class="buttons paBtn2"></p></div>',
+				    success:function(){
+				    	$(".paBtn2").click(function(){ //取消按钮
+				    		layer.closeAll('page');
+				    	});
+				    	$(".paBtn1").click(function(){ //确定按钮
+				    		alert($("#nums").val());
+				    		layer.closeAll('page');
+				    		alert("修改成功！");
+				    		
+				    	});
+				    }
+				});
+			  });
+
 		})();
+
+
+
 	</script>
 </body>
 </html>

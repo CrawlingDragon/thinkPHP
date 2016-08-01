@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/Css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/vipSet.css" type="text/Css">
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
+		<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/layer/layer.js"></script>
+	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -24,14 +25,14 @@
 		<div class="header-wrap">
 			<div class="header-top"><!-- 头部上面部分 -->
 				<div class="left">
-					<img src="/Public/mall/wuhelong/images/bslogo.png" alt=""><!-- logo -->
+					<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bslogo.png" alt=""><!-- logo -->
 				</div>
 				<div class="right"><!-- 右边内容 -->
 					<ul class="ul1 clear"><!-- 帮助中心 -->
-						<li style="cursor: default;">服务热线：0571-87661678</li>
+						<li style="cursor: default;">服务热线：0571-87661693</li>
 						<li onclick="AddFavorite('中农在线','http://www.baidu.com')">收藏本站</li>
-						<li><a href="" class="f12 cf">帮助中心</a></li>
-						<li class="name">Hi,ceshiyi<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameUp.png">
+						<li><a href="/home/CommonPersonal/help.html" class="f12 cf">帮助中心</a></li>
+						<li class="name">Hi,ceshiyi<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/headLoginNameUp.png">
 							<div class="nameCont">
 								<a href="">退出登录</a>
 								<a href="">帐号管理</a>
@@ -40,19 +41,19 @@
 						<li>请登录</li>
 					</ul>
 					<ul class="ul2 clear"><!-- 商城链接 -->
-						<li><a href="">中农在线</a></li>
-						<li><a href="">网上庄稼医院</a><span>|</span></li>
-						<li><a href="">农资商城</a><span>|</span></li>	
+						<li><a href="http://www.114nz.com" target="_blank">中农在线</a></li>
+						<li><a href="http://wen.114nz.com" target="_blank">网上庄稼医院</a><span>|</span></li>
+						<li><a href="http://mall.114nz.com" target="_blank">农资商城</a><span>|</span></li>	
 					</ul>
 				</div>
 			</div>
 		</div><!-- 头部上面部分end -->
 		<div class="header-nav"><!-- 头部导航部分 -->
 			<div class="navCont">
-				<a href="" class="active"><span>首页</span></a>
-				<a href="" class="active1"><span class="active2">会员设置</span></a>
-				<a href="" class="active"><span>农资商城管理</span></a>
-				<a href="" class="active"><span>网上庄稼医院管理</span></a>
+				<a href="/home/CommonPersonal/index.html" class="active1"><span class="active2">首页</span></a>
+				<a href="/home/CommonPersonal/BasicInfo.html" class="active"><span>会员设置</span></a>
+				<a href="/home/FarmMallPersonal/buyerIndex.html" class="active"><span>农资商城管理</span></a>
+				<a href="/home/FarmMallPersonal/sellerIndex.html" class="active"><span>网上庄稼医院管理</span></a>
 			</div>
 		</div><!-- 头部上面部分end -->
 	</div><!-- 头部开始end -->
@@ -68,51 +69,51 @@
 				<div class="lb-nav"><!-- 左边导航 -->
 					<dl>
 						<dt>个人信息设置</dt>
-						<dd><a href="" class="active">基本信息</a></dd>
-						<dd><a href="">公司信息</a></dd>
-						<dd><a href="">头像设置</a></dd>
+						<dd><a href="BasicInfo.html" class="active">基本信息</a></dd>
+						<dd><a href="companyInfo.html">公司信息</a></dd>
+						<dd><a href="headSet.html">头像设置</a></dd>
 					</dl>
 					<dl>
 						<dt>账户绑定</dt>
-						<dd><a href="">邮箱绑定</a></dd>
-						<dd><a href="">手机号码绑定</a></dd>
+						<dd><a href="emailSet.html">邮箱绑定</a></dd>
+						<dd><a href="phoneSet.html">手机号码绑定</a></dd>
 					</dl>
 					<dl>
 						<dt>账户安全</dt>
-						<dd><a href="">安全中心</a></dd>
-						<dd><a href="">登录密码</a></dd>
-						<dd><a href="">支付密码</a></dd>
-						<dd><a href="">实名账户</a></dd>
-						<dd><a href="">安全保护问题</a></dd>
-						<dd><a href="">银行卡管理</a></dd>
+						<dd><a href="vipSet.html">安全中心</a></dd>
+						<dd><a href="logoPwd.html">登录密码</a></dd>
+						<dd><a href="payPwd.html">支付密码</a></dd>
+						<dd><a href="nameAccount.html">实名账户</a></dd>
+						<dd><a href="safeAnswer.html">安全保护问题</a></dd>
+						<dd><a href="bankCard.html">银行卡管理</a></dd>
 					</dl>
 					<dl>
 						<dt>帐户设置(管理员)</dt>
-						<dd><a href="">已有账户</a></dd>
-						<dd><a href="">添加账户</a></dd>
-					</dl>
-					<dl>
-						<dt>消息设置</dt>
-						<dd><a href="">消息设置</a></dd>
+						<dd><a href="vipSetAccountSetExisting.html">已有账户</a></dd>
+						<dd><a href="vipSetAccountSetAdd.html">添加账户</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
+						<dt>消息设置</dt>
+						<dd><a href="vipSetInfoSet.html">消息设置</a></dd>
+					</dl>
+					<!-- <dl style="margin-bottom: 0px">
 						<dt>界面设置</dt>
 						<dd><a href="">自定义菜单</a></dd>
-					</dl>
+					</dl> -->
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
-			<div class="rightBar bcWrap" style="height: 700px;"><!-- 右边内容 -->
+			<div class="rightBar bcWrap"><!-- 右边内容 -->
 				<div class="smallTitle">银行卡管理</div>
-				<div class="saTitle">已天机&nbsp2&nbsp张储蓄卡,&nbsp0&nbsp张信用卡</div>
+				<div class="saTitle">已添加 2 张储蓄卡, 0 张信用卡</div>
 				<ul class="bcUl clear">
 					<li>
 						<div class="top">
-							<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/bank.png" alt="" class="bankImg">
+							<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bank.png" alt="" class="bankImg">
 							<span class="bankName">中国农业银行</span>
-							<span class="tailNum">尾号7643</span>
-							<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/bankCard.png" alt="" class="bankType">
-							<a href="" class="del">删除</a>
-							<a href="" class="do">编辑</a>
+							<span class="tailNum">尾号7642</span>
+							<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bankCard.png" alt="" class="bankType">
+							<a href="#" class="del" >删除</a>
+							<a href="/home/CommonPersonal/addbank.html" class="do">编辑</a>
 						</div>
 						<div class="bottom">
 							<p>户名：宁波金泰惠多利农资连锁有限公司</p>
@@ -121,12 +122,12 @@
 					</li>
 					<li>
 						<div class="top">
-							<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/bank.png" alt="" class="bankImg">
+							<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bank.png" alt="" class="bankImg">
 							<span class="bankName">中国农业银行</span>
 							<span class="tailNum">尾号7643</span>
-							<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/bankCard.png" alt="" class="bankType">
-							<a href="" class="del">删除</a>
-							<a href="" class="do">编辑</a>
+							<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bankCard.png" alt="" class="bankType">
+							<a href="#" class="del">删除</a>
+							<a href="/home/CommonPersonal/addbank.html" class="do">编辑</a>
 						</div>
 						<div class="bottom">
 							<p>户名：宁波金泰惠多利农资连锁有限公司</p>
@@ -134,8 +135,8 @@
 						</div>
 					</li>
 					<li class="add">
-						<a href="">
-						<img src="/Public/mall/PersonalCenter/commonPersonalCenter/Common/Image/add.png" alt="">
+						<a href="/home/CommonPersonal/addbank.html" class="add-a">
+						<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/add.png" alt="">
 						添加银行卡
 						</a>
 					</li>
@@ -359,5 +360,15 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
+	<script type="text/javascript">
+	$('.del').click(function(){
+		$this = $(this)
+		//确认是或者否类型
+		function dels(){
+			$this.parent().parent().remove();
+		}
+		confirmYes('银行卡删除后将无法恢复','你确定要删除银行卡吗？',dels);
+		})	
+	</script>
 </body>
 </html>

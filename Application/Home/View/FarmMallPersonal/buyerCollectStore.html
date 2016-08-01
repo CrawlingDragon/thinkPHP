@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/buyerIndex.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/laydate/laydate.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/layer/layer.js"></script>
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/buyerIndex.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/laydate/laydate.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/layer/layer.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -26,70 +26,75 @@
 	<include file = "Public/CommonPersonalHeader"/>
 	<section class="containar"><!-- 主体内容开始 -->
 		<div class="containarWrap clear">
-			<div class="rightPart" style="width: 100%;"> <!-- 右边主体内容 -->
-				<div class="myPlace"> <!-- 所在位置开始 -->
-					<span>当前位置:</span>
-					<a href="">首页</a>
-					<span>&gt;</span>
-					<a href="">买家中心</a>
-					<span>&gt;</span>
-					<a href="">我的评论</a>
-				</div> <!-- 所在位置结束 -->
-				<div class="favoriteProduct" ><!-- 我的收藏商品 -->
+			<include file = "Public/FarmMallBuyerLeft"/>
+			<div class="rightBar" style="overflow: hidden;"> <!-- 右边主体内容 -->
+				<div class="titles clear">
+					<h3>Hi! 我是买家</h3>
+					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
+					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
+				</div>
+				<div class="favoriteProduct clear" ><!-- 我的收藏商店 -->
+					<div class="smallTitle" style="margin-left: -15px;">我收藏的商铺</div>
 					<form action="">
 						<div>
-							<input type="text" name="" id="" placeholder="输入商品名称直接搜索" class="searchBox">
 							<label for="" class="f12 c6">商铺类型：</label>
-							<select name="" id="">
-								<option value="">选择类型</option>
-								<option value="">好的商品</option>
-							</select>
+							<div class="selectBox">
+								<select name="" id="">
+									<option value="">选择类型</option>
+									<option value="">好的商品</option>
+								</select>
+							</div>
 							<label for="" class="f12 c6" style="margin-left: 28px;">所在地：</label>
-							<select name="" id="">
-								<option value="">选择区域</option>
-								<option value="">杭州</option>
-							</select>
+							<div class="selectBox">
+								<select name="" id="">
+									<option value="">选择区域</option>
+									<option value="">杭州</option>
+								</select>
+							</div>
+							<input type="text" name="" id="" placeholder="输入商品名称直接搜索" class="searchBox" style="margin-left: 50px;">
 							<input type="button" value="搜索" class="buttons">
 						</div>
 					</form>
 					<div class="favoriteTitle">
-						<input type="checkbox" name="" id="">
-						<span>全选</span>
-						<input type="button" value="批量删除">
+						<input type="checkbox" name="" id="selectAll">
+						<span style="margin-right:10px;">全选</span>
+						<input type="button" value="批量删除" id="delAll">
 					</div>
-					<ul class="storeList clear">
+					<ul class="storeList clear" style="width: 1038px;">
 						<li>
-							<div class="checkboxs"><input type="checkbox" name="" id=""></div>
-							<div class="imgs"><img src="__PUBLIC__/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></div>
+							<div class="checkboxs"><input type="checkbox" name="checkName" id=""></div>
+							<div class="imgs"><a href=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/collectStore.jpg" alt=""></a></div>
 							<div class="rightTxt">
-								<h2>宁波金泰惠多利农资连锁有限公司宁海分公司宁海分公司</h2>
-								<p>会员号：12345678987654321</p>
-								<p>商铺类型：厂家<span>所在地：浙江 宁波</span></p>
-								<p>评分：<strong>4.9</strong>分<img src="__PUBLIC__/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/start.png" alt=""><img src="__PUBLIC__/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/start.png" alt=""><img src="__PUBLIC__/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/start.png" alt=""><img src="__PUBLIC__/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/start.png" alt=""></p>
+								<h2><a href="">宁波金泰惠多利农资连锁有限公司宁海分公司宁海分公司</a></h2>
+								<p class="vipNum">会员号：12345678987654321</p>
+								<p>所在地：浙江宁波浙江宁波浙江宁波浙江宁波浙江宁波浙江宁波浙江宁波浙江宁波</p>
+								<p>评分：<strong>4.9</strong><em class="num-em">分</em><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start.png" alt=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start.png" alt=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start.png" alt=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start.png" alt=""></p>
 							</div>
-							<img src="__PUBLIC__/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/delete.png" alt="" class="delImg">
+							<img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/delete.png" alt="" class="delImg">
 						</li>
 						<li>
-							<div class="checkboxs"><input type="checkbox" name="" id=""></div>
-							<div class="imgs"><img src="__PUBLIC__/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></div>
-							<div class="rightTxt">
-								<h2>宁波金泰惠多利农资连锁有限公司宁海分公司宁海分公司</h2>
-								<p>会员号：12345678987654321</p>
-								<p>商铺类型：厂家<span>所在地：浙江 宁波</span></p>
-								<p>评分：<strong>4.9</strong>分<img src="images/start.png" alt=""><img src="images/start.png" alt=""><img src="images/start.png" alt=""><img src="images/start.png" alt=""></p>
+							<div class="checkboxs"><input type="checkbox" name="checkName" id=""></div>
+							<div class="imgs">
+								<a href=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/collectStore.jpg" alt=""></a>
 							</div>
-							<img src="__PUBLIC__/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/delete.png" alt="" class="delImg">
+							<div class="rightTxt">
+								<h2><a href="">宁波金泰惠多利农资连锁有限公司宁海分公司宁海分公司</a></h2>
+								<p class="vipNum">会员号：12345678987654321</p>
+								<p>所在地：浙江宁波</p>
+								<p>评分：<strong>4.9</strong><em class="num-em">分</em><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start2.png" alt=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start2.png" alt=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start2.png" alt=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start2.png" alt=""></p>
+							</div>
+							<img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/delete.png" alt="" class="delImg">
 						</li>
 						<li>
-							<div class="checkboxs"><input type="checkbox" name="" id=""></div>
-							<div class="imgs"><img src="__PUBLIC__/Mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></div>
+							<div class="checkboxs"><input type="checkbox" name="checkName" id=""></div>
+							<div class="imgs"><a href=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/collectStore.jpg" alt=""></a></div>
 							<div class="rightTxt">
-								<h2>宁波金泰惠多利农资连锁有限公司宁海分公司宁海分公司</h2>
-								<p>会员号：12345678987654321</p>
-								<p>商铺类型：厂家<span>所在地：浙江 宁波</span></p>
-								<p>评分：<strong>4.9</strong>分<img src="images/start.png" alt=""><img src="images/start.png" alt=""><img src="images/start.png" alt=""><img src="images/start.png" alt=""></p>
+								<h2><a href="">宁波金泰惠多利农资连锁有限公司宁海分公司宁海分公司</a></h2>
+								<p class="vipNum">会员号：12345678987654321</p>
+								<p>所在地：浙江宁波</p>
+								<p>评分：<strong>4.9</strong><em class="num-em">分</em><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start2.png" alt=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start2.png" alt=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start2.png" alt=""><img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/start2.png" alt=""></p>
 							</div>
-							<img src="images/delete.png" alt="" class="delImg">
+							<img src="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Image/delete.png" alt="" class="delImg" >
 						</li>
 					</ul>
 				</div><!-- 我的收藏商品结束 -->
@@ -118,5 +123,69 @@
 		</div>
 	</section>
 	<include file ="Public/CommonPersonalFooter"/>
+<script type="text/javascript">
+	//全选按钮
+$('#selectAll').click(function(){
+	if($(this).prop("checked")){
+		$('.storeList input[type=checkbox]').each(function(){
+			$(this).prop("checked",true);
+			$(this).parent().addClass('on-check');//添加选择的打勾效果
+		})
+	}else{
+		$('.storeList input[type=checkbox]').each(function(){
+			$(this).prop("checked",false);
+			$(this).parent().removeClass('on-check');//去除选中的打勾效果
+		})
+	}
+});
+//商品单个复选框
+$('.storeList input[type=checkbox]').click(function(){
+		if ($(this).prop("checked")) {
+			$(this).parent().addClass('on-check');		//添加选择的打勾效果
+		}else{
+			$('#selectAll').prop("checked",false);
+			$(this).parent().removeClass('on-check'); //去除选中的打勾效果
+		};
+		var checkedNum = $("input:checkbox[name='checkName']:checked").length; //复选狂选中的个数
+		var checkboxNum = $("input:checkbox[name='checkName']").length;       //复选框的个数
+		console.log(checkedNum);
+		console.log(checkboxNum);
+		if (checkedNum == checkboxNum) {          //选中个数等于复选框个数
+			$('#selectAll').prop("checked",true);  //全选框变成选中状态
+		}
+	})
+//删除按钮弹窗
+$(".delImg").click(function(){  //立即发货按钮弹出
+	var _this = $(this);
+	layer.open({
+		    type: 1,
+		    title:false,
+		    skin: 'layer-sendBox', //样式类名
+		    closeBtn: 0, //不显示关闭按钮
+		    shift: 0,
+		    area: ['330px', '155px'],
+		    shadeClose: false, //开启遮罩关闭
+		    content: '<div class="delBox"><h5>确定要删除此商品么?</h5><div><input type="button" class="delBoxBtn1" value="取消"><input type="button" class="delBoxBtn2" value="确定"></div></div>', //弹窗内容
+		    success:function(){
+		    	$(".delBoxBtn1").click(function(){ //取消按钮
+		    		layer.closeAll('page'); //遮罩关闭 
+		    	});
+		    	$(".delBoxBtn2").click(function(){ //确定按钮
+		    		layer.closeAll('page');  //遮罩关闭 
+		    		_this.parent().remove();  //删除商品li
+		    	});
+		    }
+		});
+	});
+$(document).ready(function(){
+	$("#delAll").click(function(){
+		if ($("#selectAll").prop("checked")==true) {
+			$(".storeList li").remove();
+		} else {
+
+		}
+	})
+})
+</script>
 </body>
 </html>

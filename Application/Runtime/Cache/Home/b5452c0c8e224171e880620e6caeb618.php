@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/bscommon.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/multi-switch.min.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
-	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/vipSet.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/multi-switch.min.css" type="text/css">
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/Validation.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Js/multi-switch.js"></script>
+	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -56,14 +56,14 @@
 		<div class="header-wrap">
 			<div class="header-top"><!-- 头部上面部分 -->
 				<div class="left">
-					<img src="/Public/mall/wuhelong/images/bslogo.png" alt=""><!-- logo -->
+					<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bslogo.png" alt=""><!-- logo -->
 				</div>
 				<div class="right"><!-- 右边内容 -->
 					<ul class="ul1 clear"><!-- 帮助中心 -->
-						<li style="cursor: default;">服务热线：0571-87661678</li>
+						<li style="cursor: default;">服务热线：0571-87661693</li>
 						<li onclick="AddFavorite('中农在线','http://www.baidu.com')">收藏本站</li>
-						<li><a href="" class="f12 cf">帮助中心</a></li>
-						<li class="name">Hi,ceshiyi<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameUp.png">
+						<li><a href="/home/CommonPersonal/help.html" class="f12 cf">帮助中心</a></li>
+						<li class="name">Hi,ceshiyi<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/headLoginNameUp.png">
 							<div class="nameCont">
 								<a href="">退出登录</a>
 								<a href="">帐号管理</a>
@@ -72,19 +72,19 @@
 						<li>请登录</li>
 					</ul>
 					<ul class="ul2 clear"><!-- 商城链接 -->
-						<li><a href="">中农在线</a></li>
-						<li><a href="">网上庄稼医院</a><span>|</span></li>
-						<li><a href="">农资商城</a><span>|</span></li>	
+						<li><a href="http://www.114nz.com" target="_blank">中农在线</a></li>
+						<li><a href="http://wen.114nz.com" target="_blank">网上庄稼医院</a><span>|</span></li>
+						<li><a href="http://mall.114nz.com" target="_blank">农资商城</a><span>|</span></li>	
 					</ul>
 				</div>
 			</div>
 		</div><!-- 头部上面部分end -->
 		<div class="header-nav"><!-- 头部导航部分 -->
 			<div class="navCont">
-				<a href="" class="active"><span>首页</span></a>
-				<a href="" class="active1"><span class="active2">会员设置</span></a>
-				<a href="" class="active"><span>农资商城管理</span></a>
-				<a href="" class="active"><span>网上庄稼医院管理</span></a>
+				<a href="/home/CommonPersonal/index.html" class="active1"><span class="active2">首页</span></a>
+				<a href="/home/CommonPersonal/BasicInfo.html" class="active"><span>会员设置</span></a>
+				<a href="/home/FarmMallPersonal/buyerIndex.html" class="active"><span>农资商城管理</span></a>
+				<a href="/home/FarmMallPersonal/sellerIndex.html" class="active"><span>网上庄稼医院管理</span></a>
 			</div>
 		</div><!-- 头部上面部分end -->
 	</div><!-- 头部开始end -->
@@ -100,68 +100,73 @@
 				<div class="lb-nav"><!-- 左边导航 -->
 					<dl>
 						<dt>个人信息设置</dt>
-						<dd><a href="" class="active">基本信息</a></dd>
-						<dd><a href="">公司信息</a></dd>
-						<dd><a href="">头像设置</a></dd>
+						<dd><a href="BasicInfo.html" class="active">基本信息</a></dd>
+						<dd><a href="companyInfo.html">公司信息</a></dd>
+						<dd><a href="headSet.html">头像设置</a></dd>
 					</dl>
 					<dl>
 						<dt>账户绑定</dt>
-						<dd><a href="">邮箱绑定</a></dd>
-						<dd><a href="">手机号码绑定</a></dd>
+						<dd><a href="emailSet.html">邮箱绑定</a></dd>
+						<dd><a href="phoneSet.html">手机号码绑定</a></dd>
 					</dl>
 					<dl>
 						<dt>账户安全</dt>
-						<dd><a href="">安全中心</a></dd>
-						<dd><a href="">登录密码</a></dd>
-						<dd><a href="">支付密码</a></dd>
-						<dd><a href="">实名账户</a></dd>
-						<dd><a href="">安全保护问题</a></dd>
-						<dd><a href="">银行卡管理</a></dd>
+						<dd><a href="vipSet.html">安全中心</a></dd>
+						<dd><a href="logoPwd.html">登录密码</a></dd>
+						<dd><a href="payPwd.html">支付密码</a></dd>
+						<dd><a href="nameAccount.html">实名账户</a></dd>
+						<dd><a href="safeAnswer.html">安全保护问题</a></dd>
+						<dd><a href="bankCard.html">银行卡管理</a></dd>
 					</dl>
 					<dl>
 						<dt>帐户设置(管理员)</dt>
-						<dd><a href="">已有账户</a></dd>
-						<dd><a href="">添加账户</a></dd>
-					</dl>
-					<dl>
-						<dt>消息设置</dt>
-						<dd><a href="">消息设置</a></dd>
+						<dd><a href="vipSetAccountSetExisting.html">已有账户</a></dd>
+						<dd><a href="vipSetAccountSetAdd.html">添加账户</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
+						<dt>消息设置</dt>
+						<dd><a href="vipSetInfoSet.html">消息设置</a></dd>
+					</dl>
+					<!-- <dl style="margin-bottom: 0px">
 						<dt>界面设置</dt>
 						<dd><a href="">自定义菜单</a></dd>
-					</dl>
+					</dl> -->
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar"><!-- 右边内容 -->
 				<div class="smallTitle">添加账户</div>
-				<div class="addAccount">
-					<p class="tipTittle">输入要添加的账户信息：</p>
+				<div class="addAccount" style="padding-bottom: 20px;">
+					<p class="tipTittle">输入要添加的账户信息,带<span>*</span>为必填项</p>
 					<form>
 						<div class="vipFormItem">
-							<span class="formText">用户名：</span>
-							<input type="text" name="" id="" value="" placeholder="6-20个数字、字母或下划线组成以字母开头" class="formInput">
+							<span class="formText"><i>*</i>用户名：</span>
+							<input type="text" name="" id="" value="" placeholder="6-20个数字、字母或下划线组成以字母开头" class="formInput" onkeyup="userName(this)" onblur="userName(this)">
 							<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div>
 							<label>用于登录</label>
+							<p class="errorMsg"></p>
 						</div>
 						<div class="vipFormItem">
-							<span class="formText">手机：</span>
-							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput">
+							<span class="formText"><i>*</i>手机：</span>
+							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput" onblur="phoneNum(this)" onkeyup="phoneNum(this)">
 							<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div>
 							<label>用于登录</label>
+							<p class="errorMsg"></p>
 						</div>
-						<div class="vipFormItem">
-							<span class="formText">邮箱：</span>
-							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput">
+						<div class="vipFormItem clear">
+							<span class="formText"><i>*</i>邮箱：</span>
+							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput" onblur="Emails(this)" onkeyup="Emails(this)">
 							<div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div>
 							<label>用于登录</label>
+							<p class="errorMsg"></p>
 						</div>
-						<div class="vipFormItem">
-							<span class="formText">密码：</span>
-							<input type="text" name="" id="" value="" placeholder="6-20个字母数字特殊符号的任意两种组合" class="formInput">
+						<div class="vipFormItem clear">
+							<span class="formText"><i>*</i>密码：</span>
+							<input type="password" name="" id="" value="" placeholder="6-20个字母数字特殊符号的任意两种组合" class="formInput" onkeyup="pwd(this)" onblur="pwd(this)">
+							<br>
+							<p class="errorMsg" style="margin-top: 20px;"></p>
 						</div>
-						<div class="vipFormItem">
-							<span class="formText">是否可登陆：</span>
+						<!-- <div class="vipFormItem clear">
+							<span class="formText"><i>*</i>是否可登陆：</span>
 							<div class="checkBtn">
 								<span>
 									<input type="radio" name="doLogin" id="" value="normal">
@@ -172,16 +177,17 @@
 									<label>锁定</label>	
 								</span>
 							</div>
-						</div>
-						<div class="vipFormItem">
-							<span class="formText">姓名：</span>
+						</div> -->
+						<div class="vipFormItem clear">
+							<span class="formText"><i>*</i>姓名：</span>
 							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput">
+							<p class="errorMsg"></p>
 						</div>
-						<div class="vipFormItem">
+						<div class="vipFormItem clear">
 							<span class="formText">性别：</span>
 							<div class="checkBtn">
 								<span>
-									<input type="radio" name="gender" id="" value="male">
+									<input type="radio" name="gender" id="" value="male" checked="">
 									<label>男</label>
 								</span>
 								<span>
@@ -190,29 +196,31 @@
 								</span>
 							</div>
 						</div>
-						<div class="vipFormItem">
-							<span class="formText">身份证：</span>
-							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput">
+						<div class="vipFormItem clear">
+							<span class="formText"><i>*</i>身份证：</span>
+							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput" onblur="IDnumber(this)" onkeyup="IDnumber(this)">
+							<br>
+							<p class="errorMsg" style="margin-top: 20px;"></p>
 						</div>
-						<div class="vipFormItem">
+						<div class="vipFormItem clear">
 							<span class="formText">座机：</span>
 							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput">
 						</div>
-						<div class="vipFormItem">
+						<div class="vipFormItem clear">
 							<span class="formText">QQ号：</span>
 							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput">
 						</div>
-						<div class="vipFormItem">
+						<div class="vipFormItem clear">
 							<span class="formText">部门：</span>
 							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput">
 						</div>
-						<div class="vipFormItem">
+						<div class="vipFormItem clear">
 							<span class="formText">职位：</span>
 							<input type="text" name="" id="" value="" placeholder="请填写真实的信息" class="formInput">
 						</div>
 						<div class="vipFormItem">
 							<span class="formText"></span>
-							<a href="javascript:;" class="submitBtn">保存</a>
+							<a href="javascript:;" class="submitBtn" id="sub">保存</a>
 						</div>
 					</form>
 				</div>
@@ -435,6 +443,20 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('#sub').click(function(){
+			$('input[type=text]').trigger('blur');
+			// var len = $('.errorMsg').length;
+			var txt = $('.errorMsg').text();
+			if($('.errorMsg').text()!==''){
+				return false;
+			}else{
+				return true;
 
+			}
+		})
+		})
+</script>
 </body>
 </html>

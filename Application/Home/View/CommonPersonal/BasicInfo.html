@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/JCI/css/multi-switch.min.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/common/js/Validation.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/birthday.js"></script>
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/CommonPersonal/Css/vipSet.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/CommonPersonal/Css/multi-switch.min.css" type="text/css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/Validation.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/CommonPersonal/Js/multi-switch.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/birthday.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -27,6 +27,7 @@
 			$('.multi-switch').multiSwitch();
 		});
 	</script>
+
 </head>
 <body>
 	<include file = "Public/CommonPersonalHeader"/>
@@ -38,79 +39,104 @@
 				<div class="smallTips">带<span>*</span>为必填项</div>
 				<form action="" class="bi-form">
 					<div class="list"><!-- 登陆名 -->
-						<label for=""><i>*</i>用户名:</label>
+						<label for=""><i>*</i>用户名：</label>
 						<input type="text" name="" id="user" onblur="userName(this)" onkeyup="userName(this)">
 						<span class="nameTxt"><div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div></span>
 						<span class="c3 f12 ml">用于登录</span>
 						<p class="errorMsg"></p>
 					</div>
 					<div class="list"><!-- 性别 -->
-						<label for=""><i>*</i>性别:</label>
+						<label for=""><i>*</i>性别：</label>
 						<input type="radio" name="sex" id="" checked="">
 						<span class="sex">男</span>
 						<input type="radio" name="sex" id="">
 						<span class="sex">女</span>
-						<input type="radio" name="sex" id="">
-						<span class="sex">保密</span>
+						<!-- <input type="radio" name="sex" id="">
+						<span class="sex">保密</span> -->
 					</div>
 					<div class="list"><!-- 生日 -->
-						<label for="">生日:</label>
-						<select name="" id="selYear">
-							<option value="">请选择</option>
-						</select>
+						<label for="">生日：</label>
+						<div class="selectBox">
+							<select name="" id="selYear">
+								<option value="">请选择</option>
+							</select>
+						</div>
 						<span class="timeTxt">年</span>
-						<select name="" id="selMonth">
-							<option value="">请选择</option>
-						</select>
+						<div class="selectBox">
+							<select name="" id="selMonth">
+								<option value="">请选择</option>
+							</select>
+						</div>
 						<span class="timeTxt">月</span>
-						<select name="" id="selDay">
-							<option value="">请选择</option>
-						</select>
+						<div class="selectBox">
+							<select name="" id="selDay">
+								<option value="">请选择</option>
+							</select>
+						</div>
 						<span class="txt">日</span>
 						<span class="timeTip">填真实生日有惊喜哦~</span>
 					</div>
 					<div class="list"><!-- 真实姓名 -->
-						<label for=""><i>*</i>真实姓名:</label>
+						<label for=""><i>*</i>真实姓名：</label>
 						<input type="text" name="realName" id="realName" onblur="realNames(this)" onkeyup="realNames(this)">
 						<p class="errorMsg"></p>
 					</div>
 					<div class="list"><!-- 身份证号 -->
-						<label for="">身份证号:</label>
+						<label for="">身份证号：</label>
 						<input type="text" name="" id="IDnum" onblur="IDnumber(this)" onkeyup="IDnumber(this)">
 						<p class="errorMsg"></p>
 					</div>
 					<div class="list"><!-- 婚姻状况 -->
-						<label for="">婚姻状况:</label>
+						<label for="">婚姻状况：</label>
 						<input type="radio" name="marriage" id="" checked="">
 						<span class="marriage">已婚</span>
 						<input type="radio" name="marriage" id="">
 						<span class="marriage">未婚</span>
-						<input type="radio" name="marriage" id="">
-						<span class="marriage">保密</span>
+						<!-- <input type="radio" name="marriage" id="">
+						<span class="marriage">保密</span> -->
 					</div>
 					<div class="list"><!-- 教育程度 -->
-						<label for="">教育程度:</label>
-						<select name="" id="">
-							<option value="">请选择</option>
-						</select>
+						<label for="">教育程度：</label>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+							</select>
+						</div>
 					</div>
 					<div class="list"><!-- 所在行业 -->
-						<label for="">所在行业:</label>
-						<select name="" id="">
-							<option value="">请选择</option>
-						</select>
+						<label for="">所在行业：</label>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+							</select>
+						</div>
 					</div>
 					<div class="list"><!-- 所在地区 -->
-						<label for=""><i>*</i>所在地区:</label>
-						<select name="" id="">
-							<option value="">浙江省</option>
-						</select>
-						<select name="" id="">
-							<option value="">杭州市</option>
-						</select>
-						<select name="" id="">
-							<option value="">滨江区</option>
-						</select>
+						<label for=""><i>*</i>所在地区：</label>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">浙江省</option>
+							</select>
+						</div>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">杭州市</option>
+							</select>
+						</div>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">滨江区</option>
+							</select>
+						</div>
 						<input type="text" name="" id="" class="ads" onblur="deAds(this)" onkeyup="deAds(this)">
 						<p class="errorMsg"></p>
 					</div>

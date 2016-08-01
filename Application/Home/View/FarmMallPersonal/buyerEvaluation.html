@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -25,17 +25,15 @@
 		<div class="containarWrap clear">
 			<include file = "Public/FarmMallBuyerLeft"/>
 			<div class="rightBar"><!-- 右边内容开始 -->
-				<div class="rightPart"> <!-- 右边主体内容 -->
-					<div class="myPlace"> <!-- 所在位置开始 -->
-						<span>当前位置:</span>
-						<a href="">首页</a>
-						<span>&gt;</span>
-						<a href="">卖家中心</a>
-						<span>&gt;</span>
-						<a href="">已卖出的商品</a>
-					</div> <!-- 所在位置结束 -->
+					<div class="titles clear" style="background: #f9f9f9;">
+						<h3>Hi! 我是买家</h3>
+						<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
+						<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
+					</div>
+				<div class="rightPart" style="background: #fff;box-sizing:border-box"> <!-- 右边主体内容 -->
+					
 					<div class="right"> <!-- 右边评价部分 -->
-						<div class="myEvaluate"> <!-- 我的评价部分开始 -->
+						<div class="myEvaluate" style="background: #fff;border:none;padding-top: 1px"> <!-- 我的评价部分开始 -->
 							<h4>我的评价</h4>
 							<h5>我的好评率:<span>100.00%</span></h5>
 							<table border="1">
@@ -75,10 +73,10 @@
 						</div><!-- 我的评价部分结束 -->
 						<div class="evaluateShow"> <!-- 来自卖家买家的评价开始 -->
 							<div class="navButton">
-								<span class="active">来自卖家的评论</span>
-								<span>给卖家的评论</span>
+								<span class="active" style="background: #fff">来自卖家的评论</span>
+								<span style="background: #fff">给卖家的评论</span>
 							</div>
-							<div class="showBox">
+							<div class="showBox" >
 								<div class="showBox1">
 									<table cellPadding="0" cellSpacing="0" border-spacing="0">
 										<tr>

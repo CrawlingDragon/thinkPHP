@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/multi-switch.min.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/common/js/Validation.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/birthday.js"></script>
-	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/vipSet.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/multi-switch.min.css" type="text/css">
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/Validation.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Js/multi-switch.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/birthday.js"></script>
+	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -26,25 +26,22 @@
 		$(function(){
 			$('.multi-switch').multiSwitch();
 		});
-		function idCard(x,txt,IDtxt){
-			nulls(x,txt);
-			IDnumber(x,IDtxt);
-		}
 	</script>
+
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
 		<div class="header-wrap">
 			<div class="header-top"><!-- 头部上面部分 -->
 				<div class="left">
-					<img src="/Public/mall/wuhelong/images/bslogo.png" alt=""><!-- logo -->
+					<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bslogo.png" alt=""><!-- logo -->
 				</div>
 				<div class="right"><!-- 右边内容 -->
 					<ul class="ul1 clear"><!-- 帮助中心 -->
-						<li style="cursor: default;">服务热线：0571-87661678</li>
+						<li style="cursor: default;">服务热线：0571-87661693</li>
 						<li onclick="AddFavorite('中农在线','http://www.baidu.com')">收藏本站</li>
-						<li><a href="" class="f12 cf">帮助中心</a></li>
-						<li class="name">Hi,ceshiyi<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameUp.png">
+						<li><a href="/home/CommonPersonal/help.html" class="f12 cf">帮助中心</a></li>
+						<li class="name">Hi,ceshiyi<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/headLoginNameUp.png">
 							<div class="nameCont">
 								<a href="">退出登录</a>
 								<a href="">帐号管理</a>
@@ -53,19 +50,19 @@
 						<li>请登录</li>
 					</ul>
 					<ul class="ul2 clear"><!-- 商城链接 -->
-						<li><a href="">中农在线</a></li>
-						<li><a href="">网上庄稼医院</a><span>|</span></li>
-						<li><a href="">农资商城</a><span>|</span></li>	
+						<li><a href="http://www.114nz.com" target="_blank">中农在线</a></li>
+						<li><a href="http://wen.114nz.com" target="_blank">网上庄稼医院</a><span>|</span></li>
+						<li><a href="http://mall.114nz.com" target="_blank">农资商城</a><span>|</span></li>	
 					</ul>
 				</div>
 			</div>
 		</div><!-- 头部上面部分end -->
 		<div class="header-nav"><!-- 头部导航部分 -->
 			<div class="navCont">
-				<a href="" class="active"><span>首页</span></a>
-				<a href="" class="active1"><span class="active2">会员设置</span></a>
-				<a href="" class="active"><span>农资商城管理</span></a>
-				<a href="" class="active"><span>网上庄稼医院管理</span></a>
+				<a href="/home/CommonPersonal/index.html" class="active1"><span class="active2">首页</span></a>
+				<a href="/home/CommonPersonal/BasicInfo.html" class="active"><span>会员设置</span></a>
+				<a href="/home/FarmMallPersonal/buyerIndex.html" class="active"><span>农资商城管理</span></a>
+				<a href="/home/FarmMallPersonal/sellerIndex.html" class="active"><span>网上庄稼医院管理</span></a>
 			</div>
 		</div><!-- 头部上面部分end -->
 	</div><!-- 头部开始end -->
@@ -81,37 +78,37 @@
 				<div class="lb-nav"><!-- 左边导航 -->
 					<dl>
 						<dt>个人信息设置</dt>
-						<dd><a href="" class="active">基本信息</a></dd>
-						<dd><a href="">公司信息</a></dd>
-						<dd><a href="">头像设置</a></dd>
+						<dd><a href="BasicInfo.html" class="active">基本信息</a></dd>
+						<dd><a href="companyInfo.html">公司信息</a></dd>
+						<dd><a href="headSet.html">头像设置</a></dd>
 					</dl>
 					<dl>
 						<dt>账户绑定</dt>
-						<dd><a href="">邮箱绑定</a></dd>
-						<dd><a href="">手机号码绑定</a></dd>
+						<dd><a href="emailSet.html">邮箱绑定</a></dd>
+						<dd><a href="phoneSet.html">手机号码绑定</a></dd>
 					</dl>
 					<dl>
 						<dt>账户安全</dt>
-						<dd><a href="">安全中心</a></dd>
-						<dd><a href="">登录密码</a></dd>
-						<dd><a href="">支付密码</a></dd>
-						<dd><a href="">实名账户</a></dd>
-						<dd><a href="">安全保护问题</a></dd>
-						<dd><a href="">银行卡管理</a></dd>
+						<dd><a href="vipSet.html">安全中心</a></dd>
+						<dd><a href="logoPwd.html">登录密码</a></dd>
+						<dd><a href="payPwd.html">支付密码</a></dd>
+						<dd><a href="nameAccount.html">实名账户</a></dd>
+						<dd><a href="safeAnswer.html">安全保护问题</a></dd>
+						<dd><a href="bankCard.html">银行卡管理</a></dd>
 					</dl>
 					<dl>
 						<dt>帐户设置(管理员)</dt>
-						<dd><a href="">已有账户</a></dd>
-						<dd><a href="">添加账户</a></dd>
-					</dl>
-					<dl>
-						<dt>消息设置</dt>
-						<dd><a href="">消息设置</a></dd>
+						<dd><a href="vipSetAccountSetExisting.html">已有账户</a></dd>
+						<dd><a href="vipSetAccountSetAdd.html">添加账户</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
+						<dt>消息设置</dt>
+						<dd><a href="vipSetInfoSet.html">消息设置</a></dd>
+					</dl>
+					<!-- <dl style="margin-bottom: 0px">
 						<dt>界面设置</dt>
 						<dd><a href="">自定义菜单</a></dd>
-					</dl>
+					</dl> -->
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar biWrap"><!-- 右边内容 -->
@@ -119,84 +116,108 @@
 				<div class="smallTips">带<span>*</span>为必填项</div>
 				<form action="" class="bi-form">
 					<div class="list"><!-- 登陆名 -->
-						<label for=""><i>*</i>用户名:</label>
+						<label for=""><i>*</i>用户名：</label>
 						<input type="text" name="" id="user" onblur="userName(this)" onkeyup="userName(this)">
 						<span class="nameTxt"><div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div></span>
 						<span class="c3 f12 ml">用于登录</span>
 						<p class="errorMsg"></p>
 					</div>
 					<div class="list"><!-- 性别 -->
-						<label for=""><i>*</i>性别:</label>
+						<label for=""><i>*</i>性别：</label>
 						<input type="radio" name="sex" id="" checked="">
 						<span class="sex">男</span>
 						<input type="radio" name="sex" id="">
 						<span class="sex">女</span>
-						<input type="radio" name="sex" id="">
-						<span class="sex">保密</span>
+						<!-- <input type="radio" name="sex" id="">
+						<span class="sex">保密</span> -->
 					</div>
 					<div class="list"><!-- 生日 -->
-						<label for="">生日:</label>
-						<select name="" id="selYear">
-							<option value="">请选择</option>
-						</select>
+						<label for="">生日：</label>
+						<div class="selectBox">
+							<select name="" id="selYear">
+								<option value="">请选择</option>
+							</select>
+						</div>
 						<span class="timeTxt">年</span>
-						<select name="" id="selMonth">
-							<option value="">请选择</option>
-						</select>
+						<div class="selectBox">
+							<select name="" id="selMonth">
+								<option value="">请选择</option>
+							</select>
+						</div>
 						<span class="timeTxt">月</span>
-						<select name="" id="selDay">
-							<option value="">请选择</option>
-						</select>
+						<div class="selectBox">
+							<select name="" id="selDay">
+								<option value="">请选择</option>
+							</select>
+						</div>
 						<span class="txt">日</span>
 						<span class="timeTip">填真实生日有惊喜哦~</span>
 					</div>
 					<div class="list"><!-- 真实姓名 -->
-						<label for=""><i>*</i>真实姓名:</label>
+						<label for=""><i>*</i>真实姓名：</label>
 						<input type="text" name="realName" id="realName" onblur="realNames(this)" onkeyup="realNames(this)">
 						<p class="errorMsg"></p>
 					</div>
 					<div class="list"><!-- 身份证号 -->
-						<label for="">身份证号:</label>
+						<label for="">身份证号：</label>
 						<input type="text" name="" id="IDnum" onblur="IDnumber(this)" onkeyup="IDnumber(this)">
 						<p class="errorMsg"></p>
 					</div>
 					<div class="list"><!-- 婚姻状况 -->
-						<label for="">婚姻状况:</label>
+						<label for="">婚姻状况：</label>
 						<input type="radio" name="marriage" id="" checked="">
 						<span class="marriage">已婚</span>
 						<input type="radio" name="marriage" id="">
 						<span class="marriage">未婚</span>
-						<input type="radio" name="marriage" id="">
-						<span class="marriage">保密</span>
+						<!-- <input type="radio" name="marriage" id="">
+						<span class="marriage">保密</span> -->
 					</div>
 					<div class="list"><!-- 教育程度 -->
-						<label for="">教育程度:</label>
-						<select name="" id="">
-							<option value="">请选择</option>
-						</select>
+						<label for="">教育程度：</label>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+							</select>
+						</div>
 					</div>
 					<div class="list"><!-- 所在行业 -->
-						<label for="">所在行业:</label>
-						<select name="" id="">
-							<option value="">请选择</option>
-						</select>
+						<label for="">所在行业：</label>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+								<option value="">请选择</option>
+							</select>
+						</div>
 					</div>
 					<div class="list"><!-- 所在地区 -->
-						<label for=""><i>*</i>所在地区:</label>
-						<select name="" id="">
-							<option value="">浙江省</option>
-						</select>
-						<select name="" id="">
-							<option value="">杭州市</option>
-						</select>
-						<select name="" id="">
-							<option value="">滨江区</option>
-						</select>
+						<label for=""><i>*</i>所在地区：</label>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">浙江省</option>
+							</select>
+						</div>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">杭州市</option>
+							</select>
+						</div>
+						<div class="selectBox">
+							<select name="" id="">
+								<option value="">滨江区</option>
+							</select>
+						</div>
 						<input type="text" name="" id="" class="ads" onblur="deAds(this)" onkeyup="deAds(this)">
 						<p class="errorMsg"></p>
 					</div>
 					<input type="submit" value="保存" class="biSub" id="sub">
-					<div class="aaa">2312</div>
 				</form>
 			</div><!-- 右边内容end -->
 		</div>
@@ -441,9 +462,6 @@
 			}
 		})
 		
-		$('.aaa').click(function(){
-			alert($('#user').val().length);
-		})
 	});
 	</script>
 </body>

@@ -233,6 +233,7 @@ function realNames(x){
         }
         var str = $.trim(x.value);
 }
+//身份证验证
 function IDnumber(x){
 	var $msg = $(x).parent().find('.errorMsg');
 		 $msg.hide();
@@ -346,3 +347,108 @@ function corporate(x){
 //             $(x).css("border","1px solid #ff6600");
 //         }
 // }
+//邮箱验证
+function Emails(x){
+	var $msg = $(x).parent().find('.errorMsg');
+		$msg.hide();
+		$msg.text("");
+        $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langEmail1);
+            $(x).css("border","1px solid #ff6600");
+        }else if(!filter.test(x.value)){
+        	$msg.show();
+            $msg.text(langEmail2);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//邮箱验证码验证
+function emCodes(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langEmCode1);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//验证码验证
+function codes(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langCode1);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//手机号码验证
+function phoneNum(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		$msg.hide();
+		$msg.text("");
+        $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langPhoneNum1);
+            $(x).css("border","1px solid #ff6600");
+        }else if(!telReg.test(x.value)){
+        	$msg.show();
+            $msg.text(langPhoneNum2);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//手机验证码验证
+function phoneCodes(x){
+		var $msg = $(x).parent().find('.errorMsg');
+		 $msg.hide();
+		 $msg.text("");
+         $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langPhoneCode1);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+
+//新登密码验证
+function pwd(x){
+	var $msg = $(x).parent().find('.errorMsg');
+		$msg.hide();
+		$msg.text("");
+        $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langPwd1);
+            $(x).css("border","1px solid #ff6600");
+        }else if(!pwdReg.test(x.value)){
+        	$msg.show();
+            $msg.text(langPwd2);
+            $(x).css("border","1px solid #ff6600");
+        }
+}
+//再次输入密码的验证
+function pwdAgane(x){
+	var $msg = $(x).parent().find('.errorMsg');
+	var $masterPwd = $(x).parent().prev().find('input');
+		$msg.hide();
+		$msg.text("");
+        $(x).removeAttr("style");
+        if(!isNone(x)){
+        	$msg.show();
+            $msg.text(langPwd1);
+            $(x).css("border","1px solid #ff6600");
+        }else if(!pwdReg.test(x.value)){
+        	$msg.show();
+            $msg.text(langPwd2);
+            $(x).css("border","1px solid #ff6600");
+        }else if(x.value!==$masterPwd.val()){
+        	$msg.show();
+        	$msg.text(langPwd3);
+        }
+}

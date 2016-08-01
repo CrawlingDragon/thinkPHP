@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/css/buyerIndex.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/buyerIndex.css" type="text/css">
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/dropDownExtend.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/laydate/laydate.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/layer/layer.js"></script>
+	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -51,14 +54,14 @@
 		<div class="header-wrap">
 			<div class="header-top"><!-- 头部上面部分 -->
 				<div class="left">
-					<img src="/Public/mall/wuhelong/images/bslogo.png" alt=""><!-- logo -->
+					<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bslogo.png" alt=""><!-- logo -->
 				</div>
 				<div class="right"><!-- 右边内容 -->
 					<ul class="ul1 clear"><!-- 帮助中心 -->
-						<li style="cursor: default;">服务热线：0571-87661678</li>
+						<li style="cursor: default;">服务热线：0571-87661693</li>
 						<li onclick="AddFavorite('中农在线','http://www.baidu.com')">收藏本站</li>
-						<li><a href="" class="f12 cf">帮助中心</a></li>
-						<li class="name">Hi,ceshiyi<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameUp.png">
+						<li><a href="/home/CommonPersonal/help.html" class="f12 cf">帮助中心</a></li>
+						<li class="name">Hi,ceshiyi<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/headLoginNameUp.png">
 							<div class="nameCont">
 								<a href="">退出登录</a>
 								<a href="">帐号管理</a>
@@ -67,19 +70,19 @@
 						<li>请登录</li>
 					</ul>
 					<ul class="ul2 clear"><!-- 商城链接 -->
-						<li><a href="">中农在线</a></li>
-						<li><a href="">网上庄稼医院</a><span>|</span></li>
-						<li><a href="">农资商城</a><span>|</span></li>	
+						<li><a href="http://www.114nz.com" target="_blank">中农在线</a></li>
+						<li><a href="http://wen.114nz.com" target="_blank">网上庄稼医院</a><span>|</span></li>
+						<li><a href="http://mall.114nz.com" target="_blank">农资商城</a><span>|</span></li>	
 					</ul>
 				</div>
 			</div>
 		</div><!-- 头部上面部分end -->
 		<div class="header-nav"><!-- 头部导航部分 -->
 			<div class="navCont">
-				<a href="" class="active"><span>首页</span></a>
-				<a href="" class="active1"><span class="active2">会员设置</span></a>
-				<a href="" class="active"><span>农资商城管理</span></a>
-				<a href="" class="active"><span>网上庄稼医院管理</span></a>
+				<a href="/home/CommonPersonal/index.html" class="active1"><span class="active2">首页</span></a>
+				<a href="/home/CommonPersonal/BasicInfo.html" class="active"><span>会员设置</span></a>
+				<a href="/home/FarmMallPersonal/buyerIndex.html" class="active"><span>农资商城管理</span></a>
+				<a href="/home/FarmMallPersonal/sellerIndex.html" class="active"><span>网上庄稼医院管理</span></a>
 			</div>
 		</div><!-- 头部上面部分end -->
 	</div><!-- 头部开始end -->
@@ -88,78 +91,78 @@
 			<div class="leftBar"><!-- 左边导航公共部分 -->
 				<div class="lb-head"><!-- 头像 -->
 					<div class="lb-head-bj">
-						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/lufei.jpg" alt="">
+						<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/lufei.jpg" alt="">
 						<a href="" class="membrane">编辑资料</a><!-- 阴影 -->
 					</div>
 				</div><!-- 头像end -->
 				<div class="lb-nav buyer-lb-nav"><!-- 左边导航 -->
 					<dl>
-						<dd><a href="">已买到的商品</a></dd>
+						<dd><a href="buyerBuyedGoods.html">已买到的商品</a></dd>
 					</dl>
 					<dl>
 						<dd><a href="goods/cart.html">我的购物车</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="">收藏的商铺</a></dd>
-						<dd><a href="">收藏的商品</a></dd>
+						<dd><a href="buyerCollectStore.html">收藏的商铺</a></dd>
+						<dd><a href="buyerCollectGoods.html">收藏的商品</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="">我加入的商铺</a></dd>
+						<dd><a href="buyerJoinShop.html">我加入的商铺</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="">授信申请</a></dd>
-						<dd><a href="">授信额度调整</a></dd>
-						<dd><a href="">授信使用记录</a></dd>
+						<dd><a href="buyerCredit.html">授信申请</a></dd>
+						<dd><a href="buyerCreditChange.html">授信额度调整</a></dd>
+						<dd><a href="buyerCreditHistory.html">授信使用记录</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
-						<dd><a href="">我的评价</a></dd>
+						<dd><a href="buyerEvaluation.html">我的评价</a></dd>
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar"><!-- 右边内容开始 -->
 				<div class="titles clear">
-					<h3>Hi! 宁波金泰有限公司</h3>
+					<h3>Hi! 我是买家</h3>
 					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
 					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
 				</div>
 				<ul class="activeNav clear">
 					<li>
-						<a href="">
+						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
 							<div class="imgs3 imgs"></div>
 							<h5 class="txt">待付款</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
 							<div class="imgs2 imgs"></div>
 							<h5 class="txt">待收货</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
 							<div class="imgs3 imgs"></div>
 							<h5 class="txt">待评价</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="/home/FarmMallPersonal/buyerJoinShop.html">
 							<div class="imgs4 imgs"></div>
-							<h5 class="txt">账户认证</h5>
+							<h5 class="txt">加入的商铺</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="/home/FarmMallPersonal/buyerCredit.html">
 							<div class="imgs5 imgs"></div>
 							<h5 class="txt">授信申请</h5>
 							<p class="num">11</p>
 						</a>
 					</li>
 				</ul>
-				<div class="orderWrap"><!-- 订单内容体 -->
+				<div class="orderWrap" style="min-height: 150px;"><!-- 订单内容体 -->
 					<div class="smallTitle">待处理的订单</div>
 					<dl class="clear">
 						<dd class="dd1">
@@ -172,7 +175,7 @@
 						<dd class="dd3"><span>收货人:王思聪</span></dd>
 						<dd class="dd4"><span>状态:交易成功</span></dd>
 						<dd class="dd5">
-							<div class="btns now">立即发货</div>
+							<div class="btns now" onclick="sendGoods()">立即发货</div>
 							<!-- <a href="" class="">评价</a> --><!-- 给买家的评价-->
 							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
 						</dd>
@@ -189,11 +192,12 @@
 						<dd class="dd4"><span>状态:交易成功</span></dd>
 						<dd class="dd5">
 							<!-- <div class="btns now">立即发货</div> --><!-- 就是立即发货 to chen -->
-							 <a href="" class="assess">评价</a><!-- 给买家的评价-->
+							 <a href="/home/FarmMallPersonal/buyerGoEvaluate.html" class="assess">评价</a><!-- 给买家的评价-->
 							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
 						</dd>
 					</dl>
-					<a href="" class="lookMore">查看更多></a>
+					<a href="/home/FarmMallPersonal/buyerBuyedGoods.html" class="lookMore">查看更多></a>
+					<div class="empty-nav" style="display: none;">暂无处理的订单哦,赶紧<a href="">去看看></a></div>  <!-- 没定订单时候的状态 -->
 				</div><!-- 订单内容体end -->
 			</div><!-- 右边内容开始end -->
 		</div>
@@ -414,5 +418,6 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
+
 </body>
 </html>

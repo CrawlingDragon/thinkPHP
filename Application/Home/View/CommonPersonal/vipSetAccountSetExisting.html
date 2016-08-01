@@ -4,13 +4,13 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/bscommon.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/CommonPersonal/Css/vipSet.css" type="text/css">
 	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/layer/layer.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -77,8 +77,8 @@
 							<span class="row07">超级管理员</span>
 							<span class="row08">有效</span>
 							<span class="row09 btnCheck">
-								<a href="javascript:;" class="modityBtn"></a>
-								<a href="javascript:;" class="lockBtnYes"></a>
+								<a href="/home/CommonPersonal/vipSetAccountSetAdd.html" class="modityBtn"></a>
+								<a href="javascript:;" class="lockBtnYes" id="yes"></a>
 								<a href="javascript:;" class="deletBtn"></a>
 							</span>
 						</li>
@@ -92,17 +92,43 @@
 							<span class="row07">超级管理员</span>
 							<span class="row08">有效</span>
 							<span class="row09 btnCheck">
-								<a href="javascript:;" class="modityBtn"></a>
-								<a href="javascript:;" class="lockBtnYes"></a>
+								<a href="/home/CommonPersonal/vipSetAccountSetAdd.html" class="modityBtn"></a>
+								<a href="javascript:;" class="lockBtnYes lockBtnNo" id="no"></a>
 								<a href="javascript:;" class="deletBtn"></a>
 							</span>
 						</li>
 					</ul>
-					<a href="javascript:;" class="clickAdd">+ 增加新账户</a>
+					<a href="/home/CommonPersonal/vipSetAccountSetAdd.html" class="clickAdd">+ 增加新账户</a>
 				</div>
 			</div><!-- 右边内容end -->
 		</div>
 	</section>	<!-- 主体内容end -->
 	<include file ="Public/CommonPersonalFooter"/>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.deletBtn').click(function(){  //删除按钮
+			$this = $(this);
+			var numId = $(this).prev().attr("id");
+			function del(){
+				$this.parent().parent().remove();
+			}
+			if(numId == "yes"){                   //锁定状态
+				alert("资料被锁定，无法删除！")
+			}else if(numId == "no"){              //解锁状态
+				confirmYes("账户删除将无法恢复","你确定要删除吗？",del);
+			}
+		});
+		$('.lockBtnYes').on("click",function(){    //锁定状态
+			var numId = $(this).attr("id");
+			if(numId == 'yes'){
+				$(this).attr("id","no");
+				$(this).addClass("lockBtnNo");
+			}else if(numId == 'no'){
+				$(this).attr("id","yes");
+				$(this).removeClass("lockBtnNo");
+			}
+		})
+	})
+</script>
 </body>
 </html>

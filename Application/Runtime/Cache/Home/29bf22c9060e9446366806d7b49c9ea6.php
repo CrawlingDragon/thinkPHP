@@ -4,21 +4,22 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/multi-switch.min.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/js/multi-switch.js"></script>
-	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/Css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/vipSet.css" type="text/Css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/multi-switch.min.css" type="text/css">
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/Validation.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Js/multi-switch.js"></script>
+	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
 	<!--[if lt IE 8]>
-	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
+	<script src="static.nzsoso.com/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
 	<script type="text/javascript">
 		$(function(){
@@ -31,14 +32,14 @@
 		<div class="header-wrap">
 			<div class="header-top"><!-- 头部上面部分 -->
 				<div class="left">
-					<img src="/Public/mall/wuhelong/images/bslogo.png" alt=""><!-- logo -->
+					<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bslogo.png" alt=""><!-- logo -->
 				</div>
 				<div class="right"><!-- 右边内容 -->
 					<ul class="ul1 clear"><!-- 帮助中心 -->
-						<li style="cursor: default;">服务热线：0571-87661678</li>
+						<li style="cursor: default;">服务热线：0571-87661693</li>
 						<li onclick="AddFavorite('中农在线','http://www.baidu.com')">收藏本站</li>
-						<li><a href="" class="f12 cf">帮助中心</a></li>
-						<li class="name">Hi,ceshiyi<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameUp.png">
+						<li><a href="/home/CommonPersonal/help.html" class="f12 cf">帮助中心</a></li>
+						<li class="name">Hi,ceshiyi<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/headLoginNameUp.png">
 							<div class="nameCont">
 								<a href="">退出登录</a>
 								<a href="">帐号管理</a>
@@ -47,19 +48,19 @@
 						<li>请登录</li>
 					</ul>
 					<ul class="ul2 clear"><!-- 商城链接 -->
-						<li><a href="">中农在线</a></li>
-						<li><a href="">网上庄稼医院</a><span>|</span></li>
-						<li><a href="">农资商城</a><span>|</span></li>	
+						<li><a href="http://www.114nz.com" target="_blank">中农在线</a></li>
+						<li><a href="http://wen.114nz.com" target="_blank">网上庄稼医院</a><span>|</span></li>
+						<li><a href="http://mall.114nz.com" target="_blank">农资商城</a><span>|</span></li>	
 					</ul>
 				</div>
 			</div>
 		</div><!-- 头部上面部分end -->
 		<div class="header-nav"><!-- 头部导航部分 -->
 			<div class="navCont">
-				<a href="" class="active"><span>首页</span></a>
-				<a href="" class="active1"><span class="active2">会员设置</span></a>
-				<a href="" class="active"><span>农资商城管理</span></a>
-				<a href="" class="active"><span>网上庄稼医院管理</span></a>
+				<a href="/home/CommonPersonal/index.html" class="active1"><span class="active2">首页</span></a>
+				<a href="/home/CommonPersonal/BasicInfo.html" class="active"><span>会员设置</span></a>
+				<a href="/home/FarmMallPersonal/buyerIndex.html" class="active"><span>农资商城管理</span></a>
+				<a href="/home/FarmMallPersonal/sellerIndex.html" class="active"><span>网上庄稼医院管理</span></a>
 			</div>
 		</div><!-- 头部上面部分end -->
 	</div><!-- 头部开始end -->
@@ -75,68 +76,71 @@
 				<div class="lb-nav"><!-- 左边导航 -->
 					<dl>
 						<dt>个人信息设置</dt>
-						<dd><a href="" class="active">基本信息</a></dd>
-						<dd><a href="">公司信息</a></dd>
-						<dd><a href="">头像设置</a></dd>
+						<dd><a href="BasicInfo.html" class="active">基本信息</a></dd>
+						<dd><a href="companyInfo.html">公司信息</a></dd>
+						<dd><a href="headSet.html">头像设置</a></dd>
 					</dl>
 					<dl>
 						<dt>账户绑定</dt>
-						<dd><a href="">邮箱绑定</a></dd>
-						<dd><a href="">手机号码绑定</a></dd>
+						<dd><a href="emailSet.html">邮箱绑定</a></dd>
+						<dd><a href="phoneSet.html">手机号码绑定</a></dd>
 					</dl>
 					<dl>
 						<dt>账户安全</dt>
-						<dd><a href="">安全中心</a></dd>
-						<dd><a href="">登录密码</a></dd>
-						<dd><a href="">支付密码</a></dd>
-						<dd><a href="">实名账户</a></dd>
-						<dd><a href="">安全保护问题</a></dd>
-						<dd><a href="">银行卡管理</a></dd>
+						<dd><a href="vipSet.html">安全中心</a></dd>
+						<dd><a href="logoPwd.html">登录密码</a></dd>
+						<dd><a href="payPwd.html">支付密码</a></dd>
+						<dd><a href="nameAccount.html">实名账户</a></dd>
+						<dd><a href="safeAnswer.html">安全保护问题</a></dd>
+						<dd><a href="bankCard.html">银行卡管理</a></dd>
 					</dl>
 					<dl>
 						<dt>帐户设置(管理员)</dt>
-						<dd><a href="">已有账户</a></dd>
-						<dd><a href="">添加账户</a></dd>
-					</dl>
-					<dl>
-						<dt>消息设置</dt>
-						<dd><a href="">消息设置</a></dd>
+						<dd><a href="vipSetAccountSetExisting.html">已有账户</a></dd>
+						<dd><a href="vipSetAccountSetAdd.html">添加账户</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
+						<dt>消息设置</dt>
+						<dd><a href="vipSetInfoSet.html">消息设置</a></dd>
+					</dl>
+					<!-- <dl style="margin-bottom: 0px">
 						<dt>界面设置</dt>
 						<dd><a href="">自定义菜单</a></dd>
-					</dl>
+					</dl> -->
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
-			<div class="rightBar emailWrap" style="height: 580px;"><!-- 右边内容 -->
-				<div class="smallTitle">手机绑定</div>
+			<div class="rightBar emailWrap"><!-- 右边内容 -->
+				<div class="smallTitle">手机号码绑定</div>
 				<form action="" class="emForm">
 					<div class="list">
 						<label for="">手机号码:</label>
-						<input type="text" name="" id="">
+						<input type="text" name="" id="" onblur="phoneNum(this)" onkeyup="phoneNum(this)">
 						<span class="nameTxt"><div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div></span>
-						<span class="c6 f12 ml">用于登录</span>
+						<span class="c3 f12 ml">用于登录</span>
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list">
 						<label for="">请填写手机验证码:</label>
-						<input type="text" name="" id="" class="emCode">
-						<input type="button" value="发送邮箱验证码" class="emBtn">
-						<a href="#" class="green f12">没有收到短信?</a>
+						<input type="text" name="" id="" class="emCode" onkeyup="phoneCodes(this)" onblur="phoneCodes(this)">
+						<input type="button" value="发送手机验证码" class="emBtn" onclick="settime(this)">
+						<a href="/home/CommonPersonal/help.html" class="green f12">没有收到短信?</a>
+						<p class="errorMsg"></p>
 					</div>
 					<div class="list">
 						<label for="">验证码:</label>
-						<input type="text" name="" id="" class="code">
-						<img src="" alt="" class="codeImg">
+						<input type="text" name="" id="" class="code" onkeyup="codes(this)" onblur="codes(this)">
+						<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/code.jpg" alt="" class="codeImg" width="110px" height="33px">
 						<span class="codeTxt">看不清楚<i >换一张</i></span>
+						<p class="errorMsg"></p>
 					</div>
-					<div class="list">
+					<!-- <div class="list">
 						<label for="">开启手机号码登录</label>
-						<input type="radio" name="" id="">
+						<input type="radio" name="phoneRadio" id="" checked="">
 						<span class="yes">是</span>
-						<input type="radio" name="" id="">
+						<input type="radio" name="phoneRadio" id="">
 						<span class="yes">否</span>
-					</div>
-					<input type="submit" value="保存" class="biSub">
+					</div> -->
+					<input type="submit" value="保存" class="biSub" id="sub">
 				</form>
 			</div><!-- 右边内容end -->
 		</div>
@@ -357,5 +361,18 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
+	<script type="text/javascript">
+		$('#sub').click(function(){
+			$('input[type=text]').trigger('blur');
+			// var len = $('.errorMsg').length;
+			var txt = $('.errorMsg').text();
+			if($('.errorMsg').text()!==''){
+				return false;
+			}else{
+				return true;
+
+			}
+		})
+	</script>
 </body>
 </html>

@@ -4,16 +4,18 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!-- 编辑器源码文件 -->
-	<script type="text/javascript"  charset="utf-8" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Js/UED/ueditor.all.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Js/UED/lang/zh-cn.js"></script>
-    <!-- 实例化编辑器 -->
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/birthday.js"></script>
+
+    <!-- 图片上传 -->
+    <script type="text/javascript" src="__PUBLIC__/uploadify/jquery.uploadify.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/uploadify/uploadify.css">
+    <!-- 图片上传结束 -->
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -47,6 +49,9 @@
 						<div class="list1">农膜</div>
 						<div class="list1">种子</div>
 						<div class="list1">其他</div>
+						<div class="list1">其他</div>
+						<div class="list1">其他</div>
+						<div class="list1">其他</div>
 					</div>
 					<div class="categoryGoods-right">
 						<div class="list1">农药1</div>
@@ -77,40 +82,34 @@
 						<div>
 							<label for="">登记证书有效期时间:</label>
 							<span class="selectBox">
-								<select name="" id="">
+								<select name="" id="selYear01">
 									<option value="">年</option>
-									<option value="">1999</option>
 								</select>
 							</span>
-							<span class="selectBox">
-								<select name="" id="">
+							<span class="selectBox" id="">
+								<select name="" id="selMonth01">
 									<option value="">月</option>
-									<option value="">12月</option>
 								</select>
 							</span>
 							<span class="selectBox">
-								<select name="" id="">
+								<select name="" id="selDay01">
 									<option value="">日</option>
-									<option value="">13</option>
 								</select>
 							</span>
-							<span style="margin-right: 10px;">至</span>
+							<span style="margin-right: 10px;color: #666;font-size: 14px;vertical-align: middle;">至</span>
 							<span class="selectBox">
-								<select name="" id="">
+								<select name="" id="selYear02">
 									<option value="">年</option>
-									<option value="">1999</option>
 								</select>
 							</span>
 							<span class="selectBox">
-								<select name="" id="">
+								<select name="" id="selMonth02">
 									<option value="">月</option>
-									<option value="">12月</option>
 								</select>
 							</span>
 							<span class="selectBox">
-								<select name="" id="">
+								<select name="" id="selDay02">
 									<option value="">日</option>
-									<option value="">13</option>
 								</select>
 							</span>
 						</div>
@@ -128,12 +127,14 @@
 						<div><label for="">生产许可证:</label><input type="text" name="" id="" placeholder="输入数字必须为0~9之间的数字" class="in2"></div>
 						<div><label for="">有效成份及含量:</label><input type="text" name="" id="" placeholder="输入数字必须为0~9之间的数字"></div>
 						<div><label for="">生产企业:</label><input type="text" name="" id="" placeholder="输入数字必须为0~9之间的数字"></div>
-						<div>
-							<label for="">登记照片:</label>
-							<span class="photosbox">
+						<div class="resPic">
+							<label for="" >登记照片:</label>
+							<span class="photosbox" >
 								<span class="photos">
-									<p>选择文件</p>
-									<p>尺寸800*800</p>
+									<p class="resPic-title">选择文件</p>
+									<p class="resPic-title">尺寸800*800</p>
+									<div id="file_upload"></div>
+									<img src="" alt="" id="upload_org_code_img">
 								</span>
 								<h5>文件格式JPG、JPEG、PNG文件大小2M以内，建议尺寸800px*800px</h5>
 							</span>
@@ -198,27 +199,37 @@
 					</div>
 					<!-- 商品图片 -->
 					<div class="issueGoods-img">
-						<h4>商品图片</h4>
+						<h4>商品图片：</h4>
 						<div class="issueGoods-imgRight">
 							<span class="photos">
 								<p>选择文件</p>
 								<p>尺寸800*800</p>
+								<div id="goodsPic-btn01"></div>
+								<img src="about:blank" alt="" id="goodsPic01">
 							</span>
 							<span class="photos">
 								<p>选择文件</p>
 								<p>尺寸800*800</p>
+								<div id="goodsPic-btn02"></div>
+								<img src="about:blank" alt="" id="goodsPic02">
 							</span>
 							<span class="photos">
 								<p>选择文件</p>
 								<p>尺寸800*800</p>
+								<div id="goodsPic-btn03"></div>
+								<img src="about:blank" alt="" id="goodsPic03">
 							</span>
 							<span class="photos">
 								<p>选择文件</p>
 								<p>尺寸800*800</p>
+								<div id="goodsPic-btn04"></div>
+								<img src="about:blank" alt="" id="goodsPic04">
 							</span>
 							<span class="photos">
 								<p>选择文件</p>
 								<p>尺寸800*800</p>
+								<div id="goodsPic-btn05"></div>
+								<img src="about:blank" alt="" id="goodsPic05">
 							</span>
 							<h5>文件格式JPG、JPEG、PNG文件大小2M以内，建议尺寸800px*800px</h5>
 						</div>
@@ -247,13 +258,13 @@
 					<div class="issueGoods-label">
 						<label for="">商品状态:</label>
 						<input type="radio" name="gActive1" id=""><span>立即发布</span>
-						<input type="radio" name="gActive1" id=""><span>放入仓库</span>
+						<input type="radio" name="gActive1" id="" style="margin-left: 50px;"><span>放入仓库</span>
 					</div>
 					<!-- 红包设置 -->
 					<div class="issueGoods-label">
 						<label for="">红包设置:</label>
 						<input type="radio" name="gActive2" id=""><span>赠送</span>
-						<input type="radio" name="gActive2" id=""><span>不赠送</span>
+						<input type="radio" name="gActive2" id="" style="margin-left: 50px;"><span>不赠送</span>
 					</div>
 					<!-- 红包比例 -->
 					<div class="issueGoods-label">
@@ -280,13 +291,32 @@
 		leftHeight = $(".categoryGoods-right").attr("height");
 
 		//继续添加规格
+		var num = 2;
 		$('.issueGoods-contentBottom').on('click',function(){
-			$('#issueGoods-table').append('<tr><td>3</td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td></tr>');
-		})
+			num++;
+			$('#issueGoods-table').append('<tr><td>'+num+'</td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td></tr>');
+		});
+		$.ms_DatePicker({     //登记证书有效时间
+	            YearSelector: "#selYear01",
+	            MonthSelector: "#selMonth01",
+	            DaySelector: "#selDay01"
+	    });
+		$.ms_DatePicker();
+		$.ms_DatePicker({
+	            YearSelector: "#selYear02",
+	            MonthSelector: "#selMonth02",
+	            DaySelector: "#selDay02"
+	    });
+		$.ms_DatePicker();
 	})
 	</script>
+	<!-- 编辑器源码文件 -->
+	<script type="text/javascript"  charset="utf-8" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Js/UEditor/utf8-php/ueditor.config.js"></script>
+	<!-- <script type="text/javascript" charset="utf-8" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Js/UED/lang/zh-cn.js"></script> -->
+	<script type="text/javascript"  charset="utf-8" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/Js/UEditor/utf8-php/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
 	<script type="text/javascript"> 
-	 	var ue = UE.getEditor('container'); //实例化编辑器 
+	 	var ue = UE.getEditor('container');                     //实例化编辑器 
 	 	function isFocus(e){
 	        alert(UE.getEditor('editor').isFocus());
 	        UE.dom.domUtils.preventDefault(e)
@@ -296,6 +326,227 @@
 	        UE.dom.domUtils.preventDefault(e)
 	    }
 
+	</script>
+<script type="text/javascript">
+	    $(function() {
+	        $('#file_upload').uploadify({                  //登记照片
+	            'swf'      : '__PUBLIC__/uploadify/uploadify.swf',    //指定上传控件的主体文件
+	            'uploader' : '__PUBLIC__/uploadify/uploadify.php',   //指定服务器端上传处理文件
+	            //其他配置项
+	            'buttonClass' : 'upBtn',
+	            'buttonText' : '上传图片',
+	            'width' : 130,
+	            'height' : 130,
+	          	'cancelImg' : '__PUBLIC__/uploadify/uploadify-cancel.png',
+	          	'fileTypeExts' : '*.jpg;*.jpge;*.gif;*.png',
+   				'fileSizeLimit' : '2MB',
+	            'onUploadSuccess' : function(file, data, response) {
+			            $('#' + file.id).find('.data').html('');
+                        $("#upload_org_code_name").val(data);
+                        $("#upload_org_code_img").attr("src",data);
+                        $("#upload_org_code_img").show();
+			        },
+			     //加上此句会重写onSelectError方法【需要重写的事件】
+			    'overrideEvents': ['onSelectError', 'onDialogClose'],
+                //返回一个错误，选择文件的时候触发
+                'onSelectError':function(file, errorCode, errorMsg){
+                    switch(errorCode) {
+                        case -110:
+                            alert("文件 ["+file.name+"] 大小超出系统限制的" + jQuery('#upload_org_code').uploadify('settings', 'fileSizeLimit') + "大小！");
+                            break;
+                        case -120:
+                            alert("文件 ["+file.name+"] 大小异常！");
+                            break;
+                        case -130:
+                            alert("文件 ["+file.name+"] 类型不正确！");
+                            break;
+                    }
+                },
+	        });
+
+
+	        $('#goodsPic-btn01').uploadify({                  //商品图片照片01
+	            'swf'      : '__PUBLIC__/uploadify/uploadify.swf',    //指定上传控件的主体文件
+	            'uploader' : '__PUBLIC__/uploadify/uploadify.php',   //指定服务器端上传处理文件
+	            //其他配置项
+	            'buttonClass' : 'upBtn',
+	            'buttonText' : '上传图片',
+	            'width' : 130,
+	            'height' : 130,
+	          	'cancelImg' : '__PUBLIC__/uploadify/uploadify-cancel.png',
+	          	'fileTypeExts' : '*.jpg;*.jpge;*.gif;*.png',
+   				'fileSizeLimit' : '2MB',
+	            'onUploadSuccess' : function(file, data, response) {
+			            $('#' + file.id).find('.data').html('');
+                        $("#upload_org_code_name").val(data);
+                        $("#goodsPic01").attr("src",data);
+                        $("#goodsPic01").show();
+			        },
+			     //加上此句会重写onSelectError方法【需要重写的事件】
+			    'overrideEvents': ['onSelectError', 'onDialogClose'],
+                //返回一个错误，选择文件的时候触发
+                'onSelectError':function(file, errorCode, errorMsg){
+                    switch(errorCode) {
+                        case -110:
+                            alert("文件 ["+file.name+"] 大小超出系统限制的" + jQuery('#upload_org_code').uploadify('settings', 'fileSizeLimit') + "大小！");
+                            break;
+                        case -120:
+                            alert("文件 ["+file.name+"] 大小异常！");
+                            break;
+                        case -130:
+                            alert("文件 ["+file.name+"] 类型不正确！");
+                            break;
+                    }
+                },
+	        });
+
+
+
+	        $('#goodsPic-btn02').uploadify({                  //商品图片照片02
+	            'swf'      : '__PUBLIC__/uploadify/uploadify.swf',    //指定上传控件的主体文件
+	            'uploader' : '__PUBLIC__/uploadify/uploadify.php',   //指定服务器端上传处理文件
+	            //其他配置项
+	            'buttonClass' : 'upBtn',
+	            'buttonText' : '上传图片',
+	            'width' : 130,
+	            'height' : 130,
+	          	'cancelImg' : '__PUBLIC__/uploadify/uploadify-cancel.png',
+	          	'fileTypeExts' : '*.jpg;*.jpge;*.gif;*.png',
+   				'fileSizeLimit' : '2MB',
+	            'onUploadSuccess' : function(file, data, response) {
+			            $('#' + file.id).find('.data').html('');
+                        $("#upload_org_code_name").val(data);
+                        $("#goodsPic02").attr("src",data);
+                        $("#goodsPic02").show();
+			        },
+			     //加上此句会重写onSelectError方法【需要重写的事件】
+			    'overrideEvents': ['onSelectError', 'onDialogClose'],
+                //返回一个错误，选择文件的时候触发
+                'onSelectError':function(file, errorCode, errorMsg){
+                    switch(errorCode) {
+                        case -110:
+                            alert("文件 ["+file.name+"] 大小超出系统限制的" + jQuery('#upload_org_code').uploadify('settings', 'fileSizeLimit') + "大小！");
+                            break;
+                        case -120:
+                            alert("文件 ["+file.name+"] 大小异常！");
+                            break;
+                        case -130:
+                            alert("文件 ["+file.name+"] 类型不正确！");
+                            break;
+                    }
+                },
+	        });
+
+
+
+	        $('#goodsPic-btn03').uploadify({                  //商品图片照片03
+	            'swf'      : '__PUBLIC__/uploadify/uploadify.swf',    //指定上传控件的主体文件
+	            'uploader' : '__PUBLIC__/uploadify/uploadify.php',   //指定服务器端上传处理文件
+	            //其他配置项
+	            'buttonClass' : 'upBtn',
+	            'buttonText' : '上传图片',
+	            'width' : 130,
+	            'height' : 130,
+	          	'cancelImg' : '__PUBLIC__/uploadify/uploadify-cancel.png',
+	          	'fileTypeExts' : '*.jpg;*.jpge;*.gif;*.png',
+   				'fileSizeLimit' : '2MB',
+	            'onUploadSuccess' : function(file, data, response) {
+			            $('#' + file.id).find('.data').html('');
+                        $("#upload_org_code_name").val(data);
+                        $("#goodsPic03").attr("src",data);
+                        $("#goodsPic03").show();
+			        },
+			     //加上此句会重写onSelectError方法【需要重写的事件】
+			    'overrideEvents': ['onSelectError', 'onDialogClose'],
+                //返回一个错误，选择文件的时候触发
+                'onSelectError':function(file, errorCode, errorMsg){
+                    switch(errorCode) {
+                        case -110:
+                            alert("文件 ["+file.name+"] 大小超出系统限制的" + jQuery('#upload_org_code').uploadify('settings', 'fileSizeLimit') + "大小！");
+                            break;
+                        case -120:
+                            alert("文件 ["+file.name+"] 大小异常！");
+                            break;
+                        case -130:
+                            alert("文件 ["+file.name+"] 类型不正确！");
+                            break;
+                    }
+                },
+	        });
+
+
+
+	        $('#goodsPic-btn04').uploadify({                  //商品图片照片04
+	            'swf'      : '__PUBLIC__/uploadify/uploadify.swf',    //指定上传控件的主体文件
+	            'uploader' : '__PUBLIC__/uploadify/uploadify.php',   //指定服务器端上传处理文件
+	            //其他配置项
+	            'buttonClass' : 'upBtn',
+	            'buttonText' : '上传图片',
+	            'width' : 130,
+	            'height' : 130,
+	          	'cancelImg' : '__PUBLIC__/uploadify/uploadify-cancel.png',
+	          	'fileTypeExts' : '*.jpg;*.jpge;*.gif;*.png',
+   				'fileSizeLimit' : '2MB',
+	            'onUploadSuccess' : function(file, data, response) {
+			            $('#' + file.id).find('.data').html('');
+                        $("#upload_org_code_name").val(data);
+                        $("#goodsPic04").attr("src",data);
+                        $("#goodsPic04").show();
+			        },
+			     //加上此句会重写onSelectError方法【需要重写的事件】
+			    'overrideEvents': ['onSelectError', 'onDialogClose'],
+                //返回一个错误，选择文件的时候触发
+                'onSelectError':function(file, errorCode, errorMsg){
+                    switch(errorCode) {
+                        case -110:
+                            alert("文件 ["+file.name+"] 大小超出系统限制的" + jQuery('#upload_org_code').uploadify('settings', 'fileSizeLimit') + "大小！");
+                            break;
+                        case -120:
+                            alert("文件 ["+file.name+"] 大小异常！");
+                            break;
+                        case -130:
+                            alert("文件 ["+file.name+"] 类型不正确！");
+                            break;
+                    }
+                },
+	        });
+
+
+	        $('#goodsPic-btn05').uploadify({                  //商品图片照片05
+	            'swf'      : '__PUBLIC__/uploadify/uploadify.swf',    //指定上传控件的主体文件
+	            'uploader' : '__PUBLIC__/uploadify/uploadify.php',   //指定服务器端上传处理文件
+	            //其他配置项
+	            'buttonClass' : 'upBtn',
+	            'buttonText' : '上传图片',
+	            'width' : 130,
+	            'height' : 130,
+	          	'cancelImg' : '__PUBLIC__/uploadify/uploadify-cancel.png',
+	          	'fileTypeExts' : '*.jpg;*.jpge;*.gif;*.png',
+   				'fileSizeLimit' : '2MB',
+	            'onUploadSuccess' : function(file, data, response) {
+			            $('#' + file.id).find('.data').html('');
+                        $("#upload_org_code_name").val(data);
+                        $("#goodsPic05").attr("src",data);
+                        $("#goodsPic05").show();
+			        },
+			     //加上此句会重写onSelectError方法【需要重写的事件】
+			    'overrideEvents': ['onSelectError', 'onDialogClose'],
+                //返回一个错误，选择文件的时候触发
+                'onSelectError':function(file, errorCode, errorMsg){
+                    switch(errorCode) {
+                        case -110:
+                            alert("文件 ["+file.name+"] 大小超出系统限制的" + jQuery('#upload_org_code').uploadify('settings', 'fileSizeLimit') + "大小！");
+                            break;
+                        case -120:
+                            alert("文件 ["+file.name+"] 大小异常！");
+                            break;
+                        case -130:
+                            alert("文件 ["+file.name+"] 类型不正确！");
+                            break;
+                    }
+                },
+	        });
+	    });
 	</script>
 </body>
 </html>

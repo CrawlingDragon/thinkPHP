@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -26,14 +26,11 @@
 			<include file = "Public/FarmMallSellerLeft"/>
 			<div class="rightBar"><!-- 右边内容开始 -->
 				<div class="rightPart"> <!-- 右边主体内容 -->
-					<div class="myPlace"> <!-- 所在位置开始 -->
-						<span>当前位置:</span>
-						<a href="">首页</a>
-						<span>&gt;</span>
-						<a href="">卖家中心</a>
-						<span>&gt;</span>
-						<a href="">运费模版</a>
-					</div> <!-- 所在位置结束 -->
+					<div class="titles clear">
+						<h3>Hi! 我是卖家</h3>
+						<a href="">进入买家中心></a>
+					</div>
+
 					<div class="rightCont" style="min-height: 485px;"> <!-- 右边的正文内容 -->
 						<h3>运费模版</h3>
 						<h2 class="freightTemplate-title">新增运费模版，选择是否包邮，填写相对应的价格</h2>
@@ -45,17 +42,21 @@
 							</div>
 							<div class="freightTemplate-list1">
 								<label for="">计价方式：</label>
-								<select name="" id="">
-									<option value="">重量</option>
-									<option value="">体积</option>
-								</select>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">重量</option>
+										<option value="">体积</option>
+									</select>
+								</div>
 							</div>
 							<div class="freightTemplate-list1">
 								<label for="">是否包月：</label>
-								<select name="" id="">
-									<option value="">是</option>
-									<option value="">否</option>
-								</select>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">是</option>
+										<option value="">否</option>
+									</select>
+								</div>
 							</div>
 							<div class="freightTemplate-list1">
 								<label for="">配送费用：</label><span>除指定地区外，其他地区的费用采用"默认运费"</span>
@@ -80,7 +81,7 @@
 					<div class="rightCont freightTemplate-bottom" style="min-height: 485px;">
 						<div class="freightTemplate-bottomTitle"><input type="checkbox" name="" id="checkAll"><span>全选</span><input type="button" value="批量删除"></div>
 						<table>
-							<tr style="border:1px solid #e5e5e5;">
+							<tr style="border:1px solid #e5e5e5;" id="tableHead">
 								<th style="width: 117px;">模版名称</th>
 								<th style="width: 130px;">配送区域</th>
 								<th style="width: 122px;">运费承担方</th>
@@ -105,14 +106,14 @@
 									<a href="" class="orange">编辑</a>
 									<a href="" class="orange">删除</a>
 								</td>
-								<td>设置默认</td>
+								<td class="cur set"><a href="#" class="orange">默认地址</a></td>
 							</tr>
 							<tr>
 								<td class="td1">
 									<input type="checkbox" name="" id=""><span>全国免运费</span>
 								</td>
-								<td>全国，港澳台除外</td>
-								<td>买方</td>
+								<td>全国，港澳台除外2</td>
+								<td>买方2</td>
 								<td>1</td>
 								<td>6.00</td>
 								<td>1</td>
@@ -121,7 +122,7 @@
 									<a href="" class="orange">编辑</a>
 									<a href="" class="orange">删除</a>
 								</td>
-								<td>设置默认</td>
+								<td class="cur set">设置默认</td>
 							</tr>
 						</table>	
 					</div>
@@ -132,16 +133,27 @@
 	</section>
 	<include file ="Public/CommonPersonalFooter"/>
 <script type="text/javascript">
-	$('#checkAll').click(function(){
-		if($(this).prop("checked")){
-			$('table input[type=checkbox]').each(function(){
-				$(this).prop("checked",true);
+	$(document).ready(function(){
+			$('#checkAll').click(function(){   //全选按钮
+			if($(this).prop("checked")){
+				$('table input[type=checkbox]').each(function(){
+					$(this).prop("checked",true);
+				})
+			}else{
+				$('table input[type=checkbox]').each(function(){
+					$(this).prop("checked",false);
+				})
+			}
+		})  //按钮结束
+
+			$('.set').click(function(){   //设置默认地址
+				var $par = $(this).parent();
+				$par.fadeOut().fadeIn();
+				$('#tableHead').after($par);
+				$('.set').find('a').remove();
+				$('.set').text('设置默认');
+				$(this).html("<a href='#' class='orange'>默认地址</a>");
 			})
-		}else{
-			$('table input[type=checkbox]').each(function(){
-				$(this).prop("checked",false);
-			})
-		}
 	})		
 </script>
 </body>

@@ -355,7 +355,9 @@ header .logo2 {
 	margin-left: -6px;
 }
 header .logo img,header .logo2 img{
-	width: 100%;
+	width: 371px;
+	height: 55px;
+	margin-top: 11px;
 }
 header .headerBottom{
 	background: #fff;

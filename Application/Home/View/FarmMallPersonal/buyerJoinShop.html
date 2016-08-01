@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/buyerIndex.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/mall/PersonalCenter/FarmMallPersonal/JIC/css/seller.css" type="text/css">
-	<script type="text/javascript" src="__PUBLIC__/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/laydate/laydate.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/mall/PersonalCenter/CommonPersonalCenter/Common/js/layer/layer.js"></script>
-	<!--[if IE 8.0]><link href="__PUBLIC__/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/buyerIndex.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/laydate/laydate.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/layer/layer.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
@@ -29,50 +29,61 @@
 			<include file = "Public/FarmMallBuyerLeft"/>
 			<div class="rightBar"><!-- 右边内容开始 -->
 				<div class="rightPart"> <!-- 右边主体内容 -->
-					<div class="myPlace"> <!-- 所在位置开始 -->
-						<span>当前位置:</span>
-						<a href="">首页</a>
-						<span>&gt;</span>
-						<a href="">卖家中心</a>
-						<span>&gt;</span>
-						<a href="">我加入的商铺</a>
-					</div> <!-- 所在位置结束 -->
+					<div class="titles clear">
+						<h3>Hi! 我是买家</h3>
+						<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
+						<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
+					</div>
 					<!-- 右边的正文内容结束 -->
-					<div class="rightCont jionMystore" style="min-height: auto;"> <!-- 右边的正文内容 -->
-						<h3>我加入的商铺</h3>
+					<div class="rightCont jionMystore" style="min-height: auto;padding-bottom: 0"> <!-- 右边的正文内容 -->
+						<div class="smallTitle" style="margin:20px 0 20px 20px;">我加入的商铺</div>
 						<form action="" method="" class="approveClientele-box">
-							<div>
-								<label for="">所在区域：</label>
-								<select name="" id="">
-									<option value="">浙江省</option>
-									<option value="">上海市</option>
-								</select>
-								<select name="" id="">
-									<option value="">浙江省</option>
-									<option value="">上海市</option>
-								</select>
-								<select name="" id="">
-									<option value="">浙江省</option>
-									<option value="">上海市</option>
-								</select>
-								<label for="">商铺类型：</label>
-								<select name="" id="">
-									<option value="">厂家</option>
-									<option value="">私人</option>
-								</select>
-								<label for="">当前状态：</label>
-								<select name="" id="">
-									<option value="">新申请</option>
-									<option value="">后申请</option>
-								</select>
+							<div style="margin-bottom: 20px;margin-top: 15px;">
+								<label for="" style="margin-right: -5px;">所在区域：</label>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">浙江省</option>
+										<option value="">上海市</option>
+									</select>
+								</div>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">浙江省</option>
+										<option value="">上海市</option>
+									</select>
+								</div>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">浙江省</option>
+										<option value="">上海市</option>
+									</select>
+								</div>
+								<label for="" style="margin:0 -5px 0 50px;">商铺类型：</label>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">厂家</option>
+										<option value="">私人</option>
+									</select>
+								</div>
+								<label for="" style="margin:0 -5px 0 50px;">当前状态：</label>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">新申请</option>
+										<option value="">后申请</option>
+									</select>
+								</div>
 							</div>
-							<div>
+							<!-- <div>
 								<label for="">加入的商铺名称：</label>
 								<input type="text" name="" id="" placeholder="请输入加入的商铺名称进行搜索">
 								<input type="button" value="搜索" class="approveClientele-btn">
+							</div> -->
+							<div class="searchBox">
+								<input type="text" name="" id="" placeholder="请输入加入的商铺名称进行搜索" style="margin-right: 0px;">
+								<input type="button" value="搜索">
 							</div>
 						</form>	
-						<div class="approveClientele-content" style="margin-bottom: 30px">
+						<div class="approveClientele-content">
 							<ul class="ul1">
 								<li class="active">新申请<span>(2)</span></li>
 								<li>审核中<span>(47)</span></li>
@@ -170,14 +181,14 @@
 											<td>宁波金泰惠多利农资连锁有限公司宁海分公司</td>
 											<td>厂家</td>
 											<td>浙江省杭州市萧山区</td>
-											<td><span class="orange fb">重新申请</span></td>
+											<td><span class="orange fb cur">重新申请</span></td>
 										</tr>
 										<tr>
 											<td>12015051216928</td>
 											<td>宁波金泰惠多利农资连锁有限公司宁海分公司</td>
 											<td>厂家</td>
 											<td>浙江省杭州市萧山区</td>
-											<td><span class="orange fb">重新申请</span></td>
+											<td><span class="orange fb cur">重新申请</span></td>
 										</tr>
 									</table>
 								</div>
@@ -195,14 +206,14 @@
 											<td>宁波金泰惠多利农资连锁有限公司宁海分公司</td>
 											<td>厂家</td>
 											<td>浙江省杭州市萧山区</td>
-											<td><span class="orange fb">重新申请</span></td>
+											<td><span class="orange fb cur">重新申请</span></td>
 										</tr>
 										<tr>
 											<td>12015051216928</td>
 											<td>宁波金泰惠多利农资连锁有限公司宁海分公司</td>
 											<td>厂家</td>
 											<td>浙江省杭州市萧山区</td>
-											<td><span class="orange fb">重新申请</span></td>
+											<td><span class="orange fb cur">重新申请</span></td>
 										</tr>
 									</table>
 								</div>

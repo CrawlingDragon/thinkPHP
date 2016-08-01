@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中农在线</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="{$Think.config.STYLE_URL}/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="{$Think.config.STYLE_URL}/PersonalCenter/Common/Js/footer.js"></script>
+	<!--[if IE 8.0]><link href="{$Think.config.STYLE_URL}/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE]> 
+	<script> 
+	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
+	</script> 
+	<![endif]-->
+	<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta)/IE8.js" type=”text/javascript”></script>
+	<![endif]-->
+</head>
+<body>
+	<include file = "Public/CommonPersonalHeader"/> <!-- 这是头部 -->
+	<section class="containar"><!-- 主体内容开始 -->
+		<div class="containerBox containarWrap clear">
+			<include file = "Public/FarmMallSellerLeft"/>
+			<div class="rightPart rightBar"> <!-- 右边主体内容 -->
+				<div class="titles clear">
+					<h3>Hi! 我是买家</h3>
+					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
+					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
+				</div>
+				<!-- 右边的正文内容开始 -->
+				<div class="rightCont wealthRedtop" style="min-height: 114px;"> 
+				<!-- 红包充值开始 -->
+					<h3>红包提现</h3>
+					<p class="f12 wealthRedtop-title">红包金额仅提取至账户余额中</p>
+					<form action="" method="">
+						<div>
+							<label for="">红包当前总余额：</label><p class="wealthRedtop-money">96390.00</p><a href="">立刻充值</a>
+						</div>
+						<div>
+							<label for="">提现金额：</label><input type="text" name="" id="" placeholder="请直接填入充值金额如“2000”">
+						</div>
+						<input type="button" value="提交" class="wealthRedtop-btn">
+					</form>
+				<!-- 红包充值结束 -->
+				</div>
+				<!-- 右边的正文内容结束 -->
+				<!-- 红包充值遇到的问题开始 -->
+				<div class="rightCont wealthRedtop-cont" style="min-height: 352px;">
+					<h2>红包充值遇到问题：</h2>
+					<h4>1.我还能用信用卡在商城购物么？</h4>
+					<p>答：您在带有信用卡小标识的店铺购物，可以直接使用信用卡快捷（含卡通）、网银进行信用卡支付，支付限额为您的卡面额度。在没有信用卡标识的店铺购物时，您可以使用信用卡快捷（含卡通）、网银进行信用卡支付，月累计支付限额不超过500元。<a href="/Home/CommonPersonal/help.html">查看使用说明</a></p>
+					<h4>2.没有网上银行，怎么用银行卡充值？</h4>
+					<p>答：储蓄卡用户，请使用储蓄卡快捷支付充值，开通后只需输入支付宝支付密码，即可完成充值。</p>
+					<h4>3.怎样在网上开通储蓄卡快捷支付(含卡通)？</h4>
+					<p>答：已支持国内大部分主流银行在线开通。在易宝支付填写信息后，根据页面引导在网上银行完成开通。<a href="">马上开通</a></p>
+					<a href="/Home/CommonPersonal/help.html" class="green f12">更多帮助</a>
+				</div>
+				<!-- 红包充值遇到的问题结束 -->
+			</div>
+		</div>
+	</section><!-- 主体内容结束 -->
+	<include file ="Public/CommonPersonalFooter"/><!-- 脚部 -->
+	
+<script type="text/javascript">
+	$(function(){
+	
+
+	});
+</script>
+</body>
+</html>

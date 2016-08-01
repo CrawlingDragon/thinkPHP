@@ -4,36 +4,35 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/css/common.css" type="text/css">
-	<link rel="stylesheet" href="/Public/mall/PersonalCenter/CommonPersonalCenter/JCI/css/vipSet.css" type="text/css">
-	<script type="text/javascript" src="/Public/mall/Common/Js/jquery.1.11.3.min.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/common.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/footer.js"></script>
-		<script type="text/javascript" src="/Public/mall/common/js/Validation.js"></script>
-	<script type="text/javascript" src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/js/laydate/laydate.js"></script>
-	<!--[if IE 8.0]><link href="/Public/mall/wuhelong/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/vipSet.css" type="text/css">
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/Validation.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/laydate/laydate.js"></script>
+	
+	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
-	<!--[if lt IE 8]>
-	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
-	<![endif]-->
+	
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
 		<div class="header-wrap">
 			<div class="header-top"><!-- 头部上面部分 -->
 				<div class="left">
-					<img src="/Public/mall/wuhelong/images/bslogo.png" alt=""><!-- logo -->
+					<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/bslogo.png" alt=""><!-- logo -->
 				</div>
 				<div class="right"><!-- 右边内容 -->
 					<ul class="ul1 clear"><!-- 帮助中心 -->
-						<li style="cursor: default;">服务热线：0571-87661678</li>
+						<li style="cursor: default;">服务热线：0571-87661693</li>
 						<li onclick="AddFavorite('中农在线','http://www.baidu.com')">收藏本站</li>
-						<li><a href="" class="f12 cf">帮助中心</a></li>
-						<li class="name">Hi,ceshiyi<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/headLoginNameUp.png">
+						<li><a href="/home/CommonPersonal/help.html" class="f12 cf">帮助中心</a></li>
+						<li class="name">Hi,ceshiyi<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/headLoginNameUp.png">
 							<div class="nameCont">
 								<a href="">退出登录</a>
 								<a href="">帐号管理</a>
@@ -42,19 +41,19 @@
 						<li>请登录</li>
 					</ul>
 					<ul class="ul2 clear"><!-- 商城链接 -->
-						<li><a href="">中农在线</a></li>
-						<li><a href="">网上庄稼医院</a><span>|</span></li>
-						<li><a href="">农资商城</a><span>|</span></li>	
+						<li><a href="http://www.114nz.com" target="_blank">中农在线</a></li>
+						<li><a href="http://wen.114nz.com" target="_blank">网上庄稼医院</a><span>|</span></li>
+						<li><a href="http://mall.114nz.com" target="_blank">农资商城</a><span>|</span></li>	
 					</ul>
 				</div>
 			</div>
 		</div><!-- 头部上面部分end -->
 		<div class="header-nav"><!-- 头部导航部分 -->
 			<div class="navCont">
-				<a href="" class="active"><span>首页</span></a>
-				<a href="" class="active1"><span class="active2">会员设置</span></a>
-				<a href="" class="active"><span>农资商城管理</span></a>
-				<a href="" class="active"><span>网上庄稼医院管理</span></a>
+				<a href="/home/CommonPersonal/index.html" class="active1"><span class="active2">首页</span></a>
+				<a href="/home/CommonPersonal/BasicInfo.html" class="active"><span>会员设置</span></a>
+				<a href="/home/FarmMallPersonal/buyerIndex.html" class="active"><span>农资商城管理</span></a>
+				<a href="/home/FarmMallPersonal/sellerIndex.html" class="active"><span>网上庄稼医院管理</span></a>
 			</div>
 		</div><!-- 头部上面部分end -->
 	</div><!-- 头部开始end -->
@@ -70,41 +69,42 @@
 				<div class="lb-nav"><!-- 左边导航 -->
 					<dl>
 						<dt>个人信息设置</dt>
-						<dd><a href="" class="active">基本信息</a></dd>
-						<dd><a href="">公司信息</a></dd>
-						<dd><a href="">头像设置</a></dd>
+						<dd><a href="BasicInfo.html" class="active">基本信息</a></dd>
+						<dd><a href="companyInfo.html">公司信息</a></dd>
+						<dd><a href="headSet.html">头像设置</a></dd>
 					</dl>
 					<dl>
 						<dt>账户绑定</dt>
-						<dd><a href="">邮箱绑定</a></dd>
-						<dd><a href="">手机号码绑定</a></dd>
+						<dd><a href="emailSet.html">邮箱绑定</a></dd>
+						<dd><a href="phoneSet.html">手机号码绑定</a></dd>
 					</dl>
 					<dl>
 						<dt>账户安全</dt>
-						<dd><a href="">安全中心</a></dd>
-						<dd><a href="">登录密码</a></dd>
-						<dd><a href="">支付密码</a></dd>
-						<dd><a href="">实名账户</a></dd>
-						<dd><a href="">安全保护问题</a></dd>
-						<dd><a href="">银行卡管理</a></dd>
+						<dd><a href="vipSet.html">安全中心</a></dd>
+						<dd><a href="logoPwd.html">登录密码</a></dd>
+						<dd><a href="payPwd.html">支付密码</a></dd>
+						<dd><a href="nameAccount.html">实名账户</a></dd>
+						<dd><a href="safeAnswer.html">安全保护问题</a></dd>
+						<dd><a href="bankCard.html">银行卡管理</a></dd>
 					</dl>
 					<dl>
 						<dt>帐户设置(管理员)</dt>
-						<dd><a href="">已有账户</a></dd>
-						<dd><a href="">添加账户</a></dd>
-					</dl>
-					<dl>
-						<dt>消息设置</dt>
-						<dd><a href="">消息设置</a></dd>
+						<dd><a href="vipSetAccountSetExisting.html">已有账户</a></dd>
+						<dd><a href="vipSetAccountSetAdd.html">添加账户</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
+						<dt>消息设置</dt>
+						<dd><a href="vipSetInfoSet.html">消息设置</a></dd>
+					</dl>
+					<!-- <dl style="margin-bottom: 0px">
 						<dt>界面设置</dt>
 						<dd><a href="">自定义菜单</a></dd>
-					</dl>
+					</dl> -->
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar cyWrap"><!-- 右边内容 -->
-				<div class="cyTitle">请填写真实的资料！</div>
+				<div class="smallTitle">公司信息</div>
+				<div class="cyTitle" style="margin-top: 20px;">请填写真实的资料！</div>
 				<form action="" class="cyForm">
 					<div class="list">
 						<label for="">公司名称:</label>
@@ -116,12 +116,59 @@
 						<input type="text" name="" id="" onblur="bisLicense(this)" onkeyup="bisLicense(this)">
 						<p class="errorMsg"></p>
 					</div>
+					<script type="text/javascript" src="/Public/uploadify/jquery.uploadify.min.js"></script> <!-- 引入上传图片插件 -->
+					<link rel="stylesheet" href="/Public/uploadify/uploadify.css" type="text/css">
+				    <script type="text/javascript">
+					    $(function() {
+					        $('#file_upload').uploadify({
+					            'swf'      : '/Public/uploadify/uploadify.swf',    //指定上传控件的主体文件
+					            'uploader' : '/uploadify.php',   //指定服务器端上传处理文件
+					            //其他配置项
+					            'buttonClass' : 'upBtn',
+					            'buttonText' : '+',
+					            'height' : 100,
+					          	'width' : 100,
+					          	'cancelImg' : '/Public/uploadify/uploadify-cancel.png',
+					          	'fileTypeExts' : '*.jpg;*.jpge;*.gif;*.png',
+                   				'fileSizeLimit' : '2MB',
+					            'onUploadSuccess' : function(file, data, response) {
+							            $('#' + file.id).find('.data').html('');
+				                        $("#upload_org_code_name").val(data);
+				                        $("#upload_org_code_img").attr("src",data);  
+				                        $("#upload_org_code_img").show();
+				                        $('.img1').show();
+				                        $(".upBtn").css("opacity","0");
+							        },
+							     //加上此句会重写onSelectError方法【需要重写的事件】
+							    'overrideEvents': ['onSelectError', 'onDialogClose'],
+                                //返回一个错误，选择文件的时候触发
+			                    'onSelectError':function(file, errorCode, errorMsg){
+			                        switch(errorCode) {
+			                            case -110:
+			                                alert("文件 ["+file.name+"] 大小超出系统限制的" + jQuery('#upload_org_code').uploadify('settings', 'fileSizeLimit') + "大小！");
+			                                break;
+			                            case -120:
+			                                alert("文件 ["+file.name+"] 大小异常！");
+			                                break;
+			                            case -130:
+			                                alert("文件 ["+file.name+"] 类型不正确！");
+			                                break;
+			                        }
+			                    },
+					        });
+					    });
+					</script>
+				    </script>
 					<div class="list">
 						<label for="" class="photo">营业执照副本照片:</label>
 						<div class="upBox">
-							<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/delete.png" alt="" class="img1">
-							<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/search.png" alt="" class="img2">
-							<div class="upCont">+</div>
+							<!-- <img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/delete.png" alt="" class="img1" style="display: none;"> -->
+							<div class="img1">编辑图片</div>
+							<input id="file_upload" name="file_upload" type="file" multiple="true">
+							<img style="display: none;position: absolute;top:0px;left: 0px;" id="upload_org_code_img" src="" width="102" height="102">
+							<div id="preview">
+								  <input type="hidden" name="upload_org_code_name" id="upload_org_code_name" />
+                            </div>
 							<span>单张图片最大不能超过1M，图片格式仅限：jpg, gif, png, jpeg</span>
 						</div>
 					</div>
@@ -391,6 +438,12 @@
 				return true;
 
 			}
+		})
+		$(document).ready(function(){
+			$('.img1').click(function(){
+				$('#upload_org_code_img').hide();
+				$(this).hide();
+			})
 		})
 </script>
 </body>
