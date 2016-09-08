@@ -15,9 +15,6 @@
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
-	<!--[if lt IE 8]>
-	<script src="__PUBLIC__/mall/wuhelong/IE8.js" type="text/javascript"></script>
-	<![endif]-->
 </head>
 <body>
 	<include file = "Public/CommonPersonalHeader"/>
@@ -64,7 +61,7 @@
 								<input type="button" value="批量下架">
 							</div>
 							<!-- 商品列表table开始 -->
-							<table class="goods-selling-table">
+							<table class="goods-selling-table" id="gs-table">
 								<tr style="border:1px solid #e2e5e5">
 									<th style="width: 153px;">商品图片</th>
 									<th style="width: 200px;">商品名称</th>
@@ -144,6 +141,7 @@
 	<include file ="Public/CommonPersonalFooter"/>
 <script type="text/javascript">
 	$(function(){
+		//全选框效果
 		$('#checkAll').click(function(){
 			if($(this).prop("checked")){
 				$('.goods-selling-table input[type=checkbox]').each(function(){
@@ -153,6 +151,19 @@
 				$('.goods-selling-table input[type=checkbox]').each(function(){
 					$(this).prop("checked",false);
 				})
+			}
+		})
+
+		//单个复选框效果
+		$("#gs-table input[type=checkbox]").click(function(){
+			var len = $("#gs-table input[type=checkbox]:checked").length;
+			var len2 = $("#gs-table input[type=checkbox]").length;
+			if($(this).prop("checked")){
+				if(len == len2){
+					$('#checkAll').prop("checked",true);
+				}
+			}else{
+				$('#checkAll').prop("checked",false);
 			}
 		})
 		

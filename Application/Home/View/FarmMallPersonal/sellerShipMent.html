@@ -15,9 +15,6 @@
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
-	<!--[if lt IE 8]>
-	<script src="__PUBLIC__/mall/wuhelong/IE8.js" type="text/javascript"></script>
-	<![endif]-->
 </head>
 <body>
 	<include file = "Public/CommonPersonalHeader"/>
@@ -63,15 +60,10 @@
 							</div>
 							<div class="freightTemplate-list1  freightTemplate-default">
 								<label for="">默认费用：</label>
-								<input type="text" name="" id="">
-								<span >KG内</span>
-								<input type="text" name="" id="">
-								<span>元，</span>
-								<span>每增加，</span>
-								<input type="text" name="" id="">
-								<span>KG内，运费增加</span>
-								<input type="text" name="" id="">
-								<span>元</span>
+								<input type="text" name="" id=""><span >KG内，</span>
+								<input type="text" name="" id=""><span>元，</span><span>每增加，</span>
+								<input type="text" name="" id=""><span style="margin-right: 3px">KG内，运费增加</span>
+								<input type="text" name="" id=""><span>元</span>
 							</div>
 							<button class="freightTemplate-btn">保存</button>
 						</form>
@@ -80,7 +72,7 @@
 					<!-- 编辑模版 -->
 					<div class="rightCont freightTemplate-bottom" style="min-height: 485px;">
 						<div class="freightTemplate-bottomTitle"><input type="checkbox" name="" id="checkAll"><span>全选</span><input type="button" value="批量删除"></div>
-						<table>
+						<table id="shipMent-table">
 							<tr style="border:1px solid #e5e5e5;" id="tableHead">
 								<th style="width: 117px;">模版名称</th>
 								<th style="width: 130px;">配送区域</th>
@@ -146,14 +138,27 @@
 			}
 		})  //按钮结束
 
-			$('.set').click(function(){   //设置默认地址
-				var $par = $(this).parent();
-				$par.fadeOut().fadeIn();
-				$('#tableHead').after($par);
-				$('.set').find('a').remove();
-				$('.set').text('设置默认');
-				$(this).html("<a href='#' class='orange'>默认地址</a>");
-			})
+		$('.set').click(function(){   //设置默认地址
+			var $par = $(this).parent();
+			$par.fadeOut().fadeIn();
+			$('#tableHead').after($par);
+			$('.set').find('a').remove();
+			$('.set').text('设置默认');
+			$(this).html("<a href='#' class='orange'>默认地址</a>");
+		})
+
+		//单个复选框按钮
+		$("#shipMent-table input[type=checkbox]").click(function(){
+			var len = $("#shipMent-table input[type=checkbox]:checked").length;
+			var len2 = $("#shipMent-table input[type=checkbox]").length;
+			if($(this).prop("checked")){
+				if(len == len2){
+					$('#checkAll').prop("checked",true);
+				}
+			}else{
+				$('#checkAll').prop("checked",false);
+			}
+		})
 	})		
 </script>
 </body>

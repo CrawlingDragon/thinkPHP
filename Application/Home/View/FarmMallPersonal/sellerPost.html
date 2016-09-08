@@ -21,9 +21,6 @@
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
-	<!--[if lt IE 8]>
-	<script src="__PUBLIC__/mall/wuhelong/IE8.js" type="text/javascript"></script>
-	<![endif]-->
 </head>
 <body>
 	<include file = "Public/CommonPersonalHeader"/>
@@ -252,7 +249,7 @@
 								<option value="">运费5元</option>
 							</select>
 						</span>
-						<a href="" class="f12 green">编辑运费模板</a>
+						<a href="/home/FarmMallPersonal/sellerShipMent.html" class="f12 green">编辑运费模板</a>
 					</div>
 					<!-- 商品状态 -->
 					<div class="issueGoods-label">
@@ -344,7 +341,9 @@
 			            $('#' + file.id).find('.data').html('');
                         $("#upload_org_code_name").val(data);
                         $("#upload_org_code_img").attr("src",data);
+                        $('#file_upload').parent().find('.resPic-title').hide();
                         $("#upload_org_code_img").show();
+                        
 			        },
 			     //加上此句会重写onSelectError方法【需要重写的事件】
 			    'overrideEvents': ['onSelectError', 'onDialogClose'],
@@ -381,6 +380,7 @@
                         $("#upload_org_code_name").val(data);
                         $("#goodsPic01").attr("src",data);
                         $("#goodsPic01").show();
+                     	$('#goodsPic-btn01').parent().find('p').hide();
 			        },
 			     //加上此句会重写onSelectError方法【需要重写的事件】
 			    'overrideEvents': ['onSelectError', 'onDialogClose'],
@@ -418,6 +418,7 @@
                         $("#upload_org_code_name").val(data);
                         $("#goodsPic02").attr("src",data);
                         $("#goodsPic02").show();
+                        $('#goodsPic-btn02').parent().find('p').hide();
 			        },
 			     //加上此句会重写onSelectError方法【需要重写的事件】
 			    'overrideEvents': ['onSelectError', 'onDialogClose'],
@@ -455,6 +456,7 @@
                         $("#upload_org_code_name").val(data);
                         $("#goodsPic03").attr("src",data);
                         $("#goodsPic03").show();
+                        $('#goodsPic-btn03').parent().find('p').hide();
 			        },
 			     //加上此句会重写onSelectError方法【需要重写的事件】
 			    'overrideEvents': ['onSelectError', 'onDialogClose'],
@@ -492,6 +494,7 @@
                         $("#upload_org_code_name").val(data);
                         $("#goodsPic04").attr("src",data);
                         $("#goodsPic04").show();
+                        $('#goodsPic-btn04').parent().find('p').hide();
 			        },
 			     //加上此句会重写onSelectError方法【需要重写的事件】
 			    'overrideEvents': ['onSelectError', 'onDialogClose'],
@@ -528,6 +531,7 @@
                         $("#upload_org_code_name").val(data);
                         $("#goodsPic05").attr("src",data);
                         $("#goodsPic05").show();
+                        $('#goodsPic-btn05').parent().find('p').hide();
 			        },
 			     //加上此句会重写onSelectError方法【需要重写的事件】
 			    'overrideEvents': ['onSelectError', 'onDialogClose'],

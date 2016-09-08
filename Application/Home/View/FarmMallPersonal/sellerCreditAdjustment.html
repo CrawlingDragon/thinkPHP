@@ -15,9 +15,6 @@
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
-	<!--[if lt IE 8]>
-	<script src="__PUBLIC__/mall/wuhelong/IE8.js" type="text/javascript"></script>
-	<![endif]-->
 </head>
 <body>
 	<include file = "Public/CommonPersonalHeader"/>
@@ -65,14 +62,14 @@
 							</div>
 						</form>
 						<div class="creditAdjustment-title">
-							<input type="checkbox" name="" id="">
+							<input type="checkbox" name="" id="checkAll">
 							<span>全选</span>
 							<input type="button" value="批量通过">
 							<input type="button" value="批量拒绝">
 						</div>
-						<table class="justment-table">
+						<table class="justment-table" id="js-table">
 							<tr style="border:1px solid #e5e5e5;">
-								<th style="width: 35px;"></th>
+								<th style="width: 46px;"></th>
 								<th style="width: 90px;">申请时间</th>
 								<th style="width: 87px;">申请人</th>
 								<th style="width: 99px;">会员号</th>
@@ -113,13 +110,34 @@
 	</section>
 	<include file ="Public/CommonPersonalFooter"/>
 	<script type="text/javascript">
-		(function(){
-			//卡片切换
-			$('.creditRelations li').click(function(){
-				$(this).addClass('active').siblings().removeClass('active');
-				$('.showBox .showCont:eq('+$(this).index()+')').show().siblings().hide();
-			});
-		})();
+			$(document).ready(function(){
+			
+			//全选复选框效果
+			$("#checkAll").click(function(){
+				if($(this).prop("checked")){
+					$("#js-table input[type=checkbox]").each(function(){
+						$(this).prop("checked",true);
+					})
+				}else{
+					$("#js-table input[type=checkbox]").each(function(){
+						$(this).prop("checked",false);
+					})
+			  	}
+			})
+			//单个复选框的效果
+			$('#js-table input[type=checkbox]').click(function(){
+				var len = $(".justment-table input[type=checkbox]:checked").length;
+				var len2 = $(".justment-table input[type=checkbox]").length;
+				if($(this).prop("checked")==true){
+					if(len == len2){
+						$("#checkAll").prop("checked",true);
+					}
+				}else{
+					$("#checkAll").prop("checked",false);
+				}
+
+			})
+	})
 	</script>
 </body>
 </html>
