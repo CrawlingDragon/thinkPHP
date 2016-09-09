@@ -58,13 +58,13 @@
 							<div class="goods-selling-btnbom">
 								<input type="checkbox" name="" id="checkAll">
 								<label for="">全选</label>
-								<input type="button" value="批量下架">
+								<input type="button" value="批量下架"><div class="selling-price-btn cur" id="showPrice">显示价格</span></div>
 							</div>
 							<!-- 商品列表table开始 -->
 							<table class="goods-selling-table" id="gs-table">
 								<tr style="border:1px solid #e2e5e5">
 									<th style="width: 153px;">商品图片</th>
-									<th style="width: 200px;">商品名称</th>
+									<th style="width: 210px;">商品名称</th>
 									<th style="width: 120px;">编号</th>
 									<th style="width: 135px;">来源</th>
 									<th style="width: 160px;">上架时间</th>
@@ -90,6 +90,33 @@
 										<a href="" class="orange">上架商品</a>
 									</td>
 								</tr>
+								<tr class="infotr" id="infotr1" >
+									<td colspan="6" class="infotd">
+										<div class="infoWrap">
+											<ul class="ul1 clear">
+												<li>规格</li><li>重量/kg</li><li>库存</li><li>起定量</li><li>代理价/元</li><li>vip/元</li><li>大户/元</li><li>零售商/元</li><li>零售商/元零售商/元零售商/元零售商/元零售商/元</li><li>零售商/元</li><li>零售商/元</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
 								<!-- 第二个商品展示列表 -->
 								<tr>
 									<td class="td1">
@@ -107,6 +134,34 @@
 									<td class="td6">
 										<a href="" class="orange" >编辑商品</a>
 										<a href="" class="orange" >上架商品</a>
+									</td>
+								</tr>
+								<tr class="infotr" id="infotr2">
+									<!-- <td></td> -->
+									<td colspan="6" class="infotd">
+										<div class="infoWrap">
+											<ul class="ul1 clear">
+												<li>规格</li><li>重量/kg</li><li>库存</li><li>起定量</li><li>代理价/元</li><li>vip/元</li><li>大户/元</li><li>零售商/元</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
+											</ul>
+											<ul class="ul2 clear">
+												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
+											</ul>
+										</div>
 									</td>
 								</tr>
 							</table>
@@ -165,6 +220,41 @@
 			}else{
 				$('#checkAll').prop("checked",false);
 			}
+		});
+
+		//显示价格按钮
+		$('.infotr').css('display','none');
+		$('#showPrice').click(function(){
+			if($(this).text() == "显示价格"){
+				$(this).text("隐藏价格");
+				$(this).removeClass('cur');
+				$('.td1').css("border-right","1px solid #e5e5e5");
+				$('.td1').attr('rowspan','2');
+				$('.infotr').css('display',"");
+
+				//显示价格栏目标题的li长度
+				var liWidth = $('#infotr1 ul li').width();
+				var liLength = $('#infotr1 .ul1 li').length;
+				var w = 0;
+				$('#infotr1 .ul1 li').each(function(){
+					w += parseInt($(this).width());
+					return w;
+				})
+				S = parseInt(liLength*10+100) + w;
+				$('.infoWrap ul').css("width",S);
+			}else{
+				$(this).text("显示价格");
+				$(this).addClass('cur');
+				$('.td1').css("border-right","none");
+				$('.infotr').css('display','none');
+				$('.td1').removeAttr('rowspan');
+			}
+		})
+
+		// 显示价格用于布局函数
+		$('.infoWrap').scroll(function(){
+			var top = $(this).scrollTop();
+			$(this).find('.ul1').css("top",top);
 		})
 		
 	})
