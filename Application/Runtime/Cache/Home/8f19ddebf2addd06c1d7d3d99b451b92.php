@@ -110,8 +110,9 @@
 						<h3>Hi! 我是卖家</h3>
 						<a href="">进入买家中心></a>
 					</div>
+
 					<div class="rightCont"> <!-- 右边的正文内容开始 -->
-						<h3 style="margin-bottom: 35px;">出售中的商品</h3>
+						<h3 style="margin-bottom: 35px;">掌柜推荐</h3>
 						<!-- 右边内容输入框，按钮 -->
 						<form action="" method="" class="goods-selling">
 							<div class="goods-selling-btntop">
@@ -140,114 +141,54 @@
 							<div class="goods-selling-btnbom">
 								<input type="checkbox" name="" id="checkAll">
 								<label for="">全选</label>
-								<input type="button" value="批量下架" style="margin-right: 0;">
-								<input type="button" value="批量推荐"><div class="selling-price-btn cur" id="showPrice">显示价格</span></div>
+								<input type="button" value="批量推荐">
 							</div>
 							<!-- 商品列表table开始 -->
-							<table class="goods-selling-table">
+							<table class="goods-selling-table" id="shopKeeper-table">
 								<tr style="border:1px solid #e2e5e5">
 									<th style="width: 153px;">商品图片</th>
-									<th style="width: 210px;">商品名称</th>
+									<th style="width: 200px;">商品名称</th>
 									<th style="width: 120px;">编号</th>
 									<th style="width: 135px;">来源</th>
-									<th style="width: 160px;">上架时间</th>
+									<th style="width: 160px;">收藏人气</th>
 									<th style="width: 170px;">操作</th>
 								</tr>
 								<!-- 第一个商品展示列表 -->
 								<tr>
-									<td class="td1" ><!-- rowspan="2" -->
+									<td class="td1">
 										<input type="checkbox" name="" id="">
 										<a href="#" class="selling-imgs">
 											<img src="/Public/mall/personalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt="">
 										</a>
 									</td>
 									<td class="td2">
-										<a href="#">道儿纯硫酸复合肥葡萄专用多功能棚膜果蔬钙肥</a>
-										<span>已推荐</span>
+										<a href="">道儿纯硫酸复合肥葡萄专用多功能棚膜果蔬钙肥</a>
 									</td>
 									<td>ZNZX85</td>
 									<td>代理</td>
-									<td>2015-05-26<i>14:48</i></td>
+									<td>32</td>
 									<td class="td6">
-										<a href="/home/FarmMallPersonal/sellerPost.html" class="orange">编辑商品</a>
-										<a href="" class="orange">下架商品</a>
-										<a href="javascript:;" class="orange cancel">掌柜推荐</a>
-									</td>
-								</tr>
-								<tr class="infotr" id="infotr1" >
-									<td colspan="6" class="infotd">
-										<div class="infoWrap">
-											<ul class="ul1 clear">
-												<li>规格</li><li>重量/kg</li><li>库存</li><li>起定量</li><li>代理价/元</li><li>vip/元</li><li>大户/元</li><li>零售商/元</li><li>零售商/元零售商/元零售商/元零售商/元零售商/元</li><li>零售商/元</li><li>零售商/元</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
-											</ul>
-										</div>
+										<a href="">推荐</a>
+										<a href="" class="orange">取消推荐</a>
 									</td>
 								</tr>
 								<!-- 第二个商品展示列表 -->
 								<tr>
-									<td class="td1" ><!-- rowspan="2" -->
+									<td class="td1">
 										<input type="checkbox" name="" id="">
 										<a href="#" class="selling-imgs">
 											<img src="/Public/mall/personalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt="">
 										</a>
 									</td>
 									<td class="td2">
-										<a href="#">道儿纯硫酸复合肥葡萄专用多功能棚膜果蔬钙肥</a>
-										<span>已推荐</span>
+										<a href="">道儿纯硫酸复合肥葡萄专用多功能棚膜果蔬钙肥</a>
 									</td>
 									<td>ZNZX85</td>
 									<td>代理</td>
-									<td>2015-05-26<i>14:48</i></td>
+									<td>33</td>
 									<td class="td6">
-										<a href="/home/FarmMallPersonal/sellerPost.html" class="orange">编辑商品</a>
-										<a href="#" class="orange">下架商品</a>
-										<a href="javascript:;" class="green cancel">取消推荐</a>
-									</td>
-								</tr>
-								<tr class="infotr" id="infotr2">
-									<!-- <td></td> -->
-									<td colspan="6" class="infotd">
-										<div class="infoWrap">
-											<ul class="ul1 clear">
-												<li>规格</li><li>重量/kg</li><li>库存</li><li>起定量</li><li>代理价/元</li><li>vip/元</li><li>大户/元</li><li>零售商/元</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
-											</ul>
-											<ul class="ul2 clear">
-												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li>
-											</ul>
-										</div>
+										<a href="">推荐</a>
+										<a href="" class="orange">取消推荐</a>
 									</td>
 								</tr>
 							</table>
@@ -497,67 +438,29 @@
 	</div>
 <script type="text/javascript">
 	$(function(){
-		$('#checkAll').click(function(){   //复选框效果
+		//全选按钮
+		$('#checkAll').click(function(){  
 			if($(this).prop("checked")){
-				$('.goods-selling-table input[type=checkbox]').each(function(){
+				$('table input[type=checkbox]').each(function(){
 					$(this).prop("checked",true);
 				})
 			}else{
-				$('.goods-selling-table input[type=checkbox]').each(function(){
+				$('table input[type=checkbox]').each(function(){
 					$(this).prop("checked",false);
 				})
 			}
 		})
-		$('.cancel').click(function(){
-			var cont = $(this).text();
-			var gfather = $(this).parent().parent();
-			var txt = gfather.find(".td2 span");
-			if(cont == "掌柜推荐"){
-				$(this).addClass("green").removeClass("orange");
-				txt.text("已推荐");
-				$(this).text("取消推荐");
-			}else if(cont == "取消推荐"){
-				$(this).addClass("orange").removeClass("green");
-				txt.text(" ");
-				$(this).text("掌柜推荐");;
-			}
-
-		})
-		//显示价格按钮
-		$('.infotr').css('display','none');
-		$('#showPrice').click(function(){
-			if($(this).text() == "显示价格"){
-				$(this).text("隐藏价格");
-				$(this).removeClass('cur');
-				$('.td1').css("border-right","1px solid #e5e5e5");
-				$('.td1').attr('rowspan','2');
-				$('.infotr').css('display',"");
-
-				//显示价格栏目标题的li长度
-				var liWidth = $('#infotr1 ul li').width();
-				var liLength = $('#infotr1 .ul1 li').length;
-				var w = 0;
-				$('#infotr1 .ul1 li').each(function(){
-					w += parseInt($(this).width());
-					return w;
-				})
-				S = parseInt(liLength*10+100) + w;
-				$('.infoWrap ul').css("width",S);
+		//单个复选框按钮
+		$("#shopKeeper-table input[type=checkbox]").click(function(){
+			var len = $("#shopKeeper-table input[type=checkbox]:checked").length;
+			var len2 = $("#shopKeeper-table input[type=checkbox]").length;
+			if($(this).prop("checked")){
+				if(len == len2){
+					$('#checkAll').prop("checked",true);
+				}
 			}else{
-				$(this).text("显示价格");
-				$(this).addClass('cur');
-				$('.td1').css("border-right","none");
-				$('.infotr').css('display','none');
-				$('.td1').removeAttr('rowspan');
-				console.log($('#infotr1 ul li').width());
+				$('#checkAll').prop("checked",false);
 			}
-		})
-
-		// 显示价格用于布局函数
-		
-		$('.infoWrap').scroll(function(){
-			var top = $(this).scrollTop();
-			$(this).find('.ul1').css("top",top);
 		})
 		
 	})

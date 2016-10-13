@@ -5,13 +5,11 @@
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/buyerIndex.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/dropDownExtend.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/laydate/laydate.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/layer/layer.js"></script>
+		<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/layer/layer.js"></script>
 	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -21,33 +19,6 @@
 	<!--[if lt IE 8]>
 	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
-	<script type="text/javascript"> //判断ie8以下浏览器
-		var flag = true; 
-		var ua = navigator.userAgent.toLowerCase(); 
-		if(navigator.userAgent.indexOf("MSIE")>0)  
-		{   
-		    if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
-		    	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
-		   	 	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 8.0")>0){  
-		  		//alert("ie8");  
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
-		   		//alert("ie9");  
-		    }   
-		}else{  
-			flag = false;  
-			
-			}   
-		if(!flag){  
-
-		}  
-
-	</script>
-
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
@@ -88,117 +59,268 @@
 	</div><!-- 头部开始end -->
 	<section class="containar"><!-- 主体内容开始 -->
 		<div class="containarWrap clear">
-			<div class="leftBar"><!-- 左边导航公共部分 -->
+						<div class="leftBar"><!-- 左边导航公共部分 -->
 				<div class="lb-head"><!-- 头像 -->
 					<div class="lb-head-bj">
 						<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/lufei.jpg" alt="">
 						<a href="" class="membrane">编辑资料</a><!-- 阴影 -->
 					</div>
+					<div class="bj">
+						
+					</div>
 				</div><!-- 头像end -->
-				<div class="lb-nav buyer-lb-nav"><!-- 左边导航 -->
+				<div class="lb-nav"><!-- 左边导航 -->
 					<dl>
-						<dd><a href="buyerBuyedGoods.html">已买到的商品</a></dd>
+						<dt>交易管理</dt>
+						<dd><a href="sellerSelledGoods.html" class="active">已卖出的商品</a></dd>
+						<dd><a href="sellerEvaluationManagement.html">评价管理</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="/home/goods/cart.html">我的购物车</a></dd>
+						<dt>商品管理</dt>
+						<dd><a href="sellerPost.html">发布商品</a></dd>
+						<dd><a href="sellerSellingGoods.html">出售中的商品</a></dd>
+						<dd><a href="sellerWarehouse.html">仓库中的商品</a></dd>
+						<dd><a href="sellerClassifcation.html">商品分类管理</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="buyerCollectStore.html">收藏的商铺</a></dd>
-						<dd><a href="buyerCollectGoods.html">收藏的商品</a></dd>
+						<dt>商铺管理</dt>
+						<dd><a href="/home/Store/index.html">查看我的商铺</a></dd>
+						<dd><a href="sellerShopSet.html">商铺设置</a></dd>
+						<dd><a href="sellerShopkeeper.html">掌柜推荐</a></dd>
+						<dd><a href="sellerShipMent.html">运费模板</a></dd>
+						<!-- <dd><a href="">子账号设置</a></dd> -->
 					</dl>
 					<dl>
-						<dd><a href="buyerJoinShop.html">我加入的商铺</a></dd>
+						<dt>进货渠道</dt>
+						<dd><a href="sellerMeAgented.html">我代理的</a></dd>
+						<dd><a href="sellerAgencyMe.html">代理我的</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="buyerCredit.html">授信申请</a></dd>
-						<dd><a href="buyerCreditChange.html">授信额度调整</a></dd>
-						<dd><a href="buyerCreditHistory.html">授信使用记录</a></dd>
+						<dt>客户管理</dt>
+						<dd><a href="sellerClient.html">认证客户</a></dd>
+						<dd><a href="sellerLevelSet.html">级别设置</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
-						<dd><a href="buyerEvaluation.html">我的评价</a></dd>
+						<dt>授信管理</dt>
+						<dd><a href="sellerCreditNexus.html">授信关系</a></dd>
+						<dd><a href="sellerCreditAdjustment.html">额度调整</a></dd>
+						<dd><a href="sellerUseHistroy.html">使用记录</a></dd>
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar"><!-- 右边内容开始 -->
-				<div class="titles clear">
-					<h3>Hi! 我是买家</h3>
-					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
-					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
+				<div class="rightPart"> <!-- 右边主体内容 -->
+					<div class="titles clear">
+						<h3>Hi! 我是卖家</h3>
+						<a href="">进入买家中心></a>
+					</div>
+					<!-- 右边的正文内容开始 -->
+					<div class="rightCont creditAdjustment" style="min-height: 114px;"> 
+						<h3 style="margin-bottom: 35px;">我代理的渠道</h3>
+						<form action="" method="" class="myAgent-form">
+							<div>
+								<label for="">商品名称：</label>
+								<input type="text" name="" id="" placeholder="填写商品名称">
+								<label for="">商品编码：</label>
+								<input type="text" name="" id="" placeholder="输入商品编码">
+								<label for="">当前状态：</label>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">全部</option>
+										<option value="">新申请</option>
+										<option value="">审核通过</option>
+									</select>
+								</div>
+							</div>
+							<div style="margin-bottom: 35px;">
+								<label for="">供应商名称：</label>
+								<input type="text" name="" id="" placeholder="输入供应商名称">
+								<label for="">供应商身份：</label>
+								<div class="selectBox">
+									<select name="" id="">
+										<option value="">厂家</option>
+										<option value="">合作社</option>
+									</select>
+								</div>
+								<input type="button" value="搜索" style="margin-left: 45px;">
+							</div>
+						</form>
+						<div class="creditRelations">
+							<div class="box1">
+								<ul class="clear">
+									<li>新申请(2)</li>
+									<li>审核中(47)</li>
+									<li class="active">审核通过(316)</li>
+									<li>拒绝(1)</li>
+									<li>终止(9)</li>
+								</ul>
+							</div>
+							<div class="showBox">
+								<div class="showCont hide">
+									<!-- 新申请 -->
+									<div class="newReview">
+										<table>
+											<tr style="border:1px solid #e5e5e5;">
+												<th style="width: 90px;">商品编号</th>
+												<th style="width: 182px;">名称</th>
+												<th style="width: 124px;">供应商</th>
+												<th style="width: 106px;">供应商会员号</th>
+												<th style="width: 104px;">供应商身份</th>
+												<th style="width: 100px;">操作</th>
+											</tr>
+											<tr>
+												<td>ZNZX200</td>
+												<td>我是肥料一个，我是一个粉料号码</td>
+												<td>浙江新农化工股份有线公司</td>
+												<td>12344445656112</td>
+												<td>厂家</td>
+												<td>等待审核</td>
+											</tr>
+											<tr>
+											<td>ZNZX200</td>
+												<td>我是肥料一个，我是一个粉料号码</td>
+												<td>浙江新农化工股份有线公司</td>
+												<td>12344445656112</td>
+												<td>厂家</td>
+												<td>等待审核</td>
+											</tr>
+										</table>
+										</div>
+									<!-- 新申请结束 -->
+								</div>
+								<div class="showCont hide">
+									<!-- 审核中 -->
+									<div class="underReview">
+										<table>
+											<tr style="border:1px solid #e5e5e5;">
+												<th style="width: 90px;">商品编号</th>
+												<th style="width: 182px;">名称</th>
+												<th style="width: 124px;">供应商</th>
+												<th style="width: 106px;">供应商会员号</th>
+												<th style="width: 104px;">供应商身份</th>
+												<th style="width: 100px;">操作</th>
+											</tr>
+											<tr>
+												<td>ZNZX200</td>
+												<td>我是肥料一个，我是一个粉料号码</td>
+												<td>浙江新农化工股份有线公司</td>
+												<td>12344445656112</td>
+												<td>厂家</td>
+												<td class="restore">审核中</td>
+											</tr>
+											<tr>
+											<td>ZNZX200</td>
+												<td>我是肥料一个，我是一个粉料号码</td>
+												<td>浙江新农化工股份有线公司</td>
+												<td>12344445656112</td>
+												<td>厂家</td>
+												<td class="restore">审核中</td>
+											</tr>
+										</table>	
+									</div>
+									<!-- 审核中结束 -->
+								</div>
+								<div class="showCont show">
+									<!-- 审核通过 -->
+										<div class="passed">
+											<table>
+												<tr style="border:1px solid #e5e5e5;">
+													<th style="width: 90px;">商品编号</th>
+													<th style="width: 182px;">名称</th>
+													<th style="width: 124px;">供应商</th>
+													<th style="width: 106px;">供应商会员号</th>
+													<th style="width: 104px;">供应商身份</th>
+													<th style="width: 100px;">操作</th>
+												</tr>
+												<tr>
+													<td>ZNZX200</td>
+													<td>我是肥料一个，我是一个粉料号码</td>
+													<td>浙江新农化工股份有线公司</td>
+													<td>12344445656112</td>
+													<td>厂家</td>
+													<td class="fb restore active"><i class="f12 orange">已引用</i></td>
+												</tr>
+												<tr>
+												<td>ZNZX200</td>
+													<td>我是肥料一个，我是一个粉料号码</td>
+													<td>浙江新农化工股份有线公司</td>
+													<td>12344445656112</td>
+													<td>厂家</td>
+													<td class="fb restore" onclick="confirmYes('引用商品后，商品将自动进入“仓库中的商品”','您确认要引用该订单么：')"><i class="f12 orange">引用商品</i></td>
+												</tr>
+											</table>
+										</div>
+									<!-- 审核通过结束 -->
+								</div>
+								<div class="showCont hide">
+									<!-- 终止 -->
+										<div class="denys">
+											<table>
+												<tr style="border:1px solid #e5e5e5;">
+													<th style="width: 90px;">商品编号</th>
+													<th style="width: 182px;">名称</th>
+													<th style="width: 124px;">供应商</th>
+													<th style="width: 106px;">供应商会员号</th>
+													<th style="width: 104px;">供应商身份</th>
+													<th style="width: 100px;">操作</th>
+												</tr>
+												<tr>
+													<td>ZNZX200</td>
+													<td>我是肥料一个，我是一个粉料号码</td>
+													<td>浙江新农化工股份有线公司</td>
+													<td>12344445656112</td>
+													<td>厂家</td>
+													<td class="fb restore"><i class="f12 orange">恢复</i></td>
+												</tr>
+												<tr>
+												<td>ZNZX200</td>
+													<td>我是肥料一个，我是一个粉料号码</td>
+													<td>浙江新农化工股份有线公司</td>
+													<td>12344445656112</td>
+													<td>厂家</td>
+													<td class="fb restore"><i class="f12 orange">恢复</i></td>
+												</tr>
+											</table>
+										</div>
+									<!-- 终止结束 -->
+								</div>
+								<div class="showCont hide">
+									<!-- 拒绝列表 -->
+									<div class="terminationList">
+										<table>
+											<tr style="border:1px solid #e5e5e5;">
+												<th style="width: 90px;">商品编号</th>
+												<th style="width: 182px;">名称</th>
+												<th style="width: 124px;">供应商</th>
+												<th style="width: 106px;">供应商会员号</th>
+												<th style="width: 104px;">供应商身份</th>
+												<th style="width: 100px;">操作</th>
+											</tr>
+											<tr>
+												<td>ZNZX200</td>
+												<td>我是肥料一个，我是一个粉料号码</td>
+												<td>浙江新农化工股份有线公司</td>
+												<td>12344445656112</td>
+												<td>厂家</td>
+												<td class="fb restore"><i class="f12 orange ">重新申请</i></td>
+											</tr>
+											<tr>
+												<td>ZNZX200</td>
+												<td>我是肥料一个，我是一个粉料号码</td>
+												<td>浙江新农化工股份有线公司</td>
+												<td>12344445656112</td>
+												<td>厂家</td>
+												<td class="fb restore"><i class="f12 orange">重新申请</i></td>
+											</tr>
+										</table>
+									</div>
+									<!-- 拒绝列表结束 -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 右边的正文内容结束 -->
 				</div>
-				<ul class="activeNav clear">
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待付款</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs2 imgs"></div>
-							<h5 class="txt">待收货</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待评价</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerJoinShop.html">
-							<div class="imgs4 imgs"></div>
-							<h5 class="txt">加入的商铺</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerCredit.html">
-							<div class="imgs5 imgs"></div>
-							<h5 class="txt">授信申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-				</ul>
-				<div class="orderWrap" style="min-height: 150px;"><!-- 订单内容体 -->
-					<div class="smallTitle">待处理的订单</div>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<div class="btns now" onclick="sendGoods()">立即发货</div>
-							<!-- <a href="" class="">评价</a> --><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<!-- <div class="btns now">立即发货</div> --><!-- 就是立即发货 to chen -->
-							 <a href="/home/FarmMallPersonal/buyerGoEvaluate.html" class="assess">评价</a><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<a href="/home/FarmMallPersonal/buyerBuyedGoods.html" class="lookMore">查看更多></a>
-					<div class="empty-nav" style="display: none;">暂无处理的订单哦,赶紧<a href="">去看看></a></div>  <!-- 没定订单时候的状态 -->
-				</div><!-- 订单内容体end -->
 			</div><!-- 右边内容开始end -->
 		</div>
 	</section>
@@ -418,6 +540,14 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
-
+	<script type="text/javascript">
+		(function(){
+			//卡片切换
+			$('.creditRelations li').click(function(){
+				$(this).addClass('active').siblings().removeClass('active');
+				$('.showBox .showCont:eq('+$(this).index()+')').show().siblings().hide();
+			});
+		})();
+	</script>
 </body>
 </html>

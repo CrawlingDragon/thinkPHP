@@ -15,6 +15,9 @@
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
+	<style>
+		.ul1 li,.ul2 li{text-align: center;}
+	</style>
 </head>
 <body>
 	<include file = "Public/CommonPersonalHeader"/>
@@ -95,7 +98,7 @@
 									<td colspan="6" class="infotd">
 										<div class="infoWrap">
 											<ul class="ul1 clear">
-												<li>规格</li><li>重量/kg</li><li>库存</li><li>起定量</li><li>代理价/元</li><li>vip/元</li><li>大户/元</li><li>零售商/元</li><li>零售商/元零售商/元零售商/元零售商/元零售商/元</li><li>零售商/元</li><li>零售商/元</li>
+												<li>规格</li><li>重量/kg</li><li>库存</li><li>起定量</li><li>代理价/元</li><li>vip/元</li><li>大户/元</li><li>零售商/元</li><li>零售商/</li><li>零售商/元</li><li>零售商/元</li>
 											</ul>
 											<ul class="ul2 clear">
 												<li>40kg/包</li><li>40</li><li>1</li><li>1000</li><li>1.00</li><li>2.00</li><li>3.00</li><li>4.00</li><li>4.00</li><li>4.00</li><li>4.00</li>
@@ -245,6 +248,9 @@
 				})
 				S = parseInt(liLength*10+100) + w;
 				$('.infoWrap ul').css("width",S);
+				
+
+
 			}else{
 				$(this).text("显示价格");
 				$(this).addClass('cur');

@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/buyerIndex.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
@@ -17,9 +18,6 @@
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
-	<![endif]-->
-	<!--[if lt IE 8]>
-	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
 	<script type="text/javascript"> //判断ie8以下浏览器
 		var flag = true; 
@@ -120,85 +118,209 @@
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar"><!-- 右边内容开始 -->
-				<div class="titles clear">
+				<div class="rightPart"> <!-- 右边主体内容 -->
+					<div class="titles clear">
 					<h3>Hi! 我是买家</h3>
 					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
 					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
 				</div>
-				<ul class="activeNav clear">
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待付款</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs2 imgs"></div>
-							<h5 class="txt">待收货</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待评价</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerJoinShop.html">
-							<div class="imgs4 imgs"></div>
-							<h5 class="txt">加入的商铺</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerCredit.html">
-							<div class="imgs5 imgs"></div>
-							<h5 class="txt">授信申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-				</ul>
-				<div class="orderWrap" style="min-height: 150px;"><!-- 订单内容体 -->
-					<div class="smallTitle">待处理的订单</div>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<div class="btns now" onclick="sendGoods()">立即发货</div>
-							<!-- <a href="" class="">评价</a> --><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<!-- <div class="btns now">立即发货</div> --><!-- 就是立即发货 to chen -->
-							 <a href="/home/FarmMallPersonal/buyerGoEvaluate.html" class="assess">评价</a><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<a href="/home/FarmMallPersonal/buyerBuyedGoods.html" class="lookMore">查看更多></a>
-					<div class="empty-nav" style="display: none;">暂无处理的订单哦,赶紧<a href="">去看看></a></div>  <!-- 没定订单时候的状态 -->
-				</div><!-- 订单内容体end -->
+					<div class="rightCont"> <!-- 右边的正文内容 -->
+						<h3>已买到的商品</h3>
+						<form action="" style="padding-left: 20px;padding-top: 15px">
+							<div class="searchTitle" style="width: auto;padding-left: 15px;">
+								<label>交易状态:</label>
+								<div class="selectBox select1">
+									<select style="width: 100px;">
+										<option value="全部订单">全部订单</option>
+										<option value="未付款订单">未付款订单</option>
+										<option value="已付款订单">已付款订单</option>
+									</select>
+								</div>
+								<label>评价状态:</label>
+								<div class="selectBox select1">
+									<select style="width: 100px;">
+										<option value="全部">全部</option>
+										<option value="未付款">未付款</option>
+										<option value="已评价">已评价</option>
+									</select>
+								</div>
+								<div class="times" style="vertical-align: middle;">
+									<span>下单时间:</span>
+									<span><input type="text" class="laydate-icon" id="time1" style="width: 120px;"></span>
+									<span style="vertical-align: middle;position: relative;top: 2px;">-</span>
+									<span><input type="text" class="laydate-icon" id="time2" style="width: 120px;"></span>
+								</div>
+							</div>
+							<div class="searchBox" style="padding-left: 15px;">
+							<input type="text" name="" id="" placeholder="输入商品名称或者订单号进行搜索" style="margin-right: 0px;">
+							<input type="button" value="搜索">
+							</div>
+							<div class="batch" style="margin-left: 10px;">
+								<input type="checkbox" name="" id="" class="allCheck"><label>全选</label>
+								<input type="button" value="合并付款">
+							</div>
+							<div class="tableBox">
+								<dl class="tr1 clear">
+									<dd style="width: 248px;text-indent: 71px;">商品</dd>
+									<dd style="width: 118px;">单价/数量</dd>
+									<dd style="width: 82px;">总价</dd>
+									<dd style="width: 90px;">运费</dd>
+									<dd style="width: 120px;">实际收款</dd>
+									<dd style="width: 122px;">交易状态</dd>
+									<dd style="width: 146px;text-align: left;text-indent: 34px;">交易操作</dd>
+								</dl>
+								<table class="listBox"><!-- 一个订单开始 -->
+									<tr style="width: 940px;height: 30px;"><!-- 订单标题 -->
+										<th colspan="5">
+											<a href="" class="listBox-title">
+												<input type="checkbox" name="checkName" id="">
+												<span>订单号：1407241453498101</span>
+												<span>2015-05-28 14:53:48 </span>
+												<span>买家：王思聪</span>	
+											</a>
+											<div class="delet" onclick="deletOrder()"><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/delete.png" alt=""></div><!-- 删除图片 -->
+											<div class="printImg">
+												<a href="/home/FarmMallPersonal/printer.html"><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/print.png" alt=""></a>
+											</div>
+										</th>
+										
+									</tr>
+									<tr class="tr-border">
+										<td class="listCont listCont1" >
+											<div class="goodsInfo"><!-- 商品信息Start -->
+												<div class="goods1"> <!-- 单个商品的信息start -->
+													<div class="goodsImg"><a href=""><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/farmMallIndexGoods.png" alt=""></a></div>
+													<div class="goodsName">
+														<p><a href="">克无踪克无踪克无踪克无踪克无踪克无踪克无踪克无踪</a></p>
+														<span>规格:250ml</span>
+													</div>
+													<div class="price">
+														<p>800.00</p>
+														<p>x10</p>
+													</div>
+													<div class="goodsNum">
+														<p class="goodsNum-txt">1000.00</p>
+													</div>
+													<div class="shipment goodsNum">
+														<p class="goodsNum-txt">10</p>
+													</div>
+												</div><!-- 单个商品的信息end -->
+												<div class="goods1"> <!-- 单个商品的信息start -->
+													<div><a href=""><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/farmMallIndexGoods.png" alt=""></a></div>
+													<div class="goodsName">
+														<p><a href="">克无踪</a></p>
+														<span>规格:250ml</span>
+													</div>
+													<div class="price">
+														<p>800.00</p>
+														<p>x10</p>
+													</div>
+													<div class="goodsNum">
+														<p class="goodsNum-txt">1000.00</p>
+													</div>
+													<div class="shipment goodsNum">
+														<p class="goodsNum-txt">10</p>
+													</div>
+												</div><!-- 单个商品的信息end -->
+											</div><!-- 商品信息end -->
+										</td>
+										<td class="listCont listCont2" style="width: 110px;"><!-- 实际收款开始 -->
+											<div class="freight">
+												<div class="freightBox">
+													<p>1100.00</p>
+													<p>(含运费:0.00)</p>
+												</div>
+											</div>
+										</td><!-- 实际收款结束 -->
+										<td class="listCont listCont3" style="width: 110px;"><!-- 交易状态开始 -->
+											<div class="orderStatus">
+												<div class="orderStatusBox">
+													<p>交易成功</p>
+													<p>担保交易</p>
+													<p>余额支付</p>
+													<p>双方已评</p>
+													<p><a href="/home/Goods/orderDetail.html" class="green">查看详情</a></p>
+													<p>查看详情</p>
+												</div>
+											</div>
+										</td><!-- 交易状态结束 -->
+										<td class="listCont" style="width: 132px;">
+											<div class="operate">
+												<a href="/home/FarmMallPersonal/buyerGoEvaluate.html" class="op-evaluation">评价</a>
+												<a href="支付页" class="modify">立即支付</a>
+												<input type="button" value="关闭订单" class="closeOrder" onclick="closeOrder()">
+											</div>
+										</td>
+									</tr>
+								</table><!-- 一个订单END -->
+								<table class="listBox doneOrder"><!-- 一个订单开始 -->
+									<tr style="width: 900px;height: 30px;"><!-- 订单标题 -->
+										<th colspan="5" class="active">
+											<a href="" class="listBox-title">
+												<input type="checkbox" name="checkName" id="">
+												<span>订单号：1407241453498101</span>
+												<span>2015-05-28 14:53:48 </span>
+												<span>买家：王思聪</span>	
+											</a>
+											<div class="delet" onclick="deletOrder()"><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/delete.png" alt=""></div><!-- 删除图片 -->
+											<div class="printImg">
+												<a href="/home/FarmMallPersonal/printer.html"><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/print.png" alt=""></a>
+											</div>
+										</th>
+										
+									</tr>
+									<tr class="tr-border">
+										<td class="listCont listCont1" >
+											<div class="goodsInfo"><!-- 商品信息Start -->
+												<div class="goods1"> <!-- 单个商品的信息start -->
+													<div><a href=""><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/farmMallIndexGoods.png" alt=""></a></div>
+													<div class="goodsName">
+														<p><a href="">克无踪</a></p>
+														<span>规格:250ml</span>
+													</div>
+													<div class="price">800.00</div>
+													<div class="goodsNum">20</div>
+													<div class="shipment">
+														<p>10</p>
+													</div>
+												</div><!-- 单个商
+												品的信息end -->
+											</div><!-- 商品信息end -->
+										</td>
+										<td class="listCont listCont2" style="width: 110px;"><!-- 实际收款开始 -->
+											<div class="freight">
+												<div class="freightBox">
+													<p>1100.00</p>
+													<p>(含运费:0.00)</p>
+												</div>
+											</div>
+										</td><!-- 实际收款结束 -->
+										<td class="listCont listCont3" style="width: 110px;"><!-- 交易状态开始 -->
+											<div class="orderStatus">
+												<div class="orderStatusBox">
+													<p>交易成功</p>
+													<p>担保交易</p>
+													<p>余额支付</p>
+													<p>双方已评</p>
+													<p><a href="/home/Goods/orderDetail.html" class="green">查看详情</a></p>
+													<p>查看详情</p>
+												</div>
+											</div>
+										</td><!-- 交易状态结束 -->
+										<td class="listCont" style="width: 132px;">
+											<div class="operate">
+												<a href="/home/FarmMallPersonal/buyerGoEvaluate.html" class="op-evaluation">评价</a>
+												<a href="支付页" class="modify">立即支付</a>
+												<!-- <input type="button" value="修改价格" class="modify"> -->
+												<input type="button" value="关闭订单" class="closeOrder">
+											</div>
+										</td>
+									</tr>
+								</table><!-- 一个订单END -->
+							</div>
+						</form>
+					</div>
+				</div>
 			</div><!-- 右边内容开始end -->
 		</div>
 	</section>
@@ -418,6 +540,49 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
+<script type="text/javascript">
+		// 日历1
+		laydate({
+		   elem: '#time1',  
+		});
 
+		// 日历2
+		laydate({
+		   elem: '#time2',
+		});
+		//批量管理效果
+$(document).ready(function(){
+//全选按钮
+$('.allCheck').click(function(){
+	if($(this).prop("checked")){
+		$('.listBox-title input[type=checkbox]').each(function(){
+			$(this).prop("checked",true);
+			$(this).parent().addClass('on-check');//添加选择的打勾效果
+		})
+	}else{
+		$('.listBox-title input[type=checkbox]').each(function(){
+			$(this).prop("checked",false);
+			$(this).parent().removeClass('on-check');//去除选中的打勾效果
+		})
+	}
+});
+//商品单个复选框
+$('.listBox-title input[type=checkbox]').click(function(){
+		if ($(this).prop("checked")) {
+			$(this).parent().addClass('on-check');		//添加选择的打勾效果
+		}else{
+			$('.allCheck').prop("checked",false);
+			$(this).parent().removeClass('on-check'); //去除选中的打勾效果
+		};
+		var checkedNum = $("input:checkbox[name='checkName']:checked").length; //复选狂选中的个数
+		var checkboxNum = $("input:checkbox[name='checkName']").length;       //复选框的个数
+		console.log(checkedNum);
+		console.log(checkboxNum);
+		if (checkedNum == checkboxNum) {          //选中个数等于复选框个数
+			$('.allCheck').prop("checked",true);  //全选框变成选中状态
+		}
+	})
+})
+</script>
 </body>
 </html>

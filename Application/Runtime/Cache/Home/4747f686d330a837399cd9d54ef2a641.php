@@ -5,49 +5,17 @@
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/buyerIndex.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/dropDownExtend.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/laydate/laydate.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/layer/layer.js"></script>
 	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
 		(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
-	<!--[if lt IE 8]>
-	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
-	<![endif]-->
-	<script type="text/javascript"> //判断ie8以下浏览器
-		var flag = true; 
-		var ua = navigator.userAgent.toLowerCase(); 
-		if(navigator.userAgent.indexOf("MSIE")>0)  
-		{   
-		    if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
-		    	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
-		   	 	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 8.0")>0){  
-		  		//alert("ie8");  
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
-		   		//alert("ie9");  
-		    }   
-		}else{  
-			flag = false;  
-			
-			}   
-		if(!flag){  
-
-		}  
-
-	</script>
-
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
@@ -88,117 +56,148 @@
 	</div><!-- 头部开始end -->
 	<section class="containar"><!-- 主体内容开始 -->
 		<div class="containarWrap clear">
-			<div class="leftBar"><!-- 左边导航公共部分 -->
+						<div class="leftBar"><!-- 左边导航公共部分 -->
 				<div class="lb-head"><!-- 头像 -->
 					<div class="lb-head-bj">
 						<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/lufei.jpg" alt="">
 						<a href="" class="membrane">编辑资料</a><!-- 阴影 -->
 					</div>
+					<div class="bj">
+						
+					</div>
 				</div><!-- 头像end -->
-				<div class="lb-nav buyer-lb-nav"><!-- 左边导航 -->
+				<div class="lb-nav"><!-- 左边导航 -->
 					<dl>
-						<dd><a href="buyerBuyedGoods.html">已买到的商品</a></dd>
+						<dt>交易管理</dt>
+						<dd><a href="sellerSelledGoods.html" class="active">已卖出的商品</a></dd>
+						<dd><a href="sellerEvaluationManagement.html">评价管理</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="/home/goods/cart.html">我的购物车</a></dd>
+						<dt>商品管理</dt>
+						<dd><a href="sellerPost.html">发布商品</a></dd>
+						<dd><a href="sellerSellingGoods.html">出售中的商品</a></dd>
+						<dd><a href="sellerWarehouse.html">仓库中的商品</a></dd>
+						<dd><a href="sellerClassifcation.html">商品分类管理</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="buyerCollectStore.html">收藏的商铺</a></dd>
-						<dd><a href="buyerCollectGoods.html">收藏的商品</a></dd>
+						<dt>商铺管理</dt>
+						<dd><a href="/home/Store/index.html">查看我的商铺</a></dd>
+						<dd><a href="sellerShopSet.html">商铺设置</a></dd>
+						<dd><a href="sellerShopkeeper.html">掌柜推荐</a></dd>
+						<dd><a href="sellerShipMent.html">运费模板</a></dd>
+						<!-- <dd><a href="">子账号设置</a></dd> -->
 					</dl>
 					<dl>
-						<dd><a href="buyerJoinShop.html">我加入的商铺</a></dd>
+						<dt>进货渠道</dt>
+						<dd><a href="sellerMeAgented.html">我代理的</a></dd>
+						<dd><a href="sellerAgencyMe.html">代理我的</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="buyerCredit.html">授信申请</a></dd>
-						<dd><a href="buyerCreditChange.html">授信额度调整</a></dd>
-						<dd><a href="buyerCreditHistory.html">授信使用记录</a></dd>
+						<dt>客户管理</dt>
+						<dd><a href="sellerClient.html">认证客户</a></dd>
+						<dd><a href="sellerLevelSet.html">级别设置</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
-						<dd><a href="buyerEvaluation.html">我的评价</a></dd>
+						<dt>授信管理</dt>
+						<dd><a href="sellerCreditNexus.html">授信关系</a></dd>
+						<dd><a href="sellerCreditAdjustment.html">额度调整</a></dd>
+						<dd><a href="sellerUseHistroy.html">使用记录</a></dd>
 					</dl>
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar"><!-- 右边内容开始 -->
-				<div class="titles clear">
-					<h3>Hi! 我是买家</h3>
-					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
-					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
+					<div class="rightPart"> <!-- 右边主体内容 -->
+					<div class="titles clear">
+						<h3>Hi! 我是卖家</h3>
+						<a href="">进入买家中心></a>
+					</div>
+
+					<!-- 右边的正文内容开始 -->
+					<div class="rightCont useRecord" style="min-height: 114px;"> 
+						<h3>使用记录</h3>
+						<form action="" method="">
+							<div>
+								<label for="">申请人：</label>
+								<input type="text" name="" id="" placeholder="填写申请人名字" style="margin-right: 50px;width: 181px;">
+								<label for="">时间：</label>
+								<input type="text" name="" id="time1" class="laydate-icon">
+								<span>-</span>
+								<input type="text" name="" id="time2" class="laydate-icon">
+							</div>
+							<div>
+								<label for="">授信余额：</label>
+								<input type="text" name="" id="">
+								<span>-</span>
+								<input type="text" name="" id="">
+								<input type="button" value="搜索" class="buttons" style="margin-left: 40px;">
+							</div>
+						</form>
+						<table>
+							<tr style="border:1px solid #e5e5e5;">
+								<th style="width: 95px;">时间</th>
+								<th style="width: 78px;">申请人</th>
+								<th style="width: 194px;">交易项目</th>
+								<th style="width: 90px;">金额</th>
+								<th style="width: 98px;">授信总额</th>
+								<th style="width: 125px;">授信余额</th>
+								<th style="width: 110px;">应还款</th>
+								<th style="width: 134px;">操作</th>
+							</tr>
+							<tr>
+								<td>2015-06-09</td>
+								<td>王思聪</td>
+								<td>商品交易-10012015060458929</td>
+								<td class="green fb">-900.00</td>
+								<td class="green">30000.00</td>
+								<td class="green">29100.00</td>
+								<td class="orange fb">20000.00</td>
+								<td ><a href="" class="green">订单详情</a></td>
+							</tr>
+							<tr>
+								<td>2015-06-09</td>
+								<td>王思聪</td>
+								<td>商品交易-10012015060458929</td>
+								<td class="green fb">-900.00</td>
+								<td class="green">30000.00</td>
+								<td class="green">29100.00</td>
+								<td class="orange fb">20000.00</td>
+								<td ><a href="" class="green">订单详情</a></td>
+							</tr>
+							<tr>
+								<td>2015-06-09</td>
+								<td>王思聪</td>
+								<td>商品交易-10012015060458929</td>
+								<td class="green fb">-900.00</td>
+								<td class="green">30000.00</td>
+								<td class="green">29100.00</td>
+								<td class="orange fb">20000.00</td>
+								<td ><a href="" class="green">订单详情</a></td>
+							</tr>
+						</table>
+					</div>
+					<!-- 右边的正文内容结束 -->
+					<div class="pageBox"> <!-- 分页开始 -->
+						<dl>
+							<dd><a href=""><</a></dd>
+							<dd ><a href="">1</a></dd>
+							<dd class="active"><a href="">2</a></dd>
+							<dd><a href="">3</a></dd>
+							<dd><a href="">4</a></dd>
+							<dd><a href="">5</a></dd>
+							<dd><a href="">6</a></dd>
+							<dd>...</dd>
+							<dd><a href="">33</a></dd>
+							<dd><a href="">34</a></dd>
+							<dd><a href="">></a></dd>
+							<dd class="pageBtn">
+								<p>到第
+									<input type="text" name="" id="" value="15">页
+									<input type="button" value="确定">
+								</p>
+							</dd>
+						</dl>
+					</div><!-- 分页结束 -->
 				</div>
-				<ul class="activeNav clear">
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待付款</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs2 imgs"></div>
-							<h5 class="txt">待收货</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待评价</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerJoinShop.html">
-							<div class="imgs4 imgs"></div>
-							<h5 class="txt">加入的商铺</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerCredit.html">
-							<div class="imgs5 imgs"></div>
-							<h5 class="txt">授信申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-				</ul>
-				<div class="orderWrap" style="min-height: 150px;"><!-- 订单内容体 -->
-					<div class="smallTitle">待处理的订单</div>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<div class="btns now" onclick="sendGoods()">立即发货</div>
-							<!-- <a href="" class="">评价</a> --><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<!-- <div class="btns now">立即发货</div> --><!-- 就是立即发货 to chen -->
-							 <a href="/home/FarmMallPersonal/buyerGoEvaluate.html" class="assess">评价</a><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<a href="/home/FarmMallPersonal/buyerBuyedGoods.html" class="lookMore">查看更多></a>
-					<div class="empty-nav" style="display: none;">暂无处理的订单哦,赶紧<a href="">去看看></a></div>  <!-- 没定订单时候的状态 -->
-				</div><!-- 订单内容体end -->
 			</div><!-- 右边内容开始end -->
 		</div>
 	</section>
@@ -418,6 +417,24 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
+	<script type="text/javascript">
+	// 日历1
+		laydate({
+		   elem: '#time1',  
+		});
 
+		// 日历2
+		laydate({
+		   elem: '#time2',
+		});
+
+		(function(){
+			//卡片切换
+			$('.creditRelations li').click(function(){
+				$(this).addClass('active').siblings().removeClass('active');
+				$('.showBox .showCont:eq('+$(this).index()+')').show().siblings().hide();
+			});
+		})();
+	</script>
 </body>
 </html>

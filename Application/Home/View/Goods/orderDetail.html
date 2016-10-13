@@ -13,9 +13,15 @@
 	(function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})() 
 	</script> 
 	<![endif]-->
-	<!--[if lt IE 8]>
-	<script src=”http://ie7-js.googlecode.com/svn/version/2.0(beta)/IE8.js” type=”text/javascript”></script>
-	<![endif]-->
+	<style type="text/css">
+		.wealthOrderDetails-confirm{font-size: 12px;color: #333;}
+		.wealthOrderDetails-confirm .Clerk{display: inline-block;position: relative;}
+		.Clerk .selectBox{display: inline-block;width: 100px;height: 35px;border:1px solid #e5e5e5;overflow: hidden;vertical-align: middle;background: url(http://static.nzsoso.com/Trunk/PersonalCenter/Common/Image/select.png) no-repeat scroll right center #fff;margin-right: 60px;}
+		.Clerk .selectBox select{display: block;width: 120px;height: 35px;line-height: 32px;border:none;}
+		.Clerk #showText{position: absolute;bottom: -17px;left: 85px;color: #ff6600;}
+		.wealthOrderDetails .wealthOrderDetails-head{height: 305px;}
+		.wealthOrderDetails .wealthOrderDetails-head .wealthOrderDetails-headBar p span{margin-right: 148px;}
+	</style>
 </head>
 <body>
 	<header><!-- 头部开始 -->
@@ -658,7 +664,7 @@
 				<div class="wealthOrderDetails-head">
 					<h2>当前状态：<span class="orange">商家已经发货，等待买家确认</span></h2>
 					<div class="wealthOrderDetails-headBar"><!-- 进度条部分开始 -->
-						<p>
+						<p style="font-size: 0;">
 							<span class="fb" style="color: #589325">拍下商品</span>
 							<span>等待买家付款</span>
 							<span style="margin-right: 153px;">等待卖家发货</span>
@@ -675,7 +681,22 @@
 					</div>
 					<!-- 进度条部分结束 -->
 					<p class="wealthOrderDetails-times">当前订单状态：<span>买家已拍下商品，等待买家付款</span></p>
-					<p class="wealthOrderDetails-confirm">您可以<a href="" class="green">修改价格</a><a href="" style="border:none;margin-left:0;">关闭订单</a></p>
+					<div class="wealthOrderDetails-confirm">
+						<div class="Clerk">
+							指定业务员：
+							<div class="selectBox">
+								<select name="" id="Clerk">
+									<option value="1">请选择业务员</option>
+									<option value="2">业务员1</option>
+									<option value="3">业务员2</option>
+								</select>
+							</div>
+							<p id="showText"></p>
+						</div>
+						您可以
+						<a href="#" class="green">修改价格</a>
+						<a href="" style="border:none;margin-left:0;">关闭订单</a>
+					</div>
 				</div>
 				<div class="wealthOrderDetails-mid clear">
 					<div>
@@ -847,6 +868,16 @@
 			<p>增值电信业务经营许可证:浙B2-20150086</p>
 		</section> 
 	</footer><!-- 脚部结束 -->
+<script type="text/javascript">
+	(function(){
+		$("#Clerk").change(function(){
+			if($(this).val() !== 1){
+				$("#showText").text("修改成功");
+			}else{
+				$("#showText").text(" ")
+			}
+		})
+	})();
 </script>
 </body>
 </html>

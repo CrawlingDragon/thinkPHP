@@ -9,4 +9,6 @@ class GoodsController extends Controller {
     public function login(){
         $this->display();
     }
+
+    
 }

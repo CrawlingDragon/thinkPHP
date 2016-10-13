@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/buyerIndex.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/Css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/vipSet.css" type="text/Css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Css/multi-switch.min.css" type="text/css">
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/dropDownExtend.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/laydate/laydate.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/layer/layer.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/Validation.js"></script>
+	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/CommonPersonal/Js/multi-switch.js"></script>
 	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -21,33 +21,11 @@
 	<!--[if lt IE 8]>
 	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
-	<script type="text/javascript"> //判断ie8以下浏览器
-		var flag = true; 
-		var ua = navigator.userAgent.toLowerCase(); 
-		if(navigator.userAgent.indexOf("MSIE")>0)  
-		{   
-		    if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
-		    	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
-		   	 	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 8.0")>0){  
-		  		//alert("ie8");  
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
-		   		//alert("ie9");  
-		    }   
-		}else{  
-			flag = false;  
-			
-			}   
-		if(!flag){  
-
-		}  
-
+	<script type="text/javascript">
+		$(function(){
+			$('.multi-switch').multiSwitch();
+		});
 	</script>
-
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
@@ -91,117 +69,82 @@
 			<div class="leftBar"><!-- 左边导航公共部分 -->
 				<div class="lb-head"><!-- 头像 -->
 					<div class="lb-head-bj">
-						<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/lufei.jpg" alt="">
+						<img src="/Public/mall/PersonalCenter/CommonPersonalCenter/Common/Image/lufei.jpg" alt="">
 						<a href="" class="membrane">编辑资料</a><!-- 阴影 -->
 					</div>
 				</div><!-- 头像end -->
-				<div class="lb-nav buyer-lb-nav"><!-- 左边导航 -->
+				<div class="lb-nav"><!-- 左边导航 -->
 					<dl>
-						<dd><a href="buyerBuyedGoods.html">已买到的商品</a></dd>
+						<dt>个人信息设置</dt>
+						<dd><a href="BasicInfo.html" class="active">基本信息</a></dd>
+						<dd><a href="companyInfo.html">公司信息</a></dd>
+						<dd><a href="headSet.html">头像设置</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="/home/goods/cart.html">我的购物车</a></dd>
+						<dt>账户绑定</dt>
+						<dd><a href="emailSet.html">邮箱绑定</a></dd>
+						<dd><a href="phoneSet.html">手机号码绑定</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="buyerCollectStore.html">收藏的商铺</a></dd>
-						<dd><a href="buyerCollectGoods.html">收藏的商品</a></dd>
+						<dt>账户安全</dt>
+						<dd><a href="vipSet.html">安全中心</a></dd>
+						<dd><a href="logoPwd.html">登录密码</a></dd>
+						<dd><a href="payPwd.html">支付密码</a></dd>
+						<dd><a href="nameAccount.html">实名账户</a></dd>
+						<dd><a href="safeAnswer.html">安全保护问题</a></dd>
+						<dd><a href="bankCard.html">银行卡管理</a></dd>
 					</dl>
 					<dl>
-						<dd><a href="buyerJoinShop.html">我加入的商铺</a></dd>
-					</dl>
-					<dl>
-						<dd><a href="buyerCredit.html">授信申请</a></dd>
-						<dd><a href="buyerCreditChange.html">授信额度调整</a></dd>
-						<dd><a href="buyerCreditHistory.html">授信使用记录</a></dd>
+						<dt>帐户设置(管理员)</dt>
+						<dd><a href="vipSetAccountSetExisting.html">已有账户</a></dd>
+						<dd><a href="vipSetAccountSetAdd.html">添加账户</a></dd>
 					</dl>
 					<dl style="margin-bottom: 0px">
-						<dd><a href="buyerEvaluation.html">我的评价</a></dd>
+						<dt>消息设置</dt>
+						<dd><a href="vipSetInfoSet.html">消息设置</a></dd>
 					</dl>
+					<!-- <dl style="margin-bottom: 0px">
+						<dt>界面设置</dt>
+						<dd><a href="">自定义菜单</a></dd>
+					</dl> -->
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
-			<div class="rightBar"><!-- 右边内容开始 -->
-				<div class="titles clear">
-					<h3>Hi! 我是买家</h3>
-					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
-					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
-				</div>
-				<ul class="activeNav clear">
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待付款</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs2 imgs"></div>
-							<h5 class="txt">待收货</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待评价</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerJoinShop.html">
-							<div class="imgs4 imgs"></div>
-							<h5 class="txt">加入的商铺</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerCredit.html">
-							<div class="imgs5 imgs"></div>
-							<h5 class="txt">授信申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-				</ul>
-				<div class="orderWrap" style="min-height: 150px;"><!-- 订单内容体 -->
-					<div class="smallTitle">待处理的订单</div>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<div class="btns now" onclick="sendGoods()">立即发货</div>
-							<!-- <a href="" class="">评价</a> --><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<!-- <div class="btns now">立即发货</div> --><!-- 就是立即发货 to chen -->
-							 <a href="/home/FarmMallPersonal/buyerGoEvaluate.html" class="assess">评价</a><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<a href="/home/FarmMallPersonal/buyerBuyedGoods.html" class="lookMore">查看更多></a>
-					<div class="empty-nav" style="display: none;">暂无处理的订单哦,赶紧<a href="">去看看></a></div>  <!-- 没定订单时候的状态 -->
-				</div><!-- 订单内容体end -->
-			</div><!-- 右边内容开始end -->
+			<div class="rightBar emailWrap"><!-- 右边内容 -->
+				<div class="smallTitle">邮箱绑定</div>
+				<form action="" class="emForm">
+					<div class="list">
+						<label for="">邮箱地址:</label>
+						<input type="text" name="" id="" onkeyup="Emails(this)" onblur="Emails(this)">
+						<span class="nameTxt"><div class="switchBtn"><input type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" /></div></span>
+						<span class="c3 f12 ml">用于登录</span>
+						<p class="errorMsg"></p>
+					</div>
+					<div class="list">
+						<label for="">请填写邮箱验证码:</label>
+						<input type="text" name="" id="" class="emCode" onkeyup="emCodes(this)" onblur="emCodes(this)">
+						<input type="button" value="发送邮箱验证码" class="emBtn" onclick="settime(this)">
+						<a href="/home/CommonPersonal/help.html" class="green f12">没有收到邮件?</a>
+						<p class="errorMsg"></p>
+					</div>
+					<div class="list">
+						<label for="">验证码:</label>
+						<input type="text" name="" id="" class="code" onkeyup="codes(this)" onblur="codes(this)">
+						<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Image/code.jpg" alt="" class="codeImg" width="110px" height="33px">
+						<span class="codeTxt">看不清楚<i >换一张</i></span>
+						<p class="errorMsg"></p>
+					</div>
+					<!-- <div class="list">
+						<label for="">开启邮箱登录</label>
+						<input type="radio" name="" id="">
+						<span class="yes">是</span>
+						<input type="radio" name="" id="">
+						<span class="yes">否</span>
+					</div> -->
+					<input type="submit" value="保存" class="biSub" id="sub">
+				</form>
+			</div><!-- 右边内容end -->
 		</div>
-	</section>
+	</section>	<!-- 主体内容end -->
 	<div class="footer"><!-- 公共底部 -->
 		<div class="footerWrap">
 			<dl class="clear">
@@ -418,6 +361,18 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
+	<script type="text/javascript">
+		$('#sub').click(function(){
+			$('input[type=text]').trigger('blur');
+			// var len = $('.errorMsg').length;
+			var txt = $('.errorMsg').text();
+			if($('.errorMsg').text()!==''){
+				return false;
+			}else{
+				return true;
 
+			}
+		})
+	</script>
 </body>
 </html>

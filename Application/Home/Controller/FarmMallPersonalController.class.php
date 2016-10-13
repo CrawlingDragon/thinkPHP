@@ -9,4 +9,7 @@ class FarmMallPersonalController extends Controller {
     public function login(){
         $this->display();
     }
+
+    
+    
 }

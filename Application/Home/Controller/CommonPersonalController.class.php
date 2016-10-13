@@ -9,4 +9,6 @@ class CommonPersonalController extends Controller {
     public function login(){
         $this->display();
     }
+    
+
 }

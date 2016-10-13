@@ -5,13 +5,10 @@
 	<title>中农在线</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Css/common.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/buyerIndex.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Css/seller.css" type="text/css">
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/jquery.1.11.3.min.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/common.js"></script>
 	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/footer.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/Common/Js/dropDownExtend.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/laydate/laydate.js"></script>
-	<script type="text/javascript" src="<?php echo (C("STYLE_URL")); ?>/Common/Js/layer/layer.js"></script>
 	<!--[if IE 8.0]><link href="<?php echo (C("STYLE_URL")); ?>/Common/Css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
 	<!--[if IE]> 
 	<script type="text/javascript"> 
@@ -21,33 +18,6 @@
 	<!--[if lt IE 8]>
 	<script src="/Public/mall/wuhelong/IE8.js" type="text/javascript"></script>
 	<![endif]-->
-	<script type="text/javascript"> //判断ie8以下浏览器
-		var flag = true; 
-		var ua = navigator.userAgent.toLowerCase(); 
-		if(navigator.userAgent.indexOf("MSIE")>0)  
-		{   
-		    if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
-		    	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
-		   	 	window.location.href="http:tip.html";
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 8.0")>0){  
-		  		//alert("ie8");  
-		    }   
-		    if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
-		   		//alert("ie9");  
-		    }   
-		}else{  
-			flag = false;  
-			
-			}   
-		if(!flag){  
-
-		}  
-
-	</script>
-
 </head>
 <body>
 	<div class="header"><!-- 头部开始 -->
@@ -120,85 +90,132 @@
 				</div><!-- 左边导航end -->
 			</div><!-- 左边导航公共结束 -->
 			<div class="rightBar"><!-- 右边内容开始 -->
-				<div class="titles clear">
-					<h3>Hi! 我是买家</h3>
-					<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
-					<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
+					<div class="titles clear" style="background: #f9f9f9;">
+						<h3>Hi! 我是买家</h3>
+						<a href="" style="display: none;">进入卖家中心></a>	<!-- 一半买家状态 -->
+						<a href="" class="shopOpen">申请开店</a> <!-- 申请开店的状态 -->
+					</div>
+				<div class="rightPart" style="background: #fff;box-sizing:border-box"> <!-- 右边主体内容 -->
+					
+					<div class="right"> <!-- 右边评价部分 -->
+						<div class="myEvaluate" style="background: #fff;border:none;padding-top: 1px"> <!-- 我的评价部分开始 -->
+							<h4>我的评价</h4>
+							<h5>我的好评率:<span>100.00%</span></h5>
+							<table border="1">
+								<tr>
+									<th></th>
+									<th>最近一周</th>
+									<th>最近1个月</th>
+									<th>最近2个月</th>
+									<th>最近6个月</th>
+									<th>6个月前</th>
+								</tr>
+								<tr style="color: #ff6600;">
+									<td>好评<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/evaluation1.png" alt=""></td>
+									<td>0</td>
+									<td>4</td>
+									<td>16</td>
+									<td>29</td>
+									<td>558</td>
+								</tr>
+								<tr style="color: #589325;">
+									<td>中评<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/evaluation2.png" alt=""></td>
+									<td>0</td>
+									<td>4</td>
+									<td>16</td>
+									<td>29</td>
+									<td>558</td>
+								</tr>
+								<tr>
+									<td>差评<img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/evaluation3.png" alt=""></td>
+									<td>0</td>
+									<td>4</td>
+									<td>16</td>
+									<td>29</td>
+									<td>558</td>
+								</tr>
+							</table>
+						</div><!-- 我的评价部分结束 -->
+						<div class="evaluateShow"> <!-- 来自卖家买家的评价开始 -->
+							<div class="navButton">
+								<span class="active" style="background: #fff">来自卖家的评论</span>
+								<span style="background: #fff">给卖家的评论</span>
+							</div>
+							<div class="showBox" >
+								<div class="showBox1">
+									<table cellPadding="0" cellSpacing="0" border-spacing="0">
+										<tr>
+											<th>评价时间</th>
+											<th>评价</th>
+											<th>评价内容</th>
+											<th>评价人</th>
+											<th>商品信息</th>
+										</tr>
+										<tr>
+											<td>2015-06-11&nbsp11:22：45</td>
+											<td><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/evaluation1.png" alt=""></td>
+											<td>对症下药，东西很好，使用方法也很简单，一般农户都能直接用上了。
+											</td>
+											<td>商家：宁****泰</td>
+											<td><a href="#">燕化传奇 甲硫 吡唑酯 杀菌剂梧宁®—四霉素后产物</a></td>
+										</tr>
+										<tr>
+											<td>2015-06-11&nbsp11:22：45</td>
+											<td><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/evaluation1.png" alt=""></td>
+											<td>对症下药，东西很好，使用方法也很简单，一般农户都能直接用上了。
+											</td>
+											<td>商家：宁****泰</td>
+											<td><a href="#">燕化传奇 甲硫 吡唑酯 杀菌剂梧宁®—四霉素后产物</a></td>
+										</tr>
+										<tr>
+											<td>2015-06-11&nbsp11:22：45</td>
+											<td><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/evaluation1.png" alt=""></td>
+											<td>对症下药，东西很好，使用方法也很简单，一般农户都能直接用上了。
+											</td>
+											<td>商家：宁****泰</td>
+											<td><a href="#">燕化传奇 甲硫 吡唑酯 杀菌剂梧宁®—四霉素后产物</a></td>
+										</tr>
+									</table>
+								</div>
+								<div class="showBox2" style="display: none">
+									<table cellPadding="0" cellSpacing="0" border-spacing="0">
+										<tr>
+											<th>评价时间</th>
+											<th>评价</th>
+											<th>评价内容</th>
+											<th>评价人</th>
+											<th>商品信息</th>
+										</tr>
+										<tr>
+											<td>2015-06-11&nbsp11:22：45</td>
+											<td><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/evaluation1.png" alt=""></td>
+											<td>对症下药，东西很好，使用方法也很简单，一般农户都能直接用上了2。
+											</td>
+											<td>商家：宁****泰</td>
+											<td><a href="#">燕化传奇 甲硫 吡唑酯 杀菌剂梧宁®—四霉素后产物2</a></td>
+										</tr>
+										<tr>
+											<td>2015-06-11&nbsp11:22：45</td>
+											<td><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/evaluation1.png" alt=""></td>
+											<td>对症下药，东西很好，使用方法也很简单，一般农户都能直接用上了2。
+											</td>
+											<td>商家：宁****泰</td>
+											<td><a href="#">燕化传奇 甲硫 吡唑酯 杀菌剂梧宁®—四霉素后产物2</a></td>
+										</tr>
+										<tr>
+											<td>2015-06-11&nbsp11:22：45</td>
+											<td><img src="<?php echo (C("STYLE_URL")); ?>/PersonalCenter/NZPersonal/Image/evaluation1.png" alt=""></td>
+											<td>对症下药，东西很好，使用方法也很简单，一般农户都能直接用上了2。
+											</td>
+											<td>商家：宁****泰</td>
+											<td><a href="#">燕化传奇 甲硫 吡唑酯 杀菌剂梧宁®—四霉素后产物2</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div><!-- 来自卖家买家的评价结束 -->
+					</div><!-- 右边评价结束 -->
 				</div>
-				<ul class="activeNav clear">
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待付款</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs2 imgs"></div>
-							<h5 class="txt">待收货</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/Home/FarmMallPersonal/buyerBuyedGoods.html">
-							<div class="imgs3 imgs"></div>
-							<h5 class="txt">待评价</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerJoinShop.html">
-							<div class="imgs4 imgs"></div>
-							<h5 class="txt">加入的商铺</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-					<li>
-						<a href="/home/FarmMallPersonal/buyerCredit.html">
-							<div class="imgs5 imgs"></div>
-							<h5 class="txt">授信申请</h5>
-							<p class="num">11</p>
-						</a>
-					</li>
-				</ul>
-				<div class="orderWrap" style="min-height: 150px;"><!-- 订单内容体 -->
-					<div class="smallTitle">待处理的订单</div>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<div class="btns now" onclick="sendGoods()">立即发货</div>
-							<!-- <a href="" class="">评价</a> --><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<dl class="clear">
-						<dd class="dd1">
-							<a href=""><img src="/Public/mall/PersonalCenter/FarmMallPersonal/JIC/Image/farmMallIndexGoods.png" alt=""></a>
-						</dd>
-						<dd class="dd2">
-							<a href="#" class="orderNum">订单编号【1407241453498101】</a>
-							<p>2015-05-28<span class="times">14:53:48</span></p>
-						</dd>
-						<dd class="dd3"><span>收货人:王思聪</span></dd>
-						<dd class="dd4"><span>状态:交易成功</span></dd>
-						<dd class="dd5">
-							<!-- <div class="btns now">立即发货</div> --><!-- 就是立即发货 to chen -->
-							 <a href="/home/FarmMallPersonal/buyerGoEvaluate.html" class="assess">评价</a><!-- 给买家的评价-->
-							<!-- <div class="btns">改价</div> --><!-- 买家未付款时 -->
-						</dd>
-					</dl>
-					<a href="/home/FarmMallPersonal/buyerBuyedGoods.html" class="lookMore">查看更多></a>
-					<div class="empty-nav" style="display: none;">暂无处理的订单哦,赶紧<a href="">去看看></a></div>  <!-- 没定订单时候的状态 -->
-				</div><!-- 订单内容体end -->
 			</div><!-- 右边内容开始end -->
 		</div>
 	</section>
@@ -418,6 +435,14 @@
 		</ul>
 		<p>© 2015 中农在线 版权所有，并保留所有权利增值电信业务经营许可证:浙B2-20150086</p>
 	</div>
-
+<script type="text/javascript">
+	$(function(){
+		//来自卖家和卖家的评价的卡片切换
+		$(".navButton>span").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			$('.showBox>div:eq('+$(this).index()+')').show().siblings().hide();
+		})
+	})
+</script>
 </body>
 </html>
